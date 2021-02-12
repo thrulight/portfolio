@@ -134,39 +134,3 @@ p {
   mix-blend-mode: multiply; /* See the text under */
 }
 /* #endregion cursor */
-
-/* #region mainPageContainer */
-@keyframes fade-in {
-  from {opacity: 0%;}
-  to {opacity: 100%;}
-}
-
-/* Main page container */
-.mainPageContainer{
-  /* padding: 60px 15% 60px 15%; */
-  width: auto;
-  height: 100%;
-  display: -webkit-box;
-  display: -moz-box;
-  display: -ms-flexbox;
-  display: -webkit-flex;
-  display: flex;
-  z-index: 0;
-  -webkit-flex-flow: row wrap;
-  flex-flow: row wrap;
-  justify-content: center;
-  align-content: center;
-  text-align: center;
-
-  -webkit-animation: fadein 1.5s ease; /* Safari, Chrome and Opera > 12.1 */
-       -moz-animation: fadein 1.5s ease; /* Firefox < 16 */
-        -ms-animation: fadein 1.5s ease; /* Internet Explorer */
-         -o-animation: fadein 1.5s ease; /* Opera < 12.1 */
-            animation: fadein 1.5s ease;
-}
-
-@keyframes fadeindown  {
-    from { opacity: 0; }
-    to   { opacity: 1; }
-}
-/* #endregion mainPageContainer */
