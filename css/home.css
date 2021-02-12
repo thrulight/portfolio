@@ -1,0 +1,147 @@
+@font-face {
+  font-family: Ubuntu Regular;
+  src: url(Ubuntu/Ubuntu-Regular.ttf);
+}
+
+@font-face {
+  font-family: Lato;
+  src: url(Lato/Lato-Light.ttf);
+}
+
+html {
+  cursor: url("cursors/cursor_circle.svg") 5 5, auto;
+  background-image: url("backgrounds/montage_gif_2.gif");
+  background-repeat: no-repeat;
+  background-size: cover;
+  background-position: top;
+}
+
+body{
+  margin: 0;
+  padding: 0;
+  background-color: none;
+
+  animation-name: fade-in;
+  animation-duration: 1.5s;
+}
+
+@keyframes fade-in {
+  from {opacity: 0%;}
+  to {opacity: 100%;}
+}
+
+/* Navigation bar */
+ul {
+  list-style-type: none;
+  margin: 0;
+  padding: 0;
+  overflow: hidden;
+  background-color: none;
+  padding-right: 50px;
+  font-size: 10pt;
+  font-family: "Segoe Ui Light", Arial;
+  letter-spacing: 2pt;
+  /*box-shadow: 0 4px 8px 0 rgba(0, 0, 0, 0.2), 0 6px 20px 0 rgba(0, 0, 0, 0.19); */
+}
+
+li {
+  float: right;
+}
+
+li a {
+  display: block;
+  color: black;
+  text-align: center;
+  padding-top: 50px;
+  padding-left: 0px;
+  padding-right: 0px;
+  padding-bottom: 10px;
+  text-decoration: none;
+  margin-right: 30px;
+  margin-left: 30px;
+
+}
+
+li a:hover {
+  border-bottom: white solid 1px;
+  font-weight: bold;*
+  cursor: none;
+  color: white;
+  transition: color 0.3s ease-in;
+}
+
+.nav-title {
+  margin-left: 75px;
+  font-family: "Ubuntu Regular", Arial;
+  font-weight: 600;
+  letter-spacing: 4pt;
+  font-size: 12pt;
+}
+
+.active {
+  border-bottom: black solid 1px;
+  font-weight: bold;
+}
+
+.nav-title:hover {
+  border: none;
+  color: black;
+}
+
+p {
+  font-size: calc(0vw + 1rem);
+  font-family: "Lato", Arial;
+  font-weight: 300;
+  letter-spacing: .1em;
+}
+
+/* Main page container */
+
+.mainPageContainer {
+  background-color: none;
+  margin: auto;
+  text-align: left;
+  position: absolute;
+  left: 25%;
+  top: 50%;
+  transform: translate(-50%, -50%);
+  padding: 10px;
+  margin-left: 10%;
+  margin-right: 20%;
+}
+
+
+
+.buttonProjects p {
+  font-size: calc(.12vw + 1rem);
+  text-decoration: underline;
+  font-family: "Ubuntu Regular", Arial;
+  font-weight: 300;
+  line-height: 1.8;
+}
+
+.buttonProjects p:hover {
+  font-weight: 500;
+  color: white;
+  text-decoration: underline;
+}
+
+.intro p {
+  font-size: calc(.96vw + 1rem);
+  line-height: 1.452;
+  font-family: "Ubuntu Regular", Arial;
+  font-style: normal;
+}
+
+/* Circle cursor */
+.circle {
+	position: absolute;
+  border: solid 1px none;
+  background-color: #f2ede4;
+	width: 50px;
+	height: 50px;
+  border-radius: 50%;
+  z-index: -1;
+  transition: all 0.3s ease-in;
+  transition-property: background,transform, cursor;
+}

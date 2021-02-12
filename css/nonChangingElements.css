@@ -1,0 +1,172 @@
+@font-face {
+  font-family: Ubuntu Regular;
+  src: url(Ubuntu/Ubuntu-Regular.ttf);
+}
+
+@font-face {
+  font-family: Lato;
+  src: url(Lato/Lato-Light.ttf);
+}
+
+html {
+  cursor: url("cursors/cursor_circle.svg") 5 5, auto;
+}
+
+model-viewer {
+  margin: auto;
+  height: 100%;
+  width: 120%;
+  min-width: 200px;
+  border: none;
+  outline: white;
+  z-index: 0;
+}
+
+/* #region headings */
+.h1 {
+  color: black;
+  font-size: 1rem;
+  padding: 0;
+  position: relative;
+  overflow: hidden;
+  object-fit: contain;
+  font-family: "Lato", Arial;
+  letter-spacing: .1em;
+  text-align: left;
+  z-index: 0;
+  line-height: 1.8;
+}
+
+.h2 {
+  font-size: calc(.36vw + 1rem);
+  line-height: 1.452;
+  font-family: "Ubuntu Regular", Arial;
+  font-weight: 400;
+  letter-spacing: .1em;
+  text-align: left;
+  color: black;
+  padding: 0;
+  line-height: 2;
+  position: relative;
+  overflow: hidden;
+  object-fit: contain;
+  z-index: 0;
+}
+/* #endregion headings */
+
+/* #region navigation bar */
+/* Navigation bar */
+ul {
+  list-style-type: none;
+  overflow: hidden;
+  margin: 0;
+  padding: 0;
+  overflow: hidden;
+  background-color: none;
+  padding-right: 50px;
+  font-size: 10pt;
+  font-family: "Segoe Ui Light", Arial;
+  letter-spacing: 2pt;
+}
+
+li {
+  float: right;
+}
+
+li a {
+  display: block;
+  color: black;
+  text-align: center;
+  padding-top: 50px;
+  padding-left: 0px;
+  padding-right: 0px;
+  padding-bottom: 10px;
+  text-decoration: none;
+  margin-right: 30px;
+  margin-left: 30px;
+}
+
+li a:hover {
+  border-bottom: white solid 2px;
+  font-weight: bold;
+  cursor: none;
+  /* color: white; */
+  transition: color 0.3s ease-in;
+}
+
+/* Emilie Durand left title */
+.nav-title {
+  margin-left: 75px;
+  font-family: "Ubuntu Regular", Arial;
+  font-weight: 600;
+  letter-spacing: 4pt;
+  font-size: 12pt;
+}
+.nav-title:hover {
+  border: none;
+}
+
+/* Active page looks different */
+.active {
+  font-weight: bold;
+}
+
+p {
+  font-size: calc(0vw + 1rem);
+  font-family: "Lato", Arial;
+  letter-spacing: 0;
+}
+
+/* #endregion navigation bar */
+
+/* #region cursor */
+.circle {
+	position: absolute;
+  border: solid 1px none;
+  background-color: #f2ede4;
+	width: 50px;
+	height: 50px;
+  border-radius: 50%;
+  z-index: 2;
+  transition: all 0.3s ease-in;
+  transition-property: background,transform, cursor;
+  pointer-events: none; /* Click through */
+  mix-blend-mode: multiply; /* See the text under */
+}
+/* #endregion cursor */
+
+/* #region mainPageContainer */
+@keyframes fade-in {
+  from {opacity: 0%;}
+  to {opacity: 100%;}
+}
+
+/* Main page container */
+.mainPageContainer{
+  /* padding: 60px 15% 60px 15%; */
+  width: auto;
+  height: 100%;
+  display: -webkit-box;
+  display: -moz-box;
+  display: -ms-flexbox;
+  display: -webkit-flex;
+  display: flex;
+  z-index: 0;
+  -webkit-flex-flow: row wrap;
+  flex-flow: row wrap;
+  justify-content: center;
+  align-content: center;
+  text-align: center;
+
+  -webkit-animation: fadein 1.5s ease; /* Safari, Chrome and Opera > 12.1 */
+       -moz-animation: fadein 1.5s ease; /* Firefox < 16 */
+        -ms-animation: fadein 1.5s ease; /* Internet Explorer */
+         -o-animation: fadein 1.5s ease; /* Opera < 12.1 */
+            animation: fadein 1.5s ease;
+}
+
+@keyframes fadeindown  {
+    from { opacity: 0; }
+    to   { opacity: 1; }
+}
+/* #endregion mainPageContainer */
