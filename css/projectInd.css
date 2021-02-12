@@ -29,64 +29,6 @@ body{
   to {opacity: 100%;}
 }
 
-/* Navigation bar */
-ul {
-  list-style-type: none;
-  overflow: hidden;
-  margin: 0;
-  padding: 0;
-  overflow: hidden;
-  background-color: none;
-  padding-right: 50px;
-  font-size: 10pt;
-  font-family: "Segoe Ui Light", Arial;
-  letter-spacing: 2pt;
-  /*box-shadow: 0 4px 8px 0 rgba(0, 0, 0, 0.2), 0 6px 20px 0 rgba(0, 0, 0, 0.19); */
-}
-
-li {
-  float: right;
-}
-
-li a {
-  display: block;
-  color: black;
-  text-align: center;
-  padding-top: 50px;
-  padding-left: 0px;
-  padding-right: 0px;
-  padding-bottom: 10px;
-  text-decoration: none;
-  margin-right: 30px;
-  margin-left: 30px;
-
-}
-
-li a:hover {
-  border-bottom: white solid 2px;
-  font-weight: bold;
-  cursor: none;
-  color: white;
-  transition: color 0.3s ease-in;
-}
-
-/* Emilie Durand left title */
-.nav-title {
-  margin-left: 75px;
-  font-family: "Ubuntu Regular", Arial;
-  font-weight: 600;
-  letter-spacing: 4pt;
-  font-size: 12pt;
-}
-.nav-title:hover {
-  border: none;
-}
-
-/* Active page looks different */
-.active {
-  font-weight: bold;
-}
-
 p {
   font-size: calc(0vw + 1rem);
   font-family: "Lato", Arial;
