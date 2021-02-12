@@ -1,3 +1,17 @@
+@font-face {
+  font-family: Ubuntu Regular;
+  src: url(Ubuntu/Ubuntu-Regular.ttf);
+}
+
+@font-face {
+  font-family: Lato;
+  src: url(Lato/Lato-Light.ttf);
+}
+
+html {
+  cursor: url("cursors/cursor_circle.svg") 5 5, auto;
+}
+
 body{
   margin: 0;
   padding: 0;
@@ -10,63 +24,73 @@ body{
   animation-duration: 1.5s;
 }
 
-.header {
-  font-size: calc(.96vw + 1rem);
-  line-height: 1.452;
-  font-family: "Ubuntu Regular", Arial;
-  font-weight: 400;
-  letter-spacing: .1em;
-  text-align: left;
-  width: 100%;
-}
-
-.header:hover {
-  /* color: white; */
-  transition: all 0.5s ease-in-out;
-  -webkit transition: all 0.5s ease-in-out;
-  cursor: none;
-}
-
-.headerContainer {
-  margin-top: 30px;
-  margin-left: 10%;
-  margin-right: 10%;
-  width: auto;
-  z-index: 1;
-}
-
-.row {
-  display: flex;
-}
-
-/* Create two equal columns that sits next to each other */
-.column {
-  padding-left: 50px;
-  align-items: center;
-  align-content: center;
-  padding-right: 50px;
-  padding-top: 50px;
-  margin: 50px;
-  height: 600px; /* Should be removed. Only for demonstration */
-}
-
-.column p {
-  align-self: center;
-  vertical-align:
-
-}
-
-.left {
-  width: 60%;
-}
-
-.right {
-  width: 40%;
-}
-
 @keyframes fade-in {
   from {opacity: 0%;}
   to {opacity: 100%;}
+}
+
+/* Navigation bar */
+ul {
+  list-style-type: none;
+  overflow: hidden;
+  margin: 0;
+  padding: 0;
+  overflow: hidden;
+  background-color: none;
+  padding-right: 50px;
+  font-size: 10pt;
+  font-family: "Segoe Ui Light", Arial;
+  letter-spacing: 2pt;
+  /*box-shadow: 0 4px 8px 0 rgba(0, 0, 0, 0.2), 0 6px 20px 0 rgba(0, 0, 0, 0.19); */
+}
+
+li {
+  float: right;
+}
+
+li a {
+  display: block;
+  color: black;
+  text-align: center;
+  padding-top: 50px;
+  padding-left: 0px;
+  padding-right: 0px;
+  padding-bottom: 10px;
+  text-decoration: none;
+  margin-right: 30px;
+  margin-left: 30px;
+
+}
+
+li a:hover {
+  border-bottom: white solid 2px;
+  font-weight: bold;
+  cursor: none;
+  color: white;
+  transition: color 0.3s ease-in;
+}
+
+/* Emilie Durand left title */
+.nav-title {
+  margin-left: 75px;
+  font-family: "Ubuntu Regular", Arial;
+  font-weight: 600;
+  letter-spacing: 4pt;
+  font-size: 12pt;
+}
+.nav-title:hover {
+  border: none;
+}
+
+/* Active page looks different */
+.active {
+  font-weight: bold;
+}
+
+p {
+  font-size: calc(0vw + 1rem);
+  font-family: "Lato", Arial;
+  letter-spacing: 0;
 }
 
 /* Main page container */
@@ -96,4 +120,171 @@ body{
 @keyframes fadeindown  {
     from { opacity: 0; }
     to   { opacity: 1; }
+}
+
+.flex-item {
+  position: relative;
+  width: 500px;
+  height: 650px;
+  object-fit: cover;
+  margin: 0;
+  z-index: 0;
+  overflow: hidden;
+  align-content: center;
+  display: flex;
+  border-radius: 0px;
+  -webkit-transition-duration: .4s; /* Safari */
+  transition-duration: .4s;
+  cursor: pointer;
+}
+
+.flex-item p {
+  text-align: left;
+}
+
+.flex-img {
+  background-color: #f2ede4;
+  margin: 0;
+  padding: 0;
+  object-fit: cover;
+  height: 500px;
+  width: 500px;
+  max-width: 100%;
+  max-height: 100%;
+  z-index: 0;
+  border-radius: 10px;
+  -webkit-transition-duration: .4s; /* Safari */
+  transition-duration: .4s;
+}
+
+.txtContainer {
+  position: absolute;
+  bottom: 0;
+  left: 0;
+  right: 0;
+  background-color: none;
+  overflow: hidden;
+  width: 100%;
+  height: 150px;
+  transition: .6s ease;
+  text-align: left;
+  display: flex;
+  align-items: center;
+  justify-content: left;
+  opacity: 0.8;
+  z-index: 0;
+}
+.txtContainer:hover {
+  color: white;
+}
+
+.txt {
+  color: black;
+  font-size: 20px;
+  padding: 8px;
+  position: relative;
+  overflow: hidden;
+  object-fit: contain;
+  letter-spacing: 0;
+  z-index: 0;
+  font-weight: lighter;
+}
+
+.h1 {
+  color: black;
+  font-size: 1rem;
+  padding: 0;
+  position: relative;
+  overflow: hidden;
+  object-fit: contain;
+  font-family: "Lato", Arial;
+  letter-spacing: .1em;
+  text-align: left;
+  z-index: 0;
+  line-height: 1.8;
+}
+
+.h2 {
+  font-size: calc(.36vw + 1rem);
+  line-height: 1.452;
+  font-family: "Ubuntu Regular", Arial;
+  font-weight: 400;
+  letter-spacing: .1em;
+  text-align: left;
+}
+
+.header {
+  font-size: calc(.96vw + 1rem);
+  line-height: 1.452;
+  font-family: "Ubuntu Regular", Arial;
+  font-weight: 400;
+  letter-spacing: .1em;
+  text-align: left;
+  width: 100%;
+}
+
+.header:hover {
+  color: white;
+  transition: all 0.5s ease-in-out;
+  -webkit transition: all 0.5s ease-in-out;
+  cursor: none;
+}
+
+.headerContainer {
+  margin-top: 30px;
+  margin-left: 20%;
+  margin-right: 20%;
+  width: auto;
+}
+
+.row {
+  display: flex;
+}
+
+/* Create two equal columns that sits next to each other */
+.column {
+  padding-left: 60px;
+  align-items: center;
+  align-content: center;
+  padding-right: 60px;
+  padding-top: 50px;
+  margin: 50px;
+  height: 600px; /* Should be removed. Only for demonstration */
+}
+
+.column p {
+  align-self: center;
+}
+
+.left {
+  width: 60%;
+}
+
+.right {
+  width: 40%;
+}
+
+model-viewer {
+  margin: auto;
+  height: 100%;
+  width: 120%;
+  min-width: 200px;
+  border: none;
+  outline: none;
+  display: block;
+}
+
+/* Circle cursor */
+.circle {
+	position: absolute;
+  border: solid 1px none;
+  background-color: #f2ede4;
+	width: 50px;
+	height: 50px;
+  border-radius: 50%;
+  z-index: 1;
+  transition: all 0.3s ease-in;
+  transition-property: background,transform, cursor;
+  pointer-events: none;
+  mix-blend-mode: difference;
 }

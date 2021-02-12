@@ -1,3 +1,17 @@
+@font-face {
+  font-family: Ubuntu Regular;
+  src: url(Ubuntu/Ubuntu-Regular.ttf);
+}
+
+@font-face {
+  font-family: Lato;
+  src: url(Lato/Lato-Light.ttf);
+}
+
+html {
+  cursor: url("cursors/cursor_circle.svg") 5 5, auto;
+}
+
 body{
   margin: 0;
   padding: 0;
@@ -8,6 +22,67 @@ body{
   background-repeat: no-repeat;
   background-size: contain;
   background-position: top center; /* Center the image */
+}
+
+@keyframes fade-in {
+  from {opacity: 0%;}
+  to {opacity: 100%;}
+}
+
+
+/* Navigation bar */
+ul {
+  list-style-type: none;
+  margin: 0;
+  padding: 0;
+  overflow: hidden;
+  background-color: none;
+  padding-right: 50px;
+  font-size: 10pt;
+  font-family: "Segoe Ui Light", Arial;
+  letter-spacing: 2pt;
+  z-index: 1;
+}
+
+li {
+  float: right;
+}
+
+li a {
+  display: block;
+  color: black;
+  text-align: center;
+  padding-top: 50px;
+  padding-left: 0px;
+  padding-right: 0px;
+  padding-bottom: 10px;
+  text-decoration: none;
+  margin-right: 30px;
+  margin-left: 30px;
+  z-index: 2;
+}
+
+li a:hover {
+  border-bottom: white solid 2px;
+  font-weight: bold;
+  cursor: none;
+  color: white;
+}
+
+.nav-title {
+  margin-left: 75px;
+  font-family: "Ubuntu Regular", Arial;
+  font-weight: 600;
+  letter-spacing: 4pt;
+  font-size: 12pt;
+}
+
+.active {
+  font-weight: bold;
+}
+
+.nav-title:hover {
+  border: none;
 }
 
 p {
@@ -45,7 +120,6 @@ p {
     to   { opacity: 1; }
 }
 
-/* #region flex-item */
 .flex-item {
   position: relative;
   width: 500px;
@@ -106,7 +180,7 @@ p {
   align-items: center;
   justify-content: left;
   opacity: 0.8;
-  z-index: 2;
+  z-index: 0;
 }
 
 .txt {
@@ -120,7 +194,32 @@ p {
   z-index: 0;
   font-weight: lighter;
 }
-/* #endregion flex-item */
+
+.h1 {
+  color: black;
+  font-size: 20px;
+  padding: 0;
+  position: relative;
+  overflow: hidden;
+  object-fit: contain;
+  font-family: "Ubuntu Regular", Arial;
+  letter-spacing: .1em;
+  z-index: 0;
+}
+
+.h2 {
+  color: black;
+  font-size: 20px;
+  padding: 0;
+  line-height: 2;
+  position: relative;
+  overflow: hidden;
+  object-fit: contain;
+  font-family: "Ubuntu Regular", Arial;
+  font-weight: bold;
+  letter-spacing: .1em;
+  z-index: 0;
+}
 
 .header {
   font-size: calc(.96vw + 1rem);
@@ -138,4 +237,28 @@ p {
   align-items: left;
   align-content: left;
   justify-content: left;
+}
+
+/* white font under circle */
+.txtContainer:hover .txt, .txtContainer:hover .h2{
+  color: white;
+  -webkit-transition-duration: .2s; /* Safari */
+  transition-duration: .2s;
+  cursor: none;
+}
+
+
+/* Circle cursor */
+.circle {
+	position: absolute;
+  border: solid 1px none;
+  background-color: #f2ede4;
+	width: 50px;
+	height: 50px;
+  border-radius: 50%;
+  z-index: -1;
+  transition: all 0.3s ease-in;
+  -webkit transition: all 0.3s ease-in;
+  transition-property: background,transform, cursor;
+  -webkit transition-property: background,transform, cursor;
 }

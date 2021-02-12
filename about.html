@@ -3,20 +3,29 @@
   <link rel="icon" href="logo_invert.png">
   <meta charset="utf-8">
   <meta name="viewport" content="width=device-width, initial-scale=1.0">
-  <link rel="stylesheet" href="css/about.css">
+  <link rel="stylesheet" href="about.css">
   <title>Emilie Durand</title>
   <script src="https://ajax.googleapis.com/ajax/libs/jquery/2.1.3/jquery.min.js"></script>
   <script src="script.js"></script>
   <span id="circle" class="circle"></span>
+
+  <!-- Global site tag (gtag.js) - Google Analytics -->
+<script async src="https://www.googletagmanager.com/gtag/js?id=UA-180791677-1"></script>
+<script>
+  window.dataLayer = window.dataLayer || [];
+  function gtag(){dataLayer.push(arguments);}
+  gtag('js', new Date());
+
+  gtag('config', 'UA-180791677-1');
+</script>
+
 </head>
 <body>
   <ul>
     <li><a onmouseover="circleSmall()" onmouseout="circleBig()" class="active" href="about.html">ABOUT</a></li>
-    <li><a onmouseover="circleSmall()" onmouseout="circleBig()" href="">CONTACT</a></li>
+    <li><a onmouseover="circleSmall()" onmouseout="circleBig()" href="index.html">CONTACT</a></li>
     <li><a onmouseover="circleSmall()" onmouseout="circleBig()" href="projects.html">PROJECTS</a></li>
-    <li style="float:left"><a onmouseover="circleSmall()" onmouseout="circleBig()"
-      class="nav-title" href="index.html">EMILIE DURAND</a>
-    </li>
+    <li onmouseover="circleSmall()" onmouseout="circleBig()" style="float:left"><a class="nav-title" href="index.html">EMILIE DURAND</a></li>
 </ul>
 
 <div class="mainPageContainer">

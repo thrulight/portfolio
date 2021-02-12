@@ -36,6 +36,7 @@ ul {
   overflow: hidden;
   margin: 0;
   padding: 0;
+  overflow: hidden;
   background-color: none;
   padding-right: 50px;
   font-size: 10pt;
@@ -85,7 +86,6 @@ li a:hover {
 
 .nav-title:hover {
   border: none;
-  color: black;
 }
 
 p {
@@ -185,9 +185,9 @@ p {
   transition-property: background,transform, cursor;
 }
 
-.paragraph{
+.paragraph {
   /* animation of the fade in js */
   -webkit-transition-duration: .2s; /* Safari */
   transition-duration: .2s;
-  opacity: .3;
+  opacity: 0;
 }
