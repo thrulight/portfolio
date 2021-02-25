@@ -1,0 +1,95 @@
+<!DOCTYPE html>
+<head>
+  <link rel="icon" href="logo_invert.png">
+  <meta charset="utf-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <link rel="stylesheet" href="css/projectInd-2.css">
+  <link rel="stylesheet" href="css/nonChangingElements.css">
+  <title>Emilie Durand</title>
+  <script src="https://ajax.googleapis.com/ajax/libs/jquery/2.1.3/jquery.min.js"></script>
+  <script src="script.js"></script>
+  <span id="circle" class="circle"></span>
+
+  <!-- font -->
+  <link rel="preconnect" href="https://fonts.gstatic.com">
+  <link href="https://fonts.googleapis.com/css2?family=Ubuntu:ital,wght@0,300;0,400;0,500;0,700;1,300;1,400;1,500;1,700&display=swap" rel="stylesheet">
+
+
+  <!-- REQUIRED: Web Components polyfill to support Edge and Firefox < 63 -->
+  <script src="https://unpkg.com/@webcomponents/webcomponentsjs@2.1.3/webcomponents-loader.js"></script>
+
+  <!-- Intersection Observer polyfill for better performance in Safari and IE11 -->
+  <script src="https://unpkg.com/intersection-observer@0.5.1/intersection-observer.js"></script>
+
+  <!-- Resize Observer polyfill improves resize behavior in non-Chrome browsers -->
+  <script src="https://unpkg.com/resize-observer-polyfill@1.5.1/dist/ResizeObserver.js"></script>
+
+  <!-- Fullscreen polyfill is required for experimental AR features in Canary -->
+  <script src="https://unpkg.com/fullscreen-polyfill@1.0.2/dist/fullscreen.polyfill.js"></script>
+
+  <!-- Include prismatic.js for Magic Leap support -->
+  <script src="https://unpkg.com/@magicleap/prismatic@0.18.2/prismatic.min.js"></script>
+
+</head>
+<body>
+  <ul>
+    <li><a onmouseover="circleSmall()" onmouseout="circleBig()" href="about.html">ABOUT</a></li>
+    <li><a onmouseover="circleSmall()" onmouseout="circleBig()" href="index.html">CONTACT</a></li>
+    <li><a onmouseover="circleSmall()" onmouseout="circleBig()" href="projects.html">PROJECTS</a></li>
+    <li style="float:left"><a onmouseover="circleSmall()" onmouseout="circleBig()" class="nav-title" href="index.html">EMILIE DURAND</a></li>
+  </ul>
+
+  <div class="section-image">
+    <img src="projectsBgImages/final_joli_blanc.png" alt="">
+  </div>
+
+  <div class="section-header">
+    <h1 onmouseover="circleSmall()" onmouseout="circleBig()" class="header">REPAIR & GO</h1>
+  </div>
+
+
+  <div class="first-section row">
+
+    <div class="column left">
+      <model-viewer src="glb/repair-go-android.glb"
+              ios-src=""
+              class="repairGo mV"
+              ar
+              auto-rotate camera-controls
+              poster="projectsLogo/bw_logo_eco-design_2.png"
+              loading="eager"
+              shadow-intensity="3"
+              shadow-softness="1.3"
+              camera-orbit="60deg 80deg 3.5m"
+              stage-light-intensity="3" environment-intensity="2"
+              alt="A 3D model of an repair station">
+        </model-viewer>
+    </div>
+
+    <div class="column textIntro right">
+    <h2>Bike trailer and Repair station</h2>
+    <br><p class="h1">
+      Two added services for the existing Velib’ service in Paris.
+    </br></br>
+      made out of plastic and metal.
+    </br></br>
+      <span>DISCIPLINES:</span> INDUSTRIAL DESIGN AND PRODUCT DESIGN
+    </br></br>
+      <span>YEAR:</span> 2020
+    </p>
+    </div>
+
+  </div>
+
+</body>
+<!-- Loads <model-viewer> for modern browsers: -->
+<script type="module"
+  src="https://unpkg.com/@google/model-viewer/dist/model-viewer.js">
+</script>
+
+<!-- Loads <model-viewer> for old browsers like IE11: -->
+<script nomodule
+  src="https://unpkg.com/@google/model-viewer/dist/model-viewer-legacy.js">
+</script>
+
+<DOCTYPE html>

@@ -62,25 +62,26 @@ p {
   margin-bottom: 1em;
 }
 
-.h2 {
-  font-size: 1rem;
-  line-height: 1.8;
+.intro {
+  font-size: 1.2rem;
+  line-height: 1.4;
   font-family: "Lato", Arial;
-  font-weight: 400;
-  letter-spacing: .1em;
+  font-weight: 600;
+  color: grey;
   margin-bottom: 1em;
+  text-transform: none;
 }
 
 .h3 {
-  font-size: calc(-.24vw + 1rem);
+  font-size: 1rem;
   font-style: normal;
   letter-spacing: .1em;
   text-transform: none;
-  line-height: 1.8;
+  line-height: 1.4;
 }
 
 .link {
-  font-size: calc(.12vw + 1rem);
+  font-size: 1.2rem;
   text-decoration: underline;
   font-family: "Ubuntu Regular", Arial;
   font-weight: 300;
@@ -88,7 +89,7 @@ p {
 }
 
 .linkH3 {
-  font-size: calc(-.24vw + 1rem);
+  font-size: 1rem;
   font-style: normal;
   letter-spacing: .1em;
   text-transform: none;

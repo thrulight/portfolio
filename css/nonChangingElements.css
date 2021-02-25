@@ -1,4 +1,4 @@
-/* Navigation bar */
+/* #region Navigation bar */
 ul {
   list-style-type: none;
   overflow: hidden;
@@ -10,6 +10,7 @@ ul {
   font-size: 10pt;
   font-family: "Segoe Ui Light", Arial;
   letter-spacing: 2pt;
+  z-index: 1;
   /*box-shadow: 0 4px 8px 0 rgba(0, 0, 0, 0.2), 0 6px 20px 0 rgba(0, 0, 0, 0.19); */
 }
 
@@ -48,10 +49,78 @@ li a:hover {
   font-size: 12pt;
 }
 .nav-title:hover {
-  border: none;
+  border: none !important;
 }
 
 /* Active page looks different */
 .active {
   font-weight: bold;
+}
+/* #endregion Navigation bar */
+
+body {
+  margin: 0;
+  font-family: 'Ubuntu', sans-serif;
+}
+
+::selection {
+  background: #222;
+  color: white;
+}
+
+hr {
+  margin: 0 10% 0 10%;
+  border: none;
+  border-bottom: 2px solid rgba(96, 95, 109, 0.1);
+  outline: none;
+}
+
+.row:after {
+  content: "";
+  display: table;
+  clear: both;
+}
+
+* {
+  box-sizing: border-box;
+}
+
+/* #region headers */
+h1 {
+  font-weight: 500;
+}
+
+h2 {
+  font-weight: 500;
+  letter-spacing: .1em;
+}
+
+h3 {
+  font-weight: 400;
+  letter-spacing: .1em;
+}
+
+p {
+  font-weight: 300;
+  font-size: .9rem;
+  letter-spacing: .1em;
+  text-align: left;
+  line-height: 1.8;
+  text-transform: uppercase;
+}
+/* #endregion headers */
+
+/* Circle cursor */
+.circle {
+	position: absolute;
+  border: solid 1px none;
+  background-color: #f2ede4;
+	width: 50px;
+	height: 50px;
+  border-radius: 50%;
+  z-index: -1;
+  transition: all 0.3s ease-in;
+  transition-property: background,transform, cursor;
+  pointer-events: none;
+  mix-blend-mode: difference;
 }

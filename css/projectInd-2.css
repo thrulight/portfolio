@@ -1,0 +1,78 @@
+.section-header {
+  height: 100%;
+  padding: 10vh 0 2vh 0;
+  text-align: center;
+}
+
+/* #region first-section */
+.first-section {
+  border: blue solid 1px;
+  width: 100vw;
+}
+
+.first-section .column {
+  float: left;
+}
+
+.first-section .left {
+  width: 55%;
+  padding-left: 10vw;
+}
+
+.first-section .right {
+  width: 45%;
+  height: 100%;
+  align-items: center;
+  padding: 0;
+  padding-top: 5vh;
+  padding-right: 20vw;
+}
+
+model-viewer {
+  height: 500px;
+  width: 100%;
+  min-width: 200px;
+  display: block;
+}
+/* #endregion first-section */
+
+.second-section {
+  border: blue solid 1px;
+}
+
+li a:hover {
+  border-bottom: black solid 2px !important;
+  cursor: pointer !important;
+  color: black !important;
+}
+
+.first-section span {
+  font-weight: 500;
+  color: grey;
+}
+
+.description {
+  text-transform: none;
+  font-weight: 400;
+  font-size: 1rem;
+  letter-spacing: 1.2;
+  line-height: 1.6;
+}
+
+/* #region Image section */
+.section-image {
+  height: 90vh;
+}
+
+.section-image img {
+  width: 100%;
+  height: 100%;
+  object-fit: cover;
+  z-index: -2 !important;
+}
+
+ul {
+  position: absolute;
+  width: 100%;
+}
+/* #endregion Image section */
