@@ -1,13 +1,3 @@
-@font-face {
-  font-family: Ubuntu Regular;
-  src: url(Ubuntu/Ubuntu-Regular.ttf);
-}
-
-@font-face {
-  font-family: Lato;
-  src: url(Lato/Lato-Light.ttf);
-}
-
 html {
   cursor: url("cursors/cursor_circle.svg") 5 5, auto;
 }
@@ -24,33 +14,12 @@ body{
   background-position: top center; /* Center the image */
 }
 
-@keyframes fade-in {
-  from {opacity: 0%;}
-  to {opacity: 100%;}
-}
-
-p {
-  font-size: calc(0vw + 1rem);
-  font-family: "Lato", Arial;
-  letter-spacing: 0;
-}
-
 /* Main page container */
 .mainPageContainer{
-  padding: 60px 15% 60px 15%;
-  width: auto;
+  padding: 60px 7% 60px 7%;
+  width: 100%;
   height: 100%;
   background-color: none;
-  display: -webkit-box;
-  display: -moz-box;
-  display: -ms-flexbox;
-  display: -webkit-flex;
-  display: flex;
-  -webkit-flex-flow: row wrap;
-  flex-flow: row wrap;
-  justify-content: center;
-  align-content: center;
-  text-align: center;
 
   -webkit-animation: fadein 1.5s ease; /* Safari, Chrome and Opera > 12.1 */
        -moz-animation: fadein 1.5s ease; /* Firefox < 16 */
@@ -59,22 +28,70 @@ p {
             animation: fadein 1.5s ease;
 }
 
+@keyframes fade-in {
+  from {opacity: 0%;}
+  to {opacity: 100%;}
+}
+
 @keyframes fadeindown  {
     from { opacity: 0; }
     to   { opacity: 1; }
 }
 
+/* #region columns */
+.column {
+  float: left;
+  /*border: blue solid 1px;*/
+  margin: 0;
+  padding: 0;
+
+  display: flex;
+  -webkit-flex-flow: row wrap;
+  flex-flow: row wrap;
+  justify-content: center;
+}
+
+.left {
+  width: 50%;
+  margin: 0;
+  padding: 0;
+}
+
+.right {
+  width: 50%;
+  margin: 0;
+  padding: 0;
+  margin-top: 50vh;
+}
+/* #endregion columns */
+
+/* #region intro */
+.header {
+  font-size: calc(.96vw + 1rem);
+  line-height: 1.452;
+  font-weight: 400;
+  letter-spacing: .1em;
+}
+
+.intro {
+  padding: 20vh 7vw 10vh 7vw;
+  max-width: 100%;
+  height: auto;
+  text-align: left;
+  align-items: left;
+  align-content: left;
+  justify-content: left;
+}
+/* #endregion intro */
+
+/* #region flex item */
 .flex-item {
   position: relative;
   width: 500px;
   height: 650px;
-  object-fit: cover;
-  margin: 50px;
+  margin: 12vh 0 12vh 0;
   overflow: hidden;
-  align-content: center;
-  display: flex;
   border-radius: 0px;
-  /* animation of the fade in js */
   -webkit-transition-duration: .2s; /* Safari */
   transition-duration: .2s;
   cursor: pointer;
@@ -84,14 +101,6 @@ p {
 
 .flex-item p {
   text-align: left;
-}
-
-.left {
-  left: -20%;
-}
-
-.right {
-  right: -20%;
 }
 
 .flex-img {
@@ -136,52 +145,22 @@ p {
   object-fit: contain;
   letter-spacing: 0;
   z-index: 0;
-  font-weight: lighter;
-}
-
-.h1 {
-  color: black;
-  font-size: 20px;
-  padding: 0;
-  position: relative;
-  overflow: hidden;
-  object-fit: contain;
-  font-family: "Ubuntu Regular", Arial;
-  letter-spacing: .1em;
-  z-index: 0;
 }
 
 .h2 {
-  color: black;
-  font-size: 20px;
-  padding: 0;
-  line-height: 2;
-  position: relative;
-  overflow: hidden;
-  object-fit: contain;
-  font-family: "Ubuntu Regular", Arial;
-  font-weight: bold;
+  font-weight: 500;
   letter-spacing: .1em;
-  z-index: 0;
+  font-size: 1.6rem;
 }
 
-.header {
-  font-size: calc(.96vw + 1rem);
-  line-height: 1.452;
-  font-family: "Ubuntu Regular", Arial;
+.h3 {
   font-weight: 400;
   letter-spacing: .1em;
+  opacity: .5;
+  font-size: 1rem;
+  font-style: italic;
 }
 
-.intro {
-  padding: 150px 0 150px 0;
-  max-width: 100%;
-  height: auto;
-  text-align: left;
-  align-items: left;
-  align-content: left;
-  justify-content: left;
-}
 
 /* white font under circle */
 .txtContainer:hover .txt, .txtContainer:hover .h2{
@@ -190,19 +169,48 @@ p {
   transition-duration: .2s;
   cursor: none;
 }
+/* #endregion flex item */
 
-
-/* Circle cursor */
-.circle {
-	position: absolute;
-  border: solid 1px none;
-  background-color: #f2ede4;
-	width: 50px;
-	height: 50px;
+/* #region button go to top */
+#goToTop {
+  padding: 15px;
+  border: 2px solid black;
+  background: none;
   border-radius: 50%;
-  z-index: -1;
-  transition: all 0.3s ease-in;
-  -webkit transition: all 0.3s ease-in;
-  transition-property: background,transform, cursor;
-  -webkit transition-property: background,transform, cursor;
+  display: flex;
+  position: fixed;
+  right: 0;
+  bottom: 0;
+  margin-bottom: 4vh;
+  margin-right: 4vh;
 }
+
+#goToTop:hover {
+  background-color: black;
+  color: white;
+}
+
+#goToTop:focus {
+  outline: none !important;
+}
+/* #endregion button go to top */
+
+/* #region footer */
+.footer {
+  padding: 1vh 0 1vh 0;
+  display: flex;
+  justify-content: center;
+}
+
+.footer img {
+  max-width: 1.2em;
+  object-fit: contain;
+  margin-left: 1vw;
+}
+
+.footer p {
+  font-weight: 400;
+  letter-spacing: .1em;
+  font-size: .9rem;
+}
+/* #endregion footer */

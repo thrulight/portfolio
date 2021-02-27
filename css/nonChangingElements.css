@@ -7,9 +7,6 @@ ul {
   overflow: hidden;
   background-color: none;
   padding-right: 50px;
-  font-size: 10pt;
-  font-family: "Segoe Ui Light", Arial;
-  letter-spacing: 2pt;
   z-index: 1;
   /*box-shadow: 0 4px 8px 0 rgba(0, 0, 0, 0.2), 0 6px 20px 0 rgba(0, 0, 0, 0.19); */
 }
@@ -20,7 +17,6 @@ li {
 
 li a {
   display: block;
-  color: black;
   text-align: center;
   padding-top: 50px;
   padding-left: 0px;
@@ -30,23 +26,29 @@ li a {
   margin-right: 30px;
   margin-left: 30px;
 
+  letter-spacing: .15em;
+  font-size: .9em;
+  font-weight: 500;
+  color: black;
+  opacity: .5;
+
 }
 
 li a:hover {
   border-bottom: white solid 2px;
-  font-weight: bold;
   cursor: none;
   color: white;
+  opacity: 1;
   transition: color 0.3s ease-in;
 }
 
 /* Emilie Durand left title */
 .nav-title {
   margin-left: 75px;
-  font-family: "Ubuntu Regular", Arial;
   font-weight: 600;
-  letter-spacing: 4pt;
-  font-size: 12pt;
+  letter-spacing: .3em;
+  font-size: 1.1em;
+  opacity: 1;
 }
 .nav-title:hover {
   border: none !important;
@@ -54,7 +56,7 @@ li a:hover {
 
 /* Active page looks different */
 .active {
-  font-weight: bold;
+  opacity: 1;
 }
 /* #endregion Navigation bar */
 
@@ -122,5 +124,5 @@ p {
   transition: all 0.3s ease-in;
   transition-property: background,transform, cursor;
   pointer-events: none;
-  mix-blend-mode: difference;
+  /*mix-blend-mode: difference;*/
 }

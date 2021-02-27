@@ -36,7 +36,7 @@ function circleBig() {
 }
 //Circle change size and color on link hover end
 
-
+//Fade in projects page
 //Fade in flex-item animation
 $(document).ready(function() {
 
@@ -61,6 +61,7 @@ $(document).ready(function() {
   });
 });
 
+//Fade in about page
 //Fade in paragraph animation
 $(document).ready(function() {
 
@@ -71,7 +72,7 @@ $(document).ready(function() {
     $('.paragraph').each(function(i) {
 
       /* If the object is half in the window, fade it it */
-      var bottom_of_object = $(this).position().top + $(this).outerHeight()/.6;
+      var bottom_of_object = $(this).position().top + $(this).outerHeight()/1;
       var bottom_of_window = $(window).scrollTop() + $(window).height();
 
       /* If the object is visible in the window, fade it it */
@@ -84,3 +85,9 @@ $(document).ready(function() {
     });
   });
 });
+
+// Scroll to the top of the page
+function topFunction() {
+  var topPage = document.getElementById("topPage");
+  topPage.scrollIntoView({behavior: "smooth"});
+}
