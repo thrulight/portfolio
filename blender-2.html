@@ -5,10 +5,15 @@
   <meta name="viewport" content="width=device-width, initial-scale=1.0">
   <link rel="stylesheet" href="css/projectInd-2.css">
   <link rel="stylesheet" href="css/nonChangingElements.css">
+  <link rel="stylesheet" href="css/blender.css">
   <title>Emilie Durand</title>
   <script src="https://ajax.googleapis.com/ajax/libs/jquery/2.1.3/jquery.min.js"></script>
   <script src="script.js"></script>
   <span id="circle" class="circle"></span>
+
+  <!-- Material Icons -->
+  <link href="https://fonts.googleapis.com/icon?family=Material+Icons"
+      rel="stylesheet">
 
   <!-- Ubuntu -->
   <link rel="preconnect" href="https://fonts.gstatic.com">
@@ -31,12 +36,13 @@
   <!-- Fullscreen polyfill is required for experimental AR features in Canary -->
   <script src="https://unpkg.com/fullscreen-polyfill@1.0.2/dist/fullscreen.polyfill.js"></script>
 
-  <!-- Include prismatic.js for Magic Leap support -->
-  <script src="https://unpkg.com/@magicleap/prismatic@0.18.2/prismatic.min.js"></script>
+  <!-- Focus visible package -->
+  <script src="https://unpkg.com/focus-visible@5.1.0/dist/focus-visible.js"></script>
+
 
 </head>
 <body>
-  <ul>
+  <ul id="topPage">
     <li><a onmouseover="circleSmall()" onmouseout="circleBig()" href="about.html">ABOUT</a></li>
     <li><a onmouseover="circleSmall()" onmouseout="circleBig()" href="contact.html">CONTACT</a></li>
     <li><a onmouseover="circleSmall()" onmouseout="circleBig()" href="projects.html">PROJECTS</a></li>
@@ -85,9 +91,55 @@
 
   </div>
 
-  <div class="second-section">
-    hello world
-  </div>
+  <div class="second-section row">
+
+      <!-- left column -->
+      <div class="column left">
+
+        <div class="imgContainer">
+          <img src="projectsImg/blender/capot.png" alt="">
+        </div>
+
+        <div class="imgContainer">
+          <img src="projectsImg/blender/recipient.png" alt="">
+        </div>
+
+      </div>
+
+      <!-- right column -->
+      <div class="column right">
+
+      <div class="imgContainer">
+        <img src="projectsImg/blender/screen.png" alt="">
+      </div>
+
+      <div class="imgContainer">
+        <img src="projectsImg/blender/planche.png" alt="">
+      </div>
+      <p>a cutting board in included to make it easier to cook.</p>
+
+      </div>
+
+    </div>
+
+    <div class="third-section">
+      <div class="imgContainer">
+        <img src="projectsImg/blender/blender_2.gif" alt="">
+      </div>
+    </div>
+
+    <div class="fourth-section">
+      <div class="imgContainer">
+        <img src="projectsImg/blender/eclate.png" alt="">
+      </div>
+    </div>
+
+    <button onclick="topFunction()" id="goToTop" title="Go to top"><i class="material-icons">arrow_upward</i></button>
+
+    <div class="footer">
+      <p>All projects are under license. </p>
+      <img src="https://upload.wikimedia.org/wikipedia/commons/thumb/a/a3/Cc.logo.circle.svg/1200px-Cc.logo.circle.svg.png" alt="">
+    </div>
 
 </body>
 <!-- Loads <model-viewer> for modern browsers: -->

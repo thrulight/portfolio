@@ -90,4 +90,5 @@ $(document).ready(function() {
 function topFunction() {
   var topPage = document.getElementById("topPage");
   topPage.scrollIntoView({behavior: "smooth"});
+  console.log("goToTop");
 }
