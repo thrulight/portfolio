@@ -38,7 +38,7 @@ model-viewer {
 /* #endregion first-section */
 
 .second-section {
-  border: blue solid 1px;
+  /*border: blue solid 1px;*/
 }
 
 li a:hover {
