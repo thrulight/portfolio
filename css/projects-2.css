@@ -39,6 +39,7 @@ body{
 }
 
 /* #region columns */
+
 .column {
   float: left;
   /*border: blue solid 1px;*/
@@ -170,6 +171,23 @@ body{
   cursor: none;
 }
 /* #endregion flex item */
+
+    .imgContainer .image-hover {
+      position: absolute;
+      top: 0;
+      right: 0;
+      left: 0;
+      bottom: 0;
+      object-fit: cover;
+      opacity: 0;
+      transition: opacity .2s;
+    }
+    .imgContainer:hover .image-hover {
+      opacity: 1;
+    }
+    .imgContainer:hover .image-main {
+      opacity: 0;
+    }
 
 /* #region button go to top */
 #goToTop {
