@@ -1,0 +1,127 @@
+html {
+  cursor: url("cursors/cursor_circle.svg") 5 5, auto;
+}
+
+body{
+  margin: 0;
+  padding: 0;
+  background-color: white;
+  background-repeat: no-repeat;
+  background-size: cover;
+  width: 100%;
+  max-width: 100;
+  position: absolute;
+  animation-name: fade-in;
+  animation-duration: 1.5s;
+}
+
+@keyframes fade-in {
+  from {opacity: 0%;}
+  to {opacity: 100%;}
+}
+
+p {
+  letter-spacing: 0;
+  margin: 1vh;
+  margin-left: 0;
+}
+
+/* Main page container */
+.mainPageContainer{
+  padding: 4em 4em 0 4em;
+  margin-top: 7em;
+  position: absolute;
+  /* top: 50%; */
+  left: 50%;
+  /*margin-right: -50%;*/
+  transform: translate(-50%, -0)
+}
+
+@keyframes fadeindown  {
+    from { opacity: 0; }
+    to   { opacity: 1; }
+}
+
+h2 {
+  font-size: 1.6em !important;
+}
+
+.h3 {
+  font-size: 1em;
+  text-transform: none;
+  font-weight: 400;
+  opacity: .5;
+  letter-spacing: 0.01em;
+}
+
+.intro {
+  font-size: 1.2em;
+  line-height: 1.4;
+  font-weight: 400;
+  opacity: .5;
+  margin-bottom: 1em;
+  letter-spacing: 0.01em;
+  text-transform: none;
+}
+
+.link {
+  font-size: 1.2rem;
+  font-weight: 400;
+  line-height: 1.8;
+}
+
+.linkH3 {
+  font-size: 1rem;
+  font-style: normal;
+  letter-spacing: .1em;
+  text-transform: none;
+  line-height: 1.8;
+  text-decoration: underline;
+}
+
+/* Cursor that shows it'll click on links */
+.linkH3:hover, .link:hover, .CV:hover {
+  cursor: none;
+  color: white;
+  transition: all 0.5s ease-in-out;
+  -webkit transition: all 0.5s ease-in-out;
+}
+
+.CV {
+  font-size: calc(.50vw + 1rem);
+  line-height: 1.8;
+  color: black;
+  font-weight: 400;
+  letter-spacing: .1em;
+  text-decoration: underline;
+  margin-bottom: 20vh;
+}
+
+.paragraph {
+  /* animation of the fade in js */
+  -webkit-transition-duration: .2s; /* Safari */
+  transition-duration: .2s;
+  opacity: 0;
+}
+
+.footer {
+  padding: 1vh 0 1vh 0;
+  display: flex;
+  justify-content: center;
+}
+
+.footer img {
+  max-width: 1.2em;
+  object-fit: contain;
+  margin-left: 1vw;
+}
+
+.footer p {
+  font-weight: 400;
+  letter-spacing: .1em;
+  font-size: .9rem;
+}
+
+.buttonProjects {
+  color: black !important;
+}
