@@ -1,0 +1,141 @@
+.nav-title {
+  color: white;
+}
+
+ul li a {
+  color: white;
+}
+
+.column {
+  justify-content: flex-start;
+  display: block;
+}
+
+.right, .left {
+  width: 50%;
+}
+
+.section-header {
+    padding: 0 0 15vh 0;
+}
+
+/* #region section1 */
+.section1 {
+  height: 100vh;
+  width: 100%;
+  background-image: url(proectsImg/print-twist/print-twist.png);
+  background-size: cover;
+  background-repeat: no-repeat;
+  background-position: center;
+  display: flex;
+}
+
+.section1 .title-container {
+  margin: auto;
+}
+
+.section1 h1 {
+  color: white;
+  font-weight: 500;
+  font-size: 5em;
+}
+
+#scroll {
+    border: none;
+    background: none;
+    color: white;
+
+    position: absolute;
+    bottom: 4vh;
+    left: 50%;
+    transform: translate(-50%, 0);
+
+    height: 4em;
+}
+
+/* #endregion section1 */
+
+/* #region sections steps */
+
+.section2, .section3, .section4, .section5, .section6, .section7 {
+  display: flex;
+  margin: 5vh 0 5vh 0;
+}
+
+.section2 img, .section3 img, .section4 img, .section5 img, .section6 img, .section7 img {
+  width: 70%;
+  background-color: #ededed;
+  border-radius: 30px;
+}
+
+.section2 img, .section4 img, .section6 img {
+  margin-left: 30%;
+}
+
+.h2, .h2-left {
+  font-size: 1.5em;
+  margin-top: 10vh;
+}
+
+.description-left {
+  text-transform: none;
+  font-weight: 400;
+  font-size: 1rem;
+  letter-spacing: 1.2;
+  line-height: 1.6;
+}
+
+.description-left, .h2-left {
+  text-align: right !important;
+}
+
+.txtContainer.left {
+  margin-left: 45%;
+  margin-right: 5%;
+}
+
+.txtContainer.right {
+  margin-right: 45%;
+  margin-left: 5%;
+}
+
+/* #endregion sections steps */
+
+.txtContainer2 {
+  width: 100%;
+  background-color: #FFF7E8;
+  text-align: center;
+  padding: 15vh 20vw 15vh 20vw;
+
+  font-weight: 400;
+  font-size: 1.2rem;
+  line-height: 1.6;
+}
+
+.caracteristics {
+  background-color: white;
+  width: 100%;
+  padding: 5vh 0 5vh 0
+}
+.caracteristics h2 {
+  text-align: center;
+}
+.caracteristics img {
+  max-width: 100%;
+}
+
+.shapes {
+  background-color: #F0F5FF;
+  width: 100%;
+  padding: 5vh 10vw 5vh 10vw;
+}
+.shapes h2, .shapes p {
+  text-align: center;
+}
+.shapes p {
+  padding: 0 10vw 0 10vw
+}
+.shapes img {
+  max-width: 100%;
+  margin-top: 5vh;
+}
