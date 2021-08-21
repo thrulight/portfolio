@@ -11,14 +11,6 @@ ul li a {
   display: block;
 }
 
-.right, .left {
-  width: 50%;
-}
-
-.section-header {
-    padding: 0 0 15vh 0;
-}
-
 /* #region section1 */
 .section1 {
   height: 100vh;
@@ -55,21 +47,38 @@ ul li a {
 
 /* #endregion section1 */
 
+.section-header {
+    padding-bottom: 15vh;
+}
+
 /* #region sections steps */
+
+.sectionSteps.right, .sectionSteps.left {
+  width: 50%;
+}
 
 .section2, .section3, .section4, .section5, .section6, .section7 {
   display: flex;
-  margin: 5vh 0 5vh 0;
+  /*margin: 5vh 0 5vh 0;*/
 }
 
 .section2 img, .section3 img, .section4 img, .section5 img, .section6 img, .section7 img {
   width: 70%;
-  background-color: #ededed;
+  background-color: /*#ededed;*/
   border-radius: 30px;
 }
 
 .section2 img, .section4 img, .section6 img {
   margin-left: 30%;
+  /*border-right: 2px solid #575656;*/
+}
+
+.sectionSteps .right {
+  border-left: 3px dotted #ededed;
+}
+
+.section3 .left, .section5 .left, .section7 .left {
+  /*border-right: 2px solid #575656;*/
 }
 
 .h2, .h2-left {
@@ -77,7 +86,7 @@ ul li a {
   margin-top: 10vh;
 }
 
-.description-left {
+.sectionSteps .description-left {
   text-transform: none;
   font-weight: 400;
   font-size: 1rem;
@@ -85,18 +94,24 @@ ul li a {
   line-height: 1.6;
 }
 
-.description-left, .h2-left {
+.sectionSteps .description-left, .h2-left {
   text-align: right !important;
 }
 
-.txtContainer.left {
+.sectionSteps .txtContainer.left {
   margin-left: 45%;
   margin-right: 5%;
+  border: none;
 }
 
-.txtContainer.right {
+.sectionSteps .txtContainer.right {
   margin-right: 45%;
   margin-left: 5%;
+  border: none;
+}
+
+.sectionSteps {
+  margin-bottom: 10vh;
 }
 
 /* #endregion sections steps */
