@@ -47,9 +47,6 @@ ul li a {
 
 /* #endregion section1 */
 
-
-
-
 .section-header {
     padding-bottom: 15vh;
 }
@@ -68,7 +65,7 @@ ul li a {
 .section2 img, .section3 img, .section4 img, .section5 img, .section6 img, .section7 img {
   width: 70%;
   background-color: /*#ededed;*/
-  border-radius: 30px;
+  /* border-radius: 30px; */
 }
 
 .section2 img, .section4 img, .section6 img {
@@ -106,7 +103,6 @@ ul li a {
   margin-right: 5%;
   border: none;
 }
-
 .sectionSteps .txtContainer.right {
   margin-right: 45%;
   margin-left: 5%;
@@ -115,6 +111,10 @@ ul li a {
 
 .sectionSteps {
   margin-bottom: 10vh;
+}
+
+.sectionSteps .h2, .sectionSteps .h2-left {
+  font-weight: 500;
 }
 
 /* #endregion sections steps */
@@ -130,17 +130,23 @@ ul li a {
   line-height: 1.6;
 }
 
+/* #region caracteristics */
+
 .caracteristics {
   background-color: white;
   width: 100%;
-  padding: 5vh 0 5vh 0
+  padding: 5vh 10vw 5vh 10vw;
 }
 .caracteristics h2 {
   text-align: center;
+  font-weight: 500;
+  letter-spacing: normal;
 }
 .caracteristics img {
   max-width: 100%;
 }
+
+/* #endregion caracteristics */
 
 .shapes {
   background-color: #F0F5FF;
@@ -149,6 +155,10 @@ ul li a {
 }
 .shapes h2, .shapes p {
   text-align: center;
+}
+.shapes h2 {
+  font-weight: 500;
+  letter-spacing: normal;
 }
 .shapes p {
   padding: 0 10vw 0 10vw
