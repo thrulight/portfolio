@@ -5,7 +5,7 @@
   <meta name="viewport" content="width=device-width, initial-scale=1.0">
   <link rel="stylesheet" href="css/projectInd-2.css">
   <link rel="stylesheet" href="css/nonChangingElements.css">
-  <link rel="stylesheet" href="print-twist.css">
+  <link rel="stylesheet" href="css/print-twist.css">
   <title>Emilie Durand</title>
   <script src="https://ajax.googleapis.com/ajax/libs/jquery/2.1.3/jquery.min.js"></script>
   <script src="script.js"></script>
@@ -54,25 +54,23 @@
     <img src="scroll.png" id="scroll" alt="">
   </div>
 
-  <div class="section-header">
+  <div class="section-header title">
     <h1 onmouseover="circleSmall()" onmouseout="circleBig()" class="header">PRINT x TWIST</h1>
   </div>
 
   <div class="first-section row">
 
     <div class="column left">
-      <model-viewer src="lamp-high-wood2.glb"
-              ios-src=""
-              class="aquaponics mV"
-              ar
-              auto-rotate camera-controls
-              poster=""
-              loading="eager"
-              shadow-intensity="1"
-              shadow-softness="1.3"
-              camera-orbit="123.2deg 72.84deg 358.9m"
-              stage-light-intensity="3" environment-intensity="2"
-              alt="A 3D model of an heating blender">
+        <model-viewer src="glb/lamp-high-wood2.glb"
+          ios-src=""
+          class="print-twist mV"
+          ar
+          camera-controls
+          loading="eager"
+          camera-orbit="-43.45deg 72.14deg 358.9m"
+          poster="projectsImg/print-twist/poster.png"
+          alt="A 3D model of an heating blender"
+          auto-rotate>
         </model-viewer>
     </div>
 
@@ -92,7 +90,7 @@
 
   </div>
 
-  <div class="section-header">
+  <div class="section-header steps">
     <h1 onmouseover="circleSmall()" onmouseout="circleBig()" class="header">Let’s step into a user journey</h1>
   </div>
 

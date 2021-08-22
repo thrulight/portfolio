@@ -47,12 +47,16 @@ ul li a {
 
 /* #endregion section1 */
 
-.section-header {
+.section-header.steps {
     padding-bottom: 15vh;
 }
 
 .first-section {
-  width: auto;
+  width: auto;;
+  padding-bottom: 10vh;
+}
+.first-section .left {
+  padding-left: 15vw !important;
 }
 
 /* #region sections steps */
