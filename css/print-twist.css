@@ -47,10 +47,6 @@ ul li a {
 
 /* #endregion section1 */
 
-.section-header.steps {
-    padding-bottom: 15vh;
-}
-
 .first-section {
   width: auto;;
   padding-bottom: 10vh;
@@ -60,6 +56,11 @@ ul li a {
 }
 
 /* #region sections steps */
+
+.section-header.steps {
+    padding-bottom: 15vh;
+    background-color: #fafafa;
+}
 
 .sectionSteps.right, .sectionSteps.left {
   width: 50%;
@@ -118,7 +119,8 @@ ul li a {
 }
 
 .sectionSteps {
-  margin-bottom: 10vh;
+  padding-bottom: 10vh;
+  background-color: #fafafa;
 }
 
 .sectionSteps .h2, .sectionSteps .h2-left {
@@ -143,7 +145,7 @@ ul li a {
 .caracteristics {
   background-color: white;
   width: 100%;
-  padding: 5vh 10vw 5vh 10vw;
+  padding: 10vh 10vw 10vh 10vw;
 }
 .caracteristics h2 {
   text-align: center;
@@ -159,7 +161,7 @@ ul li a {
 .shapes {
   background-color: #F0F5FF;
   width: 100%;
-  padding: 5vh 10vw 5vh 10vw;
+  padding: 15vh 10vw 15vh 10vw;
 }
 .shapes h2, .shapes p {
   text-align: center;
