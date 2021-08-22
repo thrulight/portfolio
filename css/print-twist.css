@@ -15,7 +15,7 @@ ul li a {
 .section1 {
   height: 100vh;
   width: 100%;
-  background-image: url(projectsImg/print-twist/print-twist.webp);
+  background-image: url(print-twist/print-twist.webp);
   background-size: cover;
   background-repeat: no-repeat;
   background-position: center;
