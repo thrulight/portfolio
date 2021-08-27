@@ -20,3 +20,18 @@ img {
   font-size: 1em;
   margin: 5vh 30vw 0 30vw;
 }
+
+/* #region mobile version */
+@media screen and (max-width: 900px){
+
+.section-header {
+  font-family: 'Atari';
+  font-size: 1.5em;
+}
+
+.description {
+  font-size: 1em;
+  margin: 5vh;
+}
+
+/* #endregion mobile version */
