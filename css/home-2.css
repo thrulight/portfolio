@@ -1,0 +1,18 @@
+body {
+  background-color: white;
+}
+
+.nav-bar {
+  position: absolute;
+  width: 100%;
+}
+
+/* #region mobile version */
+@media screen and (max-width: 900px){
+body {
+  background-color: #DBE0DD;
+  width: 100%;
+  max-width: 100vw;
+}
+}
+/* #endregion mobile version */

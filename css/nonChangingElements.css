@@ -58,6 +58,23 @@ li a:hover {
 .active {
   opacity: 1;
 }
+
+.nav-bar .icon {
+  display: none;
+}
+
+.nav-logo:hover {
+  cursor: pointer;
+}
+
+.X{
+  display:none;
+}
+
+.nav-bar-mobile {
+  display: none;
+}
+
 /* #endregion Navigation bar */
 
 body {
