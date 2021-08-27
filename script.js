@@ -92,3 +92,22 @@ function topFunction() {
   topPage.scrollIntoView({behavior: "smooth"});
   console.log("goToTop");
 }
+
+//Navigation bar mobile version
+function openNav() {
+   document.getElementById("nav-bar-mobile").style.display= "block";
+   document.getElementById("icon").style.display= "none";
+   document.getElementById("overlay").style.width= "100%";
+   document.getElementById("X").style.display= "block";
+}
+function closeNav() {
+   document.getElementById("nav-bar-mobile").style.display= "none";
+   document.getElementById("icon").style.display= "block";
+   document.getElementById("overlay").style.width= "0%";
+   document.getElementById("X").style.display= "none";
+}
+
+// burger
+function onClick(e) {
+    e.target.classList.toggle("open")
+  }

@@ -60,3 +60,38 @@ body{
   font-size: 1rem;
   font-style: italic;
 }
+
+/* #region mobile version */
+@media screen and (max-width: 900px){
+
+html {
+  background-image: none;
+  background-color: #D7C9AF;
+}
+
+.mainPageContainer {
+  width: 100%;
+  margin: 0;
+  margin-top: 10vh;
+  padding: 7%;
+  left: 0;
+  right: 0;
+  top: 0;
+  transform: none;
+}
+
+.intro p {
+  font-size: 2em;
+  letter-spacing: .05em;
+  color: white;
+}
+
+#title, #icon, .low-consumption {
+  color: white !important;
+}
+
+.buttonProjects {
+  color: white;
+}
+
+/* #endregion mobile version */
