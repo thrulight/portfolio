@@ -1,0 +1,22 @@
+body {
+  background-color: #00314F;
+}
+
+.section-header {
+  font-family: 'Atari';
+  font-size: 3em;
+}
+
+img {
+  margin-top: 35%;
+  margin-bottom: 5vh;
+}
+
+.section-header.why {
+  padding-top: 5vh;
+}
+
+.description {
+  font-size: 1em;
+  margin: 5vh 30vw 0 30vw;
+}

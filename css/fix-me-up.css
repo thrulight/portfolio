@@ -1,0 +1,9 @@
+body {
+  background-color: #152445;
+}
+
+h3 a {
+  color: white;
+  text-decoration: none;
+  cursor: pointer;
+}

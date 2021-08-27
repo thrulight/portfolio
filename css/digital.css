@@ -1,0 +1,170 @@
+body {
+  background-color: #0C0C0C;
+}
+
+.nav-bar ul li a {
+  color: white !important;
+}
+
+#title, #icon {
+  color: white !important;
+}
+
+.mainPageContainer {
+  padding: 10vh 12vw 10vh 12vw;
+}
+
+.section-header {
+  height: 100%;
+  padding: 10vh 0 20vh 0;
+  text-align: center;
+  color: white;
+}
+
+h1 {
+  font-size: 3em;
+  font-weight: 100 !important;
+  margin-top: 0;
+}
+
+h3 {
+  margin-bottom: 1vh;
+}
+
+p {
+  text-transform: none !important;
+  max-width: 35%;
+}
+
+.flex-item img {
+  display: none;
+}
+
+button {
+  margin: 2vh 0 2vh 0;
+}
+
+.flex-item {
+  background-repeat: no-repeat;
+  background-size: cover;
+  background-position: top;
+
+  max-height: 90vh;
+
+  padding: 20% 10% 10% 10%;
+  margin: 10vh 0 10vh 0;
+
+  border-radius: 30px;
+}
+
+/* #region repair */
+
+.repair > * {
+  color: white;
+}
+
+.repair {
+  background-image: url("digital/3D-Repair.png");
+}
+
+.repair button {
+  background-color: #4E99DD;
+  color: white;
+}
+
+/* #endregion repair */
+
+/* #region community */
+
+.community > * {
+  color: #43A3EA;
+}
+
+.community {
+  background-image: url("digital/3D-Community.png");
+}
+
+.community button {
+  background-color: #FF5C00;
+  color: white;
+}
+
+/* #endregion community */
+
+/* #region fixmeup */
+
+.fix-me-up > * {
+  color: #1D1D1D;
+}
+
+.fix-me-up {
+  background-image: url("digital/FixMeUp.png");
+}
+
+.fix-me-up button {
+  background-color: #407AFF;
+  color: white;
+}
+
+/* #endregion fixmeup */
+
+/* #region greener */
+
+.greener > * {
+  color: white;
+}
+
+.greener {
+  background-image: url("digital/Greener.png");
+}
+
+.greener button {
+  background-color: white;
+  color: #00B937;
+}
+
+/* #endregion greener */
+
+/* #region mobile version */
+@media screen and (max-width: 900px){
+
+.mainPageContainer {
+  padding: 5%;
+}
+
+.flex-item {
+  background-image: none;
+  padding: 0;
+}
+
+.flex-item > * {
+  color: white;
+}
+
+.imgContainer {
+  height: 300px;
+  width: 100%;
+  object-fit: contain;
+}
+
+.flex-item img {
+  display: block;
+  height: 100%;
+  width: 100%;
+  object-fit: cover;
+  border-radius: 20px;
+}
+
+p {
+  max-width: 100% !important;
+}
+
+.greener button {
+  color: white;
+  background-color: #00B937;
+}
+
+.section-header {
+  padding: 5vh 0 5vh 0;
+
+/* #endregion mobile version */

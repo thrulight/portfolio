@@ -10,6 +10,9 @@
   <script src="script.js"></script>
   <span id="circle" class="circle"></span>
 
+  <!-- Load an icon library to show a hamburger menu (bars) on small screens -->
+  <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/4.7.0/css/font-awesome.min.css">
+
   <!-- Ubuntu -->
   <link rel="preconnect" href="https://fonts.gstatic.com">
   <link href="https://fonts.googleapis.com/css2?family=Lato:ital,wght@0,100;0,300;0,400;0,700;0,900;1,100;1,300;1,400;1,700;1,900&family=Ubuntu:ital,wght@0,300;0,400;0,500;0,700;1,300;1,400;1,500;1,700&display=swap" rel="stylesheet">
@@ -31,13 +34,32 @@
 
 </head>
 <body>
-  <ul>
-    <li><a onmouseover="circleSmall()" onmouseout="circleBig()" class="active" href="about.html">ABOUT</a></li>
-    <li><a onmouseover="circleSmall()" onmouseout="circleBig()" href="index.html">CONTACT</a></li>
-    <li><a onmouseover="circleSmall()" onmouseout="circleBig()" href="projects.html">PROJECTS</a></li>
-    <li><a class="active" onmouseover="circleSmall()" onmouseout="circleBig()" onClick="location='https://www.extrude.studio/'">STUDIO EXTRUDE</a></li>
-    <li onmouseover="circleSmall()" onmouseout="circleBig()" style="float:left"><a class="nav-title" href="index.html">EMILIE DURAND</a></li>
-</ul>
+  <!-- Navigation bar -->
+    <div class="X" id="X"><span  onclick="closeNav()">&times;</span></div>
+    <div id="overlay" class="overlay"></div>
+
+    <div class="nav-bar" id="myTopnav">
+      <a href="index.html" id="title">EMILIE DURAND</a>
+      <ul class="nav-text" id="topPage">
+        <li><a class="active" onmouseover="circleSmall()" onmouseout="circleBig()" href="about.html">ABOUT</a></li>
+        <li><a class="active" onmouseover="circleSmall()" onmouseout="circleBig()" href="contact.html">CONTACT</a></li>
+        <li><a class="active" onmouseover="circleSmall()" onmouseout="circleBig()" href="digital.html">DIGITAL</a></li>
+        <li><a class="active" onmouseover="circleSmall()" onmouseout="circleBig()" href="projects.html">PROJECTS</a></li>
+        <li><a class="active" onmouseover="circleSmall()" onmouseout="circleBig()" onClick="location='https://www.extrude.studio/'">STUDIO EXTRUDE</a></li>
+        <li onmouseover="circleSmall()" onmouseout="circleBig()" style="float:left"><a class="nav-title" href="index.html">EMILIE DURAND</a></li>
+      </ul>
+        <a class="icon" id="icon" onclick="openNav()">
+          <i class="fa fa-bars"></i>
+        </a>
+    </div>
+
+    <ul class="nav-bar-mobile" id="nav-bar-mobile">
+      <li><a class="active" onmouseover="circleSmall()" onmouseout="circleBig()" href="projects.html">PROJECTS</a></li>
+      <li><a class="active" onmouseover="circleSmall()" onmouseout="circleBig()" href="digital.html">DIGITAL</a></li>
+      <li><a class="active" onmouseover="circleSmall()" onmouseout="circleBig()" href="about.html">ABOUT</a></li>
+      <li><a class="active" onmouseover="circleSmall()" onmouseout="circleBig()" href="contact.html">CONTACT</a></li>
+      <li><a class="active" onmouseover="circleSmall()" onmouseout="circleBig()" onClick="location='https://www.extrude.studio/'">STUDIO EXTRUDE</a></li>
+    </ul>
 
 <div class="mainPageContainer">
   <div>
