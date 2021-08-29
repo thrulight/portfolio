@@ -3,12 +3,19 @@ body {
 }
 
 .nav-bar ul li a {
-  color: white !important;
+  color: #FF9040 !important;
 }
 
 #title, #icon {
-  color: white !important;
+  color: #FF9040 !important;
 }
+
+/* Circle cursor */
+.circle {
+  mix-blend-mode: difference;
+  z-index: 2 !important;
+}
+
 
 .mainPageContainer {
   padding: 10vh 12vw 10vh 12vw;
@@ -18,7 +25,7 @@ body {
   height: 100%;
   padding: 10vh 0 20vh 0;
   text-align: center;
-  color: white;
+  color: #FF9040;
 }
 
 h1 {
@@ -42,6 +49,7 @@ p {
 
 button {
   margin: 2vh 0 2vh 0;
+  cursor: pointer;
 }
 
 .flex-item {
@@ -166,5 +174,17 @@ p {
 
 .section-header {
   padding: 5vh 0 5vh 0;
+}
+
+.overlay {
+  background-color: #0C0C0C;
+  opacity: .8;
+  backdrop-filter: blur(10px);
+}
+
+.nav-bar-mobile li a {
+  text-decoration: none;
+  color: #FF9040 !important;
+}
 
 /* #endregion mobile version */

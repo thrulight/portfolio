@@ -3,11 +3,8 @@
   <link rel="icon" href="logo_invert.png">
   <meta charset="utf-8">
   <meta name="viewport" content="width=device-width, initial-scale=1.0">
-  <link rel="stylesheet" href="css/digital.css">
-
-
   <link rel="stylesheet" href="css/nonChangingElements.css">
-
+  <link rel="stylesheet" href="css/digital.css">
   <link rel="stylesheet" href="burger.css">
   <title>Emilie Durand</title>
 
@@ -60,12 +57,12 @@ height="0" width="0" style="display:none;visibility:hidden"></iframe></noscript>
   <div class="nav-bar" id="myTopnav">
     <a href="index.html" id="title">EMILIE DURAND</a>
     <ul class="nav-text">
-      <li><a class="active" onmouseover="circleSmall()" onmouseout="circleBig()" href="about.html">ABOUT</a></li>
-      <li><a class="active" onmouseover="circleSmall()" onmouseout="circleBig()" href="contact.html">CONTACT</a></li>
-      <li><a class="" onmouseover="circleSmall()" onmouseout="circleBig()" href="digital.html">DIGITAL</a></li>
-      <li><a class="active" onmouseover="circleSmall()" onmouseout="circleBig()" href="projects.html">PROJECTS</a></li>
-      <li><a class="active" onmouseover="circleSmall()" onmouseout="circleBig()" onClick="location='https://www.extrude.studio/'">STUDIO EXTRUDE</a></li>
-      <li onmouseover="circleSmall()" onmouseout="circleBig()" style="float:left"><a class="nav-title" href="index.html">EMILIE DURAND</a></li>
+      <li><a class="active" onmouseover="circleSmallOnly()" onmouseout="circleBigOnly()" href="about.html">ABOUT</a></li>
+      <li><a class="active" onmouseover="circleSmallOnly()" onmouseout="circleBigOnly()" href="contact.html">CONTACT</a></li>
+      <li><a class="" onmouseover="circleSmallOnly()" onmouseout="circleBigOnly()" href="digital.html">DIGITAL</a></li>
+      <li><a class="active" onmouseover="circleSmallOnly()" onmouseout="circleBigOnly()" href="projects.html">PROJECTS</a></li>
+      <li><a class="active" onmouseover="circleSmallOnly()" onmouseout="circleBigOnly()" onClick="location='https://www.extrude.studio/'">STUDIO EXTRUDE</a></li>
+      <li onmouseover="circleSmallOnly()" onmouseout="circleBigOnly()" style="float:left"><a class="nav-title" href="index.html">EMILIE DURAND</a></li>
     </ul>
       <a class="icon" id="icon" onclick="openNav()">
         <i class="fa fa-bars"></i>
@@ -73,16 +70,16 @@ height="0" width="0" style="display:none;visibility:hidden"></iframe></noscript>
   </div>
 
   <ul class="nav-bar-mobile" id="nav-bar-mobile">
-    <li><a class="active" onmouseover="circleSmall()" onmouseout="circleBig()" href="projects.html">PROJECTS</a></li>
-    <li><a class="" onmouseover="circleSmall()" onmouseout="circleBig()" href="digital.html">DIGITAL</a></li>
-    <li><a class="active" onmouseover="circleSmall()" onmouseout="circleBig()" href="about.html">ABOUT</a></li>
-    <li><a class="active" onmouseover="circleSmall()" onmouseout="circleBig()" href="contact.html">CONTACT</a></li>
-    <li><a class="active" onmouseover="circleSmall()" onmouseout="circleBig()" onClick="location='https://www.extrude.studio/'">STUDIO EXTRUDE</a></li>
+    <li><a class="active" href="projects.html">PROJECTS</a></li>
+    <li><a class="" href="digital.html">DIGITAL</a></li>
+    <li><a class="active" href="about.html">ABOUT</a></li>
+    <li><a class="active" href="contact.html">CONTACT</a></li>
+    <li><a class="active" onClick="location='https://www.extrude.studio/'">STUDIO EXTRUDE</a></li>
   </ul>
 
 <div class="mainPageContainer">
   <div class="section-header title">
-    <h1 onmouseover="circleSmall()" onmouseout="circleBig()" class="header">DIGITAL PROJECTS</h1>
+    <h1 onmouseover="circleSmallOnly()" onmouseout="circleBigOnly()" class="header">DIGITAL PROJECTS</h1>
   </div>
 
   <div class="flex-item repair">
@@ -93,7 +90,7 @@ height="0" width="0" style="display:none;visibility:hidden"></iframe></noscript>
       <h3>3D REPAIR</h3>
       <h1>Reparing not</br>replacing</h1>
       <p>A digital platform to repair home appliance thanks to 3D-printing</p>
-      <button class="buttonRound" onclick="window.location.href=('3D-repair.html')">SEE PROJECT</button>
+      <button class="buttonRound" onmouseover="circleSmallOnly()" onmouseout="circleBigOnly()" onclick="window.location.href=('3D-repair.html')">SEE PROJECT</button>
     </div>
   </div>
 
@@ -105,7 +102,7 @@ height="0" width="0" style="display:none;visibility:hidden"></iframe></noscript>
       <h3>3D COMMUNITY</h3>
       <h1>3D-printing at</br>your fingertip</h1>
       <p>A digital platform to find people that have 3D-printers</p>
-      <button class="buttonRound" type="button" name="button">SEE PROJECT</button>
+      <button onmouseover="circleSmallOnly()" onmouseout="circleBigOnly()" class="buttonRound" type="button" name="button">SEE PROJECT</button>
     </div>
   </div>
 
@@ -117,7 +114,7 @@ height="0" width="0" style="display:none;visibility:hidden"></iframe></noscript>
       <h3>FixMeUp</h3>
       <h1>Go-to platform</br>for repairing</h1>
       <p>Get access to thousands of tutorials, find the tools and pieces you need and get a helping hand from our community.</p>
-      <button class="buttonRound" onclick="window.location.href=('fix-me-up.html')">SEE PROJECT</button>
+      <button onmouseover="circleSmallOnly()" onmouseout="circleBigOnly()" class="buttonRound" onclick="window.location.href=('fix-me-up.html')">SEE PROJECT</button>
     </div>
   </div>
 
@@ -129,7 +126,7 @@ height="0" width="0" style="display:none;visibility:hidden"></iframe></noscript>
       <h3>GREENER</h3>
       <h1>Shopping</br>sustainably</h1>
       <p>Getting rewarded by shopping sustainably</p>
-      <button class="buttonRound" href="">SEE PROJECT</button>
+      <button onmouseover="circleSmallOnly()" onmouseout="circleBigOnly()" class="buttonRound" href="">SEE PROJECT</button>
     </div>
   </div>
 

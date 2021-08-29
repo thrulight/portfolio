@@ -34,7 +34,22 @@ function circleBig() {
   document.getElementById("circle").style.transform = "scale(1)";
   document.getElementById("circle").style['background-color'] = "#f2ede4";
 }
+
 //Circle change size and color on link hover end
+
+//Circle change size on link hover start
+function circleSmallOnly() {
+  console.log("circleSmallOnly");
+
+  document.getElementById("circle").style.transform = "scale(2)";
+}
+
+function circleBigOnly() {
+  console.log("circleBigOnly");
+
+  document.getElementById("circle").style.transform = "scale(1)";
+}
+//Circle change size on link hover end
 
 //Fade in projects page
 //Fade in flex-item animation
@@ -46,8 +61,8 @@ $(document).ready(function() {
     /* Check the location of each desired element */
     $('.flex-item').each(function(i) {
 
-      /* If the object is half in the window, fade it it */
-      var bottom_of_object = $(this).position().top + $(this).outerHeight()/2;
+      /* If the object is a third in the window, fade it it */
+      var bottom_of_object = $(this).position().top + $(this).outerHeight()/3;
       var bottom_of_window = $(window).scrollTop() + $(window).height();
 
       /* If the object is visible in the window, fade it it */
