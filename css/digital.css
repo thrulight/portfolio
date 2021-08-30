@@ -25,7 +25,7 @@ body {
   height: 100%;
   padding: 10vh 0 20vh 0;
   text-align: center;
-  color: #FF9040;
+  color: #FF4040;
 }
 
 h1 {
@@ -184,7 +184,7 @@ p {
 
 .nav-bar-mobile li a {
   text-decoration: none;
-  color: #FF9040 !important;
+  color: #FF4040 !important;
 }
 
 /* #endregion mobile version */
