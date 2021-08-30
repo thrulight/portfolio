@@ -178,7 +178,7 @@ p {
 
 .overlay {
   background-color: #0C0C0C;
-  opacity: .8;
+  opacity: .9;
   backdrop-filter: blur(10px);
 }
 
