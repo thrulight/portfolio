@@ -1,0 +1,172 @@
+body {
+  background-color: #0F3620 !important;
+}
+
+.mainPageContainer {
+  padding: 0 15vw 0 15vw ;
+}
+
+.logo {
+  max-width: 20vw;
+  margin-top: 20vh;
+  margin-bottom: 0;
+}
+
+h4 {
+  color: white;
+  font-size: 2.8em;
+  font-weight: 300;
+}
+
+p {
+  margin: 5vh 15vw 0 15vw;
+}
+
+.circle {
+  opacity: .5;
+}
+
+/* #region section app */
+
+.sectionApp {
+  margin-top: 30%;
+}
+
+.app {
+  margin-top: 0;
+}
+
+.app-gif {
+  display: none;
+}
+
+/* #endregion section app */
+
+/* #region section whiteboard */
+
+.sectionWhiteBoard img {
+  margin-bottom: 5vh;
+}
+
+.sectionWhiteBoard p {
+  margin: 0;
+  max-width: 30vw;
+}
+
+/* #endregion section whiteboard */
+
+/* #region section identity */
+
+.sectionIdentity img {
+  margin-top: 0;
+  margin-bottom: 10vh;
+  width: 40vw;
+}
+
+.logo-redesign {
+  max-width: 15vw;
+}
+
+.sectionIdentity h4 {
+  margin-top: 20vh;
+  text-align: center;
+}
+
+/* #endregion section identity */
+
+/* #region section landing page */
+
+.sectionLandingPage img {
+  margin-top: 0;
+  width: 60vw;
+}
+
+.sectionLandingPage h4 {
+  margin-top: 30vh;
+  text-align: center;
+}
+
+/* #endregion section landing page */
+
+/* #region mobile version */
+@media screen and (max-width: 900px){
+
+.mainPageContainer {
+  padding: 5% 5% 20% 5%;
+}
+
+.logo {
+  max-width: 50vw;
+  margin-top: 10vh;
+}
+
+p {
+  margin: 0;
+}
+
+img {
+  width: 90vw;
+  max-width: 100%;
+}
+
+h4 {
+  font-size: 1.8em;
+}
+
+/* #region section app */
+.sectionApp h4 {
+  text-align: center;
+}
+
+.app {
+  display: none;
+}
+
+.app-gif {
+  display: block;
+  margin-top: 0;
+  margin-bottom: 5vh;
+  border-radius: 15px;
+}
+/* #endregion section app */
+
+/* #region section whiteboard */
+.sectionWhiteBoard p {
+  max-width: 100%;
+}
+
+.sectionWhiteBoard img {
+  display: none;
+}
+/* #endregion section whiteboard */
+
+/* #region section identity */
+
+.sectionIdentity h4 {
+  margin-top: 10vh;
+}
+
+.sectionIdentity img {
+  margin-top: 0;
+  margin-bottom: 10vh;
+  width: 100%;
+}
+
+.sectionIdentity .logo-redesign {
+  max-width: 40vw
+}
+
+/* #endregion section identity */
+
+/* #region section landing page */
+.sectionLandingPage h4 {
+  margin-top: 15vh;
+}
+
+.sectionLandingPage img {
+  width: 100%;
+}
+/* #endregion section landing page */
+
+}
+/* #endregion mobile version */
