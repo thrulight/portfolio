@@ -35,7 +35,7 @@ p {
   position: absolute;
   left: 50%;
   margin-left: -3px;
-  top: 70%;
+  top: 80vh;
   z-index: -2;
 }
 
