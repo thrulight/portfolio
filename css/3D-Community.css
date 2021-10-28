@@ -1,0 +1,78 @@
+body {
+  background-color: #131C25 !important;
+}
+
+.mainPageContainer {
+  padding: 0 15vw 0 15vw ;
+}
+
+.section-header {
+  font-family: 'Atari';
+  font-size: 3em;
+}
+
+img {
+  margin-top: 0;
+  margin-bottom: 5vh;
+}
+
+/* #region section website */
+
+.sectionWebsite {
+  margin-top: 30%;
+}
+
+.app {
+  margin-top: 0;
+}
+
+.app-gif {
+  display: none;
+}
+
+h4 {
+  color: white;
+  font-family: 'Atari';
+  font-size: 2em;
+  font-weight: 300;
+}
+
+/* #endregion section website */
+
+p {
+  margin: 0;
+}
+
+#first {
+  text-align: center;
+  margin: 15vh 10vw 15vh 10vw;
+}
+
+.map {
+  margin-bottom: 2vh;
+}
+
+#second {
+  margin: 0 30vw 30vh 0;
+}
+
+#workflow {
+  margin: 30vh auto 30vh auto;
+  width: 50vw;
+}
+
+
+/* #region mobile version */
+@media screen and (max-width: 900px){
+
+.section-header {
+  font-family: 'Atari';
+  font-size: 1.5em;
+}
+
+.description {
+  font-size: 1em;
+  margin: 5vh;
+}
+
+/* #endregion mobile version */
