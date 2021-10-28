@@ -33,6 +33,7 @@ model-viewer {
   width: 100%;
   min-width: 200px;
   display: block;
+  background-color: none;
 }
 
 /* #endregion first-section */

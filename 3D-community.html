@@ -1,0 +1,91 @@
+<!DOCTYPE html>
+<head>
+  <link rel="icon" href="logo_circle.png">
+  <meta charset="utf-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <link rel="stylesheet" href="css/digital-project.css">
+  <link rel="stylesheet" href="css/nonChangingElements.css">
+  <link rel="stylesheet" href="css/3D-Community.css">
+  <title>Emilie Durand</title>
+
+  <script src="https://ajax.googleapis.com/ajax/libs/jquery/2.1.3/jquery.min.js"></script>
+  <script src="script.js"></script>
+  <span id="circle" class="circle"></span>
+
+  <!-- Load an icon library to show a hamburger menu (bars) on small screens -->
+  <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/4.7.0/css/font-awesome.min.css">
+
+  <!-- Ubuntu -->
+  <link rel="preconnect" href="https://fonts.gstatic.com">
+  <link href="https://fonts.googleapis.com/css2?family=Lato:ital,wght@0,100;0,300;0,400;0,700;0,900;1,100;1,300;1,400;1,700;1,900&family=Ubuntu:ital,wght@0,300;0,400;0,500;0,700;1,300;1,400;1,500;1,700&display=swap" rel="stylesheet">
+
+  <!-- Lato -->
+  <link rel="preconnect" href="https://fonts.gstatic.com">
+  <link href="https://fonts.googleapis.com/css2?family=Lato:ital,wght@0,100;0,300;0,400;0,700;0,900;1,100;1,300;1,400;1,700;1,900&display=swap" rel="stylesheet">
+
+</head>
+<body>
+
+<!-- Navigation bar -->
+  <div class="X" id="X"><span  onclick="closeNav()">&times;</span></div>
+  <div id="overlay" class="overlay"></div>
+
+  <div class="nav-bar" id="myTopnav">
+    <a href="index.html" id="title">EMILIE DURAND</a>
+    <ul class="nav-text">
+      <li><a class="active" onmouseover="circleSmall()" onmouseout="circleBig()" href="about.html">ABOUT</a></li>
+      <li><a class="active" onmouseover="circleSmall()" onmouseout="circleBig()" href="contact.html">CONTACT</a></li>
+      <li><a class="active" onmouseover="circleSmall()" onmouseout="circleBig()" href="digital.html">DIGITAL</a></li>
+      <li><a class="active" onmouseover="circleSmall()" onmouseout="circleBig()" href="projects.html">PROJECTS</a></li>
+      <li><a class="active" onmouseover="circleSmall()" onmouseout="circleBig()" onClick="location='https://www.extrude.studio/'">STUDIO EXTRUDE</a></li>
+      <li onmouseover="circleSmall()" onmouseout="circleBig()" style="float:left"><a class="nav-title" href="index.html">EMILIE DURAND</a></li>
+    </ul>
+      <a class="icon" id="icon" onclick="openNav()">
+        <i class="fa fa-bars"></i>
+      </a>
+  </div>
+
+  <ul class="nav-bar-mobile" id="nav-bar-mobile">
+    <li><a class="active" onmouseover="circleSmall()" onmouseout="circleBig()" href="projects.html">PROJECTS</a></li>
+    <li><a class="active" onmouseover="circleSmall()" onmouseout="circleBig()" href="digital.html">DIGITAL</a></li>
+    <li><a class="active" onmouseover="circleSmall()" onmouseout="circleBig()" href="about.html">ABOUT</a></li>
+    <li><a class="active" onmouseover="circleSmall()" onmouseout="circleBig()" href="contact.html">CONTACT</a></li>
+    <li><a class="active" onmouseover="circleSmall()" onmouseout="circleBig()" onClick="location='https://www.extrude.studio/'">STUDIO EXTRUDE</a></li>
+  </ul>
+
+<div class="mainPageContainer">
+  <div class="section-header title">
+    <h1 onmouseover="circleSmall()" onmouseout="circleBig()" class="header">3D Community</h1>
+  </div>
+  <h3>A peer-to-peer 3D-printing platform</h3>
+
+  <div class="line"></div>
+
+  <div class="sectionWebsite">
+    <h4>The website</h4>
+    <img src="projectsImg/digital/3D-Community_landing-page.png" alt="">
+  </div>
+
+  <p id="first">
+    A place for people without 3D-printers to find people with them, and people with 3D-printers to make money helping people out.
+  </p>
+
+  <div class="sectionMap">
+    <img class="map" src="projectsImg/digital/3D-Community_map.png" alt="">
+    <p id="second">
+      An interactive map allow users to easily get in touch with users around them to help them print the objects of their choice
+    </p>
+  </div>
+
+  <div class="sectionApp">
+    <h4>The application</h4>
+    <img src="projectsImg/digital/3D-Community_App.png" alt="">
+    <img id="workflow" src="projectsImg/digital/3D-Community_Workflow.png" alt="">
+  </div>
+
+
+</div>
+
+
+</body>
+<DOCTYPE html>

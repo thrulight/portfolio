@@ -70,7 +70,7 @@ $(document).ready(function() {
 
         $(this).animate({
           'opacity': '1'
-        }, 500);
+        }, 20);
       }
     });
   });
@@ -87,7 +87,7 @@ $(document).ready(function() {
     $('.paragraph').each(function(i) {
 
       /* If the object is half in the window, fade it it */
-      var bottom_of_object = $(this).position().top + $(this).outerHeight()/1;
+      var bottom_of_object = $(this).position().top + $(this).outerHeight()/3;
       var bottom_of_window = $(window).scrollTop() + $(window).height();
 
       /* If the object is visible in the window, fade it it */
@@ -95,7 +95,7 @@ $(document).ready(function() {
 
         $(this).animate({
           'opacity': '1'
-        }, 500);
+        }, 300);
       }
     });
   });
