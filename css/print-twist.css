@@ -233,7 +233,17 @@ ul li a {
   display: none;
 }
 
+.txtContainer2, .shapes {
+  padding: 7vh 10vw 7vh 10vw;
 }
+
+.shapes p {
+  padding: 0;
+}
+
+}
+
+
 
 @media screen and (max-width: 1110px){
 

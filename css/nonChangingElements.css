@@ -276,6 +276,15 @@ li a {
   font-weight: 400;
 }
 
+/* the whole navigation bar */
+.nav-bar {
+  display: flex; /*important*/
+  align-items: center; /*important*/
+  width: 100%; /*important*/
+  padding: 20px;
+  position: absolute;
+}
+
 /* #endregion nav-bar */
 
 .column {
@@ -286,13 +295,17 @@ li a {
   width: 100% !important;
 }
 
-/* the whole navigation bar */
-.nav-bar {
-  display: flex; /*important*/
-  align-items: center; /*important*/
-  width: 100%; /*important*/
-  padding: 20px;
-  position: absolute;
+model-viewer {
+  max-height: 50vh;
+}
+
+.first-section .left {
+  padding-left: 0;
+}
+
+
+.first-section, .second-section, .third-section, .fourth-section {
+  padding: 5%;
 }
 
 }

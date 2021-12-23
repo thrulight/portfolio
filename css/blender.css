@@ -15,3 +15,29 @@
   margin-right: auto;
   width: 70%;
 }
+
+/* #region mobile version */
+@media screen and (max-width: 900px){
+
+
+.second-section {
+  display: block;
+}
+
+.second-section img, .third-section img, .fourth-section img {
+  max-width: 100%;
+  width: auto;
+  margin: 2vh 0 2vh 0;
+}
+
+.second-section .imgContainer {
+  margin: 0;
+}
+
+.second-section .left {
+  margin-top: 0;
+}
+
+}
+
+/* #endregion mobile version */
