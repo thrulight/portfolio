@@ -82,6 +82,14 @@ ul li a {
   /*border-right: 2px solid #575656;*/
 }
 
+.mobileImg {
+  display: none;
+}
+
+.desktopImg {
+  display: block;
+}
+
 .sectionSteps .right {
   border-left: 3px dotted #ededed;
 }
@@ -177,3 +185,72 @@ ul li a {
   max-width: 100%;
   margin-top: 5vh;
 }
+
+
+/* #region mobile version */
+@media screen and (max-width: 900px){
+
+.first-section {
+  padding: 0 5vw 0 5vw;
+}
+
+.section2, .section3, .section4, .section5, .section6, .section7 {
+  display: block;
+  padding: 0 5vw 2vh 5vw;
+}
+
+.sectionSteps .txtContainer.right, .sectionSteps .txtContainer.left {
+  margin: 0;
+}
+
+.section2 img, .section3 img, .section4 img, .section5 img, .section6 img, .section7 img {
+  width: 100%;
+  padding: 5%;
+  margin: 0;
+}
+
+.sectionSteps .description-left, .h2-left {
+  text-align: left !important;
+}
+
+.mobileImg {
+  display: block;
+}
+
+.desktopImg {
+  display: none;
+}
+
+.h2, .h2-left {
+  margin: 0;
+}
+
+.first-section .left {
+  padding: 0 !important;
+}
+
+#research {
+  display: none;
+}
+
+.txtContainer2, .shapes {
+  padding: 7vh 10vw 7vh 10vw;
+}
+
+.shapes p {
+  padding: 0;
+}
+
+}
+
+
+
+@media screen and (max-width: 1110px){
+
+#title, #icon {
+  color: white;
+}
+
+}
+
+/* #endregion mobile version */

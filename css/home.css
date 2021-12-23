@@ -2,8 +2,7 @@ html {
   cursor: url("cursors/cursor_circle.svg") 5 5, auto;
   background-image: url("backgrounds/montage_gif_2.gif");
   background-repeat: no-repeat;
-  background-size: cover;
-  background-position: top;
+  background-position: top right;
 }
 
 body{

@@ -167,6 +167,20 @@ p {
 /* #region mobile version */
 @media screen and (max-width: 900px){
 
+.column {
+  float: none !important;
+}
+
+.left, .right {
+  width: 100% !important;
+}
+
+}
+
+/* #endregion mobile version */
+
+@media screen and (max-width: 1110px){
+
 /* #region nav-bar */
 .circle {
   display: none;
@@ -177,7 +191,7 @@ li {
 }
 
 .nav-bar .icon {
-  display: block;
+  display: flex;
   color: black;
   z-index: 100;
   transform: scale(1.2);
@@ -253,12 +267,22 @@ li {
   text-decoration: none;
   color: black;
   display: block;
+  width: 100%
 }
 
 li a {
   letter-spacing: .15em;
   font-size: 1.2em;
   font-weight: 400;
+}
+
+/* the whole navigation bar */
+.nav-bar {
+  display: flex; /*important*/
+  align-items: center; /*important*/
+  width: 100%; /*important*/
+  padding: 20px;
+  position: absolute;
 }
 
 /* #endregion nav-bar */
@@ -271,16 +295,17 @@ li a {
   width: 100% !important;
 }
 
-/* the whole navigation bar */
-.nav-bar {
-  display: flex; /*important*/
-  align-items: center; /*important*/
-  overflow: hidden;
+model-viewer {
+  max-height: 50vh;
+}
 
-  padding: 20px;
-  padding-right: 25px;
+.first-section .left {
+  padding-left: 0;
+}
+
+
+.first-section, .second-section, .third-section, .fourth-section {
+  padding: 5%;
 }
 
 }
-
-/* #endregion mobile version */
