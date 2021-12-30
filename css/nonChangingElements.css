@@ -303,6 +303,10 @@ model-viewer {
   padding-left: 0;
 }
 
+.first-section .right {
+  padding-right: 0;
+}
+
 
 .first-section, .second-section, .third-section, .fourth-section {
   padding: 5%;
