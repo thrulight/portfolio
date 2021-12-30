@@ -333,46 +333,33 @@ hr {
 /* #endregion prototype */
 
 /* #region mobile version */
-@media screen and (max-width: 900px){
+@media screen and (max-width: 1110px){
 
-.first-section .right {
-  padding: 0;
+.column {
+  float: left !important;
 }
 
-#desktopImg { display: none }
-#mobileImg { display: block }
-
-.second-section2 {
-  padding: 7vh 10vw 7vh 10vw;
+.section-data h1 {
+  font-size: 2rem !important;
 }
 
-.third-section .left, .third-section .right {
-  padding: 0;
+.section-data p { font-size: 1rem }
+
+.section-data .container, .section-problems .container {
+  height: 15vh;
 }
 
-.third-section .left img {
-  margin: 0;
+.section-data br { display: none; }
+
+.section-data, .section-problems {
+  padding: 5vh 7vw 5vh 7vw;
 }
 
-#mobileH2 { display: block }
-#desktopH2 { display: none }
+.circle-small { bottom: 6.3vh }
 
-.fourth-section, .fifth-section, .sixth-section, .seventh-section {
-  padding: 5%;
-  margin: 0;
-}
+hr { bottom: 7vh}
 
-.fourth-section p {
-  margin: 0;
-}
-
-.map-box {
-  left: 0;
-  margin: 5vh 0 2vh 0;
-}
-
-.sixth-section h2, .sixth-section p {
-  text-align: left;
-}
+.section-problems p {
+  margin-bottom: 0 !important }
 
 /* #endregion mobile version */
