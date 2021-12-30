@@ -1,0 +1,378 @@
+.section-image {
+  height: 100vh;
+}
+
+#scroll {
+    border: none;
+    background: none;
+    width: auto;
+
+    position: absolute;
+    bottom: 4vh;
+    left: 50%;
+    transform: translate(-50%, 0);
+
+    height: 4em;
+    z-index: 2 !important;
+}
+
+#desktopImg { display: block }
+
+#mobileImg { display: none }
+
+/* #region data */
+
+.section-data {
+  padding: 12vh 15vw 12vh 15vw;
+  height: 100%;
+  margin: 0;
+  align-items: center;
+  background-color: #EEEEEE;
+}
+
+.section-data .left, .section-data .center, .section-data .right {
+  width: 32% !important;
+  margin: 0;
+  padding: 0;
+  display: block;
+  text-align: center;
+}
+
+.section-data .center {
+  margin: 0 1.5% 0 1.5%;
+}
+
+h1 {
+  text-align: center;
+  margin-bottom: 5vh;
+}
+
+.section-data .container {
+  background-color: #C5DDBA;
+  height: 30vh;
+  position: relative;
+  border-radius: 10px;
+}
+
+.section-data .container h1 {
+  margin: 0;
+  position: absolute;
+  top: 50%;
+  left: 50%;
+  transform: translate(-50%, -50%);
+  color: white;
+  font-size: 3rem;
+}
+
+.section-data p {
+  text-align: center;
+  text-transform: none;
+  letter-spacing: normal;
+  line-height: normal;
+  font-family: "Ubuntu Regular";
+  color: #5C5C5C;
+}
+
+
+/* #endregion data */
+
+/* #region first section */
+
+.first-section {
+  width: 100%;
+}
+
+.first-section .right {
+  padding-right: 15vw;
+}
+
+/* #endregion first section */
+
+/* #region problems */
+
+.section-problems {
+  padding: 12vh 15vw 12vh 15vw;
+  height: 100%;
+  margin: 0;
+  align-items: center;
+  background-color: #EEEEEE;
+}
+
+.section-problems .left, .section-problems .center, .section-problems .right {
+  width: 32% !important;
+  margin: 0;
+  padding: 0;
+  display: block;
+  text-align: center;
+}
+
+.section-problems .center {
+  margin: 0 2% 0 2%;
+}
+
+.section-problems h2 {
+  text-align: center;
+  margin-bottom: 5vh;
+}
+
+.section-problems .container {
+  height: 30vh;
+  position: relative;
+  border-radius: 10px;
+  background-image: url(stocke-recycle/kraft.jpg);
+}
+
+.section-problems .container h1 {
+  margin: 0;
+  position: absolute;
+  top: 50%;
+  left: 50%;
+  transform: translate(-50%, -50%);
+  color: #464646;
+  font-size: 2rem;
+}
+
+.section-problems p {
+  text-align: center;
+  padding-top: 2vh;
+  font-weight: 500;
+  color: #5C5C5C;
+  font-size: 1.5rem;
+}
+
+hr {
+  position: relative;
+  bottom: 11vh;
+  width: 67%;
+  margin: auto;
+}
+
+.circle-small {
+  height: 10px;
+  width: 10px;
+  background-color: #555;
+  border-radius: 50%;
+  margin: auto;
+  position: relative;
+  bottom: 10.3vh
+}
+
+/* #endregion problems */
+
+/* #region scenario */
+
+.section-scenario {
+  padding: 12vh 15vw 5vh 15vw;
+  height: 100%;
+  margin: 0;
+  align-items: center;
+}
+
+.section-scenario img {
+  width: 100%;
+  border-radius: 10px;
+}
+
+/* #endregion scenario */
+
+/* #region pack */
+
+.section-packaging {
+  padding: 7vh 15vw 5vh 15vw;
+  height: 100%;
+  margin: 0;
+  align-items: center;
+}
+
+.section-packaging img {
+  width: 100%;
+  border-radius: 10px;
+}
+
+.section-packaging .left { width: 60%; }
+
+.section-packaging .right { width: 40%; }
+
+.section-packaging p {
+  padding: 0 2vw 0 2vw;
+  text-transform: none;
+  line-height: 130%;
+  font-weight: 400;
+}
+
+/* #endregion packaging */
+
+/* #region poll */
+
+.section-poll {
+  padding: 7vh 15vw 5vh 15vw;
+  height: 100%;
+  margin: 0;
+  align-items: center;
+}
+
+.section-poll img {
+  width: 100%;
+  border-radius: 10px;
+  background-color: #f6f6f6;
+}
+
+/* #endregion poll */
+
+/* #region posters */
+
+.section-posters {
+  padding: 7vh 15vw 5vh 15vw;
+  height: 100%;
+  margin: 0;
+  align-items: center;
+}
+
+.section-posters .imgContainer img {
+  width: 100%;
+  height: 100%;
+  object-fit: contain;
+}
+
+.section-posters .left { padding-right: 1vw; }
+
+.section-posters .right { padding-left: 1vw; }
+
+.section-posters .imgContainer {
+  height: 70vh;
+  width: 100%;
+  background-color: #f6f6f6;
+  border-radius: 10px;
+}
+
+.section-posters .column {
+  justify-content: right;
+}
+
+.section-posters .right { margin-top: 10vh; }
+
+.section-posters p {
+  text-transform: none;
+  line-height: 130%;
+  font-weight: 400;
+  text-align: right;
+  margin-top: 3vh;
+}
+
+/* #endregion posters */
+
+/* #region bin */
+
+.section-bin {
+  padding: 7vh 15vw 5vh 15vw;
+  height: 100%;
+  margin: 0;
+  align-items: center;
+}
+
+.section-bin img {
+  width: 100%;
+  border-radius: 10px;
+  background-color: #f6f6f6;
+}
+
+/* #endregion bin */
+
+/* #region maintenance */
+
+.section-maintenance {
+  padding: 7vh 15vw 5vh 15vw;
+  height: 100%;
+  margin: 0;
+  align-items: center;
+}
+
+.section-maintenance img {
+  width: 100%;
+  border-radius: 10px;
+  background-color: #f6f6f6;
+}
+
+.section-maintenance p {
+  text-transform: none;
+  font-weight: 400;
+  margin-top: 3vh;
+}
+
+/* #endregion maintenance */
+
+/* #region prototype */
+
+.section-prototype {
+  padding: 0vh 15vw 5vh 15vw;
+  height: 100%;
+  margin: 0;
+  align-items: center;
+}
+
+.section-prototype img {
+  width: 100%;
+  height: 100%;
+  border-radius: 10px;
+}
+
+.section-prototype .left { padding-right: 1vw; }
+
+.section-prototype .right { padding-left: 1vw; }
+
+.section-prototype .left { margin-top: 10vh; }
+
+.section-prototype p {
+  text-transform: none;
+  line-height: 130%;
+  font-weight: 400;
+  text-align: right;
+  margin-top: 3vh;
+}
+
+/* #endregion prototype */
+
+/* #region mobile version */
+@media screen and (max-width: 900px){
+
+.first-section .right {
+  padding: 0;
+}
+
+#desktopImg { display: none }
+#mobileImg { display: block }
+
+.second-section2 {
+  padding: 7vh 10vw 7vh 10vw;
+}
+
+.third-section .left, .third-section .right {
+  padding: 0;
+}
+
+.third-section .left img {
+  margin: 0;
+}
+
+#mobileH2 { display: block }
+#desktopH2 { display: none }
+
+.fourth-section, .fifth-section, .sixth-section, .seventh-section {
+  padding: 5%;
+  margin: 0;
+}
+
+.fourth-section p {
+  margin: 0;
+}
+
+.map-box {
+  left: 0;
+  margin: 5vh 0 2vh 0;
+}
+
+.sixth-section h2, .sixth-section p {
+  text-align: left;
+}
+
+/* #endregion mobile version */
