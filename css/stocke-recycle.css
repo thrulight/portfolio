@@ -339,27 +339,74 @@ hr {
   float: left !important;
 }
 
+.left, .right {
+  width: 50% !important;
+}
+
+.first-section .right { padding: 0; width: 40% !important }
+.first-section .left {width: 60% !important }
+
+.section-packaging .left { width: 60% !important }
+.section-packaging .right { width: 40% !important }
+
 .section-data h1 {
-  font-size: 2rem !important;
+  font-size: 2.5rem !important;
+}
+
+.section-problems .container h1 {
+  font-size: 2rem;
 }
 
 .section-data p { font-size: 1rem }
 
-.section-data .container, .section-problems .container {
-  height: 15vh;
-}
-
 .section-data br { display: none; }
 
-.section-data, .section-problems {
-  padding: 5vh 7vw 5vh 7vw;
+.section-data, .section-problems, .section-scenario, .section-packaging, .section-poll, .section-posters, .section-bin, .section-maintenance, .section-prototype  {
+  padding: 5%;
 }
+
+.section-prototype { padding-top: 0 }
+
+.section-posters p, .section-prototype p { text-align: left; }
 
 .circle-small { bottom: 6.3vh }
 
 hr { bottom: 7vh}
 
-.section-problems p {
-  margin-bottom: 0 !important }
+.section-problems p { margin-bottom: 0 !important }
+
+}
+
+@media screen and (max-width: 1023px){
+
+#desktopImg { display: none }
+
+#mobileImg { display: block }
+
+#title, #icon {
+  color: white;
+}
+
+.section-data .container, .section-problems .container {
+  height: 15vh;
+}
+
+.section-data h1 {
+  font-size: 1.7rem !important;
+}
+
+.section-problems .container h1 {
+  font-size: 1.2rem;
+}
+
+.left, .right {
+  width: 100% !important;
+  justify-content: left !important;
+}
+
+.first-section .right, .first-section .left { width: 100% !important }
+.section-packaging .left, .section-packaging .right { width: 100% !important }
+
+}
 
 /* #endregion mobile version */
