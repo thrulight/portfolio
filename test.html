@@ -1,0 +1,85 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <link rel="icon" href="images/favicon.png">
+  <meta charset="utf-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+
+  <link rel="stylesheet" href="css/nonChangingElements.css">
+  <link rel="stylesheet" href="color-change.css">
+  <link rel="stylesheet" href="css/new-homepage.css">
+  <link rel="stylesheet" href="css/switzer.css">
+
+
+  <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.5.1/jquery.min.js"></script>
+  <script type="text/javascript" src="jquery.scrollie.js"></script>
+  <script type="text/javascript" src="color-change.js"></script>
+  <script type="text/javascript" src="script.js"></script>
+
+  <!-- Material Icons -->
+  <link href="https://fonts.googleapis.com/icon?family=Material+Icons"
+      rel="stylesheet">
+
+  <span id="circle" class="circle"></span>
+
+</head>
+<body>
+  <div class="main-wrapper">
+
+
+    <!-- Navigation bar -->
+      <div class="X" id="X"><span  onclick="closeNav()">&times;</span></div>
+      <div id="overlay" class="overlay"></div>
+
+      <div class="nav-bar" id="myTopnav">
+        <a href="index.html" id="title">EMILIE DURAND</a>
+        <ul class="nav-text">
+          <li><a class="work active" onmouseover="circleSmall()" onmouseout="circleBig()" href="about.html">work</a></li>
+          <li><a class="active" onmouseover="circleSmall()" onmouseout="circleBig()" href="contact.html">information</a></li>
+          <li><a class="active" onmouseover="circleSmall()" onmouseout="circleBig()" href="digital.html">contact</a></li>
+          <li onmouseover="circleSmall()" onmouseout="circleBig()" style="float:left"><a class="nav-title" href="index.html">EMILIE DURAND</a></li>
+        </ul>
+          <a class="icon" id="icon" onclick="openNav()">
+            <i class="fa fa-bars"></i>
+          </a>
+      </div>
+
+      <ul class="nav-bar-mobile" id="nav-bar-mobile">
+        <li><a class="active" onmouseover="circleSmall()" onmouseout="circleBig()" href="projects.html">work</a></li>
+        <li><a class="active" onmouseover="circleSmall()" onmouseout="circleBig()" href="digital.html">information</a></li>
+        <li><a class="active" onmouseover="circleSmall()" onmouseout="circleBig()" href="about.html">contact</a></li>
+      </ul>
+
+
+    <div class="slide topSection" data-background="#CEC5BB">
+
+      <p>Hello, I’m Emilie</p>
+      <h1>I’m an Industrial Product Design student and UX/UI Designer based in Paris</h1>
+      <p class="studio" onclick="window.open('https://extrude.studio')">I’m also a co-founder of extrude.studio <i class="material-icons icon-studio">east</i></p>
+      <hr>
+      <i class="material-icons goDown">south</i>
+
+    </div>
+
+
+    <div class="slide productSection" data-background="#F6F6F6">
+
+        <div class="rectangle" style="background-color:#D9F0F3"></div>
+        <div class="rectangle" style="background-color:#E0EBDE"></div>
+        <div class="rectangle" style="background-color:#F2D3D3"></div>
+
+    </div>
+
+
+    <div class="slide uxSection" data-background="#212121">
+
+      <div class="rectangle" style="background-color:#ABD1B6"></div>
+      <div class="rectangle" style="background-color:#9EB3E0"></div>
+
+    </div>
+
+  </div>
+
+</body>
+
+<DOCTYPE html>

@@ -1,0 +1,105 @@
+.nav-bar {
+  border-bottom: 1px solid rgba(0,0,0,0.2);
+  padding: 0;
+}
+
+p, h1, h2, h3, h4, h5, h6 {
+  font-family: 'Switzer-Variable';
+  text-transform: none;
+  font-weight: 400;
+  letter-spacing: normal;
+}
+
+li a {
+  padding: 25px 0 25px 0;
+}
+
+ul {
+  padding-right: 0;
+}
+
+.work {
+  color: white;
+  background-color: black;
+  padding: 25px 30px 25px 30px;
+  margin: 0;
+  height: 100%;
+}
+
+.nav-title, li a {
+  font-size: .8rem;
+  text-transform: uppercase;
+  font-family: 'Switzer-Variable';
+  letter-spacing: normal;
+}
+
+.nav-title {
+  font-weight: 600;
+}
+
+
+.slide-one, .slide-two, .slide-three {
+  height: 1000px;
+  border: 1px solid black;
+}
+
+.topSection {
+  height: 85vh;
+  /*border: 1px solid black;*/
+  padding: 10vh 7vw 10vh 7vw;
+}
+
+.topSection hr {
+  border-bottom: 1px solid black;
+  width: 100%;
+  margin: 0;
+}
+
+.topSection h1 {
+  font-size: 3.2rem;
+  font-weight: 500;
+  line-height: 100%;
+  width: 80%;
+  margin: 0;
+}
+
+.studio {
+  margin-top: 15vh;
+}
+
+.studio, .material-icons {
+  font-size: 1rem !important;
+  line-height: 100%;
+}
+
+.studio:hover {
+  cursor: pointer;
+}
+
+.icon-studio { margin-left: 5px; }
+
+.goDown {
+  font-size: 2.5rem !important;
+  position: absolute;
+  bottom: 15vh;
+}
+
+.productSection {
+  height: 100%;
+  /*border: 1px solid black;*/
+  padding: 0 7vw 10vh 7vw;
+}
+
+.rectangle {
+  width: 100%;
+  height: 70vh;
+  background-color: blue;
+  margin-bottom:10vh;
+  border-radius: 5px;
+}
+
+.uxSection {
+  height: 100%;
+  /*border: 1px solid black;*/
+  padding: 0 7vw 10vh 7vw;
+}
