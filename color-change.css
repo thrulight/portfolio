@@ -1,7 +1,7 @@
 * { box-sizing: border-box }
 
 body {
-  transition: background .5s ease;
+  transition: background .3s ease;
   background-color: #CEC5BB;
 }
 

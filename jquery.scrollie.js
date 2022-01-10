@@ -16,7 +16,7 @@
             parentElement : window, // the scrolling element to watch for scrolling action. default: window (custom example: .my-wrapper)
             direction : "both", // 'up', 'down'
             scrollOffset : 0, //
-            scrollRatio  : 2, 
+            scrollRatio  : 2,
             scrollingInView : null, // activates when the whole element is moving inside the window
             scrollingToTheTop : null, // activates when it enters the window and stops when it reaches the top
             scrollingOutOfView : null, // actives when the element reaches the top of the window and stops when it is out of the window
@@ -25,9 +25,9 @@
 
     // The actual plugin constructor
     function Plugin ( element, options ) {
-        
+
         this.element = element;
-        
+
         this.settings = $.extend( {}, defaults, options );
         this._defaults = defaults;
         this._name = scrollie;
@@ -39,7 +39,7 @@
     Plugin.prototype = {
 
         init: function () {
-            
+
             this._defineElements();
 
             this._scrollEvent();
@@ -51,9 +51,9 @@
             var self = this;
 
             self.$scrollElement = $(self.element);
-            
+
             self.$elemHeight = self.$scrollElement.outerHeight();
-            
+
             self.$elemPosTop = self.$scrollElement.offset().top;
 
             // if the element has a data-scrollie-offset value, use that or use the default
@@ -80,29 +80,29 @@
              *  When the element moves into view until element reaches the very top of the page
              *---------------------------------------------------------------------------------*/
             if( movingToTheTop ){ //revised and offset complete
-                  
-                jQuery.isFunction(self.settings.scrollingToTheTop) && self.settings.scrollingToTheTop.call( this, this.$scrollElement, self.$scrollOffset, direction, coords, scrollRatio, thisTop, winPos );    
 
-            } 
+                jQuery.isFunction(self.settings.scrollingToTheTop) && self.settings.scrollingToTheTop.call( this, this.$scrollElement, self.$scrollOffset, direction, coords, scrollRatio, thisTop, winPos );
+
+            }
 
             /**
              * if the element is inside the window
              * runs when the element moves into view till the element has completly moved out
              *-------------------------------------------------------------------------------*/
             if( movingThrough ){ //revised and offset complete
-                  
-                jQuery.isFunction(self.settings.scrollingInView) && self.settings.scrollingInView.call( this, this.$scrollElement, self.$scrollOffset, direction, coords, scrollRatio, thisTop, winPos );    
-                
-            } 
+
+                jQuery.isFunction(self.settings.scrollingInView) && self.settings.scrollingInView.call( this, this.$scrollElement, self.$scrollOffset, direction, coords, scrollRatio, thisTop, winPos );
+
+            }
 
             /**
              * if the element has reached the very top of the window
              * runs from when the element touches the top till the element has completly moved out
              *------------------------------------------------------------------------------------*/
             if( atTheTop ){ //revised and offset complete
-                  
-                jQuery.isFunction(self.settings.scrollingOutOfView) && self.settings.scrollingOutOfView.call( this, this.$scrollElement, self.$scrollOffset, direction, coords, scrollRatio, thisTop, winPos );    
-                
+
+                jQuery.isFunction(self.settings.scrollingOutOfView) && self.settings.scrollingOutOfView.call( this, this.$scrollElement, self.$scrollOffset, direction, coords, scrollRatio, thisTop, winPos );
+
             }
 
             /**
@@ -110,7 +110,7 @@
              *---------------------------------------------------*/
             if (  !movedOut ) {
 
-                jQuery.isFunction(self.settings.scrolledOutOfView) && self.settings.scrolledOutOfView.call( this, this.$scrollElement, self.$scrollOffset, direction, coords, scrollRatio, thisTop, winPos ); 
+                jQuery.isFunction(self.settings.scrolledOutOfView) && self.settings.scrolledOutOfView.call( this, this.$scrollElement, self.$scrollOffset, direction, coords, scrollRatio, thisTop, winPos );
 
             }
 
@@ -123,7 +123,7 @@
                 direction = self.settings.direction,
                 lastScrolPos = 0,
                 scroll_ok = true;
-            
+
             setInterval(function () {
                 scroll_ok = true;
             }, 66);//33ms is 30fps, you can try changing this to something larger for better performance
@@ -132,9 +132,9 @@
 
                 var windowPos = $(this).scrollTop(),
                     winHeight = $(this).height(),
-                    currentDirection = ( windowPos > lastScrolPos ) ? 'up' : 'down';          
-                
-               
+                    currentDirection = ( windowPos > lastScrolPos ) ? 'up' : 'down';
+
+
                 // scrolling up
                 if ( currentDirection === direction && scroll_ok === true) {
                     scroll_ok = false;
@@ -142,8 +142,8 @@
                     // element moving from bottom to top
                     self._inMotion(windowPos, winHeight, self.$elemPosTop, currentDirection );
 
-                } 
-               
+                }
+
                 else if ( direction === 'both' && scroll_ok === true ) {
                     scroll_ok = false;
 
@@ -152,7 +152,7 @@
                 }
 
                 lastScrolPos = windowPos;
-                
+
             });
 
         }

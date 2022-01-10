@@ -1,3 +1,5 @@
+/* #region nav-bar */
+
 .nav-bar {
   border-bottom: 1px solid rgba(0,0,0,0.2);
   padding: 0;
@@ -21,7 +23,7 @@ ul {
 .work {
   color: white;
   background-color: black;
-  padding: 25px 30px 25px 30px;
+  padding: 25px 35px 25px 35px;
   margin: 0;
   height: 100%;
 }
@@ -31,13 +33,16 @@ ul {
   text-transform: uppercase;
   font-family: 'Switzer-Variable';
   letter-spacing: normal;
-  margin-left: 7vw;
 }
 
 .nav-title {
   font-weight: 600;
+  margin-left: 7vw;
 }
 
+/* #endregion nav-bar */
+
+/* #region topSection */
 
 .slide-one, .slide-two, .slide-three {
   height: 1000px;
@@ -85,22 +90,210 @@ ul {
   bottom: 15vh;
 }
 
+/* #endregion topSection */
+
+.column {
+  float: left;
+}
+
+.big, .small {
+  height: 100%;
+  padding-right: 1vw;
+  margin-bottom: 7vh;
+}
+
+.big, .small {
+  width: 60%;
+}
+
+.small {
+  width: 40%;
+}
+
+.productSection h2, .uxSection h2 {
+  text-transform: uppercase;
+  font-weight: 500;
+  margin: 3vh 0 0 0;
+}
+
+.productSection p, .uxSection p {
+  font-size: .8rem;
+  color: rgba(0, 0, 0, 0.5);
+  margin: 0;
+}
+
+.project {
+  height: 400px;
+  width: 100%;
+  border-radius: 10px;
+}
+.project img {
+  height: 100%;
+  width: auto;
+  object-fit: contain;
+  display: flex;
+  margin: auto;
+}
+
+
+/* #region productSection */
+
 .productSection {
   height: 100%;
   /*border: 1px solid black;*/
-  padding: 0 7vw 10vh 7vw;
+  padding: 0 7vw 15vh 7vw;
 }
 
-.rectangle {
-  width: 100%;
-  height: 70vh;
-  background-color: blue;
-  margin-bottom:10vh;
-  border-radius: 5px;
+.printTwist {
+  background-color: #D7B9B9;
 }
+
+.aquaponics {
+  background-color: #D9F0F3;
+  height: 400px;
+  width: 100%;
+  border-radius: 10px;
+}
+.aquaponics img {
+  height: 100%;
+  width: auto;
+  object-fit: contain;
+  display: flex;
+  margin: auto;
+  max-width: 100%;
+}
+
+.stockeRecycle {
+  background-color: #E0EBDE;
+  height: 400px;
+  width: 100%;
+  border-radius: 10px;
+}
+.stockeRecycle img {
+  height: 100%;
+  width: auto;
+  object-fit: contain;
+  display: flex;
+  margin: auto;
+}
+
+.repairGo {
+  background-color: #F1ECD8;
+  height: 400px;
+  width: 100%;
+  border-radius: 10px;
+}
+.repairGo img {
+  height: 100%;
+  width: auto;
+  object-fit: contain;
+  display: flex;
+  margin: auto;
+}
+
+.pushPour {
+  background-color: #F2D3D3;
+  height: 400px;
+  width: 100%;
+  border-radius: 10px;
+}
+.pushPour img {
+  height: 100%;
+  width: auto;
+  object-fit: contain;
+  display: flex;
+  margin: auto;
+  transform: rotate(-10deg) scale(.9);
+}
+
+.givebox {
+  background-color: #F3E5D3;
+  height: 400px;
+  width: 100%;
+  border-radius: 10px;
+}
+.givebox img {
+  height: 100%;
+  width: auto;
+  object-fit: contain;
+  display: flex;
+  margin: auto;
+}
+
+/* #endregion productSection */
+
+/* #region uxSection */
 
 .uxSection {
   height: 100%;
   /*border: 1px solid black;*/
   padding: 0 7vw 10vh 7vw;
 }
+
+.greener {
+  background-color: #ABD1B6;
+  height: 400px;
+  width: 100%;
+  border-radius: 10px;
+}
+.greener img {
+  height: 100%;
+  width: 100%;
+  object-fit: contain;
+  object-position: bottom;
+  display: flex;
+  margin: auto;
+}
+
+.repair {
+  background-color: #91B1CF;
+  height: 400px;
+  width: 100%;
+  border-radius: 10px;
+}
+.repair img {
+  height: 100%;
+  width: 100%;
+  object-fit: contain;
+  object-position: bottom;
+  display: flex;
+  margin: auto;
+  transform: scale(.8);
+}
+
+.FixMeUp {
+  background-color: #9EB3E0;
+  height: 400px;
+  width: 100%;
+  border-radius: 10px;
+}
+.FixMeUp img {
+  height: 100%;
+  width: 100%;
+  object-fit: contain;
+  object-position: bottom;
+  display: flex;
+  margin: auto;
+  transform: scale(.8);
+}
+
+.community {
+  background-color: #9AC6E7;
+  height: 450px;
+  width: 100%;
+  border-radius: 10px;
+}
+.community img {
+  height: 100%;
+  width: 100%;
+  object-fit: contain;
+  object-position: right;
+  display: flex;
+  margin: auto;
+}
+
+.uxFirst h2, .uxFirst p, .uxSecond h2, .uxSecond p {
+  color: white;
+}
+
+/* #endregion uxSection */
