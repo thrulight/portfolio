@@ -16,6 +16,9 @@
   <script type="text/javascript" src="color-change.js"></script>
   <script type="text/javascript" src="script.js"></script>
 
+  <!-- Load an icon library to show a hamburger menu (bars) on small screens -->
+  <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/4.7.0/css/font-awesome.min.css">
+
   <!-- Material Icons -->
   <link href="https://fonts.googleapis.com/icon?family=Material+Icons"
       rel="stylesheet">
@@ -45,11 +48,10 @@
       </div>
 
       <ul class="nav-bar-mobile" id="nav-bar-mobile">
-        <li><a class="active" onmouseover="circleSmall()" onmouseout="circleBig()" href="projects.html">work</a></li>
-        <li><a class="active" onmouseover="circleSmall()" onmouseout="circleBig()" href="digital.html">information</a></li>
-        <li><a class="active" onmouseover="circleSmall()" onmouseout="circleBig()" href="about.html">contact</a></li>
+        <li><a class="active" onmouseover="circleSmall()" onmouseout="circleBig()" href="projects.html">work <i class="material-icons icon-studio">east</i></a></li>
+        <li><a class="active" onmouseover="circleSmall()" onmouseout="circleBig()" href="digital.html">information <i class="material-icons icon-studio">east</i></a></li>
+        <li><a class="active" onmouseover="circleSmall()" onmouseout="circleBig()" href="about.html">contact <i class="material-icons icon-studio">east</i></a></li>
       </ul>
-
 
     <div class="slide topSection" data-background="#CEC5BB">
 
@@ -57,6 +59,7 @@
       <h1 onmouseover="circleSmall()" onmouseout="circleBig()">I’m an Industrial Product Design student and UX/UI Designer based in Paris</h1>
       <p onmouseover="circleSmall()" onmouseout="circleBig()" class="studio" onclick="window.open('https://extrude.studio')">I’m also a co-founder of extrude.studio <i class="material-icons icon-studio">east</i></p>
       <hr>
+      <p class="UX-UI" onclick="goToDigital()" onmouseover="circleSmall()" onmouseout="circleBig()">Go to UX/UI projects <i class="material-icons icon-studio">south</i></p>
       <i class="material-icons goDown">south</i>
 
     </div>
@@ -121,7 +124,7 @@
     </div>
 
 
-    <div class="slide uxSection" data-background="#212121">
+    <div class="slide uxSection" id="digitalProjects" data-background="#212121">
 
       <div class="uxFirst row">
         <div class="column small">

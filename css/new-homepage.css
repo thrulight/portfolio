@@ -40,6 +40,15 @@ ul {
   margin-left: 7vw;
 }
 
+li a:hover {
+  border-bottom: none;
+  color: black;
+  cursor: none;
+}
+.work:hover {
+  color: white
+}
+
 /* #endregion nav-bar */
 
 /* #region topSection */
@@ -52,7 +61,7 @@ ul {
 .topSection {
   height: 85vh;
   /*border: 1px solid black;*/
-  padding: 10vh 7vw 10vh 7vw;
+  padding: 7vh 7vw 10vh 7vw;
 }
 
 .topSection hr {
@@ -70,15 +79,15 @@ ul {
 }
 
 .studio {
-  margin-top: 15vh;
+  margin-top: 10vh;
 }
 
-.studio, .material-icons {
+.studio, .material-icons, .UX-UI {
   font-size: 1rem !important;
   line-height: 100%;
 }
 
-.studio:hover {
+.studio:hover, .UX-UI {
   cursor: pointer;
 }
 
@@ -87,7 +96,7 @@ ul {
 .goDown {
   font-size: 2.5rem !important;
   position: absolute;
-  bottom: 15vh;
+  bottom: 10vh;
 }
 
 /* #endregion topSection */
@@ -147,78 +156,21 @@ ul {
 .printTwist {
   background-color: #D7B9B9;
 }
-
-.aquaponics {
-  background-color: #D9F0F3;
-  height: 400px;
-  width: 100%;
-  border-radius: 10px;
-}
-.aquaponics img {
-  height: 100%;
-  width: auto;
-  object-fit: contain;
-  display: flex;
-  margin: auto;
-  max-width: 100%;
+.printTwist img {
+  transform: scale(1.2);
 }
 
-.stockeRecycle {
-  background-color: #E0EBDE;
-  height: 400px;
-  width: 100%;
-  border-radius: 10px;
-}
-.stockeRecycle img {
-  height: 100%;
-  width: auto;
-  object-fit: contain;
-  display: flex;
-  margin: auto;
-}
+.aquaponics { background-color: #D9F0F3; }
+.aquaponics img { max-width: 100%; }
 
-.repairGo {
-  background-color: #F1ECD8;
-  height: 400px;
-  width: 100%;
-  border-radius: 10px;
-}
-.repairGo img {
-  height: 100%;
-  width: auto;
-  object-fit: contain;
-  display: flex;
-  margin: auto;
-}
+.stockeRecycle { background-color: #E0EBDE; }
 
-.pushPour {
-  background-color: #F2D3D3;
-  height: 400px;
-  width: 100%;
-  border-radius: 10px;
-}
-.pushPour img {
-  height: 100%;
-  width: auto;
-  object-fit: contain;
-  display: flex;
-  margin: auto;
-  transform: rotate(-10deg) scale(.9);
-}
+.repairGo { background-color: #F1ECD8; }
 
-.givebox {
-  background-color: #F3E5D3;
-  height: 400px;
-  width: 100%;
-  border-radius: 10px;
-}
-.givebox img {
-  height: 100%;
-  width: auto;
-  object-fit: contain;
-  display: flex;
-  margin: auto;
-}
+.pushPour { background-color: #F2D3D3; }
+.pushPour img { transform: rotate(-10deg) scale(.9); }
+
+.givebox { background-color: #F3E5D3; }
 
 /* #endregion productSection */
 
@@ -226,70 +178,31 @@ ul {
 
 .uxSection {
   height: 100%;
-  /*border: 1px solid black;*/
   padding: 0 7vw 10vh 7vw;
 }
 
-.greener {
-  background-color: #ABD1B6;
-  height: 400px;
-  width: 100%;
-  border-radius: 10px;
-}
+.greener { background-color: #ABD1B6; }
 .greener img {
-  height: 100%;
   width: 100%;
-  object-fit: contain;
   object-position: bottom;
-  display: flex;
-  margin: auto;
 }
 
-.repair {
-  background-color: #91B1CF;
-  height: 400px;
-  width: 100%;
-  border-radius: 10px;
-}
+.repair { background-color: #91B1CF; }
 .repair img {
-  height: 100%;
   width: 100%;
-  object-fit: contain;
-  object-position: bottom;
-  display: flex;
-  margin: auto;
   transform: scale(.8);
 }
 
-.FixMeUp {
-  background-color: #9EB3E0;
-  height: 400px;
-  width: 100%;
-  border-radius: 10px;
-}
+.FixMeUp { background-color: #9EB3E0; }
 .FixMeUp img {
-  height: 100%;
   width: 100%;
-  object-fit: contain;
-  object-position: bottom;
-  display: flex;
-  margin: auto;
   transform: scale(.8);
 }
 
-.community {
-  background-color: #9AC6E7;
-  height: 450px;
-  width: 100%;
-  border-radius: 10px;
-}
+.community { background-color: #9AC6E7; }
 .community img {
-  height: 100%;
   width: 100%;
-  object-fit: contain;
   object-position: right;
-  display: flex;
-  margin: auto;
 }
 
 .uxFirst h2, .uxFirst p, .uxSecond h2, .uxSecond p {
@@ -297,3 +210,124 @@ ul {
 }
 
 /* #endregion uxSection */
+
+/* #region mobile version */
+@media screen and (max-width: 1110px){
+
+  .nav-bar-mobile {
+    top: 50%;
+  }
+
+  .overlay{
+    position: fixed;
+    width: 0;
+    height: 100%;
+    top: 0;
+    left: 0;
+    right: 0;
+    bottom: 0;
+    background-color: black;
+    z-index: 1;
+  }
+
+  li a {
+    font-size: 2rem;
+    text-align: left;
+    padding: 2vh;;
+  }
+
+  #title {
+    font-size: 1.2rem;
+  }
+
+  .nav-bar {
+    width: 100%;
+    padding: 2.5vh 7vw 2.5vh 7vw;
+    position: fixed;
+  }
+
+  .nav-bar .icon {
+    display: flex;
+    transform: scale(1.4);
+  }
+
+  .goDown {
+    font-size: 2.5rem !important;
+    position: absolute;
+    bottom: 15vh;
+  }
+
+  .topSection {
+    height: 95vh;
+    padding-top: 15vh;
+  }
+
+  .column {
+    float: left !important;
+  }
+
+}
+
+@media screen and (max-width: 900px){
+
+  .topSection {
+    height: 100vh;
+    padding-top: 15vh;
+  }
+
+  .topSection h1 {
+    width: 100%;
+    font-size: 2.5rem;
+  }
+
+  p { font-size: 1rem !important; }
+
+  .studio { margin-top: 10vh; }
+
+  .column { float: none; }
+
+  .big, .small {
+    width: 100%;
+    margin-bottom: 4vh;
+  }
+
+  .big img, .small img {
+    max-width: 100%;
+  }
+
+  .project {
+    height: 100%;
+  }
+
+  .printTwist img {
+    transform: none;
+  }
+
+  .FixMeUp img {
+    height: 350px;
+    transform: scale(.95);
+  }
+
+  .repair img {
+    height: 350px;
+    transform: scale(.95);
+  }
+
+  .productSection h2, .uxSection h2 {
+    margin: 2vh 0 0 0;
+  }
+
+  .studio, .material-icons, .UX-UI {
+    font-size: 1.4rem !important;
+    line-height: 100%;
+  }
+
+  .goDown {
+    font-size: 2.5rem !important;
+    position: absolute;
+    bottom: 5vh;
+  }
+
+}
+
+/* #endregion mobile version */

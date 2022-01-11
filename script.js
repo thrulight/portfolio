@@ -108,6 +108,13 @@ function topFunction() {
   console.log("goToTop");
 }
 
+// Scroll to the UX/UI projects
+function goToDigital() {
+  var digitalProjects = document.getElementById("digitalProjects");
+  digitalProjects.scrollIntoView({behavior: "smooth"});
+  console.log("goToTop");
+}
+
 //Navigation bar mobile version
 function openNav() {
    document.getElementById("nav-bar-mobile").style.display= "block";
