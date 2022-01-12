@@ -1,0 +1,94 @@
+.splash img { background-color: #CCD8CA }
+
+.sectionTxt {
+  padding: 10vh 13vw 10vh 13vw;
+  width: 100%;
+  height: 100%;
+  background-color: #EDEDED;
+}
+.sectionTxt h2 {
+  margin-bottom: 5vh;
+}
+.sectionTxt h5 {
+  width: 50%;
+}
+
+.scenario {
+  padding: 10vh 7vw 0 7vw;
+  width: 100%;
+  height: 100%;
+}
+.scenario img {
+  width: 100%;
+  height: 100%;
+  object-fit: cover;
+}
+
+.instructions {
+  padding: 10vh 13vw 10vh 13vw;
+  width: 100%;
+  height: 100%;
+}
+.instructions .left, .instructions .right {
+  width: 50%;
+}
+.instructions h5 {
+  margin-top: 2vh;
+  width: 80%;
+}
+.instructions li {
+  margin-bottom: 5vh;
+}
+
+/* #region caracteristics */
+
+.caracteristics {
+  padding: 15vh 13vw 15vh 13vw;
+  background-color: #EDEDED;
+  width: 100%;
+}
+
+.caracteristics img {
+  max-width: 100%;
+  background-color: #CCD8CA;
+}
+
+.caracteristics .left, .caracteristics .right {
+  width: 50%;
+}
+
+.caracteristics p {
+  width: 70%;
+  margin-top: 5vh;
+}
+
+.caracteristics h2 {
+  margin: 0;
+}
+
+.cutting-board h2, .container h2, .cover h2, .screen h2 {
+  margin-top: 7vh;
+}
+
+
+
+.cutting-board, .container, .cover, .screen {
+  padding: 5vh 13vw 0 13vw;
+}
+
+.cutting-board { padding-top: 10vh }
+
+.screen { padding-bottom: 10vh }
+
+.caracteristics h5 {
+  margin-top: 4vh;
+  margin-bottom: 0;
+  width: 60%;
+  line-height: 120%;
+}
+
+.mockup {
+  background-color: #F6F6F6;
+}
+
+/* #endregion caracteristics */
