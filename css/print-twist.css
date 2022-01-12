@@ -1,65 +1,14 @@
-.nav-title {
-  color: white;
-}
-
-ul li a {
-  color: white;
-}
-
-.column {
-  justify-content: flex-start;
-  display: block;
-}
-
-/* #region section1 */
-.section1 {
-  height: 100vh;
-  width: 100%;
-  background-image: url(print-twist/print-twist.jpg);
-  background-size: cover;
-  background-repeat: no-repeat;
-  background-position: center;
-  display: flex;
-}
-
-.section1 .title-container {
-  margin: auto;
-}
-
-.section1 h1 {
-  color: white;
-  font-weight: 500;
-  font-size: 5em;
-}
-
-#scroll {
-    border: none;
-    background: none;
-    color: white;
-
-    position: absolute;
-    bottom: 4vh;
-    left: 50%;
-    transform: translate(-50%, 0);
-
-    height: 4em;
-}
-
-/* #endregion section1 */
-
-.first-section {
-  width: auto;;
-  padding-bottom: 10vh;
-}
-.first-section .left {
-  padding-left: 15vw !important;
+mobile-viewer {
+  background-color: #E9E3D4;
 }
 
 /* #region sections steps */
 
 .section-header.steps {
-    padding-bottom: 15vh;
-    background-color: #fafafa;
+    padding-bottom: 10vh;
+    padding-top: 15vh;
+    background-color: #EDEDED;
+    text-align: center;
 }
 
 .sectionSteps .description {
@@ -70,20 +19,21 @@ ul li a {
   width: 50%;
 }
 
+
 .section2, .section3, .section4, .section5, .section6, .section7 {
   display: flex;
-  /*margin: 5vh 0 5vh 0;*/
+}
+
+.section2 .column, .section3 .column, .section4 .column, .section5 .column, .section6 .column, .section7 .column {
+  width: 50%;
 }
 
 .section2 img, .section3 img, .section4 img, .section5 img, .section6 img, .section7 img {
   width: 70%;
-  background-color: /*#ededed;*/
-  /* border-radius: 30px; */
 }
 
 .section2 img, .section4 img, .section6 img {
   margin-left: 30%;
-  /*border-right: 2px solid #575656;*/
 }
 
 .mobileImg {
@@ -95,35 +45,25 @@ ul li a {
 }
 
 .sectionSteps .right {
-  border-left: 3px dotted #ededed;
+  border-left: 2px dotted rgba(0, 0, 0, 0.1);
 }
 
-.section3 .left, .section5 .left, .section7 .left {
-  /*border-right: 2px solid #575656;*/
-}
-
-.h2, .h2-left {
-  font-size: 1.5em;
+.sectionSteps h2, h2.left {
   margin-top: 10vh;
+  margin-bottom: 3vh;
 }
 
-.sectionSteps .description-left {
-  text-transform: none;
-  font-weight: 400;
-  font-size: 1rem;
-  letter-spacing: 1.2;
-  line-height: 1.6;
-}
-
-.sectionSteps .description-left, .h2-left {
-  text-align: right !important;
+.sectionSteps h5 {
+  line-height: 100%;
 }
 
 .sectionSteps .txtContainer.left {
   margin-left: 45%;
   margin-right: 5%;
   border: none;
+  text-align: right !important;
 }
+
 .sectionSteps .txtContainer.right {
   margin-right: 45%;
   margin-left: 5%;
@@ -132,58 +72,69 @@ ul li a {
 
 .sectionSteps {
   padding-bottom: 10vh;
-  background-color: #fafafa;
-}
-
-.sectionSteps .h2, .sectionSteps .h2-left {
-  font-weight: 500;
+  background-color: #EDEDED;
 }
 
 /* #endregion sections steps */
 
-.txtContainer2 {
+.sectionTxt {
+  padding: 10vh 13vw 10vh 13vw;
   width: 100%;
-  background-color: #FFF7E8;
-  text-align: center;
-  padding: 15vh 20vw 15vh 20vw;
-
-  font-weight: 400;
-  font-size: 1.2rem;
-  line-height: 1.6;
+  height: 100%;
+  display: flex;
 }
 
 /* #region caracteristics */
 
 .caracteristics {
-  background-color: white;
+  padding: 15vh 13vw 15vh 13vw;
+  background-color: #EDEDED;
   width: 100%;
-  padding: 10vh 10vw 10vh 10vw;
 }
-.caracteristics h2 {
-  text-align: center;
-  font-weight: 500;
-  letter-spacing: normal;
-}
+
 .caracteristics img {
   max-width: 100%;
 }
 
+.electronics img {
+  background-color: #E9E3D4;
+}
+
+.plastic img {
+  background-color: #E1E8ED;
+}
+
+.electronics {
+  padding-bottom: 0;
+}
+
+.caracteristics .left, .caracteristics .right {
+  width: 50%;
+}
+
+.caracteristics p {
+  width: 70%;
+  margin-top: 3vh;
+}
+
+.caracteristics h2 { margin: 0; }
+
+.caracteristics h5 { margin-top: 7vh; margin-bottom: 0; }
+
 /* #endregion caracteristics */
 
 .shapes {
-  background-color: #F0F5FF;
+  padding: 15vh 13vw 15vh 13vw;
+  background-color: none;
   width: 100%;
-  padding: 15vh 10vw 15vh 10vw;
 }
 .shapes h2, .shapes p {
   text-align: center;
 }
-.shapes h2 {
-  font-weight: 500;
-  letter-spacing: normal;
-}
+
 .shapes p {
-  padding: 0 10vw 0 10vw
+  width: 50%;
+  margin: auto;
 }
 .shapes img {
   max-width: 100%;

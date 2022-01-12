@@ -1,0 +1,396 @@
+h1 {
+  font-size: 4rem;
+  font-weight: 400;
+  line-height: 100%;
+  margin: 1vh 0 1vh 0;
+}
+
+h2 {
+  font-size: 3rem;
+  font-weight: 400;
+  line-height: 100%;
+  margin: 1vh 0 1vh 0;
+}
+
+h3 {
+  font-size: 2.3rem;
+  font-weight: 400;
+  line-height: 100%;
+  margin: 1vh 0 1vh 0;
+}
+
+h4 {
+  font-size: 1.5rem;
+  font-weight: 500;
+  line-height: 130%;
+  margin: 0;
+  margin-bottom: 1vh;
+}
+
+h5 {
+  font-size: 1.5rem;
+  font-weight: 400;
+  line-height: 130%;
+  margin: 0;
+  margin-bottom: 1vh;
+}
+
+h6 {
+  font-size: 1.1rem;
+  font-weight: 400;
+  line-height: 100%;
+  margin: 0;
+  margin-bottom: 0.5vh;
+  text-transform: uppercase;
+}
+
+p {
+  font-size: 1.1rem;
+  line-height: 130%;
+}
+
+
+/* #region Navigation bar */
+ul {
+  list-style-type: none;
+  overflow: hidden;
+  margin: 0;
+  padding: 0;
+  overflow: hidden;
+  background-color: none;
+  /*padding-right: 50px;*/
+  z-index: 1;
+  /*box-shadow: 0 4px 8px 0 rgba(0, 0, 0, 0.2), 0 6px 20px 0 rgba(0, 0, 0, 0.19); */
+}
+
+li {
+  float: right;
+}
+
+li a {
+  display: block;
+  text-align: center;
+
+  padding: 30px 0 30px 0;
+
+  /*text-decoration: none;*/
+  text-decoration-line: none;
+  margin-right: 30px;
+  margin-left: 30px;
+
+  /*letter-spacing: normal;*/
+  font-size: 1.2rem;
+  font-weight: 500;
+  color: black;
+  /*opacity: .5;*/
+
+  text-transform: uppercase;
+
+}
+
+li a:hover {
+  border-bottom: none;
+  cursor: none;
+  /*color: black;*/
+  opacity: 1;
+  transition: color 0.3s ease-in;
+}
+
+/* Emilie Durand left title */
+.nav-title {
+  margin-left: 7vw;
+  font-weight: 600;
+  /*letter-spacing: .3em;*/
+  /*font-size: 1.1em;*/
+  opacity: 1;
+}
+/*
+.nav-title:hover {
+  border: none !important;
+}
+*/
+
+.work {
+  color: white;
+  background-color: black;
+  padding: 30px 40px 30px 40px;
+  margin: 0;
+  height: 100%;
+}
+/*
+.work:hover {
+  color: white;
+}
+*/
+
+/* Active page looks different */
+.active {
+  opacity: 1;
+}
+
+.nav-bar .icon {
+  display: none;
+}
+
+.nav-logo:hover {
+  cursor: pointer;
+}
+
+.X{
+  display:none;
+}
+
+.nav-bar-mobile {
+  display: none;
+}
+
+#title {
+  display: none;
+}
+
+.nav-bar {
+  border-bottom: 1px solid rgba(0,0,0,0.2);
+  padding: 0;
+  position: fixed;
+  width: 100%;
+}
+
+/* #endregion Navigation bar */
+
+body {
+  margin: 0;
+  font-family: 'Switzer-Variable';
+}
+
+@font-face {
+  font-family: Atari;
+  src: url(Atari/AtariST8x16SystemFont.ttf);
+}
+
+::selection {
+  background: #222;
+  color: white;
+}
+
+hr {
+  margin: 0 10% 0 10%;
+  border: none;
+  border-bottom: 2px solid rgba(96, 95, 109, 0.1);
+  outline: none;
+}
+
+.row:after {
+  content: "";
+  display: table;
+  clear: both;
+}
+
+* {
+  box-sizing: border-box;
+}
+
+/* #region headers */
+/*
+
+h1 {
+  font-weight: 400;
+}
+
+h2 {
+  font-weight: 400;
+  letter-spacing: .1em;
+}
+
+h3 {
+  font-weight: 400;
+  letter-spacing: .1em;
+}
+
+
+p {
+  font-weight: 300;
+  font-size: .9rem;
+  letter-spacing: .1em;
+  text-align: left;
+  line-height: 1.8;
+  text-transform: uppercase;
+}
+
+*/
+/* #endregion headers */
+
+.buttonRound {
+  background-color: white;
+  color: black;
+  border-radius: 50px;
+  padding: 15px 25px 15px 25px;
+  border: none;
+  font-size: .9em;
+  font-family: 'Ubuntu', sans-serif;
+  font-weight: 400;
+}
+
+/* Circle cursor */
+.circle {
+	position: absolute;
+  border: solid 1px none;
+  background-color: #f2ede4;
+	width: 50px;
+	height: 50px;
+  border-radius: 50%;
+  z-index: -1;
+  transition: all 0.3s ease-in;
+  transition-property: background,transform, cursor;
+  pointer-events: none;
+  /*mix-blend-mode: difference;*/
+}
+
+/* #region mobile version */
+@media screen and (max-width: 900px){
+
+.column {
+  float: none !important;
+}
+
+.left, .right {
+  width: 100% !important;
+}
+
+}
+
+/* #endregion mobile version */
+
+@media screen and (max-width: 1110px){
+
+/* #region nav-bar */
+.circle {
+  display: none;
+}
+
+li {
+  float: none;
+}
+
+.nav-bar .icon {
+  display: flex;
+  color: black;
+  z-index: 100;
+  transform: scale(1.2);
+}
+
+.overlay{
+  position: fixed;
+  width: 0;
+  height: 100%;
+  top: 0;
+  left: 0;
+  right: 0;
+  bottom: 0;
+  background-color: #D7C9AF;
+  z-index: 1;
+}
+
+.X{
+  display: none;
+  z-index: 2;
+  position: fixed;
+  justify-content: flex-end;
+  top: 3px;
+  right: 15px;
+  color: white;
+  font-size: 40px;
+  margin-left: 45px;
+  height: 50px;
+  padding: 0;
+  transition: 0.3s;
+  cursor: pointer;
+  font-weight: lighter;
+  font-family: "Segoe UI Light", Avenir Next Ultra Light, sans-serif;
+}
+
+.nav-bar-mobile {
+  position: fixed;
+  z-index: 3;
+  width: 100%;
+  height: 100%;
+  list-style: none;
+  padding: 0;
+  top: 15%;
+}
+
+.nav-bar ul * {
+  display: none;
+}
+
+.nav-bar-mobile li a {
+  text-decoration: none;
+  color: white !important;
+}
+
+.nav-bar-mobile li {
+  text-align: center;
+}
+
+/* the navigation bar text container */
+.nav-text {
+  width: 100%;
+
+  display: flex;
+  flex-direction: row;
+  justify-content: flex-end;
+  align-items: center;
+}
+
+#title {
+  white-space: nowrap;
+  font-weight: 500;
+  margin-left: 1vw;
+  text-decoration: none;
+  color: black;
+  display: block;
+  width: 100%
+}
+
+li a {
+  letter-spacing: .15em;
+  font-size: 1.2em;
+  font-weight: 400;
+}
+
+/* the whole navigation bar */
+.nav-bar {
+  display: flex; /*important*/
+  align-items: center; /*important*/
+  width: 100%; /*important*/
+  padding: 20px;
+  position: absolute;
+}
+
+/* #endregion nav-bar */
+
+.column {
+  float: none !important;
+}
+
+.left, .right {
+  width: 100% !important;
+}
+
+model-viewer {
+  max-height: 50vh;
+}
+
+.first-section .left {
+  padding-left: 0;
+}
+
+.first-section .right {
+  padding-right: 0;
+}
+
+
+.first-section, .second-section, .third-section, .fourth-section {
+  padding: 5%;
+}
+
+}

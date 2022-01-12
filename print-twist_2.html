@@ -1,0 +1,274 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <link rel="icon" href="images/favicon.png">
+  <meta charset="utf-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+
+  <link rel="stylesheet" href="css/nonChangingElements_2.css">
+
+  <link rel="stylesheet" href="css/project-page.css">
+  <link rel="stylesheet" href="css/switzer.css">
+
+  <link rel="stylesheet" href="css/print-twist.css">
+
+  <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.5.1/jquery.min.js"></script>
+  <script type="text/javascript" src="jquery.scrollie.js"></script>
+  <script type="text/javascript" src="color-change.js"></script>
+  <script type="text/javascript" src="script.js"></script>
+
+  <!-- REQUIRED: Web Components polyfill to support Edge and Firefox < 63 -->
+  <script src="https://unpkg.com/@webcomponents/webcomponentsjs@2.1.3/webcomponents-loader.js"></script>
+
+  <!-- Intersection Observer polyfill for better performance in Safari and IE11 -->
+  <script src="https://unpkg.com/intersection-observer@0.5.1/intersection-observer.js"></script>
+
+  <!-- Resize Observer polyfill improves resize behavior in non-Chrome browsers -->
+  <script src="https://unpkg.com/resize-observer-polyfill@1.5.1/dist/ResizeObserver.js"></script>
+
+  <!-- Fullscreen polyfill is required for experimental AR features in Canary -->
+  <script src="https://unpkg.com/fullscreen-polyfill@1.0.2/dist/fullscreen.polyfill.js"></script>
+
+  <!-- Focus visible package -->
+  <script src="https://unpkg.com/focus-visible@5.1.0/dist/focus-visible.js"></script>
+
+
+  <!-- Load an icon library to show a hamburger menu (bars) on small screens -->
+  <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/4.7.0/css/font-awesome.min.css">
+
+  <!-- Material Icons -->
+  <link href="https://fonts.googleapis.com/icon?family=Material+Icons" rel="stylesheet">
+
+  <span id="circle" class="circle"></span>
+
+</head>
+<body>
+  <div class="main-wrapper">
+
+
+    <!-- Navigation bar -->
+      <div class="X" id="X"><span  onclick="closeNav()">&times;</span></div>
+      <div id="overlay" class="overlay"></div>
+
+      <div class="nav-bar" id="myTopnav">
+        <a href="index.html" id="title">EMILIE DURAND</a>
+        <ul class="nav-text">
+          <li><a class="work active" onmouseover="circleSmall()" onmouseout="circleBig()" href="test.html">work</a></li>
+          <li><a class="active" onmouseover="circleSmall()" onmouseout="circleBig()" href="about.html">information</a></li>
+          <li><a class="active" onmouseover="circleSmall()" onmouseout="circleBig()" href="contact.html">contact</a></li>
+          <li onmouseover="circleSmall()" onmouseout="circleBig()" style="float:left"><a class="nav-title" href="test.html">EMILIE DURAND</a></li>
+        </ul>
+          <a class="icon" id="icon" onclick="openNav()">
+            <i class="fa fa-bars"></i>
+          </a>
+      </div>
+
+      <ul class="nav-bar-mobile" id="nav-bar-mobile">
+        <li><a class="active" onmouseover="circleSmall()" onmouseout="circleBig()" href="projects.html">work <i class="material-icons icon-studio">east</i></a></li>
+        <li><a class="active" onmouseover="circleSmall()" onmouseout="circleBig()" href="digital.html">information <i class="material-icons icon-studio">east</i></a></li>
+        <li><a class="active" onmouseover="circleSmall()" onmouseout="circleBig()" href="about.html">contact <i class="material-icons icon-studio">east</i></a></li>
+      </ul>
+
+      <div class="topSection row">
+
+        <div class="column left">
+          <h6>Print x Twist</h6>
+          <h1><span style="font-weight: 500;">PRINT x TWIST</span> is a concept project of a lamp intended to use new industrialization technologies for a greater personnalization and a lower carbon footprint.</h1>
+        </div>
+
+        <div class="column right">
+          <h6>Date</h6>
+          <h4>2021</h4>
+
+          <h6>My role</h6>
+          <h4>Industrial design<br>Product design</h4>
+
+          <h6>Duration</h6>
+          <h4>1 week</h4>
+
+          <h6>Team size</h6>
+          <h4>Only me</h4>
+        </div>
+
+      </div>
+
+      <div class="splash">
+        <img src="projectsImg/print-twist/print-twist.png" alt="">
+      </div>
+
+      <div class="arSection row">
+
+        <div class="column left">
+            <model-viewer src="glb/lamp-high-wood2.glb"
+              ios-src=""
+              class="print-twist mV"
+              ar
+              camera-controls
+              loading="eager"
+              camera-orbit="-43.45deg 72.14deg 358.9m"
+              poster="projectsImg/print-twist/poster.png"
+              alt="A 3D model of a lamp"
+              auto-rotate>
+            </model-viewer>
+        </div>
+
+        <div class="column textIntro right">
+          <h3>The use of 3D-printing allows the users to chose the model and color in a much larger range.</h3>
+
+          <div class="bottomAR">
+            <h4>view in AR <span style="opacity:.5">Android</span> <i class="material-icons icon-studio">east</i></h4>
+            <h4>view in AR <span style="opacity:.5">iOS</span> <i class="material-icons icon-studio">east</i></h4>
+          </div>
+
+        </div>
+
+      </div>
+
+      <div class="section-header steps">
+        <h2 onmouseover="circleSmall()" onmouseout="circleBig()" class="header">Let’s step into a user journey</h2>
+      </div>
+
+      <div class="sectionSteps">
+        <!-- step 1 left -->
+        <div class="section2 row">
+          <div class="column left">
+            <div class="imgContainer">
+              <img src="projectsImg/print-twist/steps-01.png" alt="">
+            </div>
+          </div>
+          <div class="column right">
+            <div class="txtContainer right">
+              <h2>Receiving the package</h2>
+              <h5 class="description">The first step from the user is receiving the package after ordering the base from the website</h5>
+            </div>
+          </div>
+        </div>
+
+          <!-- step 2 right -->
+          <div class="section3 row">
+            <div class="column left">
+              <img class="mobileImg" src="projectsImg/print-twist/steps-02.png" alt="">
+              <div class="txtContainer left">
+                <h2>Unpacking</h2>
+                <h5 class="description-left">The user can now unpack the small package containing the base, LED strip and battery</h5>
+              </div>
+            </div>
+            <div class="column right">
+              <div class="imgContainer">
+                <img class="desktopImg" src="projectsImg/print-twist/steps-02.png" alt="">
+              </div>
+            </div>
+          </div>
+
+          <!-- step 3 left -->
+          <div class="section4 row">
+              <div class="column left">
+                <div class="imgContainer">
+                  <img src="projectsImg/print-twist/steps-03.png" alt="">
+                </div>
+              </div>
+              <div class="column right">
+                <div class="txtContainer right">
+                  <h2>Accessing the 3D files</h2>
+                  <h5 class="description">The user can download the desired shape thanks to the QR code found in the packaging</h5>
+                </div>
+              </div>
+            </div>
+
+            <!-- step 4 right -->
+            <div class="section3 row">
+              <div class="column left">
+                <div class="txtContainer left">
+                  <img class="mobileImg" src="projectsImg/print-twist/steps-04.png" alt="">
+                  <h2>3D printing the desired shape</h2>
+                  <h5 class="description-left">Once done, he can print the shape with his own 3D printer, or in a FabLab</h5>
+                </div>
+              </div>
+              <div class="column right">
+                <div class="imgContainer">
+                  <img class="desktopImg" src="projectsImg/print-twist/steps-04.png" alt="">
+                </div>
+              </div>
+            </div>
+
+            <!-- step 5 left -->
+            <div class="section2 row">
+              <div class="column left">
+                  <img src="projectsImg/print-twist/steps-05.png" alt="">
+              </div>
+              <div class="column right">
+                <div class="txtContainer right">
+                  <h2>Assembling the lamp</h2>
+                  <h5 class="description">Once the handle and shade printed in the desired colors, the user can assemble them with the base as simply as a twist!</h5>
+                </div>
+              </div>
+            </div>
+
+            <!-- step 6 right -->
+            <div class="section3 row">
+              <div class="column left">
+                <img class="mobileImg" src="projectsImg/print-twist/steps-06.png" alt="">
+                <div class="txtContainer left">
+                  <h2>Turning it on!</h2>
+                  <h5 class="description-left">He can now turn the lamp on</h5>
+                </div>
+              </div>
+              <div class="column right">
+                <div class="imgContainer">
+                  <img class="desktopImg" src="projectsImg/print-twist/steps-06.png" alt="">
+                </div>
+              </div>
+            </div>
+      </div>
+
+      <div class="sectionTxt">
+        <h2>This projects was made in order to reduce the environmental footprint of industrial objects by reducing the size of packages thanks to the local production of certain parts of the lamp thanks to 3D printing.</h2>
+      </div>
+
+      <div class="caracteristics electronics row">
+
+        <div class="column left">
+          <h5>Electronics</h5>
+          <h2>Included in the packaging</h2>
+          <p>The box contains the base and the different electronic parts. It includes a LED strip, a USB-C module, a rechargeable battery and a wireless charging coil.</p>
+        </div>
+
+        <div class="column right">
+          <img src="projectsImg/print-twist/print-twist_assembling-2.png" alt="">
+        </div>
+      </div>
+
+      <div class="caracteristics plastic row">
+
+        <div class="column left">
+          <h5>Plastic parts</h5>
+          <h2>To be 3D-printed</h2>
+          <p>The user can 3D-print the diffuser and the handle at his home if he owns a 3D-printer, or go to the nearest FabLab.</p>
+        </div>
+
+        <div class="column right">
+          <img src="projectsImg/print-twist/print-twist_assembling-1.png" alt="">
+        </div>
+      </div>
+
+      <div class="shapes">
+        <h2>Variety of shapes</h2>
+        <p class="description">Using 3D printing means there could be a big amount of shapes to choose from, not only three.
+    The user could also personnalize the shape to find the one that truly fits him.</p>
+        <img id="research" src="projectsImg/print-twist/recherches.png" alt="">
+      </div>
+
+</body>
+
+
+<!-- Loads <model-viewer> for modern browsers: -->
+<script type="module"
+  src="https://unpkg.com/@google/model-viewer/dist/model-viewer.js">
+</script>
+
+<!-- Loads <model-viewer> for old browsers like IE11: -->
+<script nomodule
+  src="https://unpkg.com/@google/model-viewer/dist/model-viewer-legacy.js">
+</script>
+
+<DOCTYPE html>

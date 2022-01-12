@@ -1,58 +1,3 @@
-/* #region nav-bar */
-
-.nav-bar {
-  border-bottom: 1px solid rgba(0,0,0,0.2);
-  padding: 0;
-  position: fixed;
-  width: 100%;
-}
-
-p, h1, h2, h3, h4, h5, h6 {
-  font-family: 'Switzer-Variable';
-  text-transform: none;
-  font-weight: 400;
-  letter-spacing: normal;
-}
-
-li a {
-  padding: 25px 0 25px 0;
-}
-
-ul {
-  padding-right: 0;
-}
-
-.work {
-  color: white;
-  background-color: black;
-  padding: 25px 35px 25px 35px;
-  margin: 0;
-  height: 100%;
-}
-
-.nav-title, li a {
-  font-size: .8rem;
-  text-transform: uppercase;
-  font-family: 'Switzer-Variable';
-  letter-spacing: normal;
-}
-
-.nav-title {
-  font-weight: 600;
-  margin-left: 7vw;
-}
-
-li a:hover {
-  border-bottom: none;
-  color: black;
-  cursor: none;
-}
-.work:hover {
-  color: white
-}
-
-/* #endregion nav-bar */
-
 /* #region topSection */
 
 .slide-one, .slide-two, .slide-three {
@@ -68,7 +13,8 @@ li a:hover {
 
 .topSection p {
   color: white;
-  filter: invert(1) grayscale(1);;
+  filter: invert(1) grayscale(1);
+  font-size: 1.4rem;
 }
 
 .topSection hr {
@@ -79,7 +25,7 @@ li a:hover {
 
 
 .topSection h1 {
-  font-size: 3.2rem;
+  font-size: 4rem;
   font-weight: 500;
   line-height: 100%;
   width: 80%;
@@ -94,8 +40,9 @@ li a:hover {
 }
 
 .studio, .material-icons, .UX-UI {
-  font-size: 1rem !important;
+  font-size: 1.1rem !important;
   line-height: 100%;
+  font-weight: 300;
 }
 
 .studio:hover, .UX-UI {
@@ -124,7 +71,7 @@ li a:hover {
   margin-bottom: 7vh;
 }
 
-.big, .small {
+.big {
   width: 60%;
 }
 
@@ -132,26 +79,28 @@ li a:hover {
   width: 40%;
 }
 
-.productSection h2, .uxSection h2 {
+.productSection h3, .uxSection h3 {
   text-transform: uppercase;
   font-weight: 500;
+  font-size: 2rem;
   margin: 3vh 0 0 0;
   color: white;
   mix-blend-mode: difference;
 }
 
 .productSection p, .uxSection p {
-  font-size: .8rem;
+  font-size: 1.1rem;
+  font-weight: 300;
   color: rgba(0, 0, 0, 0.5);
   margin: 0;
   color: white;
   mix-blend-mode: difference;
+  filter: opacity(.5);
 }
 
 .project {
-  height: 400px;
+  height: 60vh;
   width: 100%;
-  border-radius: 10px;
 }
 .project img {
   height: 100%;
@@ -159,6 +108,9 @@ li a:hover {
   object-fit: contain;
   display: flex;
   margin: auto;
+}
+.project:hover, h3:hover {
+  cursor: pointer;
 }
 
 
@@ -222,7 +174,7 @@ li a:hover {
   object-position: right;
 }
 
-.uxFirst h2, .uxFirst p, .uxSecond h2, .uxSecond p {
+.uxFirst h3, .uxFirst p, .uxSecond h3, .uxSecond p {
   color: white;
 }
 
@@ -334,7 +286,7 @@ li a:hover {
     padding-bottom: 10vh;
   }
 
-  .productSection h2, .uxSection h2 {
+  .productSection h3, .uxSection h3 {
     margin: 2vh 0 0 0;
   }
 
