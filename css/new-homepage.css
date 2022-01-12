@@ -43,6 +43,7 @@
   font-size: 1.1rem !important;
   line-height: 100%;
   font-weight: 300;
+  vertical-align: bottom;
 }
 
 .studio:hover, .UX-UI {
@@ -82,17 +83,22 @@
 .productSection h3, .uxSection h3 {
   text-transform: uppercase;
   font-weight: 500;
-  font-size: 2rem;
+  /*font-size: 2rem;*/
   margin: 3vh 0 0 0;
   color: white;
   mix-blend-mode: difference;
 }
 
+.productSection .material-icons {
+  font-size: 2.3rem !important;
+  vertical-align: bottom;
+}
+
 .productSection p, .uxSection p {
-  font-size: 1.1rem;
+  /*font-size: 1.1rem;*/
   font-weight: 300;
-  color: rgba(0, 0, 0, 0.5);
   margin: 0;
+  margin-top: 1vh;
   color: white;
   mix-blend-mode: difference;
   filter: opacity(.5);
