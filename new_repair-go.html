@@ -1,0 +1,224 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <link rel="icon" href="images/favicon.png">
+  <meta charset="utf-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+
+  <link rel="stylesheet" href="css/nonChangingElements_2.css">
+
+  <link rel="stylesheet" href="css/project-page.css">
+  <link rel="stylesheet" href="css/switzer.css">
+
+  <link rel="stylesheet" href="css/repair-go_2.css">
+
+  <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.5.1/jquery.min.js"></script>
+  <script type="text/javascript" src="jquery.scrollie.js"></script>
+  <script type="text/javascript" src="color-change.js"></script>
+  <script type="text/javascript" src="script.js"></script>
+
+  <!-- REQUIRED: Web Components polyfill to support Edge and Firefox < 63 -->
+  <script src="https://unpkg.com/@webcomponents/webcomponentsjs@2.1.3/webcomponents-loader.js"></script>
+
+  <!-- Intersection Observer polyfill for better performance in Safari and IE11 -->
+  <script src="https://unpkg.com/intersection-observer@0.5.1/intersection-observer.js"></script>
+
+  <!-- Resize Observer polyfill improves resize behavior in non-Chrome browsers -->
+  <script src="https://unpkg.com/resize-observer-polyfill@1.5.1/dist/ResizeObserver.js"></script>
+
+  <!-- Fullscreen polyfill is required for experimental AR features in Canary -->
+  <script src="https://unpkg.com/fullscreen-polyfill@1.0.2/dist/fullscreen.polyfill.js"></script>
+
+  <!-- Focus visible package -->
+  <script src="https://unpkg.com/focus-visible@5.1.0/dist/focus-visible.js"></script>
+
+
+  <!-- Load an icon library to show a hamburger menu (bars) on small screens -->
+  <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/4.7.0/css/font-awesome.min.css">
+
+  <!-- Material Icons -->
+  <link href="https://fonts.googleapis.com/icon?family=Material+Icons" rel="stylesheet">
+
+  <span id="circle" class="circle"></span>
+
+</head>
+<body>
+  <div class="main-wrapper">
+
+
+    <!-- Navigation bar -->
+      <div class="X" id="X"><span  onclick="closeNav()">&times;</span></div>
+      <div id="overlay" class="overlay"></div>
+
+      <div class="nav-bar" id="myTopnav">
+        <a href="index.html" id="title">EMILIE DURAND</a>
+        <ul class="nav-text">
+          <li><a class="work active" onmouseover="circleSmall()" onmouseout="circleBig()" href="test.html">work</a></li>
+          <li><a class="active" onmouseover="circleSmall()" onmouseout="circleBig()" href="about.html">information</a></li>
+          <li><a class="active" onmouseover="circleSmall()" onmouseout="circleBig()" href="contact.html">contact</a></li>
+          <li onmouseover="circleSmall()" onmouseout="circleBig()" style="float:left"><a class="nav-title" href="test.html">EMILIE DURAND</a></li>
+        </ul>
+          <a class="icon" id="icon" onclick="openNav()">
+            <i class="fa fa-bars"></i>
+          </a>
+      </div>
+
+      <ul class="nav-bar-mobile" id="nav-bar-mobile">
+        <li><a class="active" onmouseover="circleSmall()" onmouseout="circleBig()" href="projects.html">work <i class="material-icons icon-studio">east</i></a></li>
+        <li><a class="active" onmouseover="circleSmall()" onmouseout="circleBig()" href="digital.html">information <i class="material-icons icon-studio">east</i></a></li>
+        <li><a class="active" onmouseover="circleSmall()" onmouseout="circleBig()" href="about.html">contact <i class="material-icons icon-studio">east</i></a></li>
+      </ul>
+
+      <div class="topSection row">
+
+        <div class="column left">
+          <h6>Repair & Go</h6>
+          <h1><span style="font-weight: 500;">Repair & Go</span> is a set of two solutions intended to promote using personal bicycled in Paris, using the existing Velib’ ecosystem.</h1>
+        </div>
+
+        <div class="column right">
+          <h6>Date</h6>
+          <h4>2020</h4>
+
+          <h6>My role</h6>
+          <h4>Service<br>Product design</h4>
+
+          <h6>Duration</h6>
+          <h4>3 months</h4>
+
+          <h6>Team size</h6>
+          <h4>4 members</h4>
+        </div>
+
+      </div>
+
+      <div class="splash">
+        <img src="projectsImg/repair-go/splash.png" alt="">
+      </div>
+
+      <div class="arSection row">
+
+        <div class="column left">
+            <model-viewer src="glb/repair-go-android.glb"
+              ios-src=""
+              class="print-twist mV"
+              ar
+              camera-controls
+              loading="eager"
+              camera-orbit="-43.45deg 72.14deg 358.9m"
+              poster="projectsImg/print-twist/poster.png"
+              alt="A 3D model of a lamp"
+              auto-rotate>
+            </model-viewer>
+        </div>
+
+        <div class="column textIntro right">
+          <h3>Implementing the service into the existing Velib’ ecosystem of shared bikes allows a greater visibility.</h3>
+
+          <div class="bottomAR">
+            <h4 onclick="window.open('glb/blender_android_working.glb')">view in AR <span style="opacity:.5">Android</span> <i class="material-icons icon-studio">east</i></h4>
+            <h4 onclick="window.open('glb/usbz/blender-ios-working.usdz')">view in AR <span style="opacity:.5">iOS</span> <i class="material-icons icon-studio">east</i></h4>
+          </div>
+
+        </div>
+
+      </div>
+
+      <div class="caracteristics tools row">
+        <div class="column left">
+          <h5>Repairing the existing</h5>
+          <h2>Anyone biking in the city can easily repair their bike</h2>
+          <p>
+            Taking advantage of the Velib’ sharing bike stations allows anyone to not be scared of having issues while biking.
+            <br>
+            When interviewing the citizens on why they didn’t bike to work, a lot were concerned about arriving late due to a problem with the bike, such as having a flat tire, or the brakes not being tight enough.
+            <br>
+            The bicycled can be held on the bars to make the repairs easier.
+            <br>
+            Each tool is attached by a cable to ensure nothing is stolen.</p>
+        </div>
+
+        <div class="column right">
+          <img src="projectsImg/repair-go/tools.png" alt="">
+          <img src="projectsImg/repair-go/cable.png" alt="">
+        </div>
+      </div>
+
+      <div class="caracteristics incentivizing row">
+        <div class="column left">
+          <h5>Incentivizing</h5>
+          <h2>Understanding the use</h2>
+          <p>
+            On the back of the repair station is the explanation about how to use the different elements.
+            <br>
+            A QR code is here to help people with their various repairs, leading to a website with video tutorials.
+            <br>
+            Users can buy gloves and tire patches directly from the repair station.
+          </p>
+        </div>
+
+        <div class="column right">
+          <img src="projectsImg/repair-go/back.png" alt="">
+        </div>
+      </div>
+
+      <div class="caracteristics sides row">
+        <div class="column left">
+          <h5>Sides</h5>
+          <h2>Pump & Trailer hook</h2>
+          <p>The sides of the bike station have the bike pump and the bike trailer hook.</p>
+        </div>
+
+        <div class="column right">
+          <img src="projectsImg/repair-go/sides.png" alt="">
+        </div>
+      </div>
+
+      <div class="caracteristics storing row">
+        <h5>Storing</h5>
+        <h2>Carrying weight</h2>
+        <p>
+          Another important reason why people prefer cars to bikes, was the possibility of carrying weight, such as groceries, random items or children.
+          <br>
+          For that reason, we decided to create a bike trailer compatible with all Velib’ bikes. Most of them being electric, the weight would not be a issue.
+        </p>
+        <div class="column left">
+          <img src="projectsImg/repair-go/cargo-enfant.png" alt="">
+        </div>
+
+        <div class="column right">
+          <img src="projectsImg/repair-go/cargo-colis.png" alt="">
+        </div>
+      </div>
+
+      <div class="caracteristics rain row">
+        <h5>Rain</h5>
+        <h2>The trailer has a cover to suit any weather</h2>
+        <p>
+          The cover is usually stored inside, and can be easily attached on top if needed.
+          <br>
+          It folds into a small seat to easily carry children. Carry straps can be attached in the back to be used as seat belts.
+        </p>
+        <div class="column left">
+          <img src="projectsImg/repair-go/cargo-ferme_2.png" alt="">
+        </div>
+
+        <div class="column right">
+          <img src="projectsImg/repair-go/cargo-ouvert_2.png" alt="">
+        </div>
+      </div>
+
+</body>
+
+
+<!-- Loads <model-viewer> for modern browsers: -->
+<script type="module"
+  src="https://unpkg.com/@google/model-viewer/dist/model-viewer.js">
+</script>
+
+<!-- Loads <model-viewer> for old browsers like IE11: -->
+<script nomodule
+  src="https://unpkg.com/@google/model-viewer/dist/model-viewer-legacy.js">
+</script>
+
+<DOCTYPE html>

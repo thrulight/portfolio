@@ -1,0 +1,61 @@
+/* #region caracteristics */
+
+.caracteristics {
+  padding: 15vh 13vw 5vh 13vw;
+  background-color: #E8E7E7;
+  width: 100%;
+}
+
+.caracteristics img {
+  max-width: 100%;
+  margin-bottom: 5vh;
+}
+
+.caracteristics .left, .caracteristics .right {
+  width: 50%;
+}
+
+.caracteristics p {
+  width: 70%;
+  margin-top: 5vh;
+}
+
+.caracteristics h2 {
+  margin: 0;
+}
+
+.caracteristics h5 {
+  margin-top: 4vh;
+  margin-bottom: 0;
+  width: 60%;
+  line-height: 120%;
+}
+
+.incentivizing, .sides, .rain {
+  padding-top: 5vh;
+}
+
+.sides {
+  padding-bottom: 10vh;
+}
+
+.rain, .storing {
+  background-color: #D9E3E9;
+}
+
+.rain h5, .storing h5 {
+  margin-top: 0;
+}
+
+.rain img, .storing img {
+  margin-top: 5vh;
+}
+
+.rain .left img, .storing .left img {
+  padding-right: 2vh;
+}
+.rain .right img, .storing .right img {
+  padding-left: 2vh;
+}
+
+/* #endregion caracteristics */
