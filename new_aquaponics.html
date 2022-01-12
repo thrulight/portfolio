@@ -1,0 +1,169 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <link rel="icon" href="images/favicon.png">
+  <meta charset="utf-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+
+  <link rel="stylesheet" href="css/nonChangingElements_2.css">
+
+  <link rel="stylesheet" href="css/project-page.css">
+  <link rel="stylesheet" href="css/switzer.css">
+
+  <link rel="stylesheet" href="css/aquaponics-2.css">
+
+  <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.5.1/jquery.min.js"></script>
+  <script type="text/javascript" src="jquery.scrollie.js"></script>
+  <script type="text/javascript" src="color-change.js"></script>
+  <script type="text/javascript" src="script.js"></script>
+
+  <!-- REQUIRED: Web Components polyfill to support Edge and Firefox < 63 -->
+  <script src="https://unpkg.com/@webcomponents/webcomponentsjs@2.1.3/webcomponents-loader.js"></script>
+
+  <!-- Intersection Observer polyfill for better performance in Safari and IE11 -->
+  <script src="https://unpkg.com/intersection-observer@0.5.1/intersection-observer.js"></script>
+
+  <!-- Resize Observer polyfill improves resize behavior in non-Chrome browsers -->
+  <script src="https://unpkg.com/resize-observer-polyfill@1.5.1/dist/ResizeObserver.js"></script>
+
+  <!-- Fullscreen polyfill is required for experimental AR features in Canary -->
+  <script src="https://unpkg.com/fullscreen-polyfill@1.0.2/dist/fullscreen.polyfill.js"></script>
+
+  <!-- Focus visible package -->
+  <script src="https://unpkg.com/focus-visible@5.1.0/dist/focus-visible.js"></script>
+
+
+  <!-- Load an icon library to show a hamburger menu (bars) on small screens -->
+  <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/4.7.0/css/font-awesome.min.css">
+
+  <!-- Material Icons -->
+  <link href="https://fonts.googleapis.com/icon?family=Material+Icons" rel="stylesheet">
+
+  <span id="circle" class="circle"></span>
+
+</head>
+<body>
+  <div class="main-wrapper">
+
+
+    <!-- Navigation bar -->
+      <div class="X" id="X"><span  onclick="closeNav()">&times;</span></div>
+      <div id="overlay" class="overlay"></div>
+
+      <div class="nav-bar" id="myTopnav">
+        <a href="index.html" id="title">EMILIE DURAND</a>
+        <ul class="nav-text">
+          <li><a class="work active" onmouseover="circleSmall()" onmouseout="circleBig()" href="test.html">work</a></li>
+          <li><a class="active" onmouseover="circleSmall()" onmouseout="circleBig()" href="about.html">information</a></li>
+          <li><a class="active" onmouseover="circleSmall()" onmouseout="circleBig()" href="contact.html">contact</a></li>
+          <li onmouseover="circleSmall()" onmouseout="circleBig()" style="float:left"><a class="nav-title" href="test.html">EMILIE DURAND</a></li>
+        </ul>
+          <a class="icon" id="icon" onclick="openNav()">
+            <i class="fa fa-bars"></i>
+          </a>
+      </div>
+
+      <ul class="nav-bar-mobile" id="nav-bar-mobile">
+        <li><a class="active" onmouseover="circleSmall()" onmouseout="circleBig()" href="projects.html">work <i class="material-icons icon-studio">east</i></a></li>
+        <li><a class="active" onmouseover="circleSmall()" onmouseout="circleBig()" href="digital.html">information <i class="material-icons icon-studio">east</i></a></li>
+        <li><a class="active" onmouseover="circleSmall()" onmouseout="circleBig()" href="about.html">contact <i class="material-icons icon-studio">east</i></a></li>
+      </ul>
+
+      <div class="topSection row">
+
+        <div class="column left">
+          <h6>Aquaponics</h6>
+          <h1><span style="font-weight: 500;">Aquaponics</span> is a concept of a new way of growing plants, making it easy for everyone.</h1>
+        </div>
+
+        <div class="column right">
+          <h6>Date</h6>
+          <h4>2017</h4>
+
+          <h6>My role</h6>
+          <h4>Product design</h4>
+
+          <h6>Team size</h6>
+          <h4>Only me</h4>
+        </div>
+
+      </div>
+
+      <div class="splash">
+        <img src="projectsImg/aquaponics/close-up_blue.jpg" alt="">
+      </div>
+
+      <div class="arSection row">
+
+        <div class="column left">
+            <model-viewer src="glb/aquaponics-android.glb"
+              ios-src="usdz/aquaponics-working-ios.usdz"
+              class="print-twist mV"
+              ar
+              camera-controls
+              loading="eager"
+              camera-orbit="-43.45deg 72.14deg 358.9m"
+              poster="projectsImg/print-twist/poster.png"
+              alt="A 3D model of a lamp"
+              auto-rotate>
+            </model-viewer>
+        </div>
+
+        <div class="column textIntro right">
+          <h3>Allowing the user to see the plant's growth</h3>
+
+          <div class="bottomAR">
+            <h4 onclick="window.open('glb/aquaponics-android.glb')">view in AR <span style="opacity:.5">Android</span> <i class="material-icons icon-studio">east</i></h4>
+            <h4 onclick="window.open('usdz/aquaponics-working-ios.usdz')">view in AR <span style="opacity:.5">iOS</span> <i class="material-icons icon-studio">east</i></h4>
+          </div>
+
+        </div>
+
+      </div>
+
+      <div class="caracteristics ecosystem row">
+        <div class="column left">
+          <h5>Ecosystem</h5>
+          <h2>Aquaponics makes it easy to grow plants while sustaining a biological ecosystem</h2>
+          <p>Aquaponics is a growing method in which plants do not grow in soil, but in water. In that way, roots always have the water it needs.
+            <br>
+            In the water are fishes, and their excrement are used by the roots as fertilizer. This ensures that the water is always clean, as it is filtered by the plant.
+            <br>
+            The only human action is feeding the fish.</p>
+        </div>
+
+        <div class="column right">
+          <img src="projectsImg/aquaponics/main.png" alt="">
+          <img src="projectsImg/aquaponics/close-up_2.png" alt="">
+        </div>
+      </div>
+
+      <div class="caracteristics parts row">
+        <div class="column left">
+          <h5>Parts</h5>
+          <h2>Transparency to better understand</h2>
+          <p>The use of glass allows the users to see the roots growing, thus, better understand the growth of the plant.
+            <br>
+            This pot consists of few elements: a frosted glass upper part that holds the soil and allows the user to refill the pot ; the main glass container, in which the water and the fishes go ; a base, to ensure the glass isn’t scratched.</p>
+        </div>
+
+        <div class="column right">
+          <img src="projectsImg/aquaponics/exploded-view.png" alt="">
+        </div>
+      </div>
+
+
+</body>
+
+
+<!-- Loads <model-viewer> for modern browsers: -->
+<script type="module"
+  src="https://unpkg.com/@google/model-viewer/dist/model-viewer.js">
+</script>
+
+<!-- Loads <model-viewer> for old browsers like IE11: -->
+<script nomodule
+  src="https://unpkg.com/@google/model-viewer/dist/model-viewer-legacy.js">
+</script>
+
+<DOCTYPE html>

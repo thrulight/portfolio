@@ -1,0 +1,39 @@
+/* #region caracteristics */
+
+.caracteristics {
+  padding: 15vh 13vw 5vh 13vw;
+  background-color: #E8E7E7;
+  width: 100%;
+}
+
+.caracteristics img {
+  max-width: 100%;
+  background-color: #CCD8CA;
+  margin-bottom: 5vh;
+}
+
+.caracteristics .left, .caracteristics .right {
+  width: 50%;
+}
+
+.caracteristics p {
+  width: 70%;
+  margin-top: 5vh;
+}
+
+.caracteristics h2 {
+  margin: 0;
+}
+
+.caracteristics h5 {
+  margin-top: 4vh;
+  margin-bottom: 0;
+  width: 60%;
+  line-height: 120%;
+}
+
+.parts {
+  padding-top: 5vh !important;
+}
+
+/* #endregion caracteristics */
