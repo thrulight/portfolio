@@ -14,7 +14,7 @@
 .topSection p {
   color: white;
   filter: invert(1) grayscale(1);
-  font-size: 1.4rem;
+  font-size: 1.2rem;
 }
 
 .topSection hr {
@@ -25,7 +25,7 @@
 
 
 .topSection h1 {
-  font-size: 4rem;
+  font-size: 7.5vh;
   font-weight: 500;
   line-height: 100%;
   width: 80%;
@@ -40,7 +40,7 @@
 }
 
 .studio, .material-icons, .UX-UI {
-  font-size: 1.1rem !important;
+  font-size: 1rem !important;
   line-height: 100%;
   font-weight: 300;
   vertical-align: bottom;
@@ -82,20 +82,19 @@
 
 .productSection h3, .uxSection h3 {
   text-transform: uppercase;
-  font-weight: 500;
   /*font-size: 2rem;*/
   margin: 3vh 0 0 0;
   color: white;
   mix-blend-mode: difference;
 }
 
-.productSection .material-icons {
-  font-size: 2.3rem !important;
+.productSection .material-icons, .uxSection .material-icons  {
+  font-size: 4vh !important;
   vertical-align: bottom;
 }
 
 .productSection p, .uxSection p {
-  /*font-size: 1.1rem;*/
+  font-size: 1.1rem;
   font-weight: 300;
   margin: 0;
   margin-top: 1vh;

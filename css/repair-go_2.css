@@ -26,7 +26,7 @@
 
 .caracteristics h5 {
   margin-top: 4vh;
-  margin-bottom: 0;
+  /* margin-bottom: 0;*/
   width: 60%;
   line-height: 120%;
 }
@@ -47,13 +47,27 @@
   margin-top: 0;
 }
 
+.rain h2, .storing h2 {
+  width: 50%;
+}
+
+.storing p, .rain p {
+  width: 50%;
+}
+
 .rain img, .storing img {
   margin-top: 5vh;
 }
 
+.caracteristics .left {
+  padding-right: 2vh;
+}
+
+/*
 .rain .left img, .storing .left img {
   padding-right: 2vh;
 }
+*/
 .rain .right img, .storing .right img {
   padding-left: 2vh;
 }
