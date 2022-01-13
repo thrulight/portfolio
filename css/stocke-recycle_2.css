@@ -1,0 +1,134 @@
+/* #region caracteristics */
+
+.caracteristics {
+  padding: 15vh 13vw 5vh 13vw;
+  background-color: #E8E7E7;
+  width: 100%;
+}
+
+.caracteristics img {
+  max-width: 100%;
+  margin-bottom: 5vh;
+}
+
+.caracteristics .left, .caracteristics .right {
+  width: 50%;
+}
+
+.caracteristics p {
+  width: 70%;
+  margin-top: 5vh;
+}
+
+.caracteristics h2 {
+  margin: 0;
+}
+
+.caracteristics h5 {
+  margin-top: 4vh;
+  /* margin-bottom: 0;*/
+  width: 60%;
+  line-height: 120%;
+}
+
+.caracteristics .left {
+  padding-right: 2vh;
+}
+
+.collecting h2, .collecting p {
+  width: 50%;
+}
+
+.collecting img {
+  background-color: #E8F1E3;
+}
+
+.collecting {
+  background-color: #F6F6F6;
+}
+
+.prototyping img {
+  width: 100%;
+}
+/*
+.prototyping .left img {
+  padding-right: 1vw;
+}
+
+.prototyping .right img {
+  padding-left: 1vw;
+}
+*/
+
+.prototyping p {
+  padding-bottom: 5vh;
+}
+
+/* #endregion caracteristics */
+
+/* #region data */
+
+.section-data {
+  padding: 10vh 13vw 10vh 13vw;
+  height: 100%;
+  margin: 0;
+  align-items: center;
+  background-color: #EEEEEE;
+}
+
+.section-data .left, .section-data .center, .section-data .right {
+  width: 32% !important;
+  margin: 0;
+  padding: 0;
+  display: block;
+  text-align: center;
+}
+
+.section-data .center {
+  margin: 0 1.5% 0 1.5%;
+}
+
+.section-data h2 {
+  margin-bottom: 5vh;
+}
+
+.section-data .container {
+  background-color: #3C8E65;
+  height: 35vh;
+  position: relative;
+}
+
+.section-data .container h1 {
+  margin: 0;
+  position: absolute;
+  top: 50%;
+  left: 50%;
+  transform: translate(-50%, -50%);
+  color: white;
+  font-size: 3rem;
+}
+
+.section-data p {
+  text-align: left;
+}
+
+
+/* #endregion data */
+
+.scenario {
+  padding: 7vh 7vw 7vh 7vw;
+  width: 100%;
+  height: 100%;
+  max-height: 100%;
+}
+.scenario img {
+  width: 100%;
+  height: 85vh;
+  max-height: 100%;
+  object-fit: cover;
+  object-position: bottom;
+}
+
+.scenario h5 {
+  padding-top: 5vh;
+}

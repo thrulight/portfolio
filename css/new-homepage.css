@@ -113,9 +113,14 @@
   object-fit: contain;
   display: flex;
   margin: auto;
+  max-width: 100%;
 }
 .project:hover, h3:hover {
   cursor: pointer;
+}
+
+.givebox img {
+  max-width: none;
 }
 
 
