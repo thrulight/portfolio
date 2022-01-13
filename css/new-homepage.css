@@ -129,7 +129,7 @@
 .productSection {
   height: 100%;
   /*border: 1px solid black;*/
-  padding: 0 7vw 15vh 7vw;
+  padding: 0 7vw 5vh 7vw;
 }
 
 .printTwist {
@@ -158,6 +158,7 @@
 .uxSection {
   height: 100%;
   padding: 0 7vw 10vh 7vw;
+  /*background-color: #212121;*/
 }
 
 .greener { background-color: #ABD1B6; }

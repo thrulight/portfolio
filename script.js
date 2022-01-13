@@ -141,7 +141,7 @@ var currentScrollPos = window.pageYOffset;
   if (prevScrollpos > currentScrollPos) {
     document.getElementById("myTopnav").style.top = "0";
   } else {
-    document.getElementById("myTopnav").style.top = "-90px";
+    document.getElementById("myTopnav").style.top = "-12vh";
   }
   prevScrollpos = currentScrollPos;
 }
