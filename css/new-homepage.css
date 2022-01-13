@@ -123,6 +123,12 @@
   max-width: none;
 }
 
+#seperation {
+  margin: 0 7vw 15vh 7vw;
+  border-bottom: 1px solid white;
+  mix-blend-mode: difference;
+}
+
 
 /* #region productSection */
 
