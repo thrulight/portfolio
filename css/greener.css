@@ -1,19 +1,33 @@
 body {
-  background-color: #0F3620 !important;
+  background-color: #F6F6F6 !important;
+  color: black;
 }
 
-.mainPageContainer {
-  padding: 0 15vw 0 15vw ;
+.sectionTop {
+  padding: 30vh 15vw 0 15vw ;
 }
 
-.logo {
+.sectionApp {
+  background-color: #cce8d4;
+  padding: 10vh 15vw 10vh 15vw;
+}
+.sectionApp img {
+  margin-bottom: 0;
+}
+.sectionApp h4 {
+  margin-bottom: 3vh;
+}
+
+.logoGreener {
   max-width: 20vw;
-  margin-top: 20vh;
+  margin-top: 0;
   margin-bottom: 0;
 }
 
+
+
 h4 {
-  color: white;
+  color: black;
   font-size: 2.8em;
   font-weight: 300;
 }
@@ -44,22 +58,30 @@ p {
 
 /* #region section whiteboard */
 
-.sectionWhiteBoard img {
-  margin-bottom: 5vh;
+.sectionWhiteBoard {
+  padding: 10vh 15vw 10vh 15vw;
 }
-
+.sectionWhiteBoard img {
+  margin-top: 0;
+  margin-bottom: 0;
+}
 .sectionWhiteBoard p {
-  margin: 0;
+  text-align: left;
   max-width: 30vw;
+  margin: 5vh 0 0 0;
 }
 
 /* #endregion section whiteboard */
 
 /* #region section identity */
 
+.sectionIdentity {
+  padding: 10vh 15vw 10vh 15vw;
+}
+
 .sectionIdentity img {
   margin-top: 0;
-  margin-bottom: 10vh;
+  margin-bottom: 0;
   width: 40vw;
 }
 
@@ -68,7 +90,7 @@ p {
 }
 
 .sectionIdentity h4 {
-  margin-top: 20vh;
+  margin-top: 0;
   text-align: center;
 }
 
@@ -76,13 +98,19 @@ p {
 
 /* #region section landing page */
 
+.sectionLandingPage {
+  padding: 10vh 15vw 10vh 15vw;
+  background-color: #EDEDED;
+}
+
 .sectionLandingPage img {
   margin-top: 0;
   width: 60vw;
 }
 
 .sectionLandingPage h4 {
-  margin-top: 30vh;
+  margin-top: 0;
+  margin-bottom: 3vh;
   text-align: center;
 }
 

@@ -1,3 +1,12 @@
+.link .material-icons {
+  vertical-align: middle;
+}
+
+.mainPageContainer a {
+  text-decoration: none;
+  color: black;
+}
+
 html {
   cursor: url("cursors/cursor_circle.svg") 5 5, auto;
 }
@@ -5,14 +14,10 @@ html {
 body{
   margin: 0;
   padding: 0;
-  background-color: white;
-  background-repeat: no-repeat;
-  background-size: cover;
+  background-color: #DDD5CB;
   width: 100%;
-  max-width: 100;
   position: absolute;
-  animation-name: fade-in;
-  animation-duration: 1.5s;
+  animation: fade-in 1.5s;
 }
 
 @keyframes fade-in {

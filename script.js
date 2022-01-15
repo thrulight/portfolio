@@ -155,8 +155,6 @@ if ( $(window).width() <= 900 ) {
 
 
 // Mobile version script
-if ( $(window).width() <= 600 ) {
-   // Your mobile code goes here
- }else{
-   // Your desktop code goes here
+if (screen.width <= 1100 ) {
+   document.location = "mobile.html";
  }

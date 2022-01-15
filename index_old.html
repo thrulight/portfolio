@@ -1,0 +1,97 @@
+<!DOCTYPE html>
+<head>
+  <link rel="icon" href="logo_circle.png">
+  <meta charset="utf-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <link rel="stylesheet" href="css/home.css">
+
+
+  <link rel="stylesheet" href="css/nonChangingElements.css">
+
+  <link rel="stylesheet" href="burger.css">
+  <title>Emilie Durand</title>
+
+  <script src="https://ajax.googleapis.com/ajax/libs/jquery/2.1.3/jquery.min.js"></script>
+  <script src="script.js"></script>
+  <span id="circle" class="circle"></span>
+
+  <!-- Load an icon library to show a hamburger menu (bars) on small screens -->
+  <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/4.7.0/css/font-awesome.min.css">
+
+  <!-- Ubuntu -->
+  <link rel="preconnect" href="https://fonts.gstatic.com">
+  <link href="https://fonts.googleapis.com/css2?family=Lato:ital,wght@0,100;0,300;0,400;0,700;0,900;1,100;1,300;1,400;1,700;1,900&family=Ubuntu:ital,wght@0,300;0,400;0,500;0,700;1,300;1,400;1,500;1,700&display=swap" rel="stylesheet">
+
+  <!-- Lato -->
+  <link rel="preconnect" href="https://fonts.gstatic.com">
+  <link href="https://fonts.googleapis.com/css2?family=Lato:ital,wght@0,100;0,300;0,400;0,700;0,900;1,100;1,300;1,400;1,700;1,900&display=swap" rel="stylesheet">
+
+
+  <!-- Global site tag (gtag.js) - Google Analytics -->
+<script async src="https://www.googletagmanager.com/gtag/js?id=UA-180791677-1"></script>
+<script>
+  window.dataLayer = window.dataLayer || [];
+  function gtag(){dataLayer.push(arguments);}
+  gtag('js', new Date());
+
+  gtag('config', 'UA-180791677-1');
+</script>
+
+<!-- Google Tag Manager -->
+<script>(function(w,d,s,l,i){w[l]=w[l]||[];w[l].push({'gtm.start':
+new Date().getTime(),event:'gtm.js'});var f=d.getElementsByTagName(s)[0],
+j=d.createElement(s),dl=l!='dataLayer'?'&l='+l:'';j.async=true;j.src=
+'https://www.googletagmanager.com/gtm.js?id='+i+dl;f.parentNode.insertBefore(j,f);
+})(window,document,'script','dataLayer','GTM-MV6QTJK');</script>
+<!-- End Google Tag Manager -->
+
+
+</head>
+<body>
+<!-- Google Tag Manager (noscript) -->
+<noscript><iframe src="https://www.googletagmanager.com/ns.html?id=GTM-MV6QTJK"
+height="0" width="0" style="display:none;visibility:hidden"></iframe></noscript>
+<!-- End Google Tag Manager (noscript) -->
+
+<!-- Navigation bar -->
+  <div class="X" id="X"><span  onclick="closeNav()">&times;</span></div>
+  <div id="overlay" class="overlay"></div>
+
+  <div class="nav-bar" id="myTopnav">
+    <a href="index.html" id="title">EMILIE DURAND</a>
+    <ul class="nav-text">
+      <li><a class="active" onmouseover="circleSmall()" onmouseout="circleBig()" href="about.html">ABOUT</a></li>
+      <li><a class="active" onmouseover="circleSmall()" onmouseout="circleBig()" href="contact.html">CONTACT</a></li>
+      <li><a class="active" onmouseover="circleSmall()" onmouseout="circleBig()" href="digital.html">DIGITAL</a></li>
+      <li><a class="active" onmouseover="circleSmall()" onmouseout="circleBig()" href="projects.html">PROJECTS</a></li>
+      <li><a class="active" onmouseover="circleSmall()" onmouseout="circleBig()" onClick="location='https://www.extrude.studio/'">STUDIO EXTRUDE</a></li>
+      <li onmouseover="circleSmall()" onmouseout="circleBig()" style="float:left"><a class="nav-title" href="index.html">EMILIE DURAND</a></li>
+    </ul>
+      <a class="icon" id="icon" onclick="openNav()">
+        <i class="fa fa-bars"></i>
+      </a>
+  </div>
+
+  <ul class="nav-bar-mobile" id="nav-bar-mobile">
+    <li><a class="active" onmouseover="circleSmall()" onmouseout="circleBig()" href="projects.html">PROJECTS</a></li>
+    <li><a class="active" onmouseover="circleSmall()" onmouseout="circleBig()" href="digital.html">DIGITAL</a></li>
+    <li><a class="active" onmouseover="circleSmall()" onmouseout="circleBig()" href="about.html">ABOUT</a></li>
+    <li><a class="active" onmouseover="circleSmall()" onmouseout="circleBig()" href="contact.html">CONTACT</a></li>
+    <li><a class="active" onmouseover="circleSmall()" onmouseout="circleBig()" onClick="location='https://www.extrude.studio/'">STUDIO EXTRUDE</a></li>
+  </ul>
+
+<div class="mainPageContainer">
+  <div class="intro">
+    <p>Hi, I’m Emilie, a French and American
+product design student.</p>
+  </div>
+  <div class="low-consumption">
+    <p>I use low consumption images for a low impact website.</p>
+  </div>
+  <br/>
+  <div class="buttonProjects" onclick="window.location.href=('projects.html')">
+    <p onmouseover="circleSmall()" onmouseout="circleBig()">SEE MY PROJECTS ❯</p>
+  </div>
+</div>
+</body>
+<DOCTYPE html>

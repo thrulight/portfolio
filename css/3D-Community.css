@@ -1,5 +1,5 @@
 body {
-  background-color: #131C25 !important;
+  background-color: #EDEDED !important;
 }
 
 .mainPageContainer {
@@ -11,6 +11,10 @@ body {
   font-size: 3em;
 }
 
+.title {
+  padding-top: 40vh;
+}
+
 img {
   margin-top: 0;
   margin-bottom: 5vh;
@@ -19,7 +23,7 @@ img {
 /* #region section website */
 
 .sectionWebsite {
-  margin-top: 30%;
+  margin-top: 40%;
 }
 
 .app {
@@ -31,7 +35,7 @@ img {
 }
 
 h4 {
-  color: white;
+  color: black;
   font-family: 'Atari';
   font-size: 2em;
   font-weight: 300;
@@ -54,6 +58,7 @@ p {
 
 #second {
   margin: 0 30vw 30vh 0;
+  text-align: left;
 }
 
 #workflow {

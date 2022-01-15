@@ -1,97 +1,172 @@
 <!DOCTYPE html>
+<html lang="en">
 <head>
   <link rel="icon" href="logo_circle.png">
   <meta charset="utf-8">
   <meta name="viewport" content="width=device-width, initial-scale=1.0">
-  <link rel="stylesheet" href="css/home.css">
+
+  <link rel="stylesheet" href="css/nonChangingElements_2.css">
+  <link rel="stylesheet" href="color-change.css">
+  <link rel="stylesheet" href="css/new-homepage.css">
+  <link rel="stylesheet" href="css/switzer.css">
 
 
-  <link rel="stylesheet" href="css/nonChangingElements.css">
-
-  <link rel="stylesheet" href="burger.css">
-  <title>Emilie Durand</title>
-
-  <script src="https://ajax.googleapis.com/ajax/libs/jquery/2.1.3/jquery.min.js"></script>
-  <script src="script.js"></script>
-  <span id="circle" class="circle"></span>
+  <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.5.1/jquery.min.js"></script>
+  <script type="text/javascript" src="jquery.scrollie.js"></script>
+  <script type="text/javascript" src="color-change.js"></script>
+  <script type="text/javascript" src="script.js"></script>
 
   <!-- Load an icon library to show a hamburger menu (bars) on small screens -->
   <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/4.7.0/css/font-awesome.min.css">
 
-  <!-- Ubuntu -->
-  <link rel="preconnect" href="https://fonts.gstatic.com">
-  <link href="https://fonts.googleapis.com/css2?family=Lato:ital,wght@0,100;0,300;0,400;0,700;0,900;1,100;1,300;1,400;1,700;1,900&family=Ubuntu:ital,wght@0,300;0,400;0,500;0,700;1,300;1,400;1,500;1,700&display=swap" rel="stylesheet">
+  <!-- Material Icons -->
+  <link href="https://fonts.googleapis.com/icon?family=Material+Icons"
+      rel="stylesheet">
 
-  <!-- Lato -->
-  <link rel="preconnect" href="https://fonts.gstatic.com">
-  <link href="https://fonts.googleapis.com/css2?family=Lato:ital,wght@0,100;0,300;0,400;0,700;0,900;1,100;1,300;1,400;1,700;1,900&display=swap" rel="stylesheet">
-
-
-  <!-- Global site tag (gtag.js) - Google Analytics -->
-<script async src="https://www.googletagmanager.com/gtag/js?id=UA-180791677-1"></script>
-<script>
-  window.dataLayer = window.dataLayer || [];
-  function gtag(){dataLayer.push(arguments);}
-  gtag('js', new Date());
-
-  gtag('config', 'UA-180791677-1');
-</script>
-
-<!-- Google Tag Manager -->
-<script>(function(w,d,s,l,i){w[l]=w[l]||[];w[l].push({'gtm.start':
-new Date().getTime(),event:'gtm.js'});var f=d.getElementsByTagName(s)[0],
-j=d.createElement(s),dl=l!='dataLayer'?'&l='+l:'';j.async=true;j.src=
-'https://www.googletagmanager.com/gtm.js?id='+i+dl;f.parentNode.insertBefore(j,f);
-})(window,document,'script','dataLayer','GTM-MV6QTJK');</script>
-<!-- End Google Tag Manager -->
-
+  <span id="circle" class="circle"></span>
 
 </head>
 <body>
-<!-- Google Tag Manager (noscript) -->
-<noscript><iframe src="https://www.googletagmanager.com/ns.html?id=GTM-MV6QTJK"
-height="0" width="0" style="display:none;visibility:hidden"></iframe></noscript>
-<!-- End Google Tag Manager (noscript) -->
+  <div class="main-wrapper">
 
-<!-- Navigation bar -->
-  <div class="X" id="X"><span  onclick="closeNav()">&times;</span></div>
-  <div id="overlay" class="overlay"></div>
 
-  <div class="nav-bar" id="myTopnav">
-    <a href="index.html" id="title">EMILIE DURAND</a>
-    <ul class="nav-text">
-      <li><a class="active" onmouseover="circleSmall()" onmouseout="circleBig()" href="about.html">ABOUT</a></li>
-      <li><a class="active" onmouseover="circleSmall()" onmouseout="circleBig()" href="contact.html">CONTACT</a></li>
-      <li><a class="active" onmouseover="circleSmall()" onmouseout="circleBig()" href="digital.html">DIGITAL</a></li>
-      <li><a class="active" onmouseover="circleSmall()" onmouseout="circleBig()" href="projects.html">PROJECTS</a></li>
-      <li><a class="active" onmouseover="circleSmall()" onmouseout="circleBig()" onClick="location='https://www.extrude.studio/'">STUDIO EXTRUDE</a></li>
-      <li onmouseover="circleSmall()" onmouseout="circleBig()" style="float:left"><a class="nav-title" href="index.html">EMILIE DURAND</a></li>
-    </ul>
-      <a class="icon" id="icon" onclick="openNav()">
-        <i class="fa fa-bars"></i>
-      </a>
+    <!-- Navigation bar -->
+      <div class="X" id="X"><span  onclick="closeNav()">&times;</span></div>
+      <div id="overlay" class="overlay"></div>
+
+      <div class="nav-bar" id="myTopnav">
+        <a href="index.html" id="title">EMILIE DURAND</a>
+        <ul class="nav-text">
+          <li><a class="work active" onmouseover="circleSmall()" onmouseout="circleBig()" href="test.html">work</a></li>
+          <li><a class="active" onmouseover="circleSmall()" onmouseout="circleBig()" href="about-2.html">info</a></li>
+          <li onmouseover="circleSmall()" onmouseout="circleBig()" style="float:left"><a class="nav-title" href="test.html">EMILIE DURAND</a></li>
+        </ul>
+          <a class="icon" id="icon" onclick="openNav()">
+            <i class="fa fa-bars"></i>
+          </a>
+      </div>
+
+      <ul class="nav-bar-mobile" id="nav-bar-mobile">
+        <li><a class="active" onmouseover="circleSmall()" onmouseout="circleBig()" href="projects.html">work <i class="material-icons icon-studio">east</i></a></li>
+        <li><a class="active" onmouseover="circleSmall()" onmouseout="circleBig()" href="about-2.html">info <i class="material-icons icon-studio">east</i></a></li>
+      </ul>
+
+    <div class="slide topSection" data-background="#CEC5BB">
+
+      <p>Hello, I’m Emilie</p>
+      <h1 onmouseover="circleSmall()" onmouseout="circleBig()">I’m an Industrial Product Design student and UX/UI Designer based in Paris</h1>
+      <p onmouseover="circleSmall()" onmouseout="circleBig()" class="studio" onclick="window.open('https://extrude.studio')">I’m also a co-founder of extrude.studio <i class="material-icons icon-studio">east</i></p>
+      <hr>
+      <p class="UX-UI" onclick="goToDigital()" onmouseover="circleSmall()" onmouseout="circleBig()">Go to UX/UI projects <i class="material-icons icon-studio">south</i></p>
+      <i class="material-icons goDown">south</i>
+
+    </div>
+
+
+    <div class="slide productSection" data-background="#F6F6F6">
+
+      <div class="productFirst row">
+        <div class="column big">
+          <div class="printTwist project">
+            <img src="projectsImg/print-twist/print-twist_transparent.png" onclick="window.location.href='new_print-twist.html';" alt="">
+          </div>
+          <h3 onclick="window.location.href='new_print-twist.html';">Print x Twist <i class="material-icons icon-studio">east</i></h3>
+          <p>Prduct design - Industrial design</p>
+        </div>
+
+        <div class="column small">
+          <div class="aquaponics project">
+            <img src="projectsImg/aquaponics/aquaponics_transparent.png" onclick="window.location.href='new_aquaponics.html';" alt="">
+          </div>
+          <h3 onclick="window.location.href='new_aquaponics.html';">Aquaponics <i class="material-icons icon-studio">east</i></h3>
+          <p>Prduct design - Industrial design</p>
+        </div>
+      </div>
+
+      <div class="productSecond row">
+        <div class="column small">
+          <div class="stockeRecycle project">
+            <img src="projectsImg/citeo/stockeRecycle_transparent.png" onclick="window.location.href='new_stocke-recycle.html';" alt="">
+          </div>
+          <h3 onclick="window.location.href='new_stocke-recycle.html';">Stocke & Recycle <i class="material-icons icon-studio">east</i></h3>
+          <p>Prduct design - Industrial design</p>
+        </div>
+
+        <div class="column big">
+          <div class="repairGo project">
+            <img src="projectsImg/repair-go/repair-go_render_2.png" onclick="window.location.href='new_repair-go.html';" alt="">
+          </div>
+          <h3 onclick="window.location.href='new_repair-go.html';">Repair & Go <i class="material-icons icon-studio">east</i></h3>
+          <p>Prduct design - Industrial design</p>
+        </div>
+      </div>
+
+      <div class="productThird row">
+        <div class="column big">
+          <div class="pushPour project">
+            <img src="projectsImg/blender/push-pour_transparent.png" onclick="window.location.href='new_push-pour.html';" alt="">
+          </div>
+          <h3 onclick="window.location.href='new_push-pour.html';">Push & Pour <i class="material-icons icon-studio">east</i></h3>
+          <p>Prduct design - Industrial design</p>
+        </div>
+
+        <div class="column small">
+          <div class="givebox project">
+            <img src="projectsImg\boite-dons\givebox_transparent.png" onclick="window.location.href='new_givebox.html';" alt="">
+          </div>
+          <h3 onclick="window.location.href='new_givebox.html';">Givebox <i class="material-icons icon-studio">east</i></h3>
+          <p>Prduct design - Industrial design</p>
+        </div>
+      </div>
+
+    </div>
+
+    <!--  -->
+
+    <hr id="seperation">
+
+    <div class="slide uxSection" id="digitalProjects" data-background="#212121" >
+
+      <div class="uxFirst row">
+        <div class="column small">
+          <div class="greener project">
+            <img src="projectsImg/digital/greener_transparent.png" onclick="window.location.href='greener.html';" alt="">
+          </div>
+          <h3 onclick="window.location.href='greener.html';">Greener <i class="material-icons icon-studio">east</i></h3>
+          <p>Prduct design - Industrial design</p>
+        </div>
+
+        <div class="column big">
+          <div class="repair project">
+            <img src="projectsImg/digital/repair_transparent.png" onclick="window.location.href='3D-repair.html';" alt="">
+          </div>
+          <h3 onclick="window.location.href='3D-repair.html';">3D Repair <i class="material-icons icon-studio">east</i></h3>
+          <p>Prduct design - Industrial design</p>
+        </div>
+      </div>
+
+      <div class="uxSecond row">
+        <div class="column big">
+          <div class="FixMeUp project">
+            <img src="projectsImg/digital/fix-me-up_transparent.png" onclick="window.location.href='fix-me-up.html';" alt="">
+          </div>
+          <h3 onclick="window.location.href='fix-me-up.html';">FixMeUp <i class="material-icons icon-studio">east</i></h3>
+          <p>Prduct design - Industrial design</p>
+        </div>
+
+        <div class="column small">
+          <div class="community project">
+            <img src="projectsImg/digital/community_transparent.png" onclick="window.location.href='3D-community.html';" alt="">
+          </div>
+          <h3 onclick="window.location.href='3D-community.html';">3D Community <i class="material-icons icon-studio">east</i></h3>
+          <p>Prduct design - Industrial design</p>
+        </div>
+      </div>
+
+    </div>
+
   </div>
 
-  <ul class="nav-bar-mobile" id="nav-bar-mobile">
-    <li><a class="active" onmouseover="circleSmall()" onmouseout="circleBig()" href="projects.html">PROJECTS</a></li>
-    <li><a class="active" onmouseover="circleSmall()" onmouseout="circleBig()" href="digital.html">DIGITAL</a></li>
-    <li><a class="active" onmouseover="circleSmall()" onmouseout="circleBig()" href="about.html">ABOUT</a></li>
-    <li><a class="active" onmouseover="circleSmall()" onmouseout="circleBig()" href="contact.html">CONTACT</a></li>
-    <li><a class="active" onmouseover="circleSmall()" onmouseout="circleBig()" onClick="location='https://www.extrude.studio/'">STUDIO EXTRUDE</a></li>
-  </ul>
-
-<div class="mainPageContainer">
-  <div class="intro">
-    <p>Hi, I’m Emilie, a French and American
-product design student.</p>
-  </div>
-  <div class="low-consumption">
-    <p>I use low consumption images for a low impact website.</p>
-  </div>
-  <br/>
-  <div class="buttonProjects" onclick="window.location.href=('projects.html')">
-    <p onmouseover="circleSmall()" onmouseout="circleBig()">SEE MY PROJECTS ❯</p>
-  </div>
-</div>
 </body>
+
 <DOCTYPE html>
