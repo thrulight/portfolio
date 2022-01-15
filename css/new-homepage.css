@@ -201,7 +201,10 @@
 @media screen and (max-width: 1110px){
 
   .nav-bar-mobile {
-    top: 50%;
+    top: 70%;
+  }
+  .nav-bar-mobile .material-icons {
+    vertical-align: middle;
   }
 
   .overlay{
