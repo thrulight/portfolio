@@ -1,3 +1,11 @@
+model-viewer, #default-poster {
+  background-color: #C6E1E8 !important;
+}
+
+button#default-poster, .poster, .slot, .slot-poster, model-viewer.poster {
+  background-color: yellow !important;
+}
+
 /* #region caracteristics */
 
 .caracteristics {
