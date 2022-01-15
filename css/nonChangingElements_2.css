@@ -1,3 +1,22 @@
+.sectionRedirect {
+  width: 100%;
+  height: 100%;
+  padding: 7vh 7vw 7vh 7vw;
+}
+.sectionRedirect .material-icons {
+  vertical-align: bottom;
+}
+
+.sectionRedirect .left, .sectionRedirect .right {
+  width: 50%
+}
+.sectionRedirect h3:hover {
+  cursor: pointer;
+}
+.sectionRedirect .right {
+  text-align: right;
+}
+
 .row:after {
   content: "";
   display: table;
