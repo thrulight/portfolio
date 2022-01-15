@@ -135,13 +135,28 @@ function onClick(e) {
   }
 
 // nav bar disapears
-var prevScrollpos = window.pageYOffset;
-window.onscroll = function() {
-var currentScrollPos = window.pageYOffset;
-  if (prevScrollpos > currentScrollPos) {
-    document.getElementById("myTopnav").style.top = "0";
-  } else {
-    document.getElementById("myTopnav").style.top = "-12vh";
+
+if ( $(window).width() <= 900 ) {
+  // Your mobile code goes here
+}else{
+  // Your desktop code goes here
+  var prevScrollpos = window.pageYOffset;
+  window.onscroll = function() {
+  var currentScrollPos = window.pageYOffset;
+    if (prevScrollpos > currentScrollPos) {
+      document.getElementById("myTopnav").style.top = "0";
+    } else {
+      document.getElementById("myTopnav").style.top = "-12vh";
+    }
+    prevScrollpos = currentScrollPos;
   }
-  prevScrollpos = currentScrollPos;
+
 }
+
+
+// Mobile version script
+if ( $(window).width() <= 600 ) {
+   // Your mobile code goes here
+ }else{
+   // Your desktop code goes here
+ }

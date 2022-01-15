@@ -6,6 +6,12 @@
  * Released under the MIT license
  */
 
+ if ( $(window).width() <= 1100 ) {
+   // Your mobile code goes here
+ }else{
+   // Your desktop code goes here
+
+
 ;(function ( $, window, document, undefined ) {
 
     "use strict";
@@ -169,3 +175,5 @@
     };
 
 })( jQuery, window, document );
+
+ }

@@ -252,6 +252,20 @@
     float: left !important;
   }
 
+  .uxSection {
+    background-color: #212121;
+    padding-top: 10vh;
+  }
+
+  .productSection {
+    background-color: #F6F6F6;
+    padding-top: 10vh;
+  }
+
+  #seperation {
+    display: none;
+  }
+
 }
 
 @media screen and (max-width: 900px){
