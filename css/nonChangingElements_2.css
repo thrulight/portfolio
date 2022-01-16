@@ -6,6 +6,9 @@
 .sectionRedirect .material-icons {
   vertical-align: bottom;
 }
+.sectionRedirect .column  {
+  float: left;
+}
 
 .sectionRedirect .left, .sectionRedirect .right {
   width: 50%
@@ -13,8 +16,11 @@
 .sectionRedirect h3:hover {
   cursor: pointer;
 }
-.sectionRedirect .right {
-  text-align: right;
+.sectionRedirect .right h3 {
+  text-align: right !important;
+}
+.sectionRedirect .left h3 {
+  text-align: left !important;
 }
 
 .row:after {
@@ -223,36 +229,6 @@ hr {
   box-sizing: border-box;
 }
 
-/* #region headers */
-/*
-
-h1 {
-  font-weight: 400;
-}
-
-h2 {
-  font-weight: 400;
-  letter-spacing: .1em;
-}
-
-h3 {
-  font-weight: 400;
-  letter-spacing: .1em;
-}
-
-
-p {
-  font-weight: 300;
-  font-size: .9rem;
-  letter-spacing: .1em;
-  text-align: left;
-  line-height: 1.8;
-  text-transform: uppercase;
-}
-
-*/
-/* #endregion headers */
-
 .buttonRound {
   background-color: white;
   color: black;
@@ -301,15 +277,16 @@ p {
   display: none;
 }
 
-li {
-  float: none;
-}
-
 .nav-bar .icon {
   display: flex;
   color: black;
   z-index: 100;
   transform: scale(1.2);
+}
+
+
+.nav-bar-mobile .material-icons {
+  vertical-align: middle;
 }
 
 .overlay{
@@ -320,20 +297,38 @@ li {
   left: 0;
   right: 0;
   bottom: 0;
-  background-color: #D7C9AF;
+  background-color: black;
   z-index: 1;
+}
+
+.nav-bar li {
+  float: none;
+}
+
+/*
+.nav-bar {
+  width: 100%;
+  padding: 2.5vh 7vw 2.5vh 7vw;
+  position: fixed;
+}
+*/
+
+.nav-bar .icon {
+  display: flex;
+  transform: scale(1.4);
 }
 
 .X{
   display: none;
-  z-index: 2;
+  z-index: 5;
   position: fixed;
   justify-content: flex-end;
   top: 3px;
   right: 15px;
   color: white;
   font-size: 40px;
-  margin-left: 45px;
+  /*margin-left: 45px;*/
+  margin-right: 7vw;
   height: 50px;
   padding: 0;
   transition: 0.3s;
@@ -349,7 +344,7 @@ li {
   height: 100%;
   list-style: none;
   padding: 0;
-  top: 15%;
+  top: 70%;
 }
 
 .nav-bar ul * {
@@ -357,12 +352,14 @@ li {
 }
 
 .nav-bar-mobile li a {
-  text-decoration: none;
-  color: white !important;
-}
+  padding: 2vh;
 
-.nav-bar-mobile li {
-  text-align: center;
+  text-decoration: none;
+  color: white;
+  font-size: 2rem;
+  text-align: left;
+  letter-spacing: normal;
+  font-weight: 400;
 }
 
 /* the navigation bar text container */
@@ -383,12 +380,7 @@ li {
   color: black;
   display: block;
   width: 100%
-}
-
-li a {
-  letter-spacing: .15em;
-  font-size: 1.2em;
-  font-weight: 400;
+  font-size: 1.2rem;
 }
 
 /* the whole navigation bar */
