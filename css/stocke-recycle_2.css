@@ -136,3 +136,19 @@ model-viewer {
 .scenario h5 {
   padding-top: 5vh;
 }
+
+
+.cheminement {
+  padding: 15vh 13vw 5vh 13vw;
+  width: 100%;
+  height: 100%;
+  max-height: 100%;
+}
+.cheminement img {
+  width: 100%;
+  height: 100%;
+  max-height: 100%;
+  object-fit: cover;
+  object-position: bottom;
+}
+.cheminement h2 { margin-bottom: 3vh }
