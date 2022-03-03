@@ -152,9 +152,3 @@ if ( $(window).width() <= 900 ) {
   }
 
 }
-
-
-// Mobile version script
-if (screen.width <= 1100 ) {
-   document.location = "mobile.html";
- }
