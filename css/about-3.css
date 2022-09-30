@@ -1,0 +1,173 @@
+* {
+  font-family: 'switzer', sans-serif;
+}
+
+.link .material-icons {
+  vertical-align: middle;
+}
+
+.mainPageContainer a {
+  text-decoration: none;
+  color: black;
+}
+
+html {
+  cursor: url("cursors/cursor_circle.svg") 5 5, auto;
+}
+
+body{
+  margin: 0;
+  padding: 0;
+  background-color: #DDD5CB;
+  width: 100%;
+  position: absolute;
+  animation: fade-in 1.5s;
+}
+
+@keyframes fade-in {
+  from {opacity: 0%;}
+  to {opacity: 100%;}
+}
+
+p {
+  letter-spacing: 0;
+  margin: 1vh;
+  margin-left: 0;
+}
+
+/* Main page container */
+.mainPageContainer{
+  margin-top: 10em;
+  padding: 0 10vw 0 10vw;
+}
+
+@keyframes fadeindown  {
+    from { opacity: 0; }
+    to   { opacity: 1; }
+}
+
+h2 {
+  font-size: 3rem;
+}
+
+.h3 {
+  font-size: 1em;
+  text-transform: none;
+  font-weight: 400;
+  opacity: .5;
+  letter-spacing: 0.01em;
+}
+
+.intro {
+  font-size: 1.2em;
+  line-height: 1.4;
+  font-weight: 400;
+  opacity: .5;
+  margin-bottom: 1em;
+  letter-spacing: 0.01em;
+  text-transform: none;
+}
+
+.link {
+  font-size: 1.2rem;
+  font-weight: 400;
+  line-height: 1.8;
+}
+
+.linkH3 {
+  font-size: 1rem;
+  font-style: normal;
+  letter-spacing: .1em;
+  text-transform: none;
+  line-height: 1.8;
+  text-decoration: underline;
+}
+
+/* Cursor that shows it'll click on links */
+.linkH3:hover, .link:hover, .CV:hover {
+  cursor: none;
+  color: white;
+  transition: all 0.5s ease-in-out;
+  -webkit transition: all 0.5s ease-in-out;
+}
+
+.paragraph {
+  /* animation of the fade in js */
+  -webkit-transition-duration: .2s; /* Safari */
+  transition-duration: .2s;
+  opacity: 0;
+}
+
+.footer {
+  padding: 1vh 0 1vh 0;
+  display: flex;
+  justify-content: center;
+}
+
+.footer img {
+  max-width: 1.2em;
+  object-fit: contain;
+  margin-left: 1vw;
+}
+
+.footer p {
+  font-weight: 400;
+  letter-spacing: .1em;
+  font-size: .9rem;
+}
+
+/* columns */
+.column {
+  float: left;
+  /* border: blue solid 1px; */
+  margin: 0;
+  padding: 0;
+  -webkit-flex-flow: row wrap;
+  flex-flow: row wrap;
+  justify-content: center;
+}
+
+.left {
+  width: 65%;
+  margin: 0;
+  padding: 0;
+}
+
+.right {
+  width: 35%;
+  margin: 0;
+  padding: 0;
+}
+
+/* #region sectionTop */
+.sectionTop .left {
+  width: 33%;
+}
+
+.sectionTop .right {
+  width: 66%;
+}
+
+.sectionTop .right p {
+  font-size: 32px;
+  font-family: 'switzer', sans-serif;
+}
+/* #endregion sectionTop */
+
+/* #region sectionEducation */
+
+/* #endregion sectionEducation */
+
+.sectionEducation .column, .sectionWork .column, .sectionCertificates .column, .sectionContests .column {
+  width: 33%;
+  padding: 7vh 0;
+}
+
+.sectionEducation h3, .sectionWork h3, .sectionCertificates h3, .sectionContests h3 {
+  font-size: 24px;
+}
+
+.mainPageContainer hr {
+  margin: 0;
+  border-bottom: 1px solid black;
+}
