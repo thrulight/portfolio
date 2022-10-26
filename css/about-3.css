@@ -18,7 +18,7 @@ html {
 body{
   margin: 0;
   padding: 0;
-  background-color: #DDD5CB;
+  background-color: #CEC5BB;
   width: 100%;
   position: absolute;
   animation: fade-in 1.5s;
@@ -171,3 +171,34 @@ h2 {
   margin: 0;
   border-bottom: 1px solid black;
 }
+
+/* #region mobile */
+
+@media screen and (max-width: 900px){
+
+.mainPageContainer {
+  padding: 0 7vw 10vh 7vw;
+}
+
+.sectionTop .right p {
+  font-size: 1.5rem;
+  line-height: 120%;
+  margin: 0;
+}
+
+.sectionTop .left {
+  margin-bottom: 5vh;
+}
+
+.sectionEducation .column, .sectionWork .column, .sectionCertificates .column, .sectionContests .column {
+  width: 100%;
+  padding: 10px 0;
+}
+
+h2 {
+  margin: 5vh 0 1vh 0;
+}
+
+}
+
+/* #endregion mobile */

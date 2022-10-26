@@ -12,9 +12,10 @@
 }
 
 .topSection p {
-  color: white;
-  filter: invert(1) grayscale(1);
+  color: black;
+  /*filter: invert(1) grayscale(1);*/
   font-size: 1.2rem;
+  font-weight: 500;
 }
 
 .topSection hr {
@@ -23,12 +24,17 @@
   margin: 0;
 }
 
+.topSection h4 {
+  font-size: 1.5rem;
+  margin: 2vh 0;
+}
+
 
 .topSection h1 {
   font-size: 7.5vh;
   font-weight: 500;
   line-height: 100%;
-  width: 80%;
+  width: 75%;
   margin: 0;
   color: white;
   filter: invert(1) grayscale(1);
@@ -200,46 +206,6 @@
 /* #region mobile version */
 @media screen and (max-width: 1110px){
 
-  .nav-bar-mobile {
-    top: 70%;
-  }
-  .nav-bar-mobile .material-icons {
-    vertical-align: middle;
-  }
-
-  .overlay{
-    position: fixed;
-    width: 0;
-    height: 100%;
-    top: 0;
-    left: 0;
-    right: 0;
-    bottom: 0;
-    background-color: black;
-    z-index: 1;
-  }
-
-  li a {
-    font-size: 2rem;
-    text-align: left;
-    padding: 2vh;;
-  }
-
-  #title {
-    font-size: 1.2rem;
-  }
-
-  .nav-bar {
-    width: 100%;
-    padding: 2.5vh 7vw 2.5vh 7vw;
-    position: fixed;
-  }
-
-  .nav-bar .icon {
-    display: flex;
-    transform: scale(1.4);
-  }
-
   .goDown {
     font-size: 2.5rem !important;
     position: absolute;
@@ -265,7 +231,7 @@
     padding-top: 10vh;
   }
 
-  #seperation {
+  #separation {
     display: none;
   }
 

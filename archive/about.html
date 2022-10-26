@@ -1,0 +1,200 @@
+<!DOCTYPE html>
+<head>
+  <link rel="icon" href="logo_circle.png">
+  <meta charset="utf-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <link rel="stylesheet" href="css/about.css">
+  <link rel="stylesheet" href="css/nonChangingElements.css">
+  <title>Emilie Durand</title>
+  <script src="https://ajax.googleapis.com/ajax/libs/jquery/2.1.3/jquery.min.js"></script>
+  <script src="script.js"></script>
+  <span id="circle" class="circle"></span>
+
+  <!-- Ubuntu -->
+  <link rel="preconnect" href="https://fonts.gstatic.com">
+  <link href="https://fonts.googleapis.com/css2?family=Lato:ital,wght@0,100;0,300;0,400;0,700;0,900;1,100;1,300;1,400;1,700;1,900&family=Ubuntu:ital,wght@0,300;0,400;0,500;0,700;1,300;1,400;1,500;1,700&display=swap" rel="stylesheet">
+
+  <!-- Lato -->
+  <link rel="preconnect" href="https://fonts.gstatic.com">
+  <link href="https://fonts.googleapis.com/css2?family=Lato:ital,wght@0,100;0,300;0,400;0,700;0,900;1,100;1,300;1,400;1,700;1,900&display=swap" rel="stylesheet">
+
+  <!-- Global site tag (gtag.js) - Google Analytics -->
+<script async src="https://www.googletagmanager.com/gtag/js?id=UA-180791677-1"></script>
+
+<script>
+  window.dataLayer = window.dataLayer || [];
+  function gtag(){dataLayer.push(arguments);}
+  gtag('js', new Date());
+
+  gtag('config', 'UA-180791677-1');
+</script>
+
+</head>
+<body>
+
+  <!-- Navigation bar -->
+    <div class="X" id="X"><span  onclick="closeNav()">&times;</span></div>
+    <div id="overlay" class="overlay"></div>
+
+    <div class="nav-bar" id="myTopnav">
+      <a href="index.html" id="title">EMILIE DURAND</a>
+      <ul class="nav-text">
+        <li><a class="work active" onmouseover="circleSmall()" onmouseout="circleBig()" href="test.html">work</a></li>
+        <li><a class="active" onmouseover="circleSmall()" onmouseout="circleBig()" href="about.html">info</a></li>
+        <li onmouseover="circleSmall()" onmouseout="circleBig()" style="float:left"><a class="nav-title" href="test.html">EMILIE DURAND</a></li>
+      </ul>
+        <a class="icon" id="icon" onclick="openNav()">
+          <i class="fa fa-bars"></i>
+        </a>
+    </div>
+
+    <ul class="nav-bar-mobile" id="nav-bar-mobile">
+      <li><a class="active" onmouseover="circleSmall()" onmouseout="circleBig()" href="projects.html">work <i class="material-icons icon-studio">east</i></a></li>
+      <li><a class="active" onmouseover="circleSmall()" onmouseout="circleBig()" href="digital.html">info <i class="material-icons icon-studio">east</i></a></li>
+    </ul>
+
+<div class="mainPageContainer">
+  <div>
+    <h2>ABOUT ME</h2>
+    <p class="intro">
+      Currently a fifth year product design student at Strate, School of Design in Paris,
+      </br>
+      </br>
+      I have been interested in minimalism and zero-waste recently and it is something I want to put in my work.
+    </p>
+    </br>
+    <p onmouseover="circleSmall()" onmouseout="circleBig()" class="link" onclick="window.open('https://www.linkedin.com/in/emilie-does-design/')">LinkedIn ❯</p>
+    <p onmouseover="circleSmall()" onmouseout="circleBig()" class="link" onclick="window.open('https://www.instagram.com/emilie_does_design/')">Instagram ❯</p>
+    </br>
+    </br>
+    </br>
+  </div>
+
+  <div class="section row">
+    <div class="column left">
+      <div class="paragraph">
+        <h2>EDUCATION</h2>
+
+        <!-- Strate -->
+        <h3>Strate, School of Design</h3>
+        <p class="h3">
+          Fifth year studying product design </br>
+          September 2017 - Present </br>
+          Expected Graduation: July 2022
+        </p>
+        <p onmouseover="circleSmall()" onmouseout="circleBig()" class="linkH3">www.strate.design</p>
+        <p class="h3">Sèvres</p>
+        </br>
+
+        <!-- ESCP -->
+        <h3>ESCP</h3>
+        <p class="h3">
+          Master in Management - Option E </br>
+          Septemper 2020 - December 2020
+        </p>
+        <p onmouseover="circleSmall()" onmouseout="circleBig()" class="linkH3">www.escp.eu</p>
+        <p class="h3">Berlin</p>
+        </br>
+
+      </div>
+      <div class="paragraph">
+        <h2>DESIGN EXPERIENCE</h2>
+
+        <!-- studio extrude -->
+        <h3>extrude.studio</h3>
+        <p class="h3">
+          Product designer </br>
+          January 2021 - Present </br>
+        </p>
+        <p onmouseover="circleSmall()" onmouseout="circleBig()" class="linkH3">extrude.studio</p>
+        <p class="h3">Paris</p>
+        </br>
+
+        <!-- Plast'if -->
+        <h3>Plast'if</h3>
+        <p class="h3">
+          Product design intern </br>
+          March 2020 - August 2022 </br>
+        </p>
+        <p onmouseover="circleSmall()" onmouseout="circleBig()" class="linkH3">www.plastif.com</p>
+        <p class="h3">Paris</p>
+        </br>
+
+        <!-- Saco Media -->
+        <h3>SACO MEDIA</h3>
+        <p class="h3">
+          Freelance magazine editing</br>
+          07.17.2019 - 07.23.2019</br>
+        </p>
+        <p onmouseover="circleSmall()" onmouseout="circleBig()" class="linkH3">www.sacomedia.com</p>
+        <p class="h3">Neuilly</p>
+        </br>
+      </div>
+
+      <!-- CV open and download -->
+      <a href="DURAND_CV_landscape.pdf" download=""
+         onclick="window.open('DURAND_CV_landscape.pdf')">
+          <p onmouseover="circleSmall()" onmouseout="circleBig()" class="CV">CV</p>
+       </a>
+    </div>
+
+    <div class="column right">
+      <div class="paragraph">
+        <h2>CERTIFICATES</h2>
+
+        <h3>Académie Design & Innovation</h3>
+        <p class="h3">HAIGO | 2021</p>
+        </br>
+
+        <h3>Computer Science for Business Professionals</h3>
+        <p class="h3">CS50 | 2021</p>
+        </br>
+
+        <h3>HTML & CSS Fundamentals</h3>
+        <p class="h3">SoloLearn<br>2016-2017</p>
+        </br>
+
+        <h3>Learn How to Code Course</h3>
+        <p class="h3">Codecademy<br>2020</p>
+        </br>
+      </div>
+
+      <div class="paragraph">
+        <h2>CONTESTS</h2>
+
+        <!-- L'Ete en Rosé -->
+        <h3>L'Eté en Rosé</h3>
+        <p class="h3">Top 10 (out of 50)</br>  </p>
+        <p onmouseover="circleSmall()" onmouseout="circleBig()" class="linkH3">www.oidesignawards.com</p>
+        <p class="h3">2019</p>
+        </br>
+
+        <!-- Sanny -->
+        <h3>SANNY</h3>
+        <p class="h3">2nd place (out of 10)</br></p>
+        <p onmouseover="circleSmall()" onmouseout="circleBig()" class="linkH3">www.wanteddesignnyc.com</p>
+        <p class="h3">2020</p>
+        </br>
+
+        <!-- Atelier Amylacé -->
+        <h3>Atelier Amylacé</h3>
+        <p class="h3">Top 3 (out of 10)</br></p>
+        <p onmouseover="circleSmall()" onmouseout="circleBig()" class="linkH3">www.lesdesignersfrancais.fr</p>
+        <p class="h3">2020</p>
+        </br>
+      </div>
+
+    </div>
+
+  </div>
+
+
+   <div class="footer">
+     <p>All projects are under license. </p>
+     <img src="https://upload.wikimedia.org/wikipedia/commons/thumb/a/a3/Cc.logo.circle.svg/1200px-Cc.logo.circle.svg.png" alt="">
+   </div>
+
+</div>
+
+</body>
+<DOCTYPE html>

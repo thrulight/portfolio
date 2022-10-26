@@ -277,18 +277,6 @@ hr {
   display: none;
 }
 
-.nav-bar .icon {
-  display: flex;
-  color: black;
-  z-index: 100;
-  transform: scale(1.2);
-}
-
-
-.nav-bar-mobile .material-icons {
-  vertical-align: middle;
-}
-
 .overlay{
   position: fixed;
   width: 0;
@@ -299,23 +287,6 @@ hr {
   bottom: 0;
   background-color: black;
   z-index: 1;
-}
-
-.nav-bar li {
-  float: none;
-}
-
-/*
-.nav-bar {
-  width: 100%;
-  padding: 2.5vh 7vw 2.5vh 7vw;
-  position: fixed;
-}
-*/
-
-.nav-bar .icon {
-  display: flex;
-  transform: scale(1.4);
 }
 
 .X{
@@ -337,6 +308,10 @@ hr {
   font-family: "Segoe UI Light", Avenir Next Ultra Light, sans-serif;
 }
 
+.nav-bar-mobile .material-icons {
+  vertical-align: middle;
+}
+
 .nav-bar-mobile {
   position: fixed;
   z-index: 3;
@@ -345,10 +320,6 @@ hr {
   list-style: none;
   padding: 0;
   top: 70%;
-}
-
-.nav-bar ul * {
-  display: none;
 }
 
 .nav-bar-mobile li a {
@@ -360,6 +331,31 @@ hr {
   text-align: left;
   letter-spacing: normal;
   font-weight: 400;
+}
+
+/* the whole navigation bar */
+.nav-bar {
+  display: flex; /*important*/
+  align-items: center; /*important*/
+  width: 100%; /*important*/
+  position: absolute;
+
+  padding: 2.5vh 7vw 2.5vh 7vw;
+}
+
+.nav-bar ul * {
+  display: none;
+}
+
+.nav-bar li {
+  float: none;
+}
+
+.nav-bar .icon {
+  display: flex;
+  color: black;
+  z-index: 100;
+  transform: scale(1.4);
 }
 
 /* the navigation bar text container */
@@ -383,15 +379,6 @@ hr {
   font-size: 1.2rem;
 }
 
-/* the whole navigation bar */
-.nav-bar {
-  display: flex; /*important*/
-  align-items: center; /*important*/
-  width: 100%; /*important*/
-  padding: 20px;
-  position: absolute;
-}
-
 /* #endregion nav-bar */
 
 .column {
@@ -413,7 +400,6 @@ model-viewer {
 .first-section .right {
   padding-right: 0;
 }
-
 
 .first-section, .second-section, .third-section, .fourth-section {
   padding: 5%;
