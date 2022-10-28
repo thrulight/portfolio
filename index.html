@@ -14,10 +14,9 @@
 
 
   <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.5.1/jquery.min.js"></script>
+  <script type="text/javascript" src="scripts/script.js"></script>
   <script type="text/javascript" src="scripts/jquery.scrollie.js"></script>
   <script type="text/javascript" src="scripts/color-change.js"></script>
-  <script type="text/javascript" src="scripts/script.js"></script>
-  <script src="/js/app.js"></script>
 
   <!-- Load an icon library to show a hamburger menu (bars) on small screens -->
   <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/4.7.0/css/font-awesome.min.css">
@@ -63,14 +62,14 @@
       </a>
       <hr class="slideLeft">
       <p class="UX-UI slideLeft" onclick="goToDigital()" onmouseover="circleSmall()" onmouseout="circleBig()">Go to UX/UI projects <i class="material-icons icon-studio">south</i></p>
-      <i class="material-icons goDown slideLeft">south</i>
+      <i onclick="goToDigital()" class="material-icons goDown slideLeft">south</i>
 
     </div>
 
 
-    <div class="slide productSection" data-background="#F6F6F6">
+    <div id="productProjects" class="productSection slide" data-background="#F6F6F6">
 
-      <div class="productFirst row">
+      <div class="productFirst row slide" >
         <div class="column big tag">
           <div class="printTwist project">
             <img src="images/projectsImg/print-twist/print-twist_transparent.png" onclick="window.location.href='projects/products/new_print-twist.html';" alt="">
@@ -128,7 +127,7 @@
 
     <!--  -->
 
-    <hr id="separation">
+    <hr id="separation" class="tag">
 
     <div class="slide uxSection" id="digitalProjects" data-background="#212121" >
 
@@ -173,8 +172,9 @@
   </div>
 
   <!-- partial -->
-  <script src='https://cdnjs.cloudflare.com/ajax/libs/jquery/3.3.1/jquery.min.js'></script><script  src="scripts/script.js"></script>
-
+  <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.5.1/jquery.min.js"></script>
+  <script type="text/javascript" src="scripts/script.js"></script>
+  <script type="text/javascript" src="scripts/jquery.scrollie.js"></script>
 </body>
 
 <DOCTYPE html>

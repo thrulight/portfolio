@@ -115,6 +115,13 @@ function goToDigital() {
   console.log("goToTop");
 }
 
+// Scroll down to product projects
+function goToDigital() {
+  var digitalProjects = document.getElementById("productProjects");
+  digitalProjects.scrollIntoView({behavior: "smooth"});
+  console.log("goToTop");
+}
+
 //Navigation bar mobile version
 function openNav() {
    document.getElementById("nav-bar-mobile").style.display= "block";
