@@ -1,3 +1,8 @@
+@font-face {
+  font-family: 'Atari';
+  src: url('Atari/AtariST8x16SystemFont.ttf') format('truetype');
+}
+
 body {
   background-color: #EDEDED !important;
 }

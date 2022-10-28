@@ -23,7 +23,7 @@
  * Switzer Semibold Italic
  * Switzer Bold
  * Switzer Bold Italic
- * Switzer Extrabold         
+ * Switzer Extrabold
  * Switzer Extrabold Italic
  * Switzer Black
  * Switzer Black Italic
@@ -44,9 +44,9 @@
 
 @font-face {
   font-family: 'Switzer-Variable';
-  src: url('../fonts/Switzer-Variable.woff2') format('woff2'),
-       url('../fonts/Switzer-Variable.woff') format('woff'),
-       url('../fonts/Switzer-Variable.ttf') format('truetype');
+  src: url('../fonts/Switzer/Switzer-Variable.woff2') format('woff2'),
+       url('../fonts/Switzer/Switzer-Variable.woff') format('woff'),
+       url('../fonts/Switzer/Switzer-Variable.ttf') format('truetype');
        font-weight: 100 900;
        font-display: swap;
        font-style: normal;
@@ -271,4 +271,3 @@
        font-display: swap;
        font-style: italic;
 }
-
