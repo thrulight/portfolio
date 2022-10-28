@@ -1,0 +1,74 @@
+<!DOCTYPE html>
+<html lang="en" dir="ltr">
+  <head>
+    <meta charset="utf-8">
+    <title></title>
+    <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.5.1/jquery.min.js"></script>
+
+    <script type="text/javascript">
+      gsap.utils.toArray(".container").forEach((el) => {
+
+  const image = el.querySelector('img.swipeimage'),
+        setX = gsap.quickSetter(image, "x", "px"),
+        setY = gsap.quickSetter(image, "y", "px"),
+        align = e => {
+          const top = el.getBoundingClientRect().top;
+          setX(e.clientX );
+          setY(e.clientY - top);
+        },
+        startFollow = () => document.addEventListener("mousemove", align),
+        stopFollow = () => document.removeEventListener("mousemove", align),
+        fade = gsap.to(image, {autoAlpha: 1, ease: "none", paused: true, onReverseComplete: stopFollow});
+
+  el.addEventListener('mouseenter', (e) => {
+    fade.play();
+    startFollow();
+    align(e);
+  });
+
+  el.addEventListener('mouseleave', () => fade.reverse());
+
+});
+    </script>
+
+    <style media="screen">
+      * { margin:0; }
+
+.spacer {
+  width:100%;
+  height:100vh;
+  background:black;
+}
+
+.container {
+  position: relative;
+  width:100%;
+  height:200px;
+}
+
+.container img.swipeimage {
+  position: absolute;
+  top: 0;
+  left: 0;
+  width: 200px;
+  height: 200px;
+  transform: translate(-50% ,-50%);
+  object-fit: cover;
+  opacity: 0;
+  pointer-events: none;
+  z-index: 9;
+}
+    </style>
+  </head>
+  <body>
+    <section class="spacer"></section>
+
+<section class="background">
+  <div class="container">
+    <img class="swipeimage" src="https://source.unsplash.com/random">
+  </div>
+</section>
+
+<section class="spacer"></section>
+  </body>
+</html>

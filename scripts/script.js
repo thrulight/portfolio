@@ -184,3 +184,19 @@ $(document).on("scroll", function() {
     }
   }
 });
+
+//studio image on hover
+$('.imagehover').mousemove(function(e){
+  //$(this).find('.studioImg').fadeIn();
+  $(this).find('.studioImg').addClass('visible');
+
+  $(this).find('.studioImg').css({
+      left:e.pageX, top:e.pageY
+    });
+}).mouseleave(function(){
+  $(this).find('.studioImg').removeClass('visible');
+  //$(this).find('.studioImg').fadeOut();
+  $(this).find('.studioImg').css({
+      left:e.pageX, top:e.pageY
+      });
+});

@@ -57,7 +57,10 @@
 
       <h4 class="slideLeft">👋 Hello, I’m Emilie</h4>
       <h1 class="slideLeft" onmouseover="circleSmall()" onmouseout="circleBig()">I’m an Industrial Product Design student and UX/UI Designer based in Paris</h1>
-      <p class="slideLeft" onmouseover="circleSmall()" onmouseout="circleBig()" class="studio" onclick="window.open('https://extrude.studio')">I’m also a co-founder of extrude.studio <i class="material-icons icon-studio">east</i></p>
+      <a class="imagehover" href="#">
+        <p onmouseover="circleSmall()" onmouseout="circleBig()" class="slideLeft studio" onclick="window.open('https://extrude.studio')">I’m also a co-founder of extrude.studio <i class="material-icons icon-studio">east</i></p>
+        <img class="studioImg" src="images/studio.png">
+      </a>
       <hr class="slideLeft">
       <p class="UX-UI slideLeft" onclick="goToDigital()" onmouseover="circleSmall()" onmouseout="circleBig()">Go to UX/UI projects <i class="material-icons icon-studio">south</i></p>
       <i class="material-icons goDown slideLeft">south</i>
@@ -168,6 +171,9 @@
     </div>
 
   </div>
+
+  <!-- partial -->
+  <script src='https://cdnjs.cloudflare.com/ajax/libs/jquery/3.3.1/jquery.min.js'></script><script  src="scripts/script.js"></script>
 
 </body>
 

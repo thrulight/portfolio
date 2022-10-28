@@ -1,3 +1,19 @@
+.studioImg {
+  position: absolute;
+  z-index: -1;
+  transform: translateX(30%)  translateY(-50%) scale(1);
+  pointer-events: none;
+  height: 300px;
+  opacity: 0;
+  transition: opacity 0.2s, transform 0.3s;
+}
+
+.studioImg.visible {
+  opacity: 1;
+  transform: translateX(30%) translateY(-50%) scale(1.1);
+  transition: opacity 0.5s, transform 0.5s;
+}
+
 /* #region topSection */
 
 .slide-one, .slide-two, .slide-three {
@@ -44,6 +60,10 @@
 
 .studio {
   margin-top: 10vh;
+}
+
+.imagehover {
+  text-decoration: none;
 }
 
 .studio, .material-icons, .UX-UI {
