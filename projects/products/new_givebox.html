@@ -5,18 +5,16 @@
   <meta charset="utf-8">
   <meta name="viewport" content="width=device-width, initial-scale=1.0">
 
-  <link rel="stylesheet" href="css/nonChangingElements_2.css">
-
-  <link rel="stylesheet" href="css/project-page.css">
-  <link rel="stylesheet" href="css/switzer.css">
-
-  <link rel="stylesheet" href="css/givebox-2.css">
+  <link rel="stylesheet" href="../../css/nonChangingElements_2.css">
+  <link rel="stylesheet" href="../../css/project-page.css">
+  <link rel="stylesheet" href="../../css/switzer.css">
+  <link rel="stylesheet" href="../../css/givebox-2.css">
 
   <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.5.1/jquery.min.js"></script>
-  <script type="text/javascript" src="jquery.scrollie.js"></script>
-  <script type="text/javascript" src="color-change.js"></script>
-  <script type="text/javascript" src="script.js"></script>
-  <script type="text/javascript" src="mobile-redirect.js">
+  <script type="text/javascript" src="../../scripts/jquery.scrollie.js"></script>
+  <script type="text/javascript" src="../../scripts/color-change.js"></script>
+  <script type="text/javascript" src="../../scripts/script.js"></script>
+  <script type="text/javascript" src="../../scripts/mobile-redirect.js">
 
   <!-- REQUIRED: Web Components polyfill to support Edge and Firefox < 63 -->
   <script src="https://unpkg.com/@webcomponents/webcomponentsjs@2.1.3/webcomponents-loader.js"></script>
@@ -52,11 +50,11 @@
       <div id="overlay" class="overlay"></div>
 
       <div class="nav-bar" id="myTopnav">
-        <a href="index.html" id="title">EMILIE DURAND</a>
+        <!--<a href="index.html" id="title">EMILIE DURAND</a>-->
         <ul class="nav-text">
-          <li><a class="work active" onmouseover="circleSmall()" onmouseout="circleBig()" href="test.html">work</a></li>
-          <li><a class="active" onmouseover="circleSmall()" onmouseout="circleBig()" href="about-2.html">info</a></li>
-          <li onmouseover="circleSmall()" onmouseout="circleBig()" style="float:left"><a class="nav-title" href="index.html">EMILIE DURAND</a></li>
+          <li><a class="work active" onmouseover="circleSmall()" onmouseout="circleBig()" href="../../index.html">work</a></li>
+          <li><a class="active" onmouseover="circleSmall()" onmouseout="circleBig()" href="../../about.html">info</a></li>
+          <li onmouseover="circleSmall()" onmouseout="circleBig()" style="float:left"><a class="nav-title" href="../../index.html">EMILIE DURAND</a></li>
         </ul>
           <a class="icon" id="icon" onclick="openNav()">
             <i class="fa fa-bars"></i>
@@ -64,8 +62,8 @@
       </div>
 
       <ul class="nav-bar-mobile" id="nav-bar-mobile">
-        <li><a class="active" onmouseover="circleSmall()" onmouseout="circleBig()" href="projects.html">work <i class="material-icons icon-studio">east</i></a></li>
-        <li><a class="active" onmouseover="circleSmall()" onmouseout="circleBig()" href="about-2.html">info <i class="material-icons icon-studio">east</i></a></li>
+        <li><a class="active" onmouseover="circleSmall()" onmouseout="circleBig()" href="../../index.html">work <i class="material-icons icon-studio">east</i></a></li>
+        <li><a class="active" onmouseover="circleSmall()" onmouseout="circleBig()" href="../../about.html">info <i class="material-icons icon-studio">east</i></a></li>
       </ul>
 
       <div class="topSection row">
@@ -95,7 +93,7 @@
       </div>
 
       <div class="splash">
-        <img src="projectsBgImages/givebox-splash.png" alt="">
+        <img src="../../images/projectsBgImages/givebox-splash.png" alt="">
       </div>
 
       <div class="arSection row">
@@ -108,7 +106,7 @@
               camera-controls
               loading="eager"
               camera-orbit="-43.45deg 72.14deg 358.9m"
-              poster="projectsLogo/svg/bw_logo_givebox.svg"
+              poster="../../images/projectsLogo/svg/bw_logo_givebox.svg"
               alt="A 3D model of a lamp"
               auto-rotate>
             </model-viewer>
@@ -118,8 +116,8 @@
           <h3>Using existing city polls cuts down the costs and allows a greater flexibility.</h3>
 
           <div class="bottomAR">
-            <h4 onclick="window.open('glb/givebox.glb')">>view in AR <span style="opacity:.5">Android</span> <i class="material-icons icon-studio">east</i></h4>
-            <h4>view in AR <span style="opacity:.5">iOS</span> <i class="material-icons icon-studio">east</i></h4>
+            <h4 onmouseover="circleSmall()" onmouseout="circleBig()" onclick="window.open('../../ar/glb/givebox.glb')">view in AR <span style="opacity:.5">Android</span> <i class="material-icons icon-studio">east</i></h4>
+            <h4 onmouseover="circleSmall()" onmouseout="circleBig()">view in AR <span style="opacity:.5">iOS</span> <i class="material-icons icon-studio">east</i></h4>
           </div>
 
         </div>
@@ -139,7 +137,7 @@
         </div>
 
         <div class="column right">
-          <img src="projectsImg/boite-dons/categories.gif" alt="">
+          <img src="../../images/projectsImg/boite-dons/categories.gif" alt="">
         </div>
       </div>
 
@@ -151,12 +149,12 @@
         </div>
 
         <div class="column right">
-          <img src="projectsImg/boite-dons/map-box.png" alt="">
+          <img src="../../images/projectsImg/boite-dons/map-box.png" alt="">
         </div>
       </div>
 
       <div class="splash">
-        <img src="projectsImg/boite-dons/front-view.png" alt="">
+        <img src="../../images/projectsImg/boite-dons/front-view.png" alt="">
         <h5>The inside of each box changes to better optimize the space inside.</h5>
       </div>
 
@@ -169,7 +167,7 @@ We have realized that people naturally did that in book giveboxes, giving tips o
         </div>
 
         <div class="column right">
-          <img src="projectsImg/boite-dons/detail.png" alt="">
+          <img src="../../images/projectsImg/boite-dons/detail.png" alt="">
         </div>
       </div>
 
@@ -181,17 +179,17 @@ We have realized that people naturally did that in book giveboxes, giving tips o
         </div>
 
         <div class="column right">
-          <img src="projectsImg/boite-dons/construction.png" alt="">
+          <img src="../../images/projectsImg/boite-dons/construction.png" alt="">
         </div>
       </div>
 
       <div class="sectionRedirect row">
         <div class="column left">
-          <h3 onclick="window.location.href='index.html';"><i class="material-icons icon-studio">west</i> back to projects</h3>
+          <h3 onmouseover="circleSmall()" onmouseout="circleBig()" onclick="window.location.href='../../index.html';"><i class="material-icons icon-studio">west</i> back to projects</h3>
         </div>
 
         <div class="column right">
-          <h3 onclick="window.location.href='greener.html';">UX / UI project <i class="material-icons icon-studio">east</i></h3>
+          <h3 onmouseover="circleSmall()" onmouseout="circleBig()" onclick="window.location.href='../digital/greener.html';">UX / UI project <i class="material-icons icon-studio">east</i></h3>
         </div>
       </div>
 

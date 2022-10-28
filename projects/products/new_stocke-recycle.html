@@ -5,18 +5,16 @@
   <meta charset="utf-8">
   <meta name="viewport" content="width=device-width, initial-scale=1.0">
 
-  <link rel="stylesheet" href="css/nonChangingElements_2.css">
-
-  <link rel="stylesheet" href="css/project-page.css">
-  <link rel="stylesheet" href="css/switzer.css">
-
-  <link rel="stylesheet" href="css/stocke-recycle_2.css">
+  <link rel="stylesheet" href="../../css/nonChangingElements_2.css">
+  <link rel="stylesheet" href="../../css/project-page.css">
+  <link rel="stylesheet" href="../../css/switzer.css">
+  <link rel="stylesheet" href="../../css/stocke-recycle_2.css">
 
   <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.5.1/jquery.min.js"></script>
-  <script type="text/javascript" src="jquery.scrollie.js"></script>
-  <script type="text/javascript" src="color-change.js"></script>
-  <script type="text/javascript" src="script.js"></script>
-  <script type="text/javascript" src="mobile-redirect.js">
+  <script type="text/javascript" src="../../scripts/jquery.scrollie.js"></script>
+  <script type="text/javascript" src="../../scripts/color-change.js"></script>
+  <script type="text/javascript" src="../../scripts/script.js"></script>
+  <script type="text/javascript" src="../../scripts/mobile-redirect.js">
 
   <!-- REQUIRED: Web Components polyfill to support Edge and Firefox < 63 -->
   <script src="https://unpkg.com/@webcomponents/webcomponentsjs@2.1.3/webcomponents-loader.js"></script>
@@ -52,11 +50,11 @@
       <div id="overlay" class="overlay"></div>
 
       <div class="nav-bar" id="myTopnav">
-        <a href="index.html" id="title">EMILIE DURAND</a>
+        <!--<a href="index.html" id="title">EMILIE DURAND</a>-->
         <ul class="nav-text">
-          <li><a class="work active" onmouseover="circleSmall()" onmouseout="circleBig()" href="index.html">work</a></li>
-          <li><a class="active" onmouseover="circleSmall()" onmouseout="circleBig()" href="about-2.html">info</a></li>
-          <li onmouseover="circleSmall()" onmouseout="circleBig()" style="float:left"><a class="nav-title" href="index.html">EMILIE DURAND</a></li>
+          <li><a class="work active" onmouseover="circleSmall()" onmouseout="circleBig()" href="../../index.html">work</a></li>
+          <li><a class="active" onmouseover="circleSmall()" onmouseout="circleBig()" href="../../about.html">info</a></li>
+          <li onmouseover="circleSmall()" onmouseout="circleBig()" style="float:left"><a class="nav-title" href="../../index.html">EMILIE DURAND</a></li>
         </ul>
           <a class="icon" id="icon" onclick="openNav()">
             <i class="fa fa-bars"></i>
@@ -64,8 +62,8 @@
       </div>
 
       <ul class="nav-bar-mobile" id="nav-bar-mobile">
-        <li><a class="active" onmouseover="circleSmall()" onmouseout="circleBig()" href="projects.html">work <i class="material-icons icon-studio">east</i></a></li>
-        <li><a class="active" onmouseover="circleSmall()" onmouseout="circleBig()" href="about-2.html">info <i class="material-icons icon-studio">east</i></a></li>
+        <li><a class="active" onmouseover="circleSmall()" onmouseout="circleBig()" href="../../index.html">work <i class="material-icons icon-studio">east</i></a></li>
+        <li><a class="active" onmouseover="circleSmall()" onmouseout="circleBig()" href="../../about.html">info <i class="material-icons icon-studio">east</i></a></li>
       </ul>
 
       <div class="topSection row">
@@ -92,7 +90,7 @@
       </div>
 
       <div class="splash">
-        <img src="projectsBgImages/stocke-recycle_splash.png" alt="">
+        <img src="../../images/projectsBgImages/stocke-recycle_splash.png" alt="">
       </div>
 
       <div class="arSection row">
@@ -105,7 +103,7 @@
               camera-controls
               loading="eager"
               camera-orbit="-43.45deg 72.14deg 358.9m"
-              poster="projectsLogo/svg/bw_logo_citeo.svg"
+              poster="../../images/projectsLogo/svg/bw_logo_citeo.svg"
               alt="A 3D model of a lamp"
               auto-rotate>
             </model-viewer>
@@ -115,8 +113,8 @@
           <h3>Using existing infrastructures allows cutting down costs and more flexibility.</h3>
 
           <div class="bottomAR">
-            <h4 onclick="window.open('glb/blender_android_working.glb')">view in AR <span style="opacity:.5">Android</span> <i class="material-icons icon-studio">east</i></h4>
-            <h4 onclick="window.open('glb/usbz/blender-ios-working.usdz')">view in AR <span style="opacity:.5">iOS</span> <i class="material-icons icon-studio">east</i></h4>
+            <h4 onmouseover="circleSmall()" onmouseout="circleBig()" onclick="window.open('../../ar/glb/blender_android_working.glb')">view in AR <span style="opacity:.5">Android</span> <i class="material-icons icon-studio">east</i></h4>
+            <h4 onmouseover="circleSmall()" onmouseout="circleBig()" onclick="window.open('../../ar/glb/usbz/blender-ios-working.usdz')">view in AR <span style="opacity:.5">iOS</span> <i class="material-icons icon-studio">east</i></h4>
           </div>
 
         </div>
@@ -152,7 +150,7 @@
 
       <div class="scenario">
         <h2>The user journey</h2>
-        <img src="projectsImg/stocke-recycle/step1-7.gif" alt="">
+        <img src="../../images/projectsImg/stocke-recycle/step1-7.gif" alt="">
       </div>
 
       <div class="caracteristics packaging row">
@@ -167,7 +165,7 @@
         </div>
 
         <div class="column right">
-          <img src="projectsImg/stocke-recycle/pack-portfolio.gif" alt="">
+          <img src="../../images/projectsImg/stocke-recycle/pack-portfolio.gif" alt="">
         </div>
       </div>
 
@@ -176,11 +174,11 @@
         <h2>A set of urban collectors to store the filled packaging</h2>
         <p>Urban collectors would be placed throughout the city, allowing people to throw away their Stocke & Recycle packaging, as well as making sure people that don’t have them can still throw away their chewing-gum, allowing it to be collected.</p>
         <div class="column left">
-          <img src="projectsImg/stocke-recycle/poll.png" alt="">
+          <img src="../../images/projectsImg/stocke-recycle/poll.png" alt="">
         </div>
 
         <div class="column right">
-          <img src="projectsImg/stocke-recycle/bin.png" alt="">
+          <img src="../../images/projectsImg/stocke-recycle/bin.png" alt="">
         </div>
       </div>
 
@@ -200,13 +198,13 @@
         </div>
 
         <div class="column right">
-          <img src="projectsImg/stocke-recycle/vote.png" alt="">
-          <img src="projectsImg/stocke-recycle/stick.png" alt="">
+          <img src="../../images/projectsImg/stocke-recycle/vote.png" alt="">
+          <img src="../../images/projectsImg/stocke-recycle/stick.png" alt="">
         </div>
       </div>
 
       <div class="splash scenario">
-        <img src="projectsImg/stocke-recycle/step1-7_2.gif" alt="">
+        <img src="../../images/projectsImg/stocke-recycle/step1-7_2.gif" alt="">
         <h5>Maintenance can easily pull off the pieces of paper to collect the chewing-gum stucked on it.
           <br>
           This helps collecting the packaging as well.</h5>
@@ -217,26 +215,26 @@
           <h5>Prototyping</h5>
           <h2>Finding the right size</h2>
           <p>Carboard prototypes had been made in order to find the right proportions for the collectors and the posters, and making sure the writing were visible enough.</p>
-          <img src="projectsImg/stocke-recycle/proto-bin_2.jpg" alt="">
+          <img src="../../images/projectsImg/stocke-recycle/proto-bin_2.jpg" alt="">
         </div>
 
         <div class="column right">
-          <img src="projectsImg/stocke-recycle/proto-poll_2.jpg" alt="">
+          <img src="../../images/projectsImg/stocke-recycle/proto-poll_2.jpg" alt="">
         </div>
       </div>
 
       <div class="splash cheminement">
         <h2>Understanding the whole ecosystem</h2>
-        <img src="projectsImg/stocke-recycle/cheminement-matiere.png" alt="">
+        <img src="../../images/projectsImg/stocke-recycle/cheminement-matiere.png" alt="">
       </div>
 
       <div class="sectionRedirect row">
         <div class="column left">
-          <h3 onclick="window.location.href='index.html';"><i class="material-icons icon-studio">west</i> back to projects</h3>
+          <h3 onmouseover="circleSmall()" onmouseout="circleBig()" onclick="window.location.href='../../index.html';"><i class="material-icons icon-studio">west</i> back to projects</h3>
         </div>
 
         <div class="column right">
-          <h3 onclick="window.location.href='new_repair-go.html';">next project <i class="material-icons icon-studio">east</i></h3>
+          <h3 onmouseover="circleSmall()" onmouseout="circleBig()" onclick="window.location.href='new_repair-go.html';">next project <i class="material-icons icon-studio">east</i></h3>
         </div>
       </div>
 
