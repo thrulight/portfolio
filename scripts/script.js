@@ -116,7 +116,7 @@ function goToDigital() {
 }
 
 // Scroll down to product projects
-function goToDigital() {
+function goToProduct() {
   var digitalProjects = document.getElementById("productProjects");
   digitalProjects.scrollIntoView({behavior: "smooth"});
   console.log("goToTop");
