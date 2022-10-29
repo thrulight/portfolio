@@ -10,8 +10,8 @@
 
 .studioImg.visible {
   opacity: 1;
-  transform: translateX(30%) translateY(-50%) scale(1.1);
   transition: opacity 0.5s, transform 0.5s;
+  transform: translateX(30%) translateY(-50%) scale(1.1);
 }
 
 /* #region topSection */
@@ -226,6 +226,10 @@
 
 /* #region mobile version */
 @media screen and (max-width: 1110px){
+
+  .studioImg {
+    display: none;
+  }
 
   .goDown {
     font-size: 2.5rem !important;
