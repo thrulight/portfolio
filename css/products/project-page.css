@@ -31,6 +31,11 @@ body {
   margin-bottom: 4vh;
 }
 
+.topSection .liveWebsite {
+  font-weight: 500;
+  margin-top: 5vh;
+}
+
 /* #endregion topSection */
 
 .splash {

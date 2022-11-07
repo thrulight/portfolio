@@ -66,7 +66,7 @@
   text-decoration: none;
 }
 
-.studio, .material-icons, .UX-UI {
+.studio .material-icons, .UX-UI .material-icons {
   font-size: 1rem !important;
   line-height: 100%;
   font-weight: 300;
@@ -200,8 +200,14 @@
   object-position: bottom;
 }
 
-.repair { background-color: #91B1CF; }
-.repair img {
+.aegle { background-color: #EBDCC0; }
+.aegle img {
+  width: 100%;
+  object-position: right;
+}
+
+.extrude { background-color: #C2CAC5; }
+.extrude img {
   width: 100%;
   transform: scale(.8);
 }
@@ -260,6 +266,17 @@
     display: none;
   }
 
+  .footer {
+    display: block;
+    padding: 7vh 7vw;
+  }
+
+  .footer h1, .footer h1 .material-icons {
+    font-size: 3rem;
+    display: flex;
+    margin-bottom: 3vh;
+  }
+
 }
 
 @media screen and (max-width: 900px){
@@ -297,14 +314,13 @@
     transform: none;
   }
 
-  .FixMeUp img {
+  .FixMeUp img, .extrude img  {
     height: 350px;
     transform: scale(.95);
   }
 
-  .repair img {
+  .givebox img {
     height: 350px;
-    transform: scale(.95);
   }
 
   .productSection {
@@ -315,7 +331,7 @@
     margin: 2vh 0 0 0;
   }
 
-  .studio, .material-icons, .UX-UI {
+  .studio .material-icons, .UX-UI .material-icons {
     font-size: 1.4rem !important;
     line-height: 100%;
   }

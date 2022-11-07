@@ -1,0 +1,191 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <link rel="icon" href="logo_circle.png">
+  <meta charset="utf-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+
+  <link rel="stylesheet" href="../../css/nonChangingElements_2.css">
+  <link rel="stylesheet" href="../../css/products/project-page.css">
+  <link rel="stylesheet" href="../../css/switzer.css">
+  <link rel="stylesheet" href="../../css/digital/aegle.css">
+
+  <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.5.1/jquery.min.js"></script>
+  <script type="text/javascript" src="../../scripts/jquery.scrollie.js"></script>
+  <script type="text/javascript" src="../../scripts/color-change.js"></script>
+  <script type="text/javascript" src="../../scripts/script.js"></script>
+  <script type="text/javascript" src="../../scripts/mobile-redirect.js"></script>
+
+  <!-- Load an icon library to show a hamburger menu (bars) on small screens -->
+  <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/4.7.0/css/font-awesome.min.css">
+
+  <!-- Material Icons -->
+  <link href="https://fonts.googleapis.com/icon?family=Material+Icons" rel="stylesheet">
+
+  <span id="circle" class="circle"></span>
+
+</head>
+<body>
+  <div class="main-wrapper">
+
+
+    <!-- Navigation bar -->
+      <div class="X" id="X"><span  onclick="closeNav()">&times;</span></div>
+      <div id="overlay" class="overlay"></div>
+
+      <div class="nav-bar" id="myTopnav">
+        <!--<a href="index.html" id="title">EMILIE DURAND</a>-->
+        <ul class="nav-text">
+          <li><a class="work active" onmouseover="circleSmall()" onmouseout="circleBig()" href="../../index.html">work</a></li>
+          <li><a class="active" onmouseover="circleSmall()" onmouseout="circleBig()" href="../../about.html">info</a></li>
+          <li onmouseover="circleSmall()" onmouseout="circleBig()" style="float:left"><a class="nav-title" href="../../index.html">EMILIE DURAND</a></li>
+        </ul>
+          <a class="icon" id="icon" onclick="openNav()">
+            <i class="fa fa-bars"></i>
+          </a>
+      </div>
+
+      <ul class="nav-bar-mobile" id="nav-bar-mobile">
+        <li><a class="active" onmouseover="circleSmall()" onmouseout="circleBig()" href="../../index.html">work <i class="material-icons icon-studio">east</i></a></li>
+        <li><a class="active" onmouseover="circleSmall()" onmouseout="circleBig()" href="../../about.html">info <i class="material-icons icon-studio">east</i></a></li>
+      </ul>
+
+      <div class="topSection row">
+
+        <div class="column left">
+          <h6>Aegle Health Partners</h6>
+          <h1>Designing a website for a <span style="font-weight: 500;">stop-loss reinsurance start-up</span>, by turning a complex idea into something understandable</h1>
+        </div>
+
+        <div class="column right">
+          <h6>Date</h6>
+          <h4>2021-2022</h4>
+
+          <h6>My role</h6>
+          <h4>UX/UI Lead Designer</h4>
+
+          <h6>Team</h6>
+          <h4>
+            Gerardo Zampaglione, Chief Product
+            </br>
+            Michele Gallia, Product Manager
+            </br>
+            Martin Wang, Fullstack dev
+            </br>
+            Ivan Kulish, UX/UI Designer
+          </h4>
+
+          <h6>Client</h6>
+          <h4>Aegle Health Partners</h4>
+        </div>
+
+      </div>
+
+      <div class="splash">
+        <img src="../../images/splash-aegle.png" alt="">
+      </div>
+
+      <div class="grey">
+        <div class="sectionTxt">
+          <h5>The initial goal</h5>
+          <h2>Designing a website for the start-up that explains each aspect of who they are and what they do.</h2>
+        </div>
+
+        <div class="scenario">
+          <img src="../../images/projectsImg/aegle/frames.png" alt="">
+        </div>
+      </div>
+
+      <div class="blue videoSection">
+        <div class="sectionTxt">
+          <h5>The challenge</h5>
+          <h2>Explaining easily how the reinsurance works, without compromising on the complexity of it.</h2>
+          <p>The original website and deck explaining the product were not graphical at all, and simply explained with words. It was complicated to understand with part of the product worked how, as both parts were usually explained together.</p>
+          <video autoplay muted loop>
+            <source src="../../videos/aegle-animation.mp4" type="video/mp4">
+          </video>
+          <p class="narrowTxt">An animation was created to explain the caracteristics of the product in a more appealing way, and by separating both parts of the product in different animations — the most popular one being selected by default.</p>
+
+          </video>
+        </div>
+      </div>
+
+      <div class="grey videoSection">
+        <div class="sectionTxt">
+          <h5>The goal</h5>
+          <h2>This product has specific targets, and isn’t available for every entity part of those target. The point was to create an illegibility test for structures to easily understand if they are eligible or not for the product.</h2>
+          <video autoplay muted>
+            <source src="../../videos/aegle-simulator.mp4" type="video/mp4">
+          </video>
+          <p class="narrowTxt">The first part of the test was to separate the different targets. A set of questions was then created for each of these targets.</p>
+
+          </video>
+        </div>
+      </div>
+
+      <div class="caracteristicsContainer">
+        <div class="caracteristics row">
+          <div class="column left">
+            <h5>Methodology</h5>
+            <h2>Defining</h2>
+            <p>A lot of elements needed to be defined, as we worked on the website development: from the stakeholders mapping and user needs, to clear understanding of the simulation form flow.</p>
+          </div>
+
+          <div class="column right">
+            <img src="../../images/projectsImg/aegle/methodology-defining.png" alt="">
+          </div>
+        </div>
+
+        <div class="caracteristics row">
+          <div class="column left">
+            <h5>Methodology</h5>
+            <h2>Revising</h2>
+            <p>As we progressed in the website development, I created workshops with different end users to revise the current pages, and seek for improvements.</p>
+          </div>
+
+          <div class="column right">
+            <img src="../../images/projectsImg/aegle/methodology-revising.png" alt="">
+          </div>
+        </div>
+
+        <div class="caracteristics row">
+          <div class="column left">
+            <h5>Methodology</h5>
+            <h2>Designing responsively</h2>
+            <p>To make sure the designs would work on the majority of devices, the designs were adapted to fit Tailwind’s breakpoints.</p>
+          </div>
+
+          <div class="column right">
+            <img src="../../images/projectsImg/aegle/methodology-responsive.png" alt="">
+          </div>
+        </div>
+      </div>
+
+
+      <div class="sectionRedirect row">
+        <div class="column left">
+          <h3 onmouseover="circleSmall()" onmouseout="circleBig()" onclick="window.location.href='../../index.html';"><i class="material-icons icon-studio">west</i> back to projects</h3>
+        </div>
+
+        <div class="column right">
+          <h3 onmouseover="circleSmall()" onmouseout="circleBig()" onclick="window.location.href='new_givebox.html';">next project <i class="material-icons icon-studio">east</i></h3>
+        </div>
+      </div>
+
+      <div class="footer row">
+        <div class="column left">
+          <a href="mailto:emilie@extrude.studio?subject=Object"><h1>Get in touch <i class="material-icons icon-studio">east</i></h1></a>
+        </div>
+
+        <div class="column right">
+          <h6>Instagram</h6>
+          <h4 onclick="window.open('https://www.instagram.com/emilie_does_design/')">Product design <i class="material-icons icon-studio">east</i></h4>
+          <h4 onclick="window.open('https://www.instagram.com/emilie_does_ux/')">UX/UI design <i class="material-icons icon-studio">east</i></h4>
+          <h4 onclick="window.open('https://www.instagram.com/thrulight/')">Photography <i class="material-icons icon-studio">east</i></h4>
+        </div>
+      </div>
+
+
+</body>
+
+<DOCTYPE html>

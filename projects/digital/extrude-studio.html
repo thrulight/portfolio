@@ -1,0 +1,158 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <link rel="icon" href="logo_circle.png">
+  <meta charset="utf-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+
+  <link rel="stylesheet" href="../../css/nonChangingElements_2.css">
+  <link rel="stylesheet" href="../../css/products/project-page.css">
+  <link rel="stylesheet" href="../../css/switzer.css">
+  <link rel="stylesheet" href="../../css/digital/extrude-studio.css">
+
+  <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.5.1/jquery.min.js"></script>
+  <script type="text/javascript" src="../../scripts/jquery.scrollie.js"></script>
+  <script type="text/javascript" src="../../scripts/color-change.js"></script>
+  <script type="text/javascript" src="../../scripts/script.js"></script>
+  <script type="text/javascript" src="../../scripts/mobile-redirect.js"></script>
+
+  <!-- Load an icon library to show a hamburger menu (bars) on small screens -->
+  <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/4.7.0/css/font-awesome.min.css">
+
+  <!-- Material Icons -->
+  <link href="https://fonts.googleapis.com/icon?family=Material+Icons" rel="stylesheet">
+
+  <span id="circle" class="circle"></span>
+
+</head>
+<body>
+  <div class="main-wrapper">
+
+
+    <!-- Navigation bar -->
+      <div class="X" id="X"><span  onclick="closeNav()">&times;</span></div>
+      <div id="overlay" class="overlay"></div>
+
+      <div class="nav-bar" id="myTopnav">
+        <!--<a href="index.html" id="title">EMILIE DURAND</a>-->
+        <ul class="nav-text">
+          <li><a class="work active" onmouseover="circleSmall()" onmouseout="circleBig()" href="../../index.html">work</a></li>
+          <li><a class="active" onmouseover="circleSmall()" onmouseout="circleBig()" href="../../about.html">info</a></li>
+          <li onmouseover="circleSmall()" onmouseout="circleBig()" style="float:left"><a class="nav-title" href="../../index.html">EMILIE DURAND</a></li>
+        </ul>
+          <a class="icon" id="icon" onclick="openNav()">
+            <i class="fa fa-bars"></i>
+          </a>
+      </div>
+
+      <ul class="nav-bar-mobile" id="nav-bar-mobile">
+        <li><a class="active" onmouseover="circleSmall()" onmouseout="circleBig()" href="../../index.html">work <i class="material-icons icon-studio">east</i></a></li>
+        <li><a class="active" onmouseover="circleSmall()" onmouseout="circleBig()" href="../../about.html">info <i class="material-icons icon-studio">east</i></a></li>
+      </ul>
+
+      <div class="topSection row">
+
+        <div class="column left">
+          <h6>extrude.studio</h6>
+          <h1>Designing a <span style="font-weight: 500;">website</span> for a product design studio focused on 3D-printing and sustainability.</h1>
+          <h5 class="liveWebsite" onmouseover="circleSmall()" onmouseout="circleBig()" onclick="window.open('https://extrude.studio')">View live website <i class="material-icons icon-studio">east</i></h5>
+        </div>
+
+        <div class="column right">
+          <h6>Date</h6>
+          <h4>2021-2022</h4>
+
+          <h6>My role</h6>
+          <h4>
+            UX/UI Designer
+            <br>
+            Web developer
+          </h4>
+
+          <h6>Client</h6>
+          <h4>extrude.studio</h4>
+        </div>
+
+      </div>
+
+      <div class="splash">
+        <img src="../../images/splash-extrude-studio.png" alt="">
+      </div>
+
+      <div class="grey">
+        <div class="sectionTxt">
+          <h5>The initial goal</h5>
+          <h2>Designing a website for a product design studio, detailing the designers and product pages.</h2>
+        </div>
+
+        <div class="scenario">
+          <img src="../../images/projectsImg/extrude-studio/frames.jpg" alt="">
+        </div>
+      </div>
+
+      <div class="green videoSection">
+        <div class="sectionTxt">
+          <h5>The challenge</h5>
+          <h2>Create an intuitive and straightforward shopping experience</h2>
+          <p>The website was designed to allow users to quickly find information on the products, and have as less painpoints as possible when shopping online.</p>
+          <video autoplay muted>
+            <source src="../../videos/extrude-studio_landing-page.mp4" type="video/mp4">
+          </video>
+          <p class="narrowTxt">The choice of a sage color and simple design was chosen in accordance with the design studio products line.</p>
+        </div>
+      </div>
+
+      <div class="caracteristicsContainer">
+        <div class="caracteristics row">
+          <div class="column left">
+            <h5>Methodology</h5>
+            <h2>Testing</h2>
+            <p>The website was tested using Hotjar, in order to view the different users’ paths throughout the website, and make changes to enhance the user experience.</p>
+          </div>
+
+          <div class="column right">
+            <img src="../../images/projectsImg/extrude-studio/hotjar.png" alt="">
+          </div>
+        </div>
+
+        <div class="caracteristics row">
+          <div class="column left">
+            <h5>Development</h5>
+            <h2>Coding a functional e-commerce website</h2>
+            <p>Thinking about cost reduction, we thought of coding the website ourselves. Being the one with the most knowledge in web development, I took care of coding the responsive website, fully in HTML, CSS and JavaScript, with few libraries used. The e-commerce part was made using Shopify.</p>
+          </div>
+
+          <div class="column right">
+            <img src="../../images/projectsImg/extrude-studio/coding.png" alt="">
+          </div>
+        </div>
+      </div>
+
+
+      <div class="sectionRedirect row">
+        <div class="column left">
+          <h3 onmouseover="circleSmall()" onmouseout="circleBig()" onclick="window.location.href='../../index.html';"><i class="material-icons icon-studio">west</i> back to projects</h3>
+        </div>
+
+        <div class="column right">
+          <h3 onmouseover="circleSmall()" onmouseout="circleBig()" onclick="window.location.href='new_givebox.html';">next project <i class="material-icons icon-studio">east</i></h3>
+        </div>
+      </div>
+
+      <div class="footer row">
+        <div class="column left">
+          <a href="mailto:emilie@extrude.studio?subject=Object"><h1>Get in touch <i class="material-icons icon-studio">east</i></h1></a>
+        </div>
+
+        <div class="column right">
+          <h6>Instagram</h6>
+          <h4 onclick="window.open('https://www.instagram.com/emilie_does_design/')">Product design <i class="material-icons icon-studio">east</i></h4>
+          <h4 onclick="window.open('https://www.instagram.com/emilie_does_ux/')">UX/UI design <i class="material-icons icon-studio">east</i></h4>
+          <h4 onclick="window.open('https://www.instagram.com/thrulight/')">Photography <i class="material-icons icon-studio">east</i></h4>
+        </div>
+      </div>
+
+
+</body>
+
+<DOCTYPE html>
