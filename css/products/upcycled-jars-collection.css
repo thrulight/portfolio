@@ -1,0 +1,136 @@
+model-viewer {
+  background-color: #CCD8CA !important;
+}
+
+.splash img { background-color: #CCD8CA }
+
+.sectionTxt {
+  padding: 10vh 13vw 10vh 13vw;
+  width: 100%;
+  height: 100%;
+  background-color: #EDEDED;
+}
+.sectionTxt h2 {
+  margin-bottom: 5vh;
+}
+.sectionTxt h5 {
+  width: 50%;
+}
+
+.scenario {
+  padding: 10vh 7vw;
+  width: 100%;
+  height: 100%;
+  display: flex;
+  justify-content: center;
+}
+.scenario img {
+  width: auto;
+  height: 90vh;
+  object-fit: cover;
+}
+
+/* #region caracteristics */
+
+.caracteristics {
+  padding: 10vh 13vw;
+  background-color: #EDEDED;
+  width: 100%;
+}
+
+.caracteristics img {
+  max-width: 100%;
+  background-color: #CCD8CA;
+}
+
+.caracteristics .left, .caracteristics .right {
+  width: 50%;
+}
+
+.caracteristics .left {
+  padding-right: 7vw;
+}
+
+.caracteristics p {
+  width: 70%;
+  margin-top: 5vh;
+}
+
+.caracteristics h2 {
+  margin: 0;
+}
+
+.cutting-board h2 {
+  margin-top: 7vh;
+}
+
+.cutting-board { padding-top: 10vh }
+
+.caracteristics h5 {
+  margin-top: 4vh;
+  margin-bottom: 0;
+  width: 90%;
+  line-height: 120%;
+}
+
+.caracteristics .margin {
+  margin-top: 5vh;
+}
+
+.mockup {
+  background-color: #F6F6F6;
+}
+
+/* #endregion caracteristics */
+
+.sustainable {
+  padding: 15vh 13vw 5vh 13vw;
+  background-color: #E8E7E7;
+  width: 100%;
+}
+
+.sustainable img {
+  max-width: 100%;
+  margin-bottom: 5vh;
+}
+
+.sustainable .left, .sustainable .right {
+  width: 50%;
+}
+
+.sustainable p {
+  width: 70%;
+  margin-top: 3vh;
+  margin-bottom: 7vh;
+}
+
+.sustainable h2 {
+  margin: 0;
+}
+
+.sustainable h5 {
+  margin-bottom: 2vh;
+  /* margin-bottom: 0;*/
+  width: 60%;
+  line-height: 120%;
+}
+
+.sustainable .left {
+  padding-right: 1vh;
+}
+
+.sustainable .right {
+  padding-left: 1vh;
+}
+
+.sustainable h2, .sustainable p {
+  width: 50%;
+}
+
+.sustainable img {
+  background-color: #E8F1E3;
+}
+
+.sustainable {
+  background-color: #F6F6F6;
+}
