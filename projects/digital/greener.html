@@ -1,4 +1,5 @@
 <!DOCTYPE html>
+<html lang="en">
 <head>
   <link rel="icon" href="../../images/logo_circle.png">
   <meta charset="utf-8">
@@ -6,96 +7,180 @@
 
   <title>Emilie Durand - GREENER</title>
 
-  <link rel="stylesheet" href="../../css/digital/digital-project.css">
-  <link rel="stylesheet" href="../../css/digital/greener.css">
   <link rel="stylesheet" href="../../css/nonChangingElements_2.css">
+  <link rel="stylesheet" href="../../css/products/project-page.css">
   <link rel="stylesheet" href="../../css/switzer.css">
+  <link rel="stylesheet" href="../../css/digital/greener_2.css">
 
-  <script src="https://ajax.googleapis.com/ajax/libs/jquery/2.1.3/jquery.min.js"></script>
+  <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.5.1/jquery.min.js"></script>
   <script type="text/javascript" src="../../scripts/jquery.scrollie.js"></script>
   <script type="text/javascript" src="../../scripts/color-change.js"></script>
   <script type="text/javascript" src="../../scripts/script.js"></script>
-  <span id="circle" class="circle"></span>
+  <script type="text/javascript" src="../../scripts/mobile-redirect.js">
+
+  <!-- REQUIRED: Web Components polyfill to support Edge and Firefox < 63 -->
+  <script src="https://unpkg.com/@webcomponents/webcomponentsjs@2.1.3/webcomponents-loader.js"></script>
+
+  <!-- Intersection Observer polyfill for better performance in Safari and IE11 -->
+  <script src="https://unpkg.com/intersection-observer@0.5.1/intersection-observer.js"></script>
+
+  <!-- Resize Observer polyfill improves resize behavior in non-Chrome browsers -->
+  <script src="https://unpkg.com/resize-observer-polyfill@1.5.1/dist/ResizeObserver.js"></script>
+
+  <!-- Fullscreen polyfill is required for experimental AR features in Canary -->
+  <script src="https://unpkg.com/fullscreen-polyfill@1.0.2/dist/fullscreen.polyfill.js"></script>
+
+  <!-- Focus visible package -->
+  <script src="https://unpkg.com/focus-visible@5.1.0/dist/focus-visible.js"></script>
+
 
   <!-- Load an icon library to show a hamburger menu (bars) on small screens -->
   <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/4.7.0/css/font-awesome.min.css">
 
   <!-- Material Icons -->
-  <link href="https://fonts.googleapis.com/icon?family=Material+Icons"
-      rel="stylesheet">
+  <link href="https://fonts.googleapis.com/icon?family=Material+Icons" rel="stylesheet">
+
+  <span id="circle" class="circle"></span>
 
 </head>
 <body>
+  <div class="main-wrapper">
 
-  <!-- Navigation bar -->
-    <div class="X" id="X"><span  onclick="closeNav()">&times;</span></div>
-    <div id="overlay" class="overlay"></div>
 
-    <div class="nav-bar" id="myTopnav">
-      <!--<a href="../../index.html" id="title">EMILIE DURAND</a>-->
-      <ul class="nav-text">
-        <li><a class="work active" onmouseover="circleSmall()" onmouseout="circleBig()" href="../../index.html">work</a></li>
-        <li><a class="active" onmouseover="circleSmall()" onmouseout="circleBig()" href="../../about.html">info</a></li>
-        <li onmouseover="circleSmall()" onmouseout="circleBig()" style="float:left"><a class="nav-title" href="../../index.html">EMILIE DURAND</a></li>
+    <!-- Navigation bar -->
+      <div class="X" id="X"><span  onclick="closeNav()">&times;</span></div>
+      <div id="overlay" class="overlay"></div>
+
+      <div class="nav-bar" id="myTopnav">
+        <!--<a href="index.html" id="title">EMILIE DURAND</a>-->
+        <ul class="nav-text">
+          <li><a class="work active" onmouseover="circleSmall()" onmouseout="circleBig()" href="../../index.html">work</a></li>
+          <li><a class="active" onmouseover="circleSmall()" onmouseout="circleBig()" href="../../about.html">info</a></li>
+          <li onmouseover="circleSmall()" onmouseout="circleBig()" style="float:left"><a class="nav-title" href="../../index.html">EMILIE DURAND</a></li>
+        </ul>
+          <a class="icon" id="icon" onclick="openNav()">
+            <i class="fa fa-bars"></i>
+          </a>
+      </div>
+
+      <ul class="nav-bar-mobile" id="nav-bar-mobile">
+        <li><a class="active" onmouseover="circleSmall()" onmouseout="circleBig()" href="../../index.html">work <i class="material-icons icon-studio">east</i></a></li>
+        <li><a class="active" onmouseover="circleSmall()" onmouseout="circleBig()" href="../../about.html">info <i class="material-icons icon-studio">east</i></a></li>
       </ul>
-        <a class="icon" id="icon" onclick="openNav()">
-          <i class="fa fa-bars"></i>
-        </a>
-    </div>
 
-    <ul class="nav-bar-mobile" id="nav-bar-mobile">
-      <li><a class="active" onmouseover="circleSmall()" onmouseout="circleBig()" href="../../index.html">work <i class="material-icons icon-studio">east</i></a></li>
-      <li><a class="active" onmouseover="circleSmall()" onmouseout="circleBig()" href="../../about.html">info <i class="material-icons icon-studio">east</i></a></li>
-    </ul>
+      <div class="topSection row">
 
-  <div class="sectionTop">
-    <img class="logoGreener" src="../../images/projectsImg/digital/greener-logo.png" alt="">
-    <h3>Rewards for shopping sustainably</h3>
-    <p>
-      As part of my semester at ESCP Business School for the Option Entrepreneurship, we were asked to help an existing start-up.
-      <br>I chose to work as a UX/UI designer for them. They had an idea, but no app.
-      <br>This is the app,  followed by the landing page that I designed for them.
-    </p>
-  </div>
+        <div class="column left">
+          <h6>Sustainable scoring app</h6>
+          <h1><span style="font-weight: 500;">GREENER</span> is an app that allows users to get access to knowledge about what they buy</h1>
+        </div>
 
-  <div class="line"></div>
+        <div class="column right">
+          <h6>Date</h6>
+          <h4>2020</h4>
 
-  <div class="sectionApp">
-    <h4>The application</h4>
-    <img class="app" src="../../images/projectsImg/digital/greener-app.png" alt="">
-    <img class="app-gif" src="../../images/projectsImg/digital/greener-app_3.gif" alt="">
-  </div>
+          <h6>My role</h6>
+          <h4>UX/UI Design</h4>
 
-  <div class="sectionWhiteBoard">
-    <img src="../../images/projectsImg/digital/whiteboard-scan_greener.png" alt="">
-    <p>
-      The founders has original sketches with 12 differents menus for the app and a LOT of functionalities they wanted to implement.
-      <br>
-      <br>
-      I spent a lot of time prioritizing the features that would be the most interesting for the users.
-    </p>
-  </div>
+          <h6>Duration</h6>
+          <h4>2 weeks</h4>
 
-  <div class="sectionIdentity">
-    <h4>Redesigning the logo</h4>
-    <img class="logo-redesign" src="../../images/projectsImg/digital/logo-redesign_greener_2.png" alt="">
-    <img src="../../images/projectsImg/digital/color-accent_greener_2.png" alt="">
-  </div>
+          <h6>Team size</h6>
+          <h4>Only me</h4>
+        </div>
 
-  <div class="sectionLandingPage">
-    <h4>The landing page</h4>
-    <img src="../../images/projectsImg/digital/greener_landing-page.png" alt="">
-  </div>
+      </div>
 
-  <div class="sectionRedirect row">
-    <div class="column left">
-      <h3 onmouseover="circleSmall()" onmouseout="circleBig()" onclick="window.location.href='../../index.html';"><i class="material-icons icon-studio">west</i> back to projects</h3>
-    </div>
+      <div class="splash">
+        <img src="../../images/projectsImg/greener/splash.png" alt="">
+      </div>
 
-    <div class="column right">
-      <h3 onmouseover="circleSmall()" onmouseout="circleBig()" onclick="window.location.href='3D-repair.html';">next project <i class="material-icons icon-studio">east</i></h3>
-    </div>
-  </div>
+      <div class="sectionTxt">
+        <h2>As part of my semester at ESCP Business School for the Option Entrepreneurship, we were asked to help an existing start-up. I chose to work as a UX/UI designer for them. They had an idea, but no app.</h2>
+        <h5>This is the app,  followed by the landing page that I designed for them.</h5>
+      </div>
+
+      <div class="goal">
+        <div class="sectionTxt">
+          <h5>The initial goal</h5>
+          <h2>Designing a website for a product design studio, detailing the designers and product pages.</h2>
+        </div>
+
+        <div class="scenario">
+          <img src="../../images/projectsImg/greener/whiteboard.png" alt="">
+          <p>
+            The founders had original sketches with 12 differents menus for the app and a LOT of functionalities they wanted to implement.
+            <br><br>
+            I spent a lot of time prioritizing the features that would be the most interesting for the users.
+          </p>
+        </div>
+      </div>
+
+      <div class="sustainable row">
+        <h5>Branding</h5>
+        <h2>Choosing the logo</h2>
+        <p>
+          The founders originally didn’t want to modify their logo. A work was done to simplify it , and creating a clearer version of the app icon, which they didn’t have before.
+        </p>
+        <div class="column left">
+          <img src="../../images/projectsImg/greener/greener-logo_old.png" alt="">
+        </div>
+
+        <div class="column right">
+          <img src="../../images/projectsImg/greener/greener-logo_new.png" alt="">
+        </div>
+      </div>
+
+      <div class="caracteristics cutting-board row">
+        <div class="column left">
+          <h5>Branding</h5>
+          <h2>Color</h2>
+          <p>
+            A survey was made for the app target in order to choose the color that inspired them most a sustainable app.
+            <br><br>
+            The majority chose the one that is now their primary color.
+          </p>
+        </div>
+
+        <div class="column right">
+          <img src="../../images/projectsImg/greener/colors.png" alt="">
+        </div>
+      </div>
+
+      <div class="landingPage">
+        <div class="sectionTxt">
+          <h5>Landing page</h5>
+          <h2>Creating a simple landing page to better explain their product</h2>
+          <p>
+            A simple landing page was also created, as they both had some knowledge in coding. This allows them to have an online presence and explain the different features their product offers.
+          </p>
+        </div>
+
+        <div class="scenario">
+          <img src="../../images/projectsImg/greener/landing-page.png" alt="">
+        </div>
+      </div>
+
+      <div class="sectionRedirect row">
+        <div class="column left">
+          <h3 onmouseover="circleSmall()" onmouseout="circleBig()" onclick="window.location.href='../../index.html';"><i class="material-icons icon-studio">west</i> back to projects</h3>
+        </div>
+
+        <div class="column right">
+          <h3 onmouseover="circleSmall()" onmouseout="circleBig()" onclick="window.location.href='new_givebox.html';">next project <i class="material-icons icon-studio">east</i></h3>
+        </div>
+      </div>
 
 </body>
+
+<!-- Loads <model-viewer> for modern browsers: -->
+<script type="module"
+  src="https://unpkg.com/@google/model-viewer/dist/model-viewer.js">
+</script>
+
+<!-- Loads <model-viewer> for old browsers like IE11: -->
+<script nomodule
+  src="https://unpkg.com/@google/model-viewer/dist/model-viewer-legacy.js">
+</script>
+
 <DOCTYPE html>

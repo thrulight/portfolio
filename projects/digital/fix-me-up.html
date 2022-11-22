@@ -1,4 +1,5 @@
 <!DOCTYPE html>
+<html lang="en">
 <head>
   <link rel="icon" href="../../images/logo_circle.png">
   <meta charset="utf-8">
@@ -6,98 +7,170 @@
 
   <title>Emilie Durand - FixMeUp</title>
 
-  <link rel="stylesheet" href="../../css/digital/digital-project.css">
-  <link rel="stylesheet" href="../../css/digital/fix-me-up.css">
   <link rel="stylesheet" href="../../css/nonChangingElements_2.css">
+  <link rel="stylesheet" href="../../css/products/project-page.css">
   <link rel="stylesheet" href="../../css/switzer.css">
+  <link rel="stylesheet" href="../../css/digital/fix-me-up_2.css">
 
-  <script src="https://ajax.googleapis.com/ajax/libs/jquery/2.1.3/jquery.min.js"></script>
+  <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.5.1/jquery.min.js"></script>
   <script type="text/javascript" src="../../scripts/jquery.scrollie.js"></script>
   <script type="text/javascript" src="../../scripts/color-change.js"></script>
   <script type="text/javascript" src="../../scripts/script.js"></script>
-  <span id="circle" class="circle"></span>
+  <script type="text/javascript" src="../../scripts/mobile-redirect.js">
+
+  <!-- REQUIRED: Web Components polyfill to support Edge and Firefox < 63 -->
+  <script src="https://unpkg.com/@webcomponents/webcomponentsjs@2.1.3/webcomponents-loader.js"></script>
+
+  <!-- Intersection Observer polyfill for better performance in Safari and IE11 -->
+  <script src="https://unpkg.com/intersection-observer@0.5.1/intersection-observer.js"></script>
+
+  <!-- Resize Observer polyfill improves resize behavior in non-Chrome browsers -->
+  <script src="https://unpkg.com/resize-observer-polyfill@1.5.1/dist/ResizeObserver.js"></script>
+
+  <!-- Fullscreen polyfill is required for experimental AR features in Canary -->
+  <script src="https://unpkg.com/fullscreen-polyfill@1.0.2/dist/fullscreen.polyfill.js"></script>
+
+  <!-- Focus visible package -->
+  <script src="https://unpkg.com/focus-visible@5.1.0/dist/focus-visible.js"></script>
+
 
   <!-- Load an icon library to show a hamburger menu (bars) on small screens -->
   <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/4.7.0/css/font-awesome.min.css">
 
   <!-- Material Icons -->
-  <link href="https://fonts.googleapis.com/icon?family=Material+Icons"
-      rel="stylesheet">
+  <link href="https://fonts.googleapis.com/icon?family=Material+Icons" rel="stylesheet">
 
-  <!-- Global site tag (gtag.js) - Google Analytics -->
-<script async src="https://www.googletagmanager.com/gtag/js?id=UA-180791677-1"></script>
-<script>
-  window.dataLayer = window.dataLayer || [];
-  function gtag(){dataLayer.push(arguments);}
-  gtag('js', new Date());
-
-  gtag('config', 'UA-180791677-1');
-</script>
-
-<!-- Google Tag Manager -->
-<script>(function(w,d,s,l,i){w[l]=w[l]||[];w[l].push({'gtm.start':
-new Date().getTime(),event:'gtm.js'});var f=d.getElementsByTagName(s)[0],
-j=d.createElement(s),dl=l!='dataLayer'?'&l='+l:'';j.async=true;j.src=
-'https://www.googletagmanager.com/gtm.js?id='+i+dl;f.parentNode.insertBefore(j,f);
-})(window,document,'script','dataLayer','GTM-MV6QTJK');</script>
-<!-- End Google Tag Manager -->
-
+  <span id="circle" class="circle"></span>
 
 </head>
 <body>
-<!-- Google Tag Manager (noscript) -->
-<noscript><iframe src="https://www.googletagmanager.com/ns.html?id=GTM-MV6QTJK"
-height="0" width="0" style="display:none;visibility:hidden"></iframe></noscript>
-<!-- End Google Tag Manager (noscript) -->
+  <div class="main-wrapper">
 
-<!-- Navigation bar -->
-  <div class="X" id="X"><span  onclick="closeNav()">&times;</span></div>
-  <div id="overlay" class="overlay"></div>
 
-  <div class="nav-bar" id="myTopnav">
-    <!--<a href="index.html" id="title">EMILIE DURAND</a>-->
-    <ul class="nav-text">
-      <li><a class="work active" onmouseover="circleSmall()" onmouseout="circleBig()" href="../../index.html">work</a></li>
-      <li><a class="active" onmouseover="circleSmall()" onmouseout="circleBig()" href="../../about.html">info</a></li>
-      <li onmouseover="circleSmall()" onmouseout="circleBig()" style="float:left"><a class="nav-title" href="../../index.html">EMILIE DURAND</a></li>
-    </ul>
-      <a class="icon" id="icon" onclick="openNav()">
-        <i class="fa fa-bars"></i>
-      </a>
-  </div>
+    <!-- Navigation bar -->
+      <div class="X" id="X"><span  onclick="closeNav()">&times;</span></div>
+      <div id="overlay" class="overlay"></div>
 
-  <ul class="nav-bar-mobile" id="nav-bar-mobile">
-    <li><a class="active" onmouseover="circleSmall()" onmouseout="circleBig()" href="../../index.html">work <i class="material-icons icon-studio">east</i></a></li>
-    <li><a class="active" onmouseover="circleSmall()" onmouseout="circleBig()" href="../../about.html">info <i class="material-icons icon-studio">east</i></a></li>
-  </ul>
+      <div class="nav-bar" id="myTopnav">
+        <!--<a href="index.html" id="title">EMILIE DURAND</a>-->
+        <ul class="nav-text">
+          <li><a class="work active" onmouseover="circleSmall()" onmouseout="circleBig()" href="../../index.html">work</a></li>
+          <li><a class="active" onmouseover="circleSmall()" onmouseout="circleBig()" href="../../about.html">info</a></li>
+          <li onmouseover="circleSmall()" onmouseout="circleBig()" style="float:left"><a class="nav-title" href="../../index.html">EMILIE DURAND</a></li>
+        </ul>
+          <a class="icon" id="icon" onclick="openNav()">
+            <i class="fa fa-bars"></i>
+          </a>
+      </div>
 
-<div class="mainPageContainer">
-  <div class="section-header title">
-    <h1 onmouseover="circleSmall()" onmouseout="circleBig()" class="header">FIX ME UP</h1>
-  </div>
-  <h3>A platform for repairing things</h3>
-  <p>As part of my semester at ESCP Business School for the Option Entrepreneurship, we were asked to create a start-up. We decided to create a platform for repairig all kind of objects.
-    I was the one in charge of the UX/UI for the project.
-    We also had coding classes and had to design and code a landing page, which is what follows. The link to the coded one is below it.</p>
+      <ul class="nav-bar-mobile" id="nav-bar-mobile">
+        <li><a class="active" onmouseover="circleSmall()" onmouseout="circleBig()" href="../../index.html">work <i class="material-icons icon-studio">east</i></a></li>
+        <li><a class="active" onmouseover="circleSmall()" onmouseout="circleBig()" href="../../about.html">info <i class="material-icons icon-studio">east</i></a></li>
+      </ul>
 
-  <div class="line"></div>
+      <div class="topSection row">
 
-  <img src="../../images/projectsImg/digital/FixMeUp_landing-page.png" alt="">
+        <div class="column left">
+          <h6>Landing page for a platform</h6>
+          <h1><span style="font-weight: 500;">FixMeUp</span> is a platform for repairing things, through tutorials or peer-to-peer repairing services</h1>
+          <h5 class="liveWebsite" onmouseover="circleSmall()" onmouseout="circleBig()" onclick="window.open('https://thrulight.github.io/landing-page/')">View live website <i class="material-icons icon-studio">east</i></h5>
+        </div>
 
-  <h3><a onmouseover="circleSmall()" onmouseout="circleBig()" onclick="window.open('https://thrulight.github.io/landing-page/')">coded landing page:</br>https://thrulight.github.io/landing-page/</a></h3>
-  <h3><a onmouseover="circleSmall()" onmouseout="circleBig()" onclick="window.open('https://fix-me-up.wixsite.com/website')">website:</br>https://fix-me-up.wixsite.com/website</a></h3>
+        <div class="column right">
+          <h6>Date</h6>
+          <h4>2020</h4>
 
-</div>
+          <h6>My role</h6>
+          <h4>UX/UI Design</h4>
+        </div>
 
-<div class="sectionRedirect row">
-  <div class="column left">
-    <h3 onmouseover="circleSmall()" onmouseout="circleBig()" onclick="window.location.href='../../index.html';"><i class="material-icons icon-studio">west</i> back to projects</h3>
-  </div>
+      </div>
 
-  <div class="column right">
-    <h3 onmouseover="circleSmall()" onmouseout="circleBig()" onclick="window.location.href='3D-community.html';">next project <i class="material-icons icon-studio">east</i></h3>
-  </div>
-</div>
+      <div class="splash">
+        <img src="../../images/projectsImg/fixmeup/splash.png" alt="">
+      </div>
+
+      <div class="sectionTxt">
+        <h2>
+          As part of my semester at ESCP Business School for the Option Entrepreneurship, we were asked to create a start-up. We decided to create a platform for repairig all kind of objects.
+          I was the one in charge of the UX/UI for the project.
+        </h2>
+        <h5>We also had coding classes and had to design and code a landing page, which is what follows. The link to the coded one is below it.</h5>
+      </div>
+
+      <div class="goal">
+        <div class="sectionTxt">
+          <h5>The initial goal</h5>
+          <h2>Creating a landing page for our future start-up, by explaining all key functionalities while not overwhelming the user with information</h2>
+        </div>
+
+        <div class="scenario">
+          <img src="../../images/projectsImg/fixmeup/goal.png" alt="">
+        </div>
+      </div>
+
+      <div class="sustainable row">
+        <h5>Branding</h5>
+        <h2>Choosing the logo</h2>
+        <p>
+          The logo was meant to be simple yet recognizable, in small or big. The color was also chosen to inspire trust.
+        </p>
+        <div class="column left">
+          <img src="../../images/projectsImg/fixmeup/logo-bicolor.png" alt="">
+        </div>
+
+        <div class="column right">
+          <img src="../../images/projectsImg/fixmeup/logo-unicolor.png" alt="">
+        </div>
+      </div>
+
+      <div class="blue videoSection">
+        <div class="sectionTxt">
+          <h5>Accessibility</h5>
+          <h2>Creating an experience for different times of the day</h2>
+          <p>A dark mode toggle was added in order to suit the user’s preference</p>
+          <video autoplay muted>
+            <source src="../../videos/fixmeup_landing-page.mp4" type="video/mp4">
+          </video>
+        </div>
+      </div>
+
+      <div class="caracteristics cutting-board row">
+        <div class="column left">
+          <h5>Coding</h5>
+          <h2>The challenges of coding my first landing page</h2>
+          <p>
+            Even though this was an entrepeneurial and business semester, we happened to have a lot of different coding classes. It tought us the basics of HTML, CSS, JavaScript and PHP.
+            <br>
+            The final exam was coding the landing page for our future start-up.
+          </p>
+        </div>
+
+        <div class="column right">
+          <img src="../../images/projectsImg/fixmeup/coding.png" alt="">
+        </div>
+      </div>
+
+      <div class="sectionRedirect row">
+        <div class="column left">
+          <h3 onmouseover="circleSmall()" onmouseout="circleBig()" onclick="window.location.href='../../index.html';"><i class="material-icons icon-studio">west</i> back to projects</h3>
+        </div>
+
+        <div class="column right">
+          <h3 onmouseover="circleSmall()" onmouseout="circleBig()" onclick="window.location.href='new_givebox.html';">next project <i class="material-icons icon-studio">east</i></h3>
+        </div>
+      </div>
 
 </body>
+
+<!-- Loads <model-viewer> for modern browsers: -->
+<script type="module"
+  src="https://unpkg.com/@google/model-viewer/dist/model-viewer.js">
+</script>
+
+<!-- Loads <model-viewer> for old browsers like IE11: -->
+<script nomodule
+  src="https://unpkg.com/@google/model-viewer/dist/model-viewer-legacy.js">
+</script>
+
 <DOCTYPE html>
