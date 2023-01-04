@@ -134,3 +134,41 @@ model-viewer {
 .sustainable {
   background-color: #F6F6F6;
 }
+
+/* #region sectionPress */
+.sectionPress {
+  background-color: #EDEDED;
+  padding: 5% 7vw;
+}
+
+.sectionPress h1 {
+  margin: 0 0 4vh 0;
+  font-weight: 400;
+  font-size: 1.7vw;
+  color: black;
+  text-align: center;
+}
+
+.sectionPress .logoContainer {
+  display: flex;
+  justify-content: center;
+  gap: 1vw;
+}
+
+.sectionPress .logoContainer img {
+  width: 100%;
+  object-fit: contain;
+}
+
+.sectionPress .logoContainer .imgContainer:hover {
+  cursor: pointer;
+}
+
+.sectionPress .imgContainer {
+  width: 16.4vw;
+  padding: 3.5vw;
+  background-color: rgba(255,255,255,0.4);
+  display: flex;
+  aspect-ratio: 3/2;
+}
+/* #endregion sectionPress */
