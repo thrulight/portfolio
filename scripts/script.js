@@ -142,7 +142,6 @@ function onClick(e) {
   }
 
 // nav bar disapears
-
 if ( $(window).width() <= 900 ) {
   // Your mobile code goes here
 }else{
