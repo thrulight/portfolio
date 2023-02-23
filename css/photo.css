@@ -1,0 +1,11 @@
+.eapps-instagram-feed {
+    padding: 81px 0 !important;
+}
+
+@media screen and (max-width: 1110px){
+    
+    .eapps-instagram-feed {
+        padding: 81px 0 !important;
+    }
+
+}
