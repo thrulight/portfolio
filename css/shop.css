@@ -1,0 +1,58 @@
+.nav-bar { 
+    position: relative;
+    /*background-color: #cec5bb;*/
+}
+
+.sectionShop {
+    width: 100%;
+    height: 100%;
+}
+
+.sectionShop .column { 
+    width: 50%;
+    height: 90vh;
+    float: left;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: center;
+    padding: 10vh 0;
+}
+
+.sectionShop .left {
+    border-right: 1px solid rgba(0,0,0,0.2);
+}
+
+.material-icons {
+    font-size: 1rem !important;
+    line-height: 100%;
+    font-weight: 300;
+    vertical-align: middle;
+}
+
+button {
+    padding: 5px 15px;
+    background-color: black;
+    color: white;
+    border: none;
+    margin-top: 2vh;
+}
+button:hover { cursor: pointer}
+
+.sectionShop img { 
+    margin-bottom: 5vh;
+    max-width: 80vw;
+}
+
+@media screen and (max-width: 1110px){
+    .sectionShop .column {
+        height: 100%;
+        padding: 5vh 0;
+    }
+    
+    .sectionShop .left {
+        border-bottom: 1px solid rgba(0,0,0,0.2);
+    }
+
+    .sectionShop {padding: 5vh 0;}
+}

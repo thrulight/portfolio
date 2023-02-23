@@ -198,6 +198,13 @@ li a:hover {
   margin: 0;
   height: 100%;
 }
+
+.shop {
+  border-left: 1px solid rgba(0,0,0,0.2);
+  padding: 3.5vh 40px 3.5vh 40px;
+  margin: 0;
+  height: 100%;
+}
 /*
 .work:hover {
   color: white;
@@ -356,7 +363,7 @@ hr {
   position: fixed;
   justify-content: flex-end;
   top: 3px;
-  right: 15px;
+  right: 0px;
   color: white;
   font-size: 40px;
   /*margin-left: 45px;*/
@@ -380,11 +387,13 @@ hr {
   height: 100%;
   list-style: none;
   padding: 0;
-  top: 70%;
+  bottom: 10px;
+  justify-content: flex-end;
+  flex-direction: column;
 }
 
 .nav-bar-mobile li a {
-  padding: 2vh;
+  padding: 16px;
 
   text-decoration: none;
   color: white;
@@ -436,7 +445,7 @@ hr {
   text-decoration: none;
   color: black;
   display: block;
-  width: 100%
+  width: 100%;
   font-size: 1.2rem;
 }
 
@@ -468,4 +477,5 @@ model-viewer {
 
 }
 
-}
+
+

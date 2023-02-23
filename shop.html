@@ -1,0 +1,100 @@
+<!DOCTYPE html> <!-- Test FTP portfolio -->
+<html lang="en">
+<head>
+  <link rel="icon" href="images/logo_circle.png">
+  <meta charset="utf-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+
+  <title>Emilie Durand</title>
+
+  <link rel="stylesheet" href="css/nonChangingElements_2.css">
+  <link rel="stylesheet" href="css/color-change.css">
+  <link rel="stylesheet" href="css/shop.css">
+  <link rel="stylesheet" href="css/switzer.css">
+
+
+  <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.5.1/jquery.min.js"></script>
+  <script type="text/javascript" src="scripts/script-2.js"></script>
+  <script type="text/javascript" src="scripts/jquery.scrollie.js"></script>
+  <script type="text/javascript" src="scripts/color-change.js"></script>
+
+  <!-- Load an icon library to show a hamburger menu (bars) on small screens -->
+  <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/4.7.0/css/font-awesome.min.css">
+
+  <!-- Material Icons -->
+  <link href="https://fonts.googleapis.com/icon?family=Material+Icons"
+      rel="stylesheet">
+
+  <span id="circle" class="circle"></span>
+
+  <!-- Hotjar Tracking Code for Portfolio -->
+  <script>
+    (function(h,o,t,j,a,r){
+        h.hj=h.hj||function(){(h.hj.q=h.hj.q||[]).push(arguments)};
+        h._hjSettings={hjid:3362791,hjsv:6};
+        a=o.getElementsByTagName('head')[0];
+        r=o.createElement('script');r.async=1;
+        r.src=t+h._hjSettings.hjid+j+h._hjSettings.hjsv;
+        a.appendChild(r);
+    })(window,document,'https://static.hotjar.com/c/hotjar-','.js?sv=');
+  </script>
+
+</head>
+<body>
+  <div class="main-wrapper">
+
+    <!-- Navigation bar -->
+    <div class="X" id="X"><span  onclick="closeNav()">&times;</span></div>
+    <div id="overlay" class="overlay"></div>
+
+    <div class="nav-bar fadeIn" id="myTopnav">
+    <a href="index.html" id="title">EMILIE DURAND</a>
+    <ul class="nav-text">
+        <li><a class="work active" onmouseover="circleSmall()" onmouseout="circleBig()" href="index.html">work</a></li>
+        <li><a class="shop active" onmouseover="circleSmall()" onmouseout="circleBig()" href="shop.html">shop</a></li>
+        <li><a class="active" onmouseover="circleSmall()" onmouseout="circleBig()" href="about.html">about</a></li>
+        <li onmouseover="circleSmall()" onmouseout="circleBig()" style="float:left"><a class="nav-title" href="index.html">EMILIE DURAND</a></li>
+    </ul>
+        <a class="icon" id="icon" onclick="openNav()">
+        <i class="fa fa-bars"></i>
+        </a>
+    </div>
+
+    <ul class="nav-bar-mobile" id="nav-bar-mobile">
+    <li><a class="active" onmouseover="circleSmall()" onmouseout="circleBig()" href="index.html">work <i class="material-icons icon-studio">east</i></a></li>
+    <li><a class="active" onmouseover="circleSmall()" onmouseout="circleBig()" href="shop.html">shop <i class="material-icons icon-studio">east</i></a></li>
+    <li><a class="active" onmouseover="circleSmall()" onmouseout="circleBig()" href="about.html">about <i class="material-icons icon-studio">east</i></a></li>
+    </ul>
+
+    <div class="sectionShop row">
+        <div class="column left">
+            <img src="images/3D-printed.png" alt="">
+            <p>The objects are 3D-printed by myself in Paris</p>
+            <button onclick="window.open('https://emiliedoesdesign.etsy.com')"><p>Go to Etsy stop <i class="material-icons icon-studio">east</i></p></button>
+        </div>
+
+        <div class="column right">
+            <img src="images/3D-file.png" alt="">
+            <p>The 3D-files of the objects, if you own a 3D printer</p>
+            <button onclick="window.open('https://cults3d.com/fr/utilisateurs/emilie_does_design/cr%C3%A9ations')"><p>Go to Cults3D stop <i class="material-icons icon-studio">east</i></p></button>
+        </div>
+    </div>
+
+    <div class="footer row">
+      <div class="column left">
+        <a href="mailto:emilie@extrude.studio?subject=Object"><h1>Get in touch <i class="material-icons icon-studio">east</i></h1></a>
+      </div>
+
+      <div class="column right">
+        <h6>Instagram</h6>
+        <h4 onclick="window.open('https://www.instagram.com/emilie_does_design/')">Product design <i class="material-icons icon-studio">east</i></h4>
+        <h4 onclick="window.open('https://www.instagram.com/emilie_does_ux/')">UX/UI design <i class="material-icons icon-studio">east</i></h4>
+        <h4 onclick="window.open('https://www.instagram.com/thrulight/')">Photography <i class="material-icons icon-studio">east</i></h4>
+      </div>
+    </div>
+
+  </div>
+
+</body>
+
+<DOCTYPE html>
