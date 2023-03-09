@@ -204,3 +204,32 @@ model-viewer {
 
 .sectionRedirect { background-color: #EDEDED }
 /* #endregion landingPage */
+
+@media screen and (max-width: 900px){
+
+  .splash {height: 100%;}
+
+  .sectionTxt, .videoSection, .caracteristicsContainer, .goal, .sustainable, .caracteristics, .landingPage { padding: 5vh 7vw;}
+
+  .sectionTxt h5, .goal .scenario p, .landingPage p {width: 100%;}
+
+  .sectionTxt h2 {margin-bottom: 0;}
+
+  .scenario {padding: 0 7vw 5vh 7vw;}
+
+  .goal .sectionTxt, .goal .scenario, .landingPage .sectionTxt, .landingPage .scenario {padding: 0;}
+
+  .goal .sectionTxt h2 {margin-bottom: 5vh;}
+
+  .sustainable h2, .sustainable h5, .sustainable p {width: 100%;}
+  .caracteristics h2, .caracteristics h5, .caracteristics p {width: 100%;}
+
+  .sustainable .left, .sustainable .right {padding: 0}
+
+  .sustainable img {margin-bottom: 2vh;}
+
+  .sustainable p, .landingPage p { margin-bottom: 3vh;}
+
+  .caracteristics h5 {margin: 0 0 1vh 0}
+
+}
