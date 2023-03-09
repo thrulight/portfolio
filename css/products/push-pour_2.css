@@ -96,3 +96,38 @@ model-viewer {
 }
 
 /* #endregion caracteristics */
+
+@media screen and (max-width: 1110px){
+
+  .sectionTxt h5 {
+    width: 100%;
+  }
+
+
+}
+
+@media screen and (max-width: 900px){
+
+  .sectionTxt, .scenario, .instructions, .caracteristics { padding: 5vh 7vw;}
+
+  .scenario img {
+    width: 100%;
+    height: 100%;
+  }
+
+  .instructions h5 { margin-bottom: 5vh;}
+
+  .caracteristics h2 {
+    margin-top: 0;
+  }
+
+  .caracteristics .left {
+    padding-right: 0;
+    margin-bottom: 5vh;
+  }
+
+  .mockup h5 {
+    margin: 0 0 1vh 0;
+  }
+
+}
