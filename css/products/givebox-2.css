@@ -6,6 +6,18 @@ mobile-viewer {
   margin-bottom: 2vh;
 }
 
+.splash2 img { 
+  width: 100%;
+  height: 100%;
+  margin-bottom: 2vh;
+}
+
+.splash2 {
+  padding: 5vh 7vw 10vh 7vw;
+  width: 100%;
+  height: 100%;
+}
+
 .sectionTxt {
   padding: 10vh 13vw 10vh 13vw;
   width: 100%;
@@ -47,4 +59,16 @@ mobile-viewer {
 .caracteristics h5 {
   margin-top: 7vh;
   margin-bottom: 0;
+}
+
+@media screen and (max-width: 900px){
+
+  .sectionTxt, .caracteristics, .splash2 { padding: 5vh 7vw;}
+
+  .sectionTxt h2 { width: 100%}
+
+  .caracteristics h5 {margin: 0 0 1vh 0}
+
+  .caracteristics h2, .caracteristics p { width: 100%;}
+
 }

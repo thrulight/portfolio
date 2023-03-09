@@ -44,8 +44,6 @@ button:hover { cursor: pointer}
     max-width: 80vw;
 }
 
-.footer:hover { cursor: default}
-
 @media screen and (max-width: 1110px){
     .sectionShop .column {
         height: 100%;

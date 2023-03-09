@@ -15,6 +15,8 @@ html {
   100% { transform: translate(0, 0); opacity: 1; }
 }
 
+.footer:hover { cursor: default}
+
 .tag {
   opacity: 0;
   transform: translate(0, 10vh);
