@@ -172,3 +172,75 @@ model-viewer {
   aspect-ratio: 3/2;
 }
 /* #endregion sectionPress */
+
+@media screen and (max-width: 1110px){
+
+  .sectionTxt h5 {
+    width: 100%;
+  }
+
+  .cutting-board h2 {
+    margin-top: 0;
+  }
+
+  .caracteristics .left {
+    padding-right: 0;
+    margin-bottom: 5vh;
+  }
+
+  .sustainable h2, .sustainable p {
+    width: 100%;
+  }
+
+  .sectionPress h1 { font-size: 1.125rem;}
+
+}
+
+@media screen and (max-width: 900px){
+
+  .sectionTxt {
+    padding: 5vh 7vw 5vh 7vw;
+  }
+
+  .sectionTxt h5 {
+    width: 100%;
+  }
+
+  .scenario { padding: 5vh 7vw;}
+
+  .scenario img {
+    width: 100%;
+    height: 100%;
+  }
+
+  .caracteristics, .sustainable, .sectionPress {padding: 5vh 7vw;}
+
+  .cutting-board h2 {
+    margin-top: 0;
+  }
+
+  .caracteristics .left {
+    padding-right: 0;
+    margin-bottom: 5vh;
+  }
+
+  .sustainable h2, .sustainable p {
+    width: 100%;
+  }
+
+  .sectionPress .logoContainer { 
+    flex-direction: column;
+    align-items: center;
+    gap: 2vw;
+  }
+
+  .sectionPress .imgContainer {
+    width: 100%;
+    aspect-ratio: 5/2;
+    padding: 17vw;
+  }
+
+  .sectionPress h1 { font-size: 1.125rem;}
+
+
+}

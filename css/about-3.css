@@ -85,7 +85,7 @@ h2 {
   cursor: none;
   color: white;
   transition: all 0.5s ease-in-out;
-  -webkit transition: all 0.5s ease-in-out;
+  -webkit-transition: all 0.5s ease-in-out;
 }
 
 .paragraph {
@@ -170,11 +170,17 @@ h2 {
 }
 
 /* #region mobile */
+@media screen and (max-width: 1110px){
+  .column {
+    float: left !important;
+  }
+}
 
 @media screen and (max-width: 900px){
 
 .mainPageContainer {
   padding: 0 7vw 10vh 7vw;
+  margin-top: 7em;
 }
 
 .sectionTop .right p {
@@ -195,6 +201,8 @@ h2 {
 h2 {
   margin: 5vh 0 1vh 0;
 }
+
+
 
 }
 

@@ -475,6 +475,17 @@ model-viewer {
   padding: 5%;
 }
 
+.footer {
+  display: block;
+  padding: 7vh 7vw;
+}
+
+.footer h1, .footer h1 .material-icons {
+  font-size: 3rem;
+  display: flex;
+  margin-bottom: 3vh;
+}
+
 }
 
 

@@ -23,7 +23,7 @@
     border-right: 1px solid rgba(0,0,0,0.2);
 }
 
-.material-icons {
+.sectionShop .material-icons {
     font-size: 1rem !important;
     line-height: 100%;
     font-weight: 300;
@@ -44,6 +44,8 @@ button:hover { cursor: pointer}
     max-width: 80vw;
 }
 
+.footer:hover { cursor: default}
+
 @media screen and (max-width: 1110px){
     .sectionShop .column {
         height: 100%;
@@ -55,4 +57,8 @@ button:hover { cursor: pointer}
     }
 
     .sectionShop {padding: 5vh 0;}
+
+    .column {
+        float: left !important;
+      }
 }

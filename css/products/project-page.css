@@ -114,3 +114,88 @@ body {
   width: 100%;
   bottom: 0;
 }
+
+@media screen and (max-width: 1110px){
+  
+  h1 { font-size: 3rem;}
+  h2 { font-size: 2rem;}
+  h3 { font-size: 1.5rem;}
+  h4 { font-size: 1.125rem;}
+  h5 { font-size: 1rem;}
+
+  .topSection .right { padding-left: 0;}
+  .topSection .left { 
+    padding-right: 0;
+    margin-bottom: 5vh;
+  }
+
+  .topSection { margin-bottom: 0;}
+
+  .bottomAR {margin-top: 2vh;}
+
+  .arSection .column {height: 100%;}
+
+  .arSection model-viewer { height: 300px;}
+
+  .sectionRedirect { 
+    padding: 5vh 7vw;
+  }
+
+  .left, .right { width: 50% !important;}
+
+  .column {float: left !important;}
+
+  .topSection .left {width: 70% !important;}
+  .topSection .right {width: 30% !important;}
+
+}
+
+@media screen and (max-width: 900px){
+  
+  h1 { font-size: 3rem;}
+  h2 { font-size: 2rem;}
+  h3 { font-size: 1.5rem;}
+  h4 { font-size: 1.125rem;}
+  h5 { font-size: 1rem;}
+
+  .topSection .right { padding-left: 0;}
+  .topSection .left { 
+    padding-right: 0;
+    margin-bottom: 5vh;
+  }
+
+  .topSection { margin-bottom: 0;}
+
+  .splash {
+    padding: 0;
+    height: 30vh;
+  }
+  .arSection {
+    padding: 5vh 7vw 5vh 7vw;
+    flex-direction: column;
+    margin-bottom: 0;
+  }
+
+  .arSection .right {
+    padding: 5vh 0 0 0;
+    height: 100%;
+  }
+
+  .bottomAR {margin-top: 2vh;}
+
+  .arSection .column {height: 100%;}
+
+  .arSection model-viewer { height: 300px;}
+
+  .sectionRedirect { 
+    padding: 5vh 7vw;
+  }
+
+  .left, .right { width: 100% !important;}
+
+  .column {float: none !important;}
+
+  .topSection .left {width: 100% !important;}
+  .topSection .right {width: 100% !important;}
+
+}
