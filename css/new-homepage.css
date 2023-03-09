@@ -237,7 +237,8 @@
 
 .footer .left p, .footer .left a {margin: 0}
 
-.footer .left p {opacity: 0.3;}
+.footer .left p {color: #585858;}
+.footer .left span {color: #fff}
 
 /* #region mobile version */
 @media screen and (max-width: 1110px){
