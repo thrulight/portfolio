@@ -325,6 +325,13 @@ hr {
   text-decoration: none;
 }
 
+.footer .left .material-icons { 
+  font-size: 6.8vh;
+  vertical-align: bottom;
+}
+
+.footer h4:hover {cursor: pointer}
+
 /* #region mobile version */
 @media screen and (max-width: 900px){
 
