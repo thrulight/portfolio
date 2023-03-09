@@ -152,3 +152,33 @@ model-viewer {
   object-position: bottom;
 }
 .cheminement h2 { margin-bottom: 3vh }
+
+@media screen and (max-width: 900px){
+
+  .section-data, .scenario, .caracteristics, .cheminement {padding: 5vh 7vw;}
+
+  .section-data .left, .section-data .center, .section-data .right {
+    width: 100% !important;
+  }
+
+  .section-data .container { height: 150px;}
+
+  .section-data .center { margin: 0}
+
+  .scenario img {
+    width: 100%;
+    height: 100%;
+    max-height: 100%;
+    margin-top: 2vh;
+  }
+
+  .caracteristics h5 { margin: 0 0 1vh 0}
+  .caracteristics p { margin-bottom: 5vh}
+
+  .caracteristics h2, .caracteristics p { width: 100%;}
+
+  .caracteristics .left {padding-right: 0;}
+
+  .prototyping p { margin-bottom: 0;}
+
+}
