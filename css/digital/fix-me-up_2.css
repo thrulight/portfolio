@@ -198,3 +198,25 @@ model-viewer {
 }
 
 .sectionRedirect { background-color: #F6F6F6 }
+
+@media screen and (max-width: 900px){
+
+  .splash {height: 100%;}
+
+  .sectionTxt, .goal, .sustainable, .videoSection .sectionTxt, .caracteristics { padding: 5vh 7vw;}
+
+  .sectionTxt h5 { width: 100%;}
+
+  .goal .sectionTxt, .goal .scenario { padding: 0}
+
+  .goal .sectionTxt h2 {margin-bottom: 5vh;}
+
+  .sustainable h2, .sustainable h5, .sustainable p {width: 100%;}
+  .caracteristics h2, .caracteristics h5, .caracteristics p {width: 100%;}
+
+  .sustainable .left, .sustainable .right {padding: 0}
+
+  .sustainable img {margin-bottom: 2vh;}
+
+  .sustainable p { margin-bottom: 3vh;}
+}

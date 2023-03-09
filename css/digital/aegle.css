@@ -125,3 +125,19 @@
         padding-left: 0vw;
   }
 }
+
+@media screen and (max-width: 900px){
+
+  .splash {height: 100%;}
+
+  .sectionTxt, .videoSection .sectionTxt, .caracteristicsContainer { padding: 5vh 7vw;}
+
+  .sectionTxt h2 {margin-bottom: 0;}
+
+  .scenario {padding: 0 7vw 5vh 7vw;}
+
+  .narrowTxt {width: 100%;}
+
+  .caracteristics {padding: 0;}
+  .caracteristics p {width: 100%;}
+}

@@ -52,30 +52,35 @@ img {
 /* #region mobile version */
 @media screen and (max-width: 900px){
 
-.mainPageContainer {
-  padding: 5% 5% 20% 5%;
-}
+  .mainPageContainer {
+    padding: 5% 5% 20% 5%;
+  }
 
-p {
-  margin: 0;
-}
+  p {
+    margin: 0;
+  }
 
-img {
-  width: 90vw;
-  margin-top: 10vh;
-  margin-bottom: 10vh;
-}
+  img {
+    width: 90vw;
+    margin-top: 10vh;
+    margin-bottom: 10vh;
+  }
 
-.line {
-  display: none;
-}
+  .line {
+    display: none;
+  }
 
-.section-header {
-  padding: 10vh 0 0 0;
-}
+  .section-header {
+    padding: 10vh 0 0 0;
+  }
 
-h3 a {
-  font-size: .7em !important;
-}
+  h3 a {
+    font-size: .7em !important;
+  }
 
+  .splash {
+    height: 100%;
+  }
+
+}
 /* #endregion mobile version */
