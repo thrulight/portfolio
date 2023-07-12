@@ -230,16 +230,6 @@
 
 /* #endregion uxSection */
 
-.footer .left {
-  align-items: flex-start !important;
-  flex-direction: column !important;
-}
-
-.footer .left p, .footer .left a {margin: 0}
-
-.footer .left p {color: #6d6d6d;}
-.footer .left span {color: #fff}
-
 /* #region mobile version */
 @media screen and (max-width: 1110px){
 
