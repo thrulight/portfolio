@@ -95,24 +95,6 @@ h2 {
   opacity: 0;
 }
 
-.footer {
-  padding: 1vh 0 1vh 0;
-  display: flex;
-  justify-content: center;
-}
-
-.footer img {
-  max-width: 1.2em;
-  object-fit: contain;
-  margin-left: 1vw;
-}
-
-.footer p {
-  font-weight: 400;
-  letter-spacing: .1em;
-  font-size: .9rem;
-}
-
 /* columns */
 .column {
   float: left;

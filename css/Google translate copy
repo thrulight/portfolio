@@ -1,0 +1,47 @@
+.center {
+    float: none;
+    position: absolute;
+    top: 50%;
+    left: 50%;
+    transform: translate(-50%, -50%);
+    display: flex;
+  }
+  
+  .toggleLanguage {
+    background: transparent;
+    border: none;
+    padding: 0;
+  }
+
+  .shop {
+    /*border-left: 1px solid rgba(0,0,0,0.2);*/
+    padding: 3.5vh 40px 3.5vh 40px;
+    margin: 0;
+    height: 100%;
+  }
+
+  <!-- Navigation bar -->
+  <div class="X" id="X"><span  onclick="closeNav()">&times;</span></div>
+  <div id="overlay" class="overlay"></div>
+
+  <div class="nav-bar" id="myTopnav">
+    <a href="index.html" id="title">EMILIE DURAND</a>
+    <ul class="nav-text">
+      <li style="float:right"><a class="work active" onmouseover="circleSmall()" onmouseout="circleBig()" href="index.html">work</a></li>
+      <li style="float:right">
+        <button onclick="toggleLanguageButton()" class="toggleLanguage" id="toggleLanguage">
+          <a class="" onmouseover="circleSmall()" onmouseout="circleBig()" ">FR | ENG</a>
+        </button>
+      </li>
+
+      <div class="center">
+        <li><a class="shop active" onmouseover="circleSmall()" onmouseout="circleBig()" href="shop.html">shop</a></li>
+      <li><a class="active" onmouseover="circleSmall()" onmouseout="circleBig()" href="about.html">about</a></li>
+      </div>
+      
+      <li onmouseover="circleSmall()" onmouseout="circleBig()" style="float:left"><a class="nav-title" href="index.html">EMILIE DURAND</a></li>
+    </ul>
+      <a class="icon" id="icon" onclick="openNav()">
+        <i class="fa fa-bars"></i>
+      </a>
+  </div>

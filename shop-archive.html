@@ -11,16 +11,12 @@
   <link rel="stylesheet" href="css/color-change.css">
   <link rel="stylesheet" href="css/shop.css">
   <link rel="stylesheet" href="css/switzer.css">
-  <link rel="stylesheet" href="css/translate.css">
 
 
   <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.5.1/jquery.min.js"></script>
   <script type="text/javascript" src="scripts/script-2.js"></script>
   <script type="text/javascript" src="scripts/jquery.scrollie.js"></script>
   <script type="text/javascript" src="scripts/color-change.js"></script>
-
-  <!-- Translation -->
-  <script type="text/javascript" src="scripts/shop-traduction.js"></script>
 
   <!-- Load an icon library to show a hamburger menu (bars) on small screens -->
   <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/4.7.0/css/font-awesome.min.css">
@@ -52,26 +48,15 @@
     <div id="overlay" class="overlay"></div>
 
     <div class="nav-bar fadeIn" id="myTopnav">
-      <a href="index.html" id="title">EMILIE DURAND</a>
-      <ul class="nav-text">
-
-        <div style="float:right" class="right">
-          <li><a class="work active" onmouseover="circleSmall()" onmouseout="circleBig()" href="index.html"><span class="lang-work"></span></a></li>
-          <li class="country">
-            <select id="country_select" onchange="loadsLanguage(this.value);" onclick="imageChange();" onchange="imageChange();"></select>
-          </li>
-        </div>
-        
-
-        <div class="center">
-          <li><a class="shop active" onmouseover="circleSmall()" onmouseout="circleBig()" href="shop.html"><span class="lang-shop"></a></li>
-        <li><a class="active" onmouseover="circleSmall()" onmouseout="circleBig()" href="about.html"><span class="lang-about"></a></li>
-        </div>
-
+    <a href="index.html" id="title">EMILIE DURAND</a>
+    <ul class="nav-text">
+        <li><a class="work active" onmouseover="circleSmall()" onmouseout="circleBig()" href="index.html">work</a></li>
+        <li><a class="shop active" onmouseover="circleSmall()" onmouseout="circleBig()" href="shop.html">shop</a></li>
+        <li><a class="active" onmouseover="circleSmall()" onmouseout="circleBig()" href="about.html">about</a></li>
         <li onmouseover="circleSmall()" onmouseout="circleBig()" style="float:left"><a class="nav-title" href="index.html">EMILIE DURAND</a></li>
-      </ul>
+    </ul>
         <a class="icon" id="icon" onclick="openNav()">
-          <i class="fa fa-bars"></i>
+        <i class="fa fa-bars"></i>
         </a>
     </div>
 
@@ -84,22 +69,22 @@
     <div class="sectionShop row">
         <div class="column left">
             <img src="images/3D-printed.png" alt="">
-            <p><span class="lang-Etsy"></span></p>
+            <p>The objects are 3D-printed by myself in Paris</p>
             <button onclick="window.open('https://StudioEmilieDurand.etsy.com')"><p>Go to Etsy stop <i class="material-icons icon-studio">east</i></p></button>
         </div>
 
         <div class="column right">
             <img src="images/3D-file.png" alt="">
-            <p><span class="lang-Cults3D"></span></p>
+            <p>The 3D-files of the objects, if you own a 3D printer</p>
             <button onclick="window.open('https://cults3d.com/fr/utilisateurs/emilie_does_design/cr%C3%A9ations')"><p>Go to Cults3D stop <i class="material-icons icon-studio">east</i></p></button>
         </div>
     </div>
 
     <div class="footer row">
       <div class="column left">
-        <a href="mailto:emilie@extrude.studio?subject=Object"><h1><span class="lang-getInTouch"></span> <i class="material-icons icon-studio">east</i></h1></a>
+        <a href="mailto:emilie@extrude.studio?subject=Object"><h1>Get in touch <i class="material-icons icon-studio">east</i></h1></a>
       </br>
-        <p><span class="lang-coded"></span> <span class="lang-me"></span><br><span class="lang-license"></span> <span class="highlight">CC-BY-NC-ND</span></p>
+        <p>This website is designed and coded by <span>me</span><br>All projects are licensed under <span>CC-BY-NC-ND</span></p>
       </div>
 
       <div class="column right">

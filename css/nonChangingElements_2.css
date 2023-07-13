@@ -340,7 +340,7 @@ hr {
 .footer .left p, .footer .left a {margin: 0}
 
 .footer .left p {color: #6d6d6d;}
-.footer .left span {color: #fff}
+.footer .left .highlight {color: #fff}
 
 /* #region mobile version */
 @media screen and (max-width: 900px){
@@ -432,13 +432,21 @@ hr {
   padding: 2.5vh 7vw 2.5vh 7vw;
 }
 
-.nav-bar ul * {
+/*.nav-bar ul * {
+  display: none;
+}*/
+
+.nav-bar li {
   display: none;
 }
 
 .nav-bar li {
   float: none;
 }
+
+#country_select {
+  float: right;
+ }
 
 .nav-bar .icon {
   display: flex;
