@@ -266,19 +266,6 @@
     display: none;
   }
 
-  .footer {
-    display: block;
-    padding: 7vh 7vw;
-  }
-
-  .footer h1, .footer h1 .material-icons {
-    font-size: 3rem !important;
-    display: flex;
-    margin-bottom: 0;
-  }
-
-  .footer .left p {margin-bottom: 5vh; }
-
 }
 
 @media screen and (max-width: 900px){

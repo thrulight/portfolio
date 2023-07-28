@@ -2,6 +2,19 @@ html {
   cursor: url("../cursors/cursor_circle.svg") 5 5, auto;
 }
 
+/* Cookie bot */
+#CybotCookiebotDialogFooter #CybotCookiebotDialogBodyButtonAccept, #CybotCookiebotDialogFooter #CybotCookiebotDialogBodyLevelButtonAccept, #CybotCookiebotDialogFooter #CybotCookiebotDialogBodyLevelButtonLevelOptinAllowAll {
+  background-color: black !important;
+}
+
+#CybotCookiebotDialogFooter .CybotCookiebotDialogBodyButton {
+border: 2px solid black !important;
+}
+
+#CybotCookiebotDialog.CybotEdge #CybotCookiebotDialogBodyEdgeMoreDetails a {
+  color: black !important;
+}
+
 /* #region animations */
 .slideLeft {
   animation: translate 1s;
@@ -446,6 +459,7 @@ hr {
 
 #country_select {
   float: right;
+  padding: 0 7px !important;
  }
 
 .nav-bar .icon {
@@ -508,10 +522,12 @@ model-viewer {
 }
 
 .footer h1, .footer h1 .material-icons {
-  font-size: 3rem;
+  font-size: 3rem !important;
   display: flex;
-  margin-bottom: 3vh;
+  margin-bottom: 0;
 }
+
+.footer .left p {margin-bottom: 5vh; }
 
 }
 
