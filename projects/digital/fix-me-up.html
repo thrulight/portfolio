@@ -13,7 +13,7 @@
   <link rel="stylesheet" href="../../css/digital/fix-me-up_2.css">
 
   <!-- Translation -->
-  <script type="text/javascript" src="../../scripts/index-traduction.js"></script>
+  <script type="text/javascript" src="../../scripts/digital/fix-me-up-translation.js"></script>
   <link rel="stylesheet" href="../../css/translate.css">
 
   <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.5.1/jquery.min.js"></script>
@@ -52,41 +52,50 @@
 
 
     <!-- Navigation bar -->
-      <div class="X" id="X"><span  onclick="closeNav()">&times;</span></div>
-      <div id="overlay" class="overlay"></div>
+    <div class="X" id="X"><span  onclick="closeNav()">&times;</span></div>
+    <div id="overlay" class="overlay"></div>
 
-      <div class="nav-bar" id="myTopnav">
-        <a href="../../index.html" id="title">EMILIE DURAND</a>
-        <ul class="nav-text">
-          <li><a class="work active" onmouseover="circleSmall()" onmouseout="circleBig()" href="../../index.html">work</a></li>
-          <li><a class="shop active" onmouseover="circleSmall()" onmouseout="circleBig()" href="../../shop.html">shop</a></li>
-          <li><a class="active" onmouseover="circleSmall()" onmouseout="circleBig()" href="../../about.html">info</a></li>
-          <li onmouseover="circleSmall()" onmouseout="circleBig()" style="float:left"><a class="nav-title" href="../../index.html">EMILIE DURAND</a></li>
-        </ul>
-          <a class="icon" id="icon" onclick="openNav()">
-            <i class="fa fa-bars"></i>
-          </a>
-      </div>
+    <div class="nav-bar fadeIn" id="myTopnav">
+      <a href="../../index.html" id="title">EMILIE DURAND</a>
+      <ul class="nav-text">
 
-      <ul class="nav-bar-mobile" id="nav-bar-mobile">
-        <li><a class="active" onmouseover="circleSmall()" onmouseout="circleBig()" href="../../index.html">work <i class="material-icons icon-studio">east</i></a></li>
-        <li><a class="active" onmouseover="circleSmall()" onmouseout="circleBig()" href="../../shop.html">shop <i class="material-icons icon-studio">east</i></a></li>
-        <li><a class="active" onmouseover="circleSmall()" onmouseout="circleBig()" href="../../about.html">info <i class="material-icons icon-studio">east</i></a></li>
+        <div style="float:right" class="float-right">
+          <li><a class="work active" onmouseover="circleSmall()" onmouseout="circleBig()" href="../../index.html"><span class="lang-work"></span></a></li>
+          <select id="country_select" onchange="loadsLanguage(this.value);" onclick="imageChange();" onchange="imageChange();"></select>
+        </div>
+        
+
+        <div class="center">
+          <li><a class="shop active" onmouseover="circleSmall()" onmouseout="circleBig()" href="../../shop.html"><span class="lang-shop"></span></a></li>
+        <li><a class="active" onmouseover="circleSmall()" onmouseout="circleBig()" href="../../about.html"><span class="lang-about"></span></a></li>
+        </div>
+
+        <li onmouseover="circleSmall()" onmouseout="circleBig()" style="float:left"><a class="nav-title" href="../../index.html">EMILIE DURAND</a></li>
       </ul>
+        <a class="icon" id="icon" onclick="openNav()">
+          <i class="fa fa-bars"></i>
+        </a>
+    </div>
+
+    <ul class="nav-bar-mobile" id="nav-bar-mobile">
+      <li><a class="active" onmouseover="circleSmall()" onmouseout="circleBig()" href="../../index.html"><span class="lang-work"></span> <i class="material-icons icon-studio">east</i></a></li>
+      <li><a class="active" onmouseover="circleSmall()" onmouseout="circleBig()" href="../../shop.html"><span class="lang-shop"></span> <i class="material-icons icon-studio">east</i></a></li>
+      <li><a class="active" onmouseover="circleSmall()" onmouseout="circleBig()" href="../../about.html"><span class="lang-about"></span> <i class="material-icons icon-studio">east</i></a></li>
+    </ul>
 
       <div class="topSection row">
 
         <div class="column left">
-          <h6>Landing page for a platform</h6>
-          <h1><span style="font-weight: 500;">FixMeUp</span> is a platform for repairing things, through tutorials or peer-to-peer repairing services</h1>
-          <h5 class="liveWebsite" onmouseover="circleSmall()" onmouseout="circleBig()" onclick="window.open('https://thrulight.github.io/landing-page/')">View live website <i class="material-icons icon-studio">east</i></h5>
+          <h6><span class="lang-subheader"></span></h6>
+          <h1><span class="lang-header"></span></h1>
+          <h5 class="liveWebsite" onmouseover="circleSmall()" onmouseout="circleBig()" onclick="window.open('https://thrulight.github.io/landing-page/')"><span class="lang-viewWebsite"></span> <i class="material-icons icon-studio">east</i></h5>
         </div>
 
         <div class="column right">
           <h6>Date</h6>
           <h4>2020</h4>
 
-          <h6>My role</h6>
+          <h6><span class="lang-role"></span></h6>
           <h4>UX/UI Design</h4>
         </div>
 
@@ -97,17 +106,14 @@
       </div>
 
       <div class="sectionTxt">
-        <h2>
-          As part of my semester at ESCP Business School for the Option Entrepreneurship, we were asked to create a start-up. We decided to create a platform for repairig all kind of objects.
-          I was the one in charge of the UX/UI for the project.
-        </h2>
-        <h5>We also had coding classes and had to design and code a landing page, which is what follows. The link to the coded one is below it.</h5>
+        <h2><span class="lang-descriptionText"></span></h2>
+        <h5><span class="lang-descriptionSubText"></span></h5>
       </div>
 
       <div class="goal">
         <div class="sectionTxt">
-          <h5>The initial goal</h5>
-          <h2>Creating a landing page for our future start-up, by explaining all key functionalities while not overwhelming the user with information</h2>
+          <h5><span class="lang-initialGoalTitle"></span></h5>
+          <h2><span class="lang-initialGoalText"></span></h2>
         </div>
 
         <div class="scenario">
@@ -116,11 +122,9 @@
       </div>
 
       <div class="sustainable row">
-        <h5>Branding</h5>
-        <h2>Choosing the logo</h2>
-        <p>
-          The logo was meant to be simple yet recognizable, in small or big. The color was also chosen to inspire trust.
-        </p>
+        <h5><span class="lang-branding"></span></h5>
+        <h2><span class="lang-brandingTitle"></span></h2>
+        <p><span class="lang-brandingText"></span></p>
         <div class="column left">
           <img src="../../images/projectsImg/fixmeup/logo-bicolor.png" alt="">
         </div>
@@ -132,9 +136,9 @@
 
       <div class="blue videoSection">
         <div class="sectionTxt">
-          <h5>Accessibility</h5>
-          <h2>Creating an experience for different times of the day</h2>
-          <p>A dark mode toggle was added in order to suit the user’s preference</p>
+          <h5><span class="lang-accessibility"></span></h5>
+          <h2><span class="lang-accessTitle"></span></h2>
+          <p><span class="lang-accessText"></span></p>
           <video autoplay muted>
             <source src="../../videos/fixmeup_landing-page.mp4" type="video/mp4">
           </video>
@@ -143,13 +147,9 @@
 
       <div class="caracteristics cutting-board row">
         <div class="column left">
-          <h5>Coding</h5>
-          <h2>The challenges of coding my first landing page</h2>
-          <p>
-            Even though this was an entrepeneurial and business semester, we happened to have a lot of different coding classes. It tought us the basics of HTML, CSS, JavaScript and PHP.
-            <br>
-            The final exam was coding the landing page for our future start-up.
-          </p>
+          <h5><span class="lang-coding"></span></h5>
+          <h2><span class="lang-codingTitle"></span></h2>
+          <p><span class="lang-codingText"></span></p>
         </div>
 
         <div class="column right">
@@ -159,11 +159,11 @@
 
       <div class="sectionRedirect row">
         <div class="column left">
-          <h3 onmouseover="circleSmall()" onmouseout="circleBig()" onclick="window.location.href='../../index.html';"><i class="material-icons icon-studio">west</i> back to projects</h3>
+          <h3 onmouseover="circleSmall()" onmouseout="circleBig()" onclick="window.location.href='../../index.html';"><i class="material-icons icon-studio">west</i> <span class="lang-back"></h3>
         </div>
 
         <div class="column right">
-          <h3 onmouseover="circleSmall()" onmouseout="circleBig()" onclick="window.location.href='new_givebox.html';">next project <i class="material-icons icon-studio">east</i></h3>
+          <h3 onmouseover="circleSmall()" onmouseout="circleBig()" onclick="window.location.href='new_givebox.html';"><span class="lang-next"></span> <i class="material-icons icon-studio">east</i></h3>
         </div>
       </div>
 
