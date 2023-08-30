@@ -1,0 +1,186 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <link rel="icon" href="../../images/logo_circle.png">
+  <meta charset="utf-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+
+  <title>Emilie Durand - ValueCo</title>
+
+  <link rel="stylesheet" href="../../css/nonChangingElements_2.css">
+  <link rel="stylesheet" href="../../css/products/project-page.css">
+  <link rel="stylesheet" href="../../css/switzer.css">
+  <link rel="stylesheet" href="../../css/digital/valueco.css">
+
+  <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.5.1/jquery.min.js"></script>
+  <script type="text/javascript" src="../../scripts/jquery.scrollie.js"></script>
+  <script type="text/javascript" src="../../scripts/color-change.js"></script>
+  <script type="text/javascript" src="../../scripts/script.js"></script>
+  <!--<script type="text/javascript" src="../../scripts/mobile-redirect.js"></script>-->
+
+  <!-- Translation -->
+  <script type="text/javascript" src="../../scripts/digital/valueco-translation.js"></script>
+  <link rel="stylesheet" href="../../css/translate.css">
+
+  <!-- Load an icon library to show a hamburger menu (bars) on small screens -->
+  <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/4.7.0/css/font-awesome.min.css">
+
+  <!-- Material Icons -->
+  <link href="https://fonts.googleapis.com/icon?family=Material+Icons" rel="stylesheet">
+
+  <span id="circle" class="circle"></span>
+
+</head>
+<body>
+  <div class="main-wrapper">
+
+
+    <!-- Navigation bar -->
+    <div class="X" id="X"><span  onclick="closeNav()">&times;</span></div>
+    <div id="overlay" class="overlay"></div>
+
+    <div class="nav-bar fadeIn" id="myTopnav">
+      <a href="../../index.html" id="title">EMILIE DURAND</a>
+      <ul class="nav-text">
+
+        <div style="float:right" class="float-right">
+          <li><a class="work active" onmouseover="circleSmall()" onmouseout="circleBig()" href="../../index.html"><span class="lang-work"></span></a></li>
+          <select id="country_select" onchange="loadsLanguage(this.value);" onclick="imageChange();" onchange="imageChange();"></select>
+        </div>
+        
+
+        <div class="center">
+          <li><a class="shop active" onmouseover="circleSmall()" onmouseout="circleBig()" href="../../shop.html"><span class="lang-shop"></span></a></li>
+        <li><a class="active" onmouseover="circleSmall()" onmouseout="circleBig()" href="../../about.html"><span class="lang-about"></span></a></li>
+        </div>
+
+        <li onmouseover="circleSmall()" onmouseout="circleBig()" style="float:left"><a class="nav-title" href="../../index.html">EMILIE DURAND</a></li>
+      </ul>
+        <a class="icon" id="icon" onclick="openNav()">
+          <i class="fa fa-bars"></i>
+        </a>
+    </div>
+
+    <ul class="nav-bar-mobile" id="nav-bar-mobile">
+      <li><a class="active" onmouseover="circleSmall()" onmouseout="circleBig()" href="../../index.html"><span class="lang-work"></span> <i class="material-icons icon-studio">east</i></a></li>
+      <li><a class="active" onmouseover="circleSmall()" onmouseout="circleBig()" href="../../shop.html"><span class="lang-shop"></span> <i class="material-icons icon-studio">east</i></a></li>
+      <li><a class="active" onmouseover="circleSmall()" onmouseout="circleBig()" href="../../about.html"><span class="lang-about"></span> <i class="material-icons icon-studio">east</i></a></li>
+    </ul>
+
+      <div class="topSection row">
+
+        <div class="column left slideLeft">
+          <h6>Saas platform for a start-up</h6>
+          <h1><span class="lang-header"></span></h1>
+        </div>
+
+        <div class="column right">
+          <h6>Date</h6>
+          <h4>2022-2023</h4>
+
+          <h6><span class="lang-role"></span></h6>
+          <h4>UX/UI Designer</h4>
+
+          <h6><span class="lang-team"></span></h6>
+          <h4>
+            Mariem Mhadhbi, CEO
+            </br>
+            Mathieu Joubrel, CTO
+            </br>
+            Corentin, Fullstack dev
+          </h4>
+
+          <h6>Client</h6>
+          <h4 onclick="window.open('https://www.valuecometrics.com/')">ValueCo <i class="material-icons icon-studio">arrow_outward</i></h4>
+        </div>
+
+      </div>
+
+      <div class="splash">
+        <img src="../../images/projectsImg/valueco/Valueco_splash.png" alt="">
+      </div>
+
+      <div class="grey">
+        <div class="sectionTxt">
+          <h5><span class="lang-initialGoalTitle"></span></h5>
+          <h2><span class="lang-initialGoalText"></span></h2>
+        </div>
+
+        <div class="scenario">
+          <img src="../../images/projectsImg/valueco/Valueco_global.png" alt="">
+        </div>
+      </div>
+
+      <div class="orange videoSection">
+        <div class="sectionTxt">
+          <h5><span class="lang-challengeTitle"></span></h5>
+          <h2><span class="lang-challengeText"></span></h2>
+          <p><span class="lang-challengeParagraph"></span></p>
+          <video autoplay muted loop>
+            <source src="../../videos/ValueCo_Affinity-panel.mp4" type="video/mp4">
+          </video>
+          <p class="narrowTxt"><span class="lang-challengeCaption"></span></p>
+
+          </video>
+        </div>
+      </div>
+
+      <div class="grey videoSection">
+        <div class="sectionTxt">
+          <h5><span class="lang-challengeTitle"></span></h5>
+          <h2><span class="lang-challenge2Text"></span></h2>
+          <video autoplay muted>
+            <source src="../../videos/ValueCo_Asset-owners.mp4" type="video/mp4">
+          </video>
+          <p class="narrowTxt"><span class="lang-challenge2Caption"></span></p>
+
+          </video>
+        </div>
+      </div>
+
+      <div class="caracteristicsContainer">
+        <div class="caracteristics row">
+          <div class="column left">
+            <h5><span class="lang-methodology"></span></h5>
+            <h2><span class="lang-testing"></span></h2>
+            <p><span class="lang-testingParagraph"></span></p>
+            <p><span class="lang-testingParagraph2"></span></p>
+          </div>
+
+          <div class="column right">
+            <img src="../../images/projectsImg/valueco/ValueCo_testing.png" alt="">
+          </div>
+        </div>
+
+      </div>
+
+
+      <div class="sectionRedirect row">
+        <div class="column left">
+          <h3 onmouseover="circleSmall()" onmouseout="circleBig()" onclick="window.location.href='../../index.html';"><i class="material-icons icon-studio">west</i> <span class="lang-back"></span></h3>
+        </div>
+
+        <div class="column right">
+          <h3 onmouseover="circleSmall()" onmouseout="circleBig()" onclick="window.location.href='new_givebox.html';"><span class="lang-next"></span> <i class="material-icons icon-studio">east</i></h3>
+        </div>
+      </div>
+
+      <div class="footer row">
+        <div class="column left">
+          <a href="mailto:emilie@extrude.studio?subject=Object"><h1><span class="lang-getInTouch"></span> <i class="material-icons icon-studio">east</i></h1></a>
+        </br>
+          <p><span class="lang-coded"></span> <span class="lang-me"></span><br><span class="lang-license"></span> <span class="highlight">CC-BY-NC-ND</span></p>
+        </div>
+  
+        <div class="column right">
+          <h6>Instagram</h6>
+          <h4 onclick="window.open('https://www.instagram.com/emilie_does_design/')">Product design <i class="material-icons icon-studio">east</i></h4>
+          <h4 onclick="window.open('https://www.instagram.com/emilie_does_ux/')">UX/UI design <i class="material-icons icon-studio">east</i></h4>
+          <h4 onclick="window.open('https://www.instagram.com/thrulight/')">Photography <i class="material-icons icon-studio">east</i></h4>
+        </div>
+      </div>
+
+
+</body>
+
+<DOCTYPE html>
