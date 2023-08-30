@@ -1,0 +1,268 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <link rel="icon" href="../../images/logo_circle.png">
+  <meta charset="utf-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+
+  <title>Emilie Durand - Le Fil d'Oriane</title>
+
+  <link rel="stylesheet" href="../../css/nonChangingElements_2.css">
+  <link rel="stylesheet" href="../../css/products/project-page.css">
+  <link rel="stylesheet" href="../../css/switzer.css">
+  <link rel="stylesheet" href="../../css/digital/oriane.css">
+
+  <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.5.1/jquery.min.js"></script>
+  <script type="text/javascript" src="../../scripts/jquery.scrollie.js"></script>
+  <script type="text/javascript" src="../../scripts/color-change.js"></script>
+  <script type="text/javascript" src="../../scripts/script.js"></script>
+  <!--<script type="text/javascript" src="../../scripts/mobile-redirect.js"></script>-->
+
+  <!-- Translation -->
+  <script type="text/javascript" src="../../scripts/digital/oriane-translation.js"></script>
+  <link rel="stylesheet" href="../../css/translate.css">
+
+  <!-- Load an icon library to show a hamburger menu (bars) on small screens -->
+  <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/4.7.0/css/font-awesome.min.css">
+
+  <!-- Material Icons -->
+  <link href="https://fonts.googleapis.com/icon?family=Material+Icons" rel="stylesheet">
+
+  <span id="circle" class="circle"></span>
+
+</head>
+<body>
+  <div class="main-wrapper">
+
+
+    <!-- Navigation bar -->
+    <div class="X" id="X"><span  onclick="closeNav()">&times;</span></div>
+    <div id="overlay" class="overlay"></div>
+
+    <div class="nav-bar fadeIn" id="myTopnav">
+      <a href="../../index.html" id="title">EMILIE DURAND</a>
+      <ul class="nav-text">
+
+        <div style="float:right" class="float-right">
+          <li><a class="work active" onmouseover="circleSmall()" onmouseout="circleBig()" href="../../index.html"><span class="lang-work"></span></a></li>
+          <select id="country_select" onchange="loadsLanguage(this.value);" onclick="imageChange();" onchange="imageChange();"></select>
+        </div>
+        
+
+        <div class="nav-center">
+          <li><a class="shop active" onmouseover="circleSmall()" onmouseout="circleBig()" href="../../shop.html"><span class="lang-shop"></span></a></li>
+        <li><a class="active" onmouseover="circleSmall()" onmouseout="circleBig()" href="../../about.html"><span class="lang-about"></span></a></li>
+        </div>
+
+        <li onmouseover="circleSmall()" onmouseout="circleBig()" style="float:left"><a class="nav-title" href="../../index.html">EMILIE DURAND</a></li>
+      </ul>
+        <a class="icon" id="icon" onclick="openNav()">
+          <i class="fa fa-bars"></i>
+        </a>
+    </div>
+
+    <ul class="nav-bar-mobile" id="nav-bar-mobile">
+      <li><a class="active" onmouseover="circleSmall()" onmouseout="circleBig()" href="../../index.html"><span class="lang-work"></span> <i class="material-icons icon-studio">east</i></a></li>
+      <li><a class="active" onmouseover="circleSmall()" onmouseout="circleBig()" href="../../shop.html"><span class="lang-shop"></span> <i class="material-icons icon-studio">east</i></a></li>
+      <li><a class="active" onmouseover="circleSmall()" onmouseout="circleBig()" href="../../about.html"><span class="lang-about"></span> <i class="material-icons icon-studio">east</i></a></li>
+    </ul>
+
+      <div class="topSection row">
+
+        <div class="column left slideLeft">
+          <h6>Le Fil d'Oriane</h6>
+          <h1><span class="lang-header"></span></h1>
+        </div>
+
+        <div class="column right">
+          <h6><span class="lang-year"></span></h6>
+          <h4>2023</h4>
+
+          <h6><span class="lang-duration"></span></h6>
+          <h4><span class="lang-durationText"></span></h4>
+
+          <h6><span class="lang-role"></span></h6>
+          <h4><span class="lang-roleText"></span></h4>
+
+          <h6><span class="lang-team"></span></h6>
+          <h4>
+            Shanna Charbonnel, Designer
+            </br>
+            Stéphane Assezat, Designer
+            </br>
+            Emilie Martin, Designer
+          </h4>
+
+          <h6>Client</h6>
+          <h4><span class="lang-client"></span></h4>
+        </div>
+
+      </div>
+
+      <div class="splash">
+        <img src="../../images/projectsImg/oriane/oriane-splash.png" alt="">
+      </div>
+
+      <div class="red project row">
+        <h2><span class="lang-project"></span></h2>
+
+        <div class="column left">
+          <img src="../../images/projectsImg/oriane/rentree.png" alt="">
+          <h5>La rentrée des parents</h5>
+          <p>Evénements dédié à la présentation de l’établissement, de l’année scolaire et des nouveaux outils des parents</p>
+        </div>
+
+        <div class="column center">
+          <img src="../../images/projectsImg/oriane/kiosque.png" alt="">
+          <h5>Le Kiosque 182</h5>
+          <p>Kit de visualisation de l’année et d’informations essentielles pour les parents</p>
+        </div>
+
+        <div class="column right">
+          <img src="../../images/projectsImg/oriane/ateliers.png" alt="">
+          <h5>Les ateliers thématiques</h5>
+          <p>Événements réguliers dédiés aux parents pour apprendre & partager sur un sujet avec un professionnel.</p>
+        </div>
+      </div>
+
+      <div class="kiosque">
+          <h5><span class="lang-kiosqueTitle"></span></h5>
+          <h2><span class="lang-kiosqueText"></span></h2>
+          <p><span class="lang-kiosqueParagraph"></span></p>
+
+        <div class="row">
+          <div class="column left">
+            <img src="../../images/projectsImg/oriane/kiosque_1.png" alt="">
+          </div>
+  
+          <div class="column right">
+            <img src="../../images/projectsImg/oriane/kiosque_2.png" alt="">
+          </div>
+        </div>
+      </div>
+
+      <div class="blue fiches">
+        <div class="sectionTxt">
+          <h5><span class="lang-initialGoalTitle"></span></h5>
+          <h2><span class="lang-initialGoalText"></span></h2>
+        </div>
+
+        <div class="scenario">
+          <img src="../../images/projectsImg/oriane/fiches.gif" alt="">
+
+          <div class="row">
+            <div class="column left">
+              <p><span class="lang-initialGoalParagraph"></span></p>
+            </div>
+            <div class="column right">
+              <h3><ol>
+                <li><span class="lang-initialGoalStep1"></span></li>
+                <li><span class="lang-initialGoalStep2"></span></li>
+                <li><span class="lang-initialGoalStep3"></span></li>
+                <li><span class="lang-initialGoalStep4"></span></li>
+              </ol></h3>
+            </div>
+          </div>
+        </div>
+      </div>
+
+      <div class="calendar">
+        <div class="sectionTxt">
+          <h5><span class="lang-calendarTitle"></span></h5>
+          <h2><span class="lang-calendarText"></span></h2>
+          <p><span class="lang-calendarParagraph1"></span></p>
+          <p><span class="lang-calendarParagraph2"></span></p>
+        </div>
+
+        <div class="scenario">
+          <img src="../../images/projectsImg/oriane/oriane-calendar.png" alt="">
+          <p class="narrowTxt"><span class="lang-calendarCaption"></span></p>
+        </div>
+
+      </div>
+
+      <div class="grey userScenario">
+        <div class="sectionTxt">
+          <h2><span class="lang-scenarioText"></span></h2>
+          
+          <div class="container">
+            <img src="../../images/projectsImg/oriane/step1.png" alt="">
+            <img src="../../images/projectsImg/oriane/step2.png" alt="">
+            <img src="../../images/projectsImg/oriane/step3.png" alt="">
+            <img src="../../images/projectsImg/oriane/step4.png" alt="">
+            <img src="../../images/projectsImg/oriane/step5.png" alt="">
+          </div>
+
+          <p class="narrowTxt"><span class="lang-scenarioCaption"></span></p>
+        </div>
+      </div>
+
+      <div class="caracteristicsContainer">
+        <div class="caracteristics row">
+          <div class="column left">
+            <h5><span class="lang-methodology"></span></h5>
+            <h2><span class="lang-interviewing"></span></h2>
+            <p><span class="lang-interviewingParagraph"></span></p>
+          </div>
+
+          <div class="column right">
+            <img src="../../images/projectsImg/oriane/oriane-interviewing.png" alt="">
+          </div>
+        </div>
+
+        <div class="caracteristics row">
+          <div class="column left">
+            <h5><span class="lang-methodology"></span></h5>
+            <h2><span class="lang-ideating"></span></h2>
+            <p><span class="lang-ideatingParagraph1"></span></p>
+            <p><span class="lang-ideatingParagraph2"></span></p>
+          </div>
+
+          <div class="column right">
+            <img src="../../images/projectsImg/oriane/oriane-ideating.png" alt="">
+          </div>
+        </div>
+
+        <div class="caracteristics row">
+          <div class="column left">
+            <h5><span class="lang-methodology"></span></h5>
+            <h2><span class="lang-researching"></span></h2>
+            <p><span class="lang-researchingParagraph"></span></p>
+          </div>
+
+          <div class="column right">
+            <img src="../../images/projectsImg/oriane/oriane-researching.png" alt="">
+          </div>
+        </div>
+      </div>
+
+
+      <div class="sectionRedirect row">
+        <div class="column left">
+          <h3 onmouseover="circleSmall()" onmouseout="circleBig()" onclick="window.location.href='../../index.html';"><i class="material-icons icon-studio">west</i> <span class="lang-back"></span></h3>
+        </div>
+
+        <div class="column right">
+          <h3 onmouseover="circleSmall()" onmouseout="circleBig()" onclick="window.location.href='new_givebox.html';"><span class="lang-next"></span> <i class="material-icons icon-studio">east</i></h3>
+        </div>
+      </div>
+
+      <div class="footer row">
+        <div class="column left">
+          <a href="mailto:emilie@extrude.studio?subject=Object"><h1><span class="lang-getInTouch"></span> <i class="material-icons icon-studio">east</i></h1></a>
+        </br>
+          <p><span class="lang-coded"></span> <span class="lang-me"></span><br><span class="lang-license"></span> <span class="highlight">CC-BY-NC-ND</span></p>
+        </div>
+  
+        <div class="column right">
+          <h6>Instagram</h6>
+          <h4 onclick="window.open('https://www.instagram.com/emilie_does_design/')">Product design <i class="material-icons icon-studio">east</i></h4>
+          <h4 onclick="window.open('https://www.instagram.com/emilie_does_ux/')">UX/UI design <i class="material-icons icon-studio">east</i></h4>
+          <h4 onclick="window.open('https://www.instagram.com/thrulight/')">Photography <i class="material-icons icon-studio">east</i></h4>
+        </div>
+      </div>
+
+
+</body>
+
+<DOCTYPE html>

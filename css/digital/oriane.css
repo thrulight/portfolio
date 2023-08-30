@@ -1,0 +1,206 @@
+.topSection .right {
+  padding-left: 2vw;
+}
+
+.splash img { background-color: #CCD8CA }
+
+.grey {
+  background-color: #EDEDED;
+}
+
+.blue {
+  background-color: #D7DDED;
+}
+
+.red {
+  background-color: #F5DCDE;
+}
+
+.project .column {
+  width: 24vw;
+  padding-right: 2vw;
+}
+
+.project {padding: 10vh 13vw 10vh 13vw;}
+
+.project img {
+  width: 96px;
+  margin-bottom: 3vh;
+}
+
+.project h2 {
+  margin-bottom: 7vh;
+}
+
+.project h5 {
+  font-size: 1.5rem;
+}
+
+.kiosque {padding: 10vh 13vw 10vh 13vw;}
+
+.kiosque img {width: 100%;}
+
+.kiosque .column {width: 48%;}
+
+.kiosque p {
+  margin-bottom: 7vh;
+  width: 50%;
+}
+
+.kiosque .left {margin-right: 2%;}
+.kiosque .right {margin-left: 2%;}
+
+.fiches .left {width: 60%;}
+.fiches .right {width: 40%;}
+
+.fiches h3 {line-height: 150%;}
+
+.fiches h3, .fiches p, .fiches ol {margin: 0}
+
+.fiches img {margin-bottom: 5vh;}
+
+.fiches p {margin-right: 7vw;}
+
+.calendar h2 {margin-bottom: 5vh !important;}
+
+.calendar img {margin-top: 5vh;}
+
+.userScenario .container {
+  display: flex;
+  justify-content: space-between;
+}
+
+.userScenario img {
+  width: 16vw;
+}
+
+.userScenario .sectionTxt {padding: 10vh 7vw 10vh 7vw}
+
+.userScenario h2 {margin-bottom: 5vh !important;}
+
+.sectionTxt {
+  padding: 10vh 13vw 0 13vw;
+  width: 100%;
+  height: 100%;
+}
+.sectionTxt h2 {
+  margin-bottom: 10vh;
+}
+.sectionTxt h5 {
+  width: 50%;
+}
+
+.scenario {
+  padding: 0 7vw 10vh 7vw;
+  width: 100%;
+  height: 100%;
+}
+.scenario img {
+  width: 100%;
+  height: 100%;
+  object-fit: cover;
+}
+
+.instructions {
+  padding: 10vh 13vw 10vh 13vw;
+  width: 100%;
+  height: 100%;
+}
+.instructions .left, .instructions .right {
+  width: 50%;
+}
+.instructions h5 {
+  margin-top: 2vh;
+  width: 80%;
+}
+.instructions li {
+  margin-bottom: 5vh;
+}
+
+.videoSection h2 {
+  margin-bottom: 2vh;
+}
+
+.videoSection video {
+  width: 100%;
+  margin-top: 5vh;
+  border-radius: 10px;
+}
+
+.videoSection .sectionTxt {
+  padding: 10vh 13vw 10vh 13vw;
+}
+
+.narrowTxt {
+  width: 60%;
+}
+
+/* #region caracteristics */
+.caracteristicsContainer {
+  padding: 15vh 13vw 15vh 13vw;
+  background-color: #F6F6F6;
+}
+
+.caracteristics {
+  padding: 7vh 0;
+  width: 100%;
+}
+
+.caracteristics img {
+  max-width: 100%;
+  background-color: #CCD8CA;
+  border-radius: 10px;
+}
+
+.caracteristics .left, .caracteristics .right {
+  width: 50%;
+}
+
+.caracteristics p {
+  width: 70%;
+  margin-top: 4vh;
+}
+
+.caracteristics h2 {
+  width: 90%;
+  margin-top: 1vh;
+}
+
+.caracteristics h5 {
+  margin-top: 5vh;
+}
+
+.caracteristics h5 {
+  margin-top: 4vh;
+  margin-bottom: 0;
+  width: 60%;
+  line-height: 120%;
+}
+
+.mockup {
+  background-color: #F6F6F6;
+}
+
+/* #endregion caracteristics */
+
+@media screen and (max-width: 1110px) {
+  .topSection .right {
+        padding-left: 0vw;
+  }
+}
+
+@media screen and (max-width: 900px){
+
+  .splash {height: 100%;}
+
+  .sectionTxt, .videoSection .sectionTxt, .caracteristicsContainer { padding: 5vh 7vw;}
+
+  .sectionTxt h2 {margin-bottom: 0;}
+
+  .scenario {padding: 0 7vw 5vh 7vw;}
+
+  .narrowTxt {width: 100%;}
+
+  .caracteristics {padding: 0;}
+  .caracteristics p,  .caracteristics h2 {width: 100%;}
+}
