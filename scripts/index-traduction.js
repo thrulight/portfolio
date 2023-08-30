@@ -1,6 +1,6 @@
 var LanguageList = {
-  "EN" : "ENG",
-  "FR" : "FRA"
+  "EN" : "EN",
+  "FR" : "FR"
 };
 
 //languages Objects
