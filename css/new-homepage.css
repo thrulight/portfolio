@@ -206,6 +206,12 @@
   object-position: right;
 }
 
+.valueco { background-color: #B0BECC; }
+.valueco img {
+  width: 100%;
+  transform: scale(.8);
+}
+
 .extrude { background-color: #C2CAC5; }
 .extrude img {
   width: 100%;
@@ -303,7 +309,7 @@
     transform: none;
   }
 
-  .FixMeUp img, .extrude img  {
+  .FixMeUp img, .extrude img, .valueco img  {
     height: 350px;
     transform: scale(.95);
   }
