@@ -150,10 +150,10 @@
   max-width: none;
 }
 
-#seperation {
-  margin: 0 7vw 15vh 7vw;
-  border-bottom: 1px solid white;
-  mix-blend-mode: difference;
+.productSecond .big, .productThird .small {padding-right: 0;}
+
+#separation {
+  margin: 10vh 0 !important;
 }
 
 
@@ -164,6 +164,12 @@
   /*border: 1px solid black;*/
   padding: 0 7vw 5vh 7vw;
 }
+
+.oriane {background-color: #D7DDED;}
+.oriane img {transform: scale(.8);}
+.orianeSection {padding-left: 2vw !important;}
+.orianeSection .paragraph {filter: opacity(1);}
+.productFirst .big {margin-bottom: 0;}
 
 .printTwist {
   background-color: #D7B9B9;
@@ -294,7 +300,6 @@
 
   .big, .small {
     width: 100%;
-    margin-bottom: 4vh;
   }
 
   .big img, .small img {
