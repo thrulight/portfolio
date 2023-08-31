@@ -191,7 +191,18 @@
 
 @media screen and (max-width: 900px){
 
-  .splash {height: 100%;}
+  .splash {
+    height: 100%;
+    margin-bottom: 5vh;
+  }
+
+  .center {width: 100% !important;}
+
+  .column {padding-right: 0 !important;}
+
+  .column .left, .column .center {
+    margin-bottom: 4vh;
+  }
 
   .sectionTxt, .videoSection .sectionTxt, .caracteristicsContainer { padding: 5vh 7vw;}
 
@@ -199,8 +210,42 @@
 
   .scenario {padding: 0 7vw 5vh 7vw;}
 
-  .narrowTxt {width: 100%;}
+  .project, .kiosque, .userScenario .sectionTxt {padding: 5vh 7vw;}
 
-  .caracteristics {padding: 0;}
+  .project img {
+    width: 64px;
+    margin-bottom: 1vh;
+  }
+
+  .project h2, .kiosque p {margin-bottom: 4vh;}
+
+  .kiosque .left, .kiosque .right {margin: 0;}
+
+  .fiches img {margin-bottom: 2vh;}
+
+  .fiches .left p {
+    margin-right: 0;
+    margin-bottom: 2vh;
+  }
+
+  .calendar .sectionTxt {padding-bottom: 2vh;}
+
+  .calendar img {margin-top: 0;}
+
+  .userScenario .container {
+    justify-content: center;
+    flex-wrap: wrap;
+    gap: 20px;
+  }
+
+  .userScenario .container img {width: 150px;}
+
+  .narrowTxt, .kiosque p {width: 100%;}
+
+  .caracteristics {padding: 0 0 2vh 0;}
+
+  .caracteristics p {margin-top: 2vh;}
+
+  .caracteristics img {margin-top: 2vh;}
   .caracteristics p,  .caracteristics h2 {width: 100%;}
 }
