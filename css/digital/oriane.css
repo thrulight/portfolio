@@ -138,7 +138,6 @@
 /* #region caracteristics */
 .caracteristicsContainer {
   padding: 15vh 13vw 15vh 13vw;
-  background-color: #F6F6F6;
 }
 
 .caracteristics {
@@ -181,6 +180,14 @@
   background-color: #F6F6F6;
 }
 
+.ecosystem {padding: 10vh 7vw;}
+
+.ecosystem img {
+  height: 100%;
+  width: 100%;
+  margin-top: 5vh;
+}
+
 /* #endregion caracteristics */
 
 @media screen and (max-width: 1110px) {
@@ -204,7 +211,11 @@
     margin-bottom: 4vh;
   }
 
-  .sectionTxt, .videoSection .sectionTxt, .caracteristicsContainer { padding: 5vh 7vw;}
+  .sectionTxt, .videoSection .sectionTxt, .caracteristicsContainer, .ecosystem { padding: 5vh 7vw;}
+
+  .ecosystem img {margin-top: 2vh;}
+
+  .userScenario h2 {margin-bottom: 3vh !important;}
 
   .sectionTxt h2 {margin-bottom: 0;}
 
