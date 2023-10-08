@@ -49,6 +49,8 @@ var WORDS_EN = {
 "scenarioText" : "The user scenario",
 "scenarioCaption" : "The calendar and information sheets are given in the shape of a binder that can open and be hung on the wall, putting the calendar above, and the binder below.",
 
+"ecosystem" : "Understanding the whole ecosystem",
+
 //Methology
 "methodology" : "Methodology",
 
@@ -118,6 +120,9 @@ var WORDS_FR = {
 //User Scenario
 "scenarioText" : "Le scénario d'usage",
 "scenarioCaption" : "Le calendrier et les fiches d'information sont présentés sous la forme d'un classeur qui peut s'ouvrir et être accroché au mur, en plaçant le calendrier au-dessus et le classeur en dessous.",
+
+//Ecosystem
+"ecosystem" : "Comprendre tout l'éco-système",
 
 //Methology
 "methodology" : "Méthodologie",
