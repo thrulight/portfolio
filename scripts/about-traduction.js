@@ -15,9 +15,9 @@ var WORDS_EN = {
 "aboutMe" : "About me",
 "contactMe" : "Contact me",
 "resume" : "See Resume",
-"description1" : "Hi! I am currently looking for a UX/UI designer job in France.",
-"description2" : "I’ve gained experience in industrial product design through my internship and the design studio I have co-founded, with a special focus on sustainability.",
-"description3" : "I’ve also had some experience in UX / UI design during my previous internship, through the building of an app. I have since then helped a start-up create an app from scratch. I also gained experience by doing freelance for two different start-ups to build their website and digital product, as a Lead Designer.", 
+"description1" : "Hi! I am currently looking for a UX/UI Designer job in France.",
+"description2" : "I have a particular interest in projects with an environmental impact, as well as projects focused on local authorities and public-sector players. I always put citizens at the heart of the projects I work on.",
+"description3" : "I've been able to develop my UX/UI design skills through my various training courses and professional experience, particularly as a freelancer. This has enabled me to gain in empathy and observation, but also to work more effectively in a group.", 
 
 //Education
 "dapDescription" : "Certificate 'Designing a social innovation project'",
@@ -75,9 +75,9 @@ var WORDS_FR = {
 "aboutMe" : "About me",
 "contactMe" : "Contact me",
 "resume" : "See Resume",
-"description1" : "Bonjour ! Je suis actuellement à la recherche d'un travail de designer UX/UI en France",
-"description2" : "J'ai gagné de l'expérience en design industriel grâce à mon stage et le studio de design que j'ai co-fondé, avec un intérêt particulier pour l'environnement.",
-"description3" : "J'ai également développé des compétences en design UX/UI grâce à mon précédent stage, au travers la création d'une application.  Depuis, j'ai aidé une start-up à créer une application à partir de zéro. J'ai également développé mes compétences en faisant du freelance pour deux différentes start-ups, en concevant leur site web et plateforme, comme Lead Designer.", 
+"description1" : "Bonjour ! Je suis actuellement à la recherche d'un travail de Designer UX/UI en France.",
+"description2" : "J'ai un intérêt particulier pour les projets à impact environnementaux, ainsi que les projets centrés sur les collectivités territoriales et les acteurs publics. Je place toujours les citoyens au centre des projets sur lesquels je travaille.",
+"description3" : "J'ai pu développé des compétences en Design UX/UI au travers de mes différentes formations et expériences professionnelles, notamment en freelance. Cela m'a permis de gagner en empathie, en observation, mais également de travailler plus efficacement en groupe.", 
 
 //Education
 "dapDescription" : "Certificat 'Concevoir un projet de design d’innovation sociale'",
@@ -135,7 +135,7 @@ function initialize() {
     text(value));
   });
 
-  loadsLanguage("EN");
+  loadsLanguage("FR");
 }
 
 function loadsLanguage(lang){
