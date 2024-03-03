@@ -1,6 +1,6 @@
 var LanguageList = {
-  "EN" : "EN",
-  "FR" : "FR"
+  "FR" : "FR",
+  "EN" : "EN"
 };
 
 //languages Objects
@@ -20,7 +20,7 @@ var WORDS_EN = {
 "description3" : "I've been able to develop my UX/UI design skills through my various training courses and professional experience, particularly as a freelancer. This has enabled me to gain in empathy and observation, but also to work more effectively in a group.", 
 
 //Education
-"dapDescription" : "Certificate 'Designing a social innovation project'",
+"dapDescription" : "Public Action Design Diploma'",
 "dapDates" : "February 2023 - June 2023",
 
 "escpDescription" : "Master in Management - Option E",
@@ -31,6 +31,9 @@ var WORDS_EN = {
 
 //Work
 "workXP" : "Work experience",
+
+"userDescription" : "Digital service designer - Internship/CDD",
+"userDates" : "September 2023 - April 2024",
 
 "CRIDF" : "Ile-de-France Regional Counsil",
 "cridfDescription" : "General-interest designer - Internship",
@@ -80,7 +83,7 @@ var WORDS_FR = {
 "description3" : "J'ai pu développé des compétences en Design UX/UI au travers de mes différentes formations et expériences professionnelles, notamment en freelance. Cela m'a permis de gagner en empathie, en observation, mais également de travailler plus efficacement en groupe.", 
 
 //Education
-"dapDescription" : "Certificat 'Concevoir un projet de design d’innovation sociale'",
+"dapDescription" : "Diplôme de Design d'Actions Publiques",
 "dapDates" : "Février 2023 - Juin 2023",
 
 "escpDescription" : "Master in Management - Option E",
@@ -91,6 +94,9 @@ var WORDS_FR = {
 
 //Work
 "workXP" : "Expérience professionnelle",
+
+"userDescription" : "Designer de service digitaux - Stage/CDD",
+"userDates" : "Septembre 2023 - Avril 2024",
 
 "CRIDF" : "Conseil Régional d'Ile-de-France",
 "cridfDescription" : "Designer d'Intérêt Général - Stage",
