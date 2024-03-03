@@ -57,7 +57,7 @@ function initialize() {
     text(value));
   });
 
-  loadsLanguage("EN");
+  loadsLanguage("FR");
 }
 
 function loadsLanguage(lang){
