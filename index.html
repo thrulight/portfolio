@@ -9,8 +9,10 @@
 
   <link rel="stylesheet" href="css/nonChangingElements_2.css">
   <link rel="stylesheet" href="css/color-change.css">
-  <link rel="stylesheet" href="css/new-homepage.css">
+  <link rel="stylesheet" href="css/index-3.css">
   <link rel="stylesheet" href="css/switzer.css">
+  <link rel="stylesheet" href="css/sentient.css">
+  <link rel="stylesheet" href="css/cabinet-grotesk.css">
   <link rel="stylesheet" href="css/translate.css">
 
   <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.5.1/jquery.min.js"></script>
@@ -84,10 +86,16 @@
 
     <div class="slide topSection" data-background="#CEC5BB">
 
-      <h4 class="slideLeft">👋 <span class="lang-hello"></span></h4>
-      <h1 class="slideLeft" onmouseover="circleSmall()" onmouseout="circleBig()"><span class="lang-title"></span></h1>
+      <h4 class="slideLeft"><span class="lang-hello"></span></h4>
+
+      <div class="typing-container slideLeft" onmouseover="circleSmall()" onmouseout="circleBig()">
+        <span id="sentence" class="sentence">Je suis une </span>
+        <span id="feature-text"></span>
+        <!--<span class="input-cursor"></span>-->
+        <span id="sentence" class="sentence-2"> basée à Paris, <br>centrée sur les usagers et l'intérêt général au travers des questions sociales, sociétales et environnementales.</span>
+      </div>
       <a class="imagehover" href="#">
-        <p onmouseover="circleSmall()" onmouseout="circleBig()" class="slideLeft studio" onclick="window.open('https://extrude.studio')"><span class="lang-extrude-studio"></span> <i class="material-icons icon-studio">east</i></p>
+        <p onmouseover="circleSmall()" onmouseout="circleBig()" class="slideLeft studio" onclick="window.open('https://extrude.studio')"><span class="lang-extrude-studio"></span> <i class="material-icons icon-studio">arrow_outward</i></p>
         <img class="studioImg" src="images/studio.png">
       </a>
       <hr class="slideLeft">
@@ -103,7 +111,8 @@
           <div class="aegle project">
             <img src="images/projectsImg/digital/aegle.png" onclick="window.location.href='projects/digital/aegle.html';" alt="">
           </div>
-          <h3 onclick="window.location.href='projects/digital/aegle.html';">Aegle Health Partners <i class="material-icons icon-studio">east</i></h3>
+          <p class="client">Aegle Health Partners</p>
+          <h3 onclick="window.location.href='projects/digital/aegle.html';">Refonte du site web d’une réassurance <i class="material-icons icon-studio">east</i></h3>
           <p>UX/UI design</p>
         </div>
 
@@ -111,7 +120,8 @@
           <div class="valueco project">
             <img src="images/projectsImg/digital/valueco.png" onclick="window.location.href='projects/digital/valueco.html';" alt="">
           </div>
-          <h3 onclick="window.location.href='projects/digital/valueco.html';">ValueCo <i class="material-icons icon-studio">east</i></h3>
+          <p class="client">ValueCo</p>
+          <h3 onclick="window.location.href='projects/digital/valueco.html';">Création d’un outil métier d'analyse de scores ESG <i class="material-icons icon-studio">east</i></h3>
           <p>UX/UI design - User testing</p>
         </div>
       </div>
@@ -121,7 +131,8 @@
           <div class="extrude project">
             <img src="images/projectsImg/digital/extrude-studio.png" onclick="window.location.href='projects/digital/extrude-studio.html';" alt="">
           </div>
-          <h3 onclick="window.location.href='projects/digital/extude-studio.html';">extrude.studio <i class="material-icons icon-studio">east</i></h3>
+          <p class="client">extrude.studio</p>
+          <h3 onclick="window.location.href='projects/digital/extude-studio.html';">Création d’une plateforme e-commerce pour un studio de design éco-responsable <i class="material-icons icon-studio">east</i></h3>
           <p>UX/UI design - Branding - Web develoment</p>
         </div>
 
@@ -129,7 +140,8 @@
           <div class="greener project">
             <img src="images/projectsImg/digital/greener_transparent.png" onclick="window.location.href='projects/digital/greener.html';" alt="">
           </div>
-          <h3 onclick="window.location.href='projects/digital/greener.html';">Greener <i class="material-icons icon-studio">east</i></h3>
+          <p class="client">Greener</p>
+          <h3 onclick="window.location.href='projects/digital/greener.html';">Accompagner les usagers dans une consommation éco-responsable <i class="material-icons icon-studio">east</i></h3>
           <p>UX/UI design - Branding</p>
         </div>
       </div>
@@ -157,6 +169,7 @@
         </div>
       </div>-->
 
+        <!--
       <div class="productFirst row">
         <div class="column big tag">
           <div class="oriane project">
@@ -175,31 +188,35 @@
       </div>
 
       <hr id="separation" class="tag">
+      -->
 
       <div class="productSecond row slide">
         <div class="column small tag">
           <div class="stockeRecycle project">
             <img src="images/projectsImg/citeo/stockeRecycle_transparent.png" onclick="window.location.href='projects/products/new_stocke-recycle.html';" alt="">
           </div>
-          <h3 onclick="window.location.href='projects/products/new_stocke-recycle.html';">Stocke & Recycle <i class="material-icons icon-studio">east</i></h3>
+          <p class="client">CITEO</p>
+          <h3 onclick="window.location.href='projects/products/new_stocke-recycle.html';">Repenser la filière de recyclage des déchets non collectés <i class="material-icons icon-studio">east</i></h3>
           <p>Product design - Industrial design</p>
         </div>
 
         <div class="column big tag">
-          <div class="repairGo project">
-            <img src="images/projectsImg/repair-go/repair-go_render_2.png" onclick="window.location.href='projects/products/new_repair-go.html';" alt="">
+          <div class="oriane project">
+            <img src="images/projectsImg/oriane.png" onclick="window.location.href='projects/digital/oriane.html';" alt="">
           </div>
-          <h3 onclick="window.location.href='projects/products/new_repair-go.html';">Repair & Go <i class="material-icons icon-studio">east</i></h3>
+          <p class="client">Agence Oriane, Conseil Régional d'Ile-de-France</p>
+          <h3 onclick="window.location.href='projects/digital/oriane.html';">Réinventer la place des parents au lycée pour les enfants en situation de décrochage scolaire<i class="material-icons icon-studio">east</i></h3>
           <p>Product design - Industrial design</p>
         </div>
       </div>
 
       <div class="productThird row">
         <div class="column big tag">
-          <div class="UJC project">
-            <img src="images/projectsImg/upcycled-jars-collection/ujc.png" onclick="window.location.href='projects/products/new_upcycled-jars-collection.html';" alt="">
+          <div class="otomi project">
+            <img src="images/projectsImg/otomi/mobilier.png" onclick="window.location.href='projects/products/otomi.html';" alt="">
           </div>
-          <h3 onclick="window.location.href='projects/products/new_upcycled-jars-collection.html';">The Upcycled Jars Collection <i class="material-icons icon-studio">east</i></h3>
+          <p class="client">OTOMI</p>
+          <h3 onclick="window.location.href='projects/products/otomi.html';">Accompagner le développement de l’autonomie des étudiants grâce à l’<i>open design</i> <i class="material-icons icon-studio">east</i></h3>
           <p>Product design - Production</p>
         </div>
 
@@ -207,7 +224,8 @@
           <div class="givebox project">
             <img src="images/projectsImg\boite-dons\givebox_transparent.png" onclick="window.location.href='projects/products/new_givebox.html';" alt="">
           </div>
-          <h3 onclick="window.location.href='projects/products/new_givebox.html';">Givebox <i class="material-icons icon-studio">east</i></h3>
+          <p class="client">Vivons Chaville Ensemble</p>
+          <h3 onclick="window.location.href='projects/products/new_givebox.html';">Penser le dons d’objets en fonction du plan et des services de la ville <i class="material-icons icon-studio">east</i></h3>
           <p>Product design - Industrial design</p>
         </div>
       </div>

@@ -1,0 +1,398 @@
+.studioImg {
+  position: absolute;
+  z-index: -1;
+  transform: translateX(30%)  translateY(-50%) scale(1);
+  pointer-events: none;
+  height: 300px;
+  opacity: 0;
+  transition: opacity 0.2s, transform 0.3s;
+}
+
+.studioImg.visible {
+  opacity: 1;
+  transition: opacity 0.5s, transform 0.5s;
+  transform: translateX(30%) translateY(-50%) scale(1.1);
+}
+
+/* #region topSection */
+
+.slide-one, .slide-two, .slide-three {
+  height: 1000px;
+  border: 1px solid black;
+}
+
+.topSection {
+  height: 95vh;
+  /*border: 1px solid black;*/
+  padding: 20vh 7vw 10vh 7vw;
+}
+
+.topSection p {
+  color: black;
+  /*filter: invert(1) grayscale(1);*/
+  font-size: 1.2rem;
+  font-weight: 500;
+}
+
+.topSection hr {
+  border-bottom: 1px solid black;
+  width: 100%;
+  margin: 0;
+}
+
+.topSection h4 {
+  font-size: 1.5rem;
+  margin: 2vh 0;
+}
+
+
+.topSection h1 {
+  font-size: 7.5vh;
+  font-weight: 500;
+  line-height: 100%;
+  width: 75%;
+  margin: 0;
+  color: white;
+  filter: invert(1) grayscale(1);
+  margin-bottom: 12vh;
+}
+
+
+.studio {
+  margin-top: 10vh;
+}
+
+.imagehover {
+  text-decoration: none;
+}
+
+.studio .material-icons, .UX-UI .material-icons {
+  font-size: 1.2rem !important;
+  line-height: 100%;
+  font-weight: 300;
+  vertical-align: middle;
+}
+
+.studio:hover, .UX-UI {
+  cursor: pointer;
+}
+
+.icon-studio { margin-left: 5px; }
+
+.goDown {
+  font-size: 2.5rem !important;
+  position: absolute;
+  bottom: 10vh;
+  color: white;
+  filter: invert(1) grayscale(1);
+}
+
+/* Typing sentence */
+.typing-container {
+  font-size: 7.2vh;
+  font-weight: 500;
+  line-height: 100%;
+  margin: 0;
+  margin-bottom: 12vh;
+  font-family: 'CabinetGrotesk-Variable';
+}
+
+#sentence {
+  color: white;
+  filter: invert(1) grayscale(1);
+}
+
+#feature-text {
+  font-style: italic;
+}
+
+/*
+.input-cursor {
+  display: inline-block;
+  width: 2px;
+  height: 42px;
+  background-color: white;
+  margin-left: 8px;
+  animation: blink .6s linear infinite alternate;
+}
+@keyframes blink {
+  0% {opacity: 1;}
+  40% {opacity: 1;}
+  60% {opacity: 0;}
+  100% {opacity: 0;}
+}
+*/
+
+
+/* #endregion topSection */
+
+.column {
+  float: left;
+}
+
+.big, .small {
+  height: 100%;
+  padding-right: 1vw;
+  margin-bottom: 7vh;
+}
+
+.big {
+  width: 60%;
+}
+
+.small {
+  width: 40%;
+}
+
+.productSection h3, .uxSection h3 {
+  /*text-transform: uppercase;*/
+  /*font-size: 2rem;*/
+  margin: 1vh 0 0 0;
+  /*color: white;
+  mix-blend-mode: difference;*/
+  font-family: 'CabinetGrotesk-Variable';
+  font-size: 32px;
+  font-weight: 500;
+}
+
+.productSection .client, .uxSection .client {
+  margin: 3vh 0 0 0;
+}
+
+.productSection .material-icons, .uxSection .material-icons  {
+  font-size: 32px;
+  vertical-align: bottom;
+}
+
+.productSection p, .uxSection p {
+  font-size: 1.1rem;
+  font-weight: 300;
+  margin: 0;
+  margin-top: 1vh;
+  /*color: white;
+  mix-blend-mode: difference;*/
+  filter: opacity(.5);
+}
+
+.project {
+  height: 60vh;
+  width: 100%;
+}
+.project img {
+  height: 100%;
+  width: auto;
+  object-fit: contain;
+  display: flex;
+  margin: auto;
+  max-width: 100%;
+}
+.project:hover, h3:hover {
+  cursor: pointer;
+}
+
+.givebox img {
+  max-width: none;
+}
+
+.productSecond .big, .productThird .small {padding-right: 0;}
+
+#separation {
+  margin: 10vh 0 !important;
+}
+
+
+/* #region productSection */
+
+.productSection {
+  height: 100%;
+  /*border: 1px solid black;*/
+  padding: 0 7vw 5vh 7vw;
+}
+
+.productFirst .big {margin-bottom: 0;}
+
+.printTwist {
+  background-color: #D7B9B9;
+}
+.printTwist img {
+  transform: scale(1.2);
+}
+
+.otomi { background-color: #f6f6f6; }
+.otomi img { 
+  width: 100%;
+  object-fit: cover; 
+}
+
+.stockeRecycle { background-color: #E0EBDE; }
+
+.oriane { background-color: #D7DDED; }
+.oriane img {transform: scale(.8);}
+
+
+.pushPour { background-color: #F2D3D3; }
+.pushPour img { transform: rotate(-10deg) scale(.9); }
+
+.givebox { background-color: #F3E5D3; }
+
+/* #endregion productSection */
+
+/* #region uxSection */
+
+.uxSection {
+  height: 100%;
+  padding: 0 7vw 10vh 7vw;
+  /*background-color: #212121;*/
+}
+
+.greener { background-color: #ABD1B6; }
+.greener img {
+  width: 100%;
+  object-position: bottom;
+}
+
+.aegle { background-color: #EBDCC0; }
+.aegle img {
+  width: 100%;
+  object-position: right;
+}
+
+.valueco { background-color: #B0BECC; }
+.valueco img {
+  width: 100%;
+  transform: scale(.8);
+}
+
+.extrude { background-color: #C2CAC5; }
+.extrude img {
+  width: 100%;
+  transform: scale(.8);
+}
+
+.FixMeUp { background-color: #9EB3E0; }
+.FixMeUp img {
+  width: 100%;
+  transform: scale(.8);
+}
+
+.community { background-color: #9AC6E7; }
+.community img {
+  width: 100%;
+  object-position: right;
+}
+
+.uxFirst h3, .uxFirst p, .uxSecond h3, .uxSecond p {
+  color: white;
+}
+
+/* #endregion uxSection */
+
+/* #region mobile version */
+@media screen and (max-width: 1110px){
+
+  .studioImg {
+    display: none;
+  }
+
+  .goDown {
+    font-size: 2.5rem !important;
+    position: absolute;
+    bottom: 15vh;
+  }
+
+  .topSection {
+    height: 95vh;
+    padding-top: 15vh;
+  }
+
+  .column {
+    float: left !important;
+  }
+
+  .uxSection {
+    background-color: #212121;
+    padding-top: 10vh;
+  }
+
+  .productSection {
+    background-color: #F6F6F6;
+    padding-top: 10vh;
+  }
+
+  #separation {
+    display: none;
+  }
+
+}
+
+@media screen and (max-width: 900px){
+
+  .topSection {
+    height: 100vh;
+    padding-top: 15vh;
+  }
+
+  .topSection h1, .typing-container {
+    width: 100%;
+    font-size: 2.5rem;
+  }
+
+  p { font-size: 1rem !important; }
+
+  .studio { margin-top: 10vh; }
+
+  .column { float: none; }
+
+  .big, .small {
+    width: 100%;
+  }
+
+  .big img, .small img {
+    max-width: 100%;
+  }
+
+  .project {
+    height: 100%;
+  }
+
+  .printTwist img {
+    transform: none;
+  }
+
+  .FixMeUp img, .extrude img, .valueco img  {
+    height: 350px;
+    transform: scale(.95);
+  }
+
+  .givebox img {
+    height: 350px;
+  }
+
+  .productSection {
+    padding-bottom: 5vh;
+  }
+
+  .productSection h3, .uxSection h3 {
+    margin: 2vh 0 0 0;
+  }
+
+  .studio .material-icons, .UX-UI .material-icons {
+    font-size: 1.4rem !important;
+    line-height: 100%;
+  }
+
+  .goDown {
+    font-size: 2.5rem !important;
+    position: absolute;
+    bottom: 5vh;
+  }
+
+  #seperation {
+    margin: 0 7vw 10vh 7vw;
+    border-bottom: 1px solid white;
+    mix-blend-mode: difference;
+  }
+
+}
+
+/* #endregion mobile version */

@@ -1,0 +1,254 @@
+.topSection .right {
+  padding-left: 2vw;
+}
+
+.splash img { background-color: #CCD8CA }
+
+.grey {
+  background-color: #EDEDED;
+}
+
+.beige {
+  background-color: #E8E0D8;
+}
+
+/* Project */
+.project .column {
+  width: 24vw;
+  padding-right: 2vw;
+}
+
+.project {padding: 10vh 13vw 10vh 13vw;}
+
+.project img {
+  width: 100%;
+  margin-bottom: 3vh;
+}
+
+.project p {
+  margin-bottom: 7vh;
+}
+
+.project h5 {
+  font-size: 1.5rem;
+}
+
+/* Mobilier */
+.fiches img {margin-bottom: 5vh;}
+
+.mobilier-img {
+  padding: 0 13vw 10vh 13vw;}
+
+.mobilier-img img {
+  border-radius: 10px;
+  width: 100%;
+}
+
+/* Etapes */
+.etapes h2 {margin-bottom: 5vh !important;}
+
+.etapes img {margin-top: 5vh;}
+
+/* Configuration */
+.configuration p {margin-bottom: 7vh; width: 70%;}
+
+.configuration h2 {margin-bottom : 0 !important;}
+
+/* Espace */
+.espace {
+  padding: 10vh 13vw 10vh 13vw;
+  width: 100%;
+  height: 100%;
+}
+
+.espace img {width: 100%;}
+
+.espace .left, .espace .right {
+  width: 50%;
+}
+
+.espace p {
+  width: 70%;
+  margin-top: 4vh;
+}
+
+.espace h2 {
+  width: 90%;
+  margin-top: 1vh;
+}
+
+.espace h5 {
+  margin-top: 4vh;
+  margin-bottom: 0;
+  width: 60%;
+  line-height: 120%;
+}
+
+/* ROULOS */
+.ROULOS p {margin-bottom: 7vh; width: 70%;}
+
+.ROULOS h2 {margin-bottom : 0 !important;}
+
+/* Scénario Roulos */
+.scenarioRoulos p {margin-bottom: 7vh; width: 70%;}
+
+.scenarioRoulos h2 {margin-bottom : 0 !important;}
+
+.sectionTxt {
+  padding: 10vh 13vw 0 13vw;
+  width: 100%;
+  height: 100%;
+}
+.sectionTxt h2 {
+  margin-bottom: 10vh;
+}
+.sectionTxt h5 {
+  width: 50%;
+}
+
+.large {
+  padding: 0 7vw 10vh 7vw;
+  width: 100%;
+  height: 100%;
+}
+.large img {
+  width: 100%;
+  height: 100%;
+  object-fit: cover;
+}
+
+
+
+.narrowTxt {
+  width: 60%;
+}
+
+/* #region caracteristics */
+.caracteristicsContainer {
+  padding: 15vh 13vw 15vh 13vw;
+}
+
+.caracteristics .material-icons {
+  vertical-align: middle;
+}
+
+.caracteristics a {
+  text-decoration: none;
+  color: black;
+}
+
+.caracteristics {
+  padding: 7vh 0;
+  width: 100%;
+}
+
+.caracteristics img {
+  max-width: 100%;
+  background-color: #CCD8CA;
+  border-radius: 10px;
+}
+
+.caracteristics .left, .caracteristics .right {
+  width: 50%;
+}
+
+.caracteristics p {
+  width: 70%;
+  margin-top: 4vh;
+}
+
+.caracteristics h2 {
+  width: 90%;
+  margin-top: 1vh;
+}
+
+.caracteristics h5 {
+  margin-top: 5vh;
+}
+
+.caracteristics h5 {
+  margin-top: 4vh;
+  margin-bottom: 0;
+  width: 60%;
+  line-height: 120%;
+}
+
+.mockup {
+  background-color: #F6F6F6;
+}
+
+.ecosystem {padding: 10vh 7vw;}
+
+.ecosystem img {
+  height: 100%;
+  width: 100%;
+  margin-top: 5vh;
+}
+
+/* #endregion caracteristics */
+
+@media screen and (max-width: 1110px) {
+  .topSection .right {
+        padding-left: 0vw;
+  }
+}
+
+@media screen and (max-width: 900px){
+
+  .splash {
+    height: 100%;
+    margin-bottom: 5vh;
+  }
+
+  .center {width: 100% !important;}
+
+  .column {padding-right: 0 !important;}
+
+  .column .left, .column .center {
+    margin-bottom: 4vh;
+  }
+
+  .sectionTxt, .caracteristicsContainer { padding: 5vh 7vw;}
+
+  .sectionTxt h2 {margin-bottom: 0;}
+
+  .large {padding: 0 7vw 5vh 7vw;}
+
+  .project, .sectionTxt {padding: 5vh 7vw 2vh 7vw;}
+
+  .project img {margin-bottom: 1vh;}
+  .project h2 {margin-bottom: 2vh;}
+  .project p {margin-bottom: 5vh;}
+
+  .mobilier-img {padding: 0 7vw 5vh 7vw}
+  .mobilier .sectionTxt {padding: 5vh 7vw 3vh 7vw;}
+
+  .etapes h2 {margin-bottom: 0 !important;}
+  .etapes img {margin-top: 0;}
+  .etapes .sectionTxt {padding: 5vh 7vw 3vh 7vw;}
+
+  .configuration h2, .configuration h5, .configuration p {width: 100%;}
+  .configuration p {margin-bottom: 0;}
+  .configuration .sectionTxt {padding: 5vh 7vw 3vh 7vw;}
+
+  .espace { padding: 5vh 7vw;}
+  .espace h5 {margin-top: 0;}
+  .espace p {margin-top: 2vh;}
+  .espace h2, .espace h5, .espace p {width: 100%;}
+
+  .ROULOS h2, .ROULOS h5, .ROULOS p {width: 100%;}
+  .ROULOS p {margin-bottom: 0;}
+
+  .scenarioRoulos h2, .scenarioRoulos h5, .scenarioRoulos p {width: 100%;}
+  .scenarioRoulos p {margin-bottom: 2vh;}
+  
+  .narrowTxt {width: 100%;}
+
+  .caracteristics {padding: 0;}
+
+  .caracteristics p {margin-top: 2vh;}
+  .caracteristics h5 {margin-top: 0;}
+
+  .caracteristics img {margin-top: 2vh;}
+  .caracteristics p,  .caracteristics h2 {width: 100%;}
+}

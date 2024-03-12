@@ -1,0 +1,251 @@
+<!DOCTYPE html>
+<html lang="fr">
+<head>
+  <link rel="icon" href="../../images/logo_circle.png">
+  <meta charset="utf-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+
+  <title>Emilie Durand - Le Fil d'Oriane</title>
+
+  <link rel="stylesheet" href="../../css/nonChangingElements_2.css">
+  <link rel="stylesheet" href="../../css/products/project-page.css">
+  <link rel="stylesheet" href="../../css/switzer.css">
+  <link rel="stylesheet" href="../../css/products/otomi.css">
+
+  <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.5.1/jquery.min.js"></script>
+  <script type="text/javascript" src="../../scripts/jquery.scrollie.js"></script>
+  <script type="text/javascript" src="../../scripts/color-change.js"></script>
+  <script type="text/javascript" src="../../scripts/script.js"></script>
+  <!--<script type="text/javascript" src="../../scripts/mobile-redirect.js"></script>-->
+
+  <!-- Translation -->
+  <script type="text/javascript" src="../../scripts/digital/otomi-translation.js"></script>
+  <link rel="stylesheet" href="../../css/translate.css">
+
+  <!-- Load an icon library to show a hamburger menu (bars) on small screens -->
+  <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/4.7.0/css/font-awesome.min.css">
+
+  <!-- Material Icons -->
+  <link href="https://fonts.googleapis.com/icon?family=Material+Icons" rel="stylesheet">
+
+  <span id="circle" class="circle"></span>
+
+</head>
+<body>
+  <div class="main-wrapper">
+
+
+    <!-- Navigation bar -->
+    <div class="X" id="X"><span  onclick="closeNav()">&times;</span></div>
+    <div id="overlay" class="overlay"></div>
+
+    <div class="nav-bar fadeIn" id="myTopnav">
+      <a href="../../index.html" id="title">EMILIE DURAND</a>
+      <ul class="nav-text">
+
+        <div style="float:right" class="float-right">
+          <li><a class="work active" onmouseover="circleSmall()" onmouseout="circleBig()" href="../../index.html"><span class="lang-work"></span></a></li>
+          <select id="country_select" onchange="loadsLanguage(this.value);" onclick="imageChange();" onchange="imageChange();"></select>
+        </div>
+        
+
+        <div class="nav-center">
+          <li><a class="shop active" onmouseover="circleSmall()" onmouseout="circleBig()" href="../../shop.html"><span class="lang-shop"></span></a></li>
+        <li><a class="active" onmouseover="circleSmall()" onmouseout="circleBig()" href="../../about.html"><span class="lang-about"></span></a></li>
+        </div>
+
+        <li onmouseover="circleSmall()" onmouseout="circleBig()" style="float:left"><a class="nav-title" href="../../index.html">EMILIE DURAND</a></li>
+      </ul>
+        <a class="icon" id="icon" onclick="openNav()">
+          <i class="fa fa-bars"></i>
+        </a>
+    </div>
+
+    <ul class="nav-bar-mobile" id="nav-bar-mobile">
+      <li><a class="active" onmouseover="circleSmall()" onmouseout="circleBig()" href="../../index.html"><span class="lang-work"></span> <i class="material-icons icon-studio">east</i></a></li>
+      <li><a class="active" onmouseover="circleSmall()" onmouseout="circleBig()" href="../../shop.html"><span class="lang-shop"></span> <i class="material-icons icon-studio">east</i></a></li>
+      <li><a class="active" onmouseover="circleSmall()" onmouseout="circleBig()" href="../../about.html"><span class="lang-about"></span> <i class="material-icons icon-studio">east</i></a></li>
+    </ul>
+
+      <div class="topSection row">
+
+        <div class="column left slideLeft">
+          <h6>OTOMI</h6>
+          <h1>Accompagner les étudiants dans le développement de leur autonomie à  l’aide d’un mobilier en open design</h1>
+        </div>
+
+        <div class="column right">
+          <h6><span class="lang-year"></span></h6>
+          <h4>2022</h4>
+
+          <h6><span class="lang-duration"></span></h6>
+          <h4>6 mois</h4>
+
+          <h6><span class="lang-role"></span></h6>
+          <h4>Designer de service</h4>
+
+          <h6><span class="lang-team"></span></h6>
+          <h4>Seule</h4>
+        </div>
+
+      </div>
+
+      <div class="splash">
+        <img src="../../images/projectsImg/otomi/otomi-splash.png" alt="">
+      </div>
+
+      <div class="beige project row">
+          <h5>OTOMI</h5>
+          <h2>L’open design pour l’autonomie des étudiants</h2>
+          <p>Les étudiants expriment une envie forte de contribuer à l’amélioration des objets qui les entourent.</p>
+
+        <div class="column left">
+          <img src="../../images/projectsImg/otomi/otomi-1.png" alt="">
+          <h5>Mobilier</h5>
+          <p>Table à tout faire personnalisable et configurable pour s’adapter à l’espace et aux besoins</p>
+        </div>
+
+        <div class="column center">
+          <img src="../../images/projectsImg/otomi/otomi-2.png" alt="">
+          <h5>ROULOS</h5>
+          <p>ROULOS permettant le  développement de ses  compétences dans les  domaines de son choix</p>
+        </div>
+
+        <div class="column right">
+          <img src="../../images/projectsImg/otomi/otomi-3.png" alt="">
+          <h5>Plateforme</h5>
+          <p>Plateforme collaborative  de contribution et de configuration</p>
+        </div>
+      </div>
+
+      <div class="mobilier">
+        <div class="sectionTxt">
+          <h5>L'objectif principal</h5>
+          <h2>Formuler un <i>open design</i> basé sur l’<i></i>open source</i>, afin de permettre aux étudiants de développer leurs compétences</h2>
+        </div>
+
+        <div class="mobilier-img">
+          <img src="../../images/projectsImg/otomi/mobilier.png" alt="">
+        </div>
+      </div>
+
+      <div class="beige etapes">
+        <div class="sectionTxt">
+          <h5>La construction</h5>
+          <h2>Les étapes de configuration et construction du mobilier et de ses accéssoires</h2>
+        </div>
+
+        <div class="large">
+          <img src="../../images/projectsImg/otomi/schema-construction.svg" alt="">
+        </div>
+
+      </div>
+
+      <div class="configuration">
+        <div class="sectionTxt">
+          <h5>1/ La configuration du mobilier</h5>
+          <h2>Une configuration simple pour s’adapter aux besoins et à l’espace des usagers</h2>
+          <p>L’usager peut choisir la taille du mobilier en fonction de son espace, ainsi que le nombre de poches latérales et d’accessoires qu’il souhaite, en fonction de ses besoins, de son budget et de son espace.</p>
+        </div>
+
+        <div class="mobilier-img">
+          <img src="../../images/projectsImg/otomi/gif-site-extended.gif" alt="">
+        </div>
+      </div>
+
+      <div class="grey livret">
+        <div class="sectionTxt">
+          <h5>2/ L’assemblage</h5>
+          <h2>Le livret d’assemblage guide l’utilisateur dans sa liste de matériaux à récupérer, ainsi que dans les différentes étapes à suivre pour assembler son mobilier.</h2>
+        </div>
+
+        <div class="large">
+          <img src="../../images/projectsImg/otomi/gif-livret.gif" alt="">
+        </div>
+      </div>
+
+      <div class="espace row">
+        <div class="column left">
+          <h5>3/ Implémentation dans l’espace</h5>
+          <h2>Une intégration dans les petits espaces</h2>
+          <p>Le mobilier a été pensé afin de s’intégrer facilement dans de petits studios étudiants. Ses deux parties caractéristiques lui permettent de séparer les espaces de son appartement plus facilement (espace cuisine, espace travail, espace divertissement, etc)</p>
+        </div>
+
+        <div class="column right">
+          <img src="../../images/projectsImg/otomi/espace.png" alt="">
+        </div>
+      </div>
+
+      <div class="beige ROULOS">
+        <div class="sectionTxt">
+          <h5>Les ROULOS</h5>
+          <h2>Les ROULOS sont chacun conçus pour un usage différent</h2>
+          <p>L’usager peut choisir la taille du mobilier en fonction de son espace, ainsi que le nombre de poches latérales et d’accessoires qu’il souhaite, en fonction de ses besoins, de son budget et de son espace.</p>
+        </div>
+
+        <div class="large">
+          <img src="../../images/projectsImg/otomi/gif-ROULOS.gif" alt="">
+        </div>
+      </div>
+
+      <div class="grey scenarioRoulos">
+        <div class="sectionTxt">
+          <h5>Scénario d'usage</h5>
+          <h2>Les ROULOS peuvent être facilement échangés, accrochés et détachés</h2>
+          <p>Ils peuvent être accrochés et détachés du support central. Ils peuvent être enroulés et rangés dans les poches latérales, afin de les changer.</p>
+        </div>
+
+        <div class="large">
+          <img src="../../images/projectsImg/otomi/scenario.svg" alt="">
+        </div>
+      </div>
+
+      <div class="caracteristicsContainer">
+        <div class="caracteristics row">
+          <div class="column left">
+            <h5>Mémoire</h5>
+            <h2>L’open source et le capitalisme</h2>
+            <p>Ce projet est né de la réflexion lors de mon mémoire de fin d’étude autour des valeurs de l’open source au sein d’une société capitaliste.</p>
+
+            <!-- Memoire open -->
+            <a href="" download="" onclick="window.open('../../Memoire-Emilie-DURAND_2022.pdf')">
+              <p onmouseover="circleSmall()" onmouseout="circleBig()" class="link">Voir mon mémoire <i class="material-icons icon-studio">east</i></p>
+            </a>
+          </div>
+
+          <div class="column right">
+            <img src="../../images/projectsImg/otomi/memoire.png" alt="">
+          </div>
+        </div>
+      </div>
+
+
+      <div class="sectionRedirect row">
+        <div class="column left">
+          <h3 onmouseover="circleSmall()" onmouseout="circleBig()" onclick="window.location.href='../../index.html';"><i class="material-icons icon-studio">west</i> <span class="lang-back"></span></h3>
+        </div>
+
+        <div class="column right">
+          <h3 onmouseover="circleSmall()" onmouseout="circleBig()" onclick="window.location.href='new_givebox.html';"><span class="lang-next"></span> <i class="material-icons icon-studio">east</i></h3>
+        </div>
+      </div>
+
+      <div class="footer row">
+        <div class="column left">
+          <a href="mailto:emilie@extrude.studio?subject=Object"><h1><span class="lang-getInTouch"></span> <i class="material-icons icon-studio">east</i></h1></a>
+        </br>
+          <p><span class="lang-coded"></span> <span class="lang-me"></span><br><span class="lang-license"></span> <span class="highlight">CC-BY-NC-ND</span></p>
+        </div>
+  
+        <div class="column right">
+          <h6>Instagram</h6>
+          <h4 onclick="window.open('https://www.instagram.com/emilie_does_design/')">Product design <i class="material-icons icon-studio">east</i></h4>
+          <h4 onclick="window.open('https://www.instagram.com/emilie_does_ux/')">UX/UI design <i class="material-icons icon-studio">east</i></h4>
+          <h4 onclick="window.open('https://www.instagram.com/thrulight/')">Photography <i class="material-icons icon-studio">east</i></h4>
+        </div>
+      </div>
+
+
+</body>
+
+<DOCTYPE html>
