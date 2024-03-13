@@ -246,6 +246,11 @@
   object-fit: cover; 
 }
 
+.workshop-kit { background-color: #E5D9F4; }
+.workshop-kit img { 
+  width: 100%;
+}
+
 .stockeRecycle { background-color: #E0EBDE; }
 
 .oriane { background-color: #D7DDED; }

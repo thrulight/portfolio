@@ -15,7 +15,7 @@ var WORDS_EN = {
 "hello" : "Hello, I'm Emilie",
 "title" : "I’m a UX/UI and Industrial Product Designer based in Paris",
 "extrude-studio" : "I’m also a co-founder of extrude.studio",
-"industrialDesign" : "Go to Industrial product design projects",
+"serviceDesign" : "Go to service design projects",
 
 //Oriane
 "orianeDescription" : "Designing a solution to help on the subject of high-school dropouts, by involving the parents a little bit more in school-life",
@@ -39,7 +39,7 @@ var WORDS_FR = {
 "hello" : "Hello, moi, c'est Emilie",
 "title" : "Je suis une designer UX/UI et produit basée à Paris",
 "extrude-studio" : "Je suis également la co-fondatrice d'extrude.studio",
-"industrialDesign" : "Voir les projets de design industriel",
+"serviceDesign" : "Voir les projets de design de service",
 
 //Oriane
 "orianeDescription" : "Conception d'une solution contre le décrochage scolaire, en incluant davantage les parents dans la vie scolaire.",
