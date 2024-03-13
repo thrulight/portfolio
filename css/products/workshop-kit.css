@@ -1,0 +1,221 @@
+.topSection .right {
+  padding-left: 2vw;
+}
+
+.splash img { background-color: #E5D9F4 }
+
+.grey {
+  background-color: #EDEDED;
+}
+
+.purple {
+  background-color: #E8E2F0;
+}
+
+/* Project */
+.project .column {
+  width: 24vw;
+  padding-right: 2vw;
+}
+
+.project {padding: 10vh 13vw 10vh 13vw;}
+
+.project img {
+  width: 100%;
+  margin-bottom: 3vh;
+}
+
+.project p {
+  margin-bottom: 7vh;
+}
+
+.project h5 {
+  font-size: 1.5rem;
+}
+
+/* Methodo */
+.methodo .column {
+  width: 25%;
+  display: flex;
+  align-items: center;
+  padding-right: 2vw;
+}
+
+.stepsContainer {
+  padding: 6vh 13vw 10vh 13vw;
+}
+
+.methodo .number {
+  min-width: 96px;
+  height: 96px;
+  background-color: #A45FFF;
+  color : white;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  font-size: 48px;
+  margin-right: 2vh;
+}
+
+.methodo .first {margin-bottom: 3vh;}
+
+.methodo .sectionTxt h2 {margin-bottom: 0;}
+
+/* Canevas */
+.canevas .sectionTxt h2 {margin-bottom: 2vh;}
+.canevas .small {padding: 5vh 13vw 10vh 13vw;}
+.canevas .small img {width: 100%;}
+
+.sectionTxt {
+  padding: 10vh 13vw 0 13vw;
+  width: 100%;
+  height: 100%;
+}
+.sectionTxt h2 {
+  margin-bottom: 10vh;
+}
+.sectionTxt h5 {
+  width: 50%;
+}
+
+.large {
+  padding: 0 7vw 10vh 7vw;
+  width: 100%;
+  height: 100%;
+}
+.large img {
+  width: 100%;
+  height: 100%;
+  object-fit: cover;
+}
+
+
+.narrowTxt {
+  width: 60%;
+}
+
+/* Parcours Usagers */
+.parcoursUsagers .column {width: 49%;}
+.parcoursUsagers .left {margin-right: 2%;}
+.parcoursUsagers img {width: 100%;}
+.parcoursUsagers .sectionTxt h2 {margin-bottom: 2vh;}
+.parcoursUsagers .sectionTxt {margin-bottom: 2vh;}
+.parcoursUsagers .container {padding: 5vh 13vw 0 13vw;}
+.parcoursUsagers .container p {margin-top: 2vh;}
+.parcoursUsagers .small {padding: 2vh 13vw 10vh 13vw;}
+
+/* #region caracteristics */
+.caracteristicsContainer {
+  padding: 10vh 13vw 10vh 13vw;
+}
+
+.caracteristics .material-icons {
+  vertical-align: middle;
+}
+
+.caracteristics a {
+  text-decoration: none;
+  color: black;
+}
+
+.caracteristics {
+  padding: 7vh 0;
+  width: 100%;
+}
+
+.caracteristics img {
+  max-width: 100%;
+  border-radius: 10px;
+}
+
+.caracteristics .left, .caracteristics .right {
+  width: 50%;
+}
+
+.caracteristics p {
+  width: 70%;
+  margin-top: 4vh;
+}
+
+.caracteristics h2 {
+  width: 90%;
+  margin-top: 1vh;
+}
+
+.caracteristics h5 {
+  margin-top: 5vh;
+}
+
+.caracteristics h5 {
+  margin-top: 4vh;
+  margin-bottom: 0;
+  width: 60%;
+  line-height: 120%;
+}
+
+.caracteristics .right img {margin-bottom: 2vh;}
+
+/* #endregion caracteristics */
+
+@media screen and (max-width: 1110px) {
+  .topSection .right {
+        padding-left: 0vw;
+  }
+}
+
+@media screen and (max-width: 900px){
+
+  .splash {
+    height: 100%;
+    margin-bottom: 5vh;
+  }
+
+  .center {width: 100% !important;}
+
+  .column {padding-right: 0 !important;}
+
+  .column .left, .column .center {
+    margin-bottom: 4vh;
+  }
+
+  .project, .sectionTxt {padding: 5vh 7vw 2vh 7vw;}
+
+  .project img {margin-bottom: 1vh;}
+  .project h2 {margin-bottom: 2vh;}
+  .project p {margin-bottom: 5vh;}
+
+  .support h5 {margin-bottom: 5vh;}
+
+  .stepsContainer {padding: 0 7vw 2vh 7vw;}
+  .methodo .first {margin-bottom: 0;}
+  .methodo .column {
+    width: 100%;
+    margin-bottom: 2vh;
+  }
+
+  .canevas .sectionTxt {padding: 5vh 7vw 2vh 7vw;}
+  .canevas .small {padding: 0 7vw 5vh 7vw;}
+
+  .parcoursUsagers .sectionTxt {
+    padding: 5vh 7vw 2vh 7vw;
+    margin-bottom: 0;
+  }
+  .parcoursUsagers .container {padding: 0 7vw 2vh 7vw;}
+  .parcoursUsagers .small {padding: 0 7vw 5vh 7vw;}
+
+  .sectionTxt, .caracteristicsContainer {padding: 5vh 7vw 5vh 7vw;;}
+
+  .sectionTxt h2 {margin-bottom: 0;}
+
+  .large {padding: 0 7vw 5vh 7vw;}
+
+  .narrowTxt {width: 100%;}
+
+  .caracteristics {padding: 0;}
+
+  .caracteristics p {margin-top: 2vh;}
+  .caracteristics h5 {margin-top: 0;}
+
+  .caracteristics img {margin-top: 2vh;}
+  .caracteristics p,  .caracteristics h2 {width: 100%;}
+}

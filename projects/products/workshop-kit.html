@@ -1,0 +1,290 @@
+<!DOCTYPE html>
+<html lang="fr">
+<head>
+  <link rel="icon" href="../../images/logo_circle.png">
+  <meta charset="utf-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+
+  <title>Emilie Durand - Le Fil d'Oriane</title>
+
+  <link rel="stylesheet" href="../../css/nonChangingElements_2.css">
+  <link rel="stylesheet" href="../../css/products/project-page.css">
+  <link rel="stylesheet" href="../../css/switzer.css">
+  <link rel="stylesheet" href="../../css/products/workshop-kit.css">
+
+  <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.5.1/jquery.min.js"></script>
+  <script type="text/javascript" src="../../scripts/jquery.scrollie.js"></script>
+  <script type="text/javascript" src="../../scripts/color-change.js"></script>
+  <script type="text/javascript" src="../../scripts/script.js"></script>
+  <!--<script type="text/javascript" src="../../scripts/mobile-redirect.js"></script>-->
+
+  <!-- Translation -->
+  <script type="text/javascript" src="../../scripts/digital/otomi-translation.js"></script>
+  <link rel="stylesheet" href="../../css/translate.css">
+
+  <!-- Load an icon library to show a hamburger menu (bars) on small screens -->
+  <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/4.7.0/css/font-awesome.min.css">
+
+  <!-- Material Icons -->
+  <link href="https://fonts.googleapis.com/icon?family=Material+Icons" rel="stylesheet">
+
+  <span id="circle" class="circle"></span>
+
+</head>
+<body>
+  <div class="main-wrapper">
+
+
+    <!-- Navigation bar -->
+    <div class="X" id="X"><span  onclick="closeNav()">&times;</span></div>
+    <div id="overlay" class="overlay"></div>
+
+    <div class="nav-bar fadeIn" id="myTopnav">
+      <a href="../../index.html" id="title">EMILIE DURAND</a>
+      <ul class="nav-text">
+
+        <div style="float:right" class="float-right">
+          <li><a class="work active" onmouseover="circleSmall()" onmouseout="circleBig()" href="../../index.html"><span class="lang-work"></span></a></li>
+          <select id="country_select" onchange="loadsLanguage(this.value);" onclick="imageChange();" onchange="imageChange();"></select>
+        </div>
+        
+
+        <div class="nav-center">
+          <li><a class="shop active" onmouseover="circleSmall()" onmouseout="circleBig()" href="../../shop.html"><span class="lang-shop"></span></a></li>
+        <li><a class="active" onmouseover="circleSmall()" onmouseout="circleBig()" href="../../about.html"><span class="lang-about"></span></a></li>
+        </div>
+
+        <li onmouseover="circleSmall()" onmouseout="circleBig()" style="float:left"><a class="nav-title" href="../../index.html">EMILIE DURAND</a></li>
+      </ul>
+        <a class="icon" id="icon" onclick="openNav()">
+          <i class="fa fa-bars"></i>
+        </a>
+    </div>
+
+    <ul class="nav-bar-mobile" id="nav-bar-mobile">
+      <li><a class="active" onmouseover="circleSmall()" onmouseout="circleBig()" href="../../index.html"><span class="lang-work"></span> <i class="material-icons icon-studio">east</i></a></li>
+      <li><a class="active" onmouseover="circleSmall()" onmouseout="circleBig()" href="../../shop.html"><span class="lang-shop"></span> <i class="material-icons icon-studio">east</i></a></li>
+      <li><a class="active" onmouseover="circleSmall()" onmouseout="circleBig()" href="../../about.html"><span class="lang-about"></span> <i class="material-icons icon-studio">east</i></a></li>
+    </ul>
+
+      <div class="topSection row">
+
+        <div class="column left slideLeft">
+          <h6>Workshop Kit</h6>
+          <h1>Penser un système de conception de supports d’ateliers configurable et personnalisable</h1>
+        </div>
+
+        <div class="column right">
+          <h6><span class="lang-year"></span></h6>
+          <h4>2023-2024</h4>
+
+          <h6><span class="lang-duration"></span></h6>
+          <h4>3 mois</h4>
+
+          <h6><span class="lang-role"></span></h6>
+          <h4>Designer de service</h4>
+
+          <h6><span class="lang-team"></span></h6>
+          <h4>Sarah Vasselon, Designer de service</h4>
+        </div>
+
+      </div>
+
+      <div class="splash">
+        <img src="../../images/projectsImg/workshop-kit/workshop-kit-splash.png" alt="">
+      </div>
+
+      <div class="grey project row">
+          <h5>Le Workshop Kit</h5>
+          <h2>Faciliter et automatiser la création des supports d’ateliers pour laisser plus de temps à la réflexion de fonds</h2>
+          <p>Les supports d’ateliers consistent souvent en des tâches répétitives à adapter à chaque atelier, en apportant quelques modifications par rapport aux ateliers précédent. Passer moins de temps à la création des supports permet d’en passer plus sur la réflexion importante.</p>
+
+        <div class="column left">
+          <img src="../../images/projectsImg/workshop-kit/supports.png" alt="">
+          <h5>Supports</h5>
+          <p>Conception de supports utilisables sans modification (canevas, cartes et mini-cartes)</p>
+        </div>
+
+        <div class="column center">
+          <img src="../../images/projectsImg/workshop-kit/configuration.png" alt="">
+          <h5>Composants</h5>
+          <p>Conception d’un système de composants configurables et éditables pour la conception de supports sur-mesure</p>
+        </div>
+
+        <div class="column right">
+          <img src="../../images/projectsImg/workshop-kit/documentation.png" alt="">
+          <h5>Documentation</h5>
+          <p>Création de la documentation dans Notion afin de pouvoir prendre en main rapidement ce système de conception et avoir de l’aide dans la conception des supports tant sur le fond que la forme</p>
+        </div>
+      </div>
+
+      <div class="purple methodo">
+        <div class="sectionTxt">
+          <h5>Méthodologie</h5>
+          <h2>Étapes</h2>
+        </div>
+        <div class="stepsContainer">
+          <div class="steps first row">
+            <div class="column col-1">
+              <div class="number">1</div>
+              <h5>Compréhension de l’existant</h5>
+            </div>
+  
+            <div class="column col-2">
+              <div class="number">2</div>
+              <h5>Benchmark</h5>
+            </div>
+  
+            <div class="column col-3">
+              <div class="number">3</div>
+              <h5>Analyse des besoins et usages</h5>
+            </div>
+  
+            <div class="column col-4">
+              <div class="number">4</div>
+              <h5>Création d’un style pour harmoniser les supports créés</h5>
+            </div>
+          </div>
+  
+          <div class="steps second row">
+            <div class="column col-5">
+              <div class="number">5</div>
+              <h5>Développement d’une v1</h5>
+            </div>
+  
+            <div class="column col-6">
+              <div class="number">6</div>
+              <h5>Test en interne</h5>
+            </div>
+  
+            <div class="column col-7">
+              <div class="number">7</div>
+              <h5>Déploiement lors des prochains ateliers</h5>
+            </div>
+  
+            <div class="column col-8">
+              <div class="number">8</div>
+              <h5>Amélioration continue</h5>
+            </div>
+          </div>
+        </div>
+        
+      </div>
+
+      <div class="project support row">
+        <h5>Les supports</h5>
+        <h2>Différents types de supports pour différentes utilisations</h2>
+        <p>Des types de supports distincts ont été conçus afin de s’adapter aux besoins et dynamiques des différents d’ateliers</p>
+
+      <div class="column left">
+        <img src="../../images/projectsImg/workshop-kit/canevas.png" alt="">
+        <h5>Canevas</h5>
+      </div>
+
+      <div class="column center">
+        <img src="../../images/projectsImg/workshop-kit/cartes.png" alt="">
+        <h5>Cartes</h5>
+      </div>
+
+      <div class="column right">
+        <img src="../../images/projectsImg/workshop-kit/mini-cartes.png" alt="">
+        <h5>Mini-cartes</h5>
+      </div>
+    </div>
+
+      <div class="purple canevas">
+        <div class="sectionTxt">
+          <h5>Les canevas</h5>
+          <h2>Des structures et contenus de canevas configurables</h2>
+          <p>Les structures peuvent être facilement modifiées, ainsi que les cases qui les composent, le type de remplissage, de titre, etc.</p>
+        </div>
+
+        <div class="small">
+          <img src="../../images/projectsImg/workshop-kit/gif-canevas.gif" alt="">
+        </div>
+      </div>
+
+      <div class="grey parcoursUsagers">
+        <div class="sectionTxt">
+          <h5>Test interne</h5>
+          <h2>Le parcours usagers</h2>
+          <p class="narrowTxt">Les différents types de supports furent testés en interne grâce à un parcours usagers. Cela permis de comprendre comment chaque type était utilisé, et ce qu’il fallait améliorer pour chacun.</p>
+        </div>
+
+        <div class="container row">
+          <div class="column left">
+            <img src="../../images/projectsImg/workshop-kit/parcours-1.png" alt="">
+          </div>
+
+          <div class="column right">
+            <img src="../../images/projectsImg/workshop-kit/parcours-2.png" alt="">
+          </div>
+        </div>
+
+        <div class="small">
+          <p class="narrowTxt">Grâce à ce test, nous avons notamment pu déterminer la taille à laquelle les usagers écrivaient, en fonction du type de support.</p>
+        </div>
+
+      </div>
+
+      <div class="caracteristicsContainer">
+        <div class="caracteristics row">
+          <div class="column left">
+            <h5>Support</h5>
+            <h2>Cartes</h2>
+            <p>Plus ludiques que les canevas, les cartes permettent d’ajouter des informations sur un sujet à la fois. Elles peuvent être utilisées pour faire de l'idéation, en complément d'un canevas pour évaluer un concept, ou indépendamment, pour y noter des enseignements ou inspirations.</p>
+          </div>
+
+          <div class="column right">
+            <img src="../../images/projectsImg/workshop-kit/gif-cartes.gif" alt="">
+          </div>
+        </div>
+
+        <div class="caracteristics row">
+          <div class="column left">
+            <h5>Support</h5>
+            <h2>Mini-cartes</h2>
+            <p>
+              Elles aident à humaniser les différentes informations écrites, en suggérant des émotions pour les parcours usagers ou des visages pour les personas
+            </br></br>
+              <i>Les illustrations de personnages proviennent d'Open Peeps.</i>
+            </p>
+          </div>
+
+          <div class="column right">
+            <img src="../../images/projectsImg/workshop-kit/gif-mini-cartes-emotions.gif" alt="">
+            <img src="../../images/projectsImg/workshop-kit/gif-mini-cartes-personas.gif" alt="">
+          </div>
+        </div>
+      </div>
+
+
+      <div class="sectionRedirect row">
+        <div class="column left">
+          <h3 onmouseover="circleSmall()" onmouseout="circleBig()" onclick="window.location.href='../../index.html';"><i class="material-icons icon-studio">west</i> <span class="lang-back"></span></h3>
+        </div>
+
+        <div class="column right">
+          <h3 onmouseover="circleSmall()" onmouseout="circleBig()" onclick="window.location.href='new_givebox.html';"><span class="lang-next"></span> <i class="material-icons icon-studio">east</i></h3>
+        </div>
+      </div>
+
+      <div class="footer row">
+        <div class="column left">
+          <a href="mailto:emilie@extrude.studio?subject=Object"><h1><span class="lang-getInTouch"></span> <i class="material-icons icon-studio">east</i></h1></a>
+        </br>
+          <p><span class="lang-coded"></span> <span class="lang-me"></span><br><span class="lang-license"></span> <span class="highlight">CC-BY-NC-ND</span></p>
+        </div>
+  
+        <div class="column right">
+          <h6>Instagram</h6>
+          <h4 onclick="window.open('https://www.instagram.com/emilie_does_design/')">Product design <i class="material-icons icon-studio">east</i></h4>
+          <h4 onclick="window.open('https://www.instagram.com/emilie_does_ux/')">UX/UI design <i class="material-icons icon-studio">east</i></h4>
+          <h4 onclick="window.open('https://www.instagram.com/thrulight/')">Photography <i class="material-icons icon-studio">east</i></h4>
+        </div>
+      </div>
+
+
+</body>
+
+<DOCTYPE html>
