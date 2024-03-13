@@ -20,6 +20,8 @@ var WORDS_EN = {
 "description3" : "I've been able to develop my UX/UI design skills through my various training courses and professional experience, particularly as a freelancer. This has enabled me to gain in empathy and observation, but also to work more effectively in a group.", 
 
 //Education
+"schoolXP" : "Education",
+
 "dapDescription" : "Public Action Design Diploma'",
 "dapDates" : "February 2023 - June 2023",
 
@@ -83,6 +85,8 @@ var WORDS_FR = {
 "description3" : "J'ai pu développé des compétences en Design UX/UI au travers de mes différentes formations et expériences professionnelles, notamment en freelance. Cela m'a permis de gagner en empathie, en observation, mais également de travailler plus efficacement en groupe.", 
 
 //Education
+"schoolXP" : "Formation",
+
 "dapDescription" : "Diplôme de Design d'Actions Publiques",
 "dapDates" : "Février 2023 - Juin 2023",
 
