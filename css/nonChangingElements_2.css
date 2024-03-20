@@ -62,6 +62,7 @@ border: 2px solid black !important;
 }
 .sectionRedirect .material-icons {
   vertical-align: bottom;
+  font-size: 4vh;
 }
 .sectionRedirect .column  {
   float: left;

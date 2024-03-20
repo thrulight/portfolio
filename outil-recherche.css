@@ -8,8 +8,8 @@
   background-color: #EDEDED;
 }
 
-.purple {
-  background-color: #E8E2F0;
+.blue {
+  background-color: #E4E6F7;
 }
 
 /* Project */
@@ -48,7 +48,7 @@
 .methodo .number {
   min-width: 96px;
   height: 96px;
-  background-color: #A45FFF;
+  background-color: #4457FF;
   color : white;
   display: flex;
   justify-content: center;
@@ -63,8 +63,7 @@
 
 /* Canevas */
 .canevas .sectionTxt h2 {margin-bottom: 2vh;}
-.canevas .small {padding: 5vh 13vw 10vh 13vw;}
-.canevas .small img {width: 100%;}
+.canevas .sectionTxt p {margin-bottom: 5vh;}
 
 .sectionTxt {
   padding: 10vh 13vw 0 13vw;
@@ -79,7 +78,7 @@
 }
 
 .large {
-  padding: 0 7vw 10vh 7vw;
+  padding: 0 7vw 2vh 7vw;
   width: 100%;
   height: 100%;
 }
@@ -91,7 +90,9 @@
 
 
 .narrowTxt {
+  padding: 0 7vw 10vh 7vw;
   width: 60%;
+  font-size: 1.5rem;
 }
 
 /* Parcours Usagers */
@@ -195,6 +196,12 @@
 
   .canevas .sectionTxt {padding: 5vh 7vw 2vh 7vw;}
   .canevas .small {padding: 0 7vw 5vh 7vw;}
+  .canevas .sectionTxt p {margin-bottom: 2vh;}
+  .canevas .large {padding: 0 7vw 2vh 7vw;}
+  .canevas .narrowTxt {
+    font-size: 1.25rem;
+    padding: 0 7vw 5vh 7vw;
+  }
 
   .parcoursUsagers .sectionTxt {
     padding: 5vh 7vw 2vh 7vw;
@@ -203,7 +210,9 @@
   .parcoursUsagers .container {padding: 0 7vw 2vh 7vw;}
   .parcoursUsagers .small {padding: 0 7vw 5vh 7vw;}
 
-  .sectionTxt, .caracteristicsContainer {padding: 5vh 7vw 5vh 7vw;;}
+  .sectionTxt {padding: 5vh 7vw 5vh 7vw;}
+
+  .caracteristicsContainer {padding: 5vh 7vw 0 7vw;}
 
   .sectionTxt h2 {margin-bottom: 0;}
 
@@ -216,7 +225,10 @@
   .caracteristics p {margin-top: 2vh;}
   .caracteristics h5 {margin-top: 0;}
 
-  .caracteristics img {margin-top: 2vh;}
+  .caracteristics img {
+    margin-top: 2vh;
+    margin-bottom: 5vh !important;
+  }
   .caracteristics p,  .caracteristics h2 {width: 100%;}
 
   .methodo .number {

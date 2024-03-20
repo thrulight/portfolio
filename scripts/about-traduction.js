@@ -47,7 +47,7 @@ var WORDS_EN = {
 "valuecoDescription" : "UX / UI Designer - Freelance",
 "valuecoDates" : "July 2022 - January 2023",
 
-"esDescription" : "Product designer",
+"esDescription" : "Co-founder, UX/UI & Product designer - Freelance",
 "esDates" : "January 2021 - March 2023",
 
 "plastifDescription" : "Product designer - Internship",
@@ -112,7 +112,7 @@ var WORDS_FR = {
 "valuecoDescription" : "Designer UX/UI - Freelance",
 "valuecoDates" : "Juillet 2022 - Janvier 2023",
 
-"esDescription" : "Designer produit et UX/UI",
+"esDescription" : "Co-fondatrice, designer produit et UX/UI - Freelance",
 "esDates" : "Janvier 2021 - Mars 2023",
 
 "plastifDescription" : "Designer produit et UX/UI - Stage",
