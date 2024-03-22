@@ -1,26 +1,26 @@
 <!DOCTYPE html>
 <html lang="fr">
 <head>
-  <link rel="icon" href="../../images/logo_circle.png">
+  <link rel="icon" href="images/logo_circle.png">
   <meta charset="utf-8">
   <meta name="viewport" content="width=device-width, initial-scale=1.0">
 
   <title>Emilie Durand - Le Workshop Kit</title>
 
-  <link rel="stylesheet" href="../../css/nonChangingElements_2.css">
-  <link rel="stylesheet" href="../../css/products/project-page.css">
-  <link rel="stylesheet" href="../../css/switzer.css">
-  <link rel="stylesheet" href="../../css/products/workshop-kit.css">
+  <link rel="stylesheet" href="css/nonChangingElements_2.css">
+  <link rel="stylesheet" href="css/products/project-page.css">
+  <link rel="stylesheet" href="css/switzer.css">
+  <link rel="stylesheet" href="workshop-kit.css">
 
   <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.5.1/jquery.min.js"></script>
-  <script type="text/javascript" src="../../scripts/jquery.scrollie.js"></script>
-  <script type="text/javascript" src="../../scripts/color-change.js"></script>
-  <script type="text/javascript" src="../../scripts/script.js"></script>
+  <script type="text/javascript" src="scripts/jquery.scrollie.js"></script>
+  <script type="text/javascript" src="scripts/color-change.js"></script>
+  <script type="text/javascript" src="scripts/script.js"></script>
   <!--<script type="text/javascript" src="../../scripts/mobile-redirect.js"></script>-->
 
   <!-- Translation -->
-  <script type="text/javascript" src="../../scripts/digital/otomi-translation.js"></script>
-  <link rel="stylesheet" href="../../css/translate.css">
+  <script type="text/javascript" src="scripts/digital/otomi-translation.js"></script>
+  <link rel="stylesheet" href="css/translate.css">
 
   <!-- Load an icon library to show a hamburger menu (bars) on small screens -->
   <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/4.7.0/css/font-awesome.min.css">
@@ -32,29 +32,39 @@
 
 </head>
 <body>
-  <div class="main-wrapper">
+    <script>
+      var password = "*****";
+      (function passcodeprotect() {
+        var passcode = prompt("Enter PassCode");
+        while (passcode !== password) {
+            alert("Incorrect PassCode");
+            return passcodeprotect();
+        }
+      }());
+  </script>
 
+  <div class="main-wrapper">
 
     <!-- Navigation bar -->
     <div class="X" id="X"><span  onclick="closeNav()">&times;</span></div>
     <div id="overlay" class="overlay"></div>
 
     <div class="nav-bar fadeIn" id="myTopnav">
-      <a href="../../index.html" id="title">EMILIE DURAND</a>
+      <a href="index.html" id="title">EMILIE DURAND</a>
       <ul class="nav-text">
 
         <div style="float:right" class="float-right">
-          <li><a class="work active" onmouseover="circleSmall()" onmouseout="circleBig()" href="../../index.html"><span class="lang-work"></span></a></li>
+          <li><a class="work active" onmouseover="circleSmall()" onmouseout="circleBig()" href="index.html"><span class="lang-work"></span></a></li>
           <select id="country_select" onchange="loadsLanguage(this.value);" onclick="imageChange();" onchange="imageChange();"></select>
         </div>
         
 
         <div class="nav-center">
-          <li><a class="shop active" onmouseover="circleSmall()" onmouseout="circleBig()" href="../../shop.html"><span class="lang-shop"></span></a></li>
-        <li><a class="active" onmouseover="circleSmall()" onmouseout="circleBig()" href="../../about.html"><span class="lang-about"></span></a></li>
+          <li><a class="shop active" onmouseover="circleSmall()" onmouseout="circleBig()" href="shop.html"><span class="lang-shop"></span></a></li>
+        <li><a class="active" onmouseover="circleSmall()" onmouseout="circleBig()" href="about.html"><span class="lang-about"></span></a></li>
         </div>
 
-        <li onmouseover="circleSmall()" onmouseout="circleBig()" style="float:left"><a class="nav-title" href="../../index.html">EMILIE DURAND</a></li>
+        <li onmouseover="circleSmall()" onmouseout="circleBig()" style="float:left"><a class="nav-title" href="index.html">EMILIE DURAND</a></li>
       </ul>
         <a class="icon" id="icon" onclick="openNav()">
           <i class="fa fa-bars"></i>
@@ -62,9 +72,9 @@
     </div>
 
     <ul class="nav-bar-mobile" id="nav-bar-mobile">
-      <li><a class="active" onmouseover="circleSmall()" onmouseout="circleBig()" href="../../index.html"><span class="lang-work"></span> <i class="material-icons icon-studio">east</i></a></li>
-      <li><a class="active" onmouseover="circleSmall()" onmouseout="circleBig()" href="../../shop.html"><span class="lang-shop"></span> <i class="material-icons icon-studio">east</i></a></li>
-      <li><a class="active" onmouseover="circleSmall()" onmouseout="circleBig()" href="../../about.html"><span class="lang-about"></span> <i class="material-icons icon-studio">east</i></a></li>
+      <li><a class="active" onmouseover="circleSmall()" onmouseout="circleBig()" href="index.html"><span class="lang-work"></span> <i class="material-icons icon-studio">east</i></a></li>
+      <li><a class="active" onmouseover="circleSmall()" onmouseout="circleBig()" href="shop.html"><span class="lang-shop"></span> <i class="material-icons icon-studio">east</i></a></li>
+      <li><a class="active" onmouseover="circleSmall()" onmouseout="circleBig()" href="about.html"><span class="lang-about"></span> <i class="material-icons icon-studio">east</i></a></li>
     </ul>
 
       <div class="topSection row">
@@ -91,7 +101,7 @@
       </div>
 
       <div class="splash">
-        <img src="../../images/projectsImg/workshop-kit/workshop-kit-splash.png" alt="">
+        <img src="images/projectsImg/workshop-kit/workshop-kit-splash.png" alt="">
       </div>
 
       <div class="grey project row">
@@ -100,19 +110,19 @@
           <p>Les supports d’ateliers consistent souvent en des tâches répétitives à adapter à chaque atelier, en apportant quelques modifications par rapport aux ateliers précédent. Passer moins de temps à la création des supports permet d’en passer plus sur la réflexion importante.</p>
 
         <div class="column left">
-          <img src="../../images/projectsImg/workshop-kit/supports.png" alt="">
+          <img src="images/projectsImg/workshop-kit/supports.png" alt="">
           <h5>Supports</h5>
           <p>Conception de supports utilisables sans modification (canevas, cartes et mini-cartes)</p>
         </div>
 
         <div class="column center">
-          <img src="../../images/projectsImg/workshop-kit/configuration.png" alt="">
+          <img src="images/projectsImg/workshop-kit/configuration.png" alt="">
           <h5>Composants</h5>
           <p>Conception d’un système de composants configurables et éditables pour la conception de supports sur-mesure</p>
         </div>
 
         <div class="column right">
-          <img src="../../images/projectsImg/workshop-kit/documentation.png" alt="">
+          <img src="images/projectsImg/workshop-kit/documentation.png" alt="">
           <h5>Documentation</h5>
           <p>Création de la documentation dans Notion afin de pouvoir prendre en main rapidement ce système de conception et avoir de l’aide dans la conception des supports tant sur le fond que la forme</p>
         </div>
@@ -177,17 +187,17 @@
         <p>Des types de supports distincts ont été conçus afin de s’adapter aux besoins et dynamiques des différents d’ateliers</p>
 
       <div class="column left">
-        <img src="../../images/projectsImg/workshop-kit/canevas.png" alt="">
+        <img src="images/projectsImg/workshop-kit/canevas.png" alt="">
         <h5>Canevas</h5>
       </div>
 
       <div class="column center">
-        <img src="../../images/projectsImg/workshop-kit/cartes.png" alt="">
+        <img src="images/projectsImg/workshop-kit/cartes.png" alt="">
         <h5>Cartes</h5>
       </div>
 
       <div class="column right">
-        <img src="../../images/projectsImg/workshop-kit/mini-cartes.png" alt="">
+        <img src="images/projectsImg/workshop-kit/mini-cartes.png" alt="">
         <h5>Mini-cartes</h5>
       </div>
     </div>
@@ -200,7 +210,7 @@
         </div>
 
         <div class="small">
-          <img src="../../images/projectsImg/workshop-kit/gif-canevas.gif" alt="">
+          <img src="images/projectsImg/workshop-kit/gif-canevas.gif" alt="">
         </div>
       </div>
 
@@ -213,11 +223,11 @@
 
         <div class="container row">
           <div class="column left">
-            <img src="../../images/projectsImg/workshop-kit/parcours-1.png" alt="">
+            <img src="images/projectsImg/workshop-kit/parcours-1.png" alt="">
           </div>
 
           <div class="column right">
-            <img src="../../images/projectsImg/workshop-kit/parcours-2.png" alt="">
+            <img src="images/projectsImg/workshop-kit/parcours-2.png" alt="">
           </div>
         </div>
 
@@ -236,7 +246,7 @@
           </div>
 
           <div class="column right">
-            <img src="../../images/projectsImg/workshop-kit/gif-cartes.gif" alt="">
+            <img src="images/projectsImg/workshop-kit/gif-cartes.gif" alt="">
           </div>
         </div>
 
@@ -252,8 +262,8 @@
           </div>
 
           <div class="column right">
-            <img src="../../images/projectsImg/workshop-kit/gif-mini-cartes-emotions.gif" alt="">
-            <img src="../../images/projectsImg/workshop-kit/gif-mini-cartes-personas.gif" alt="">
+            <img src="images/projectsImg/workshop-kit/gif-mini-cartes-emotions.gif" alt="">
+            <img src="images/projectsImg/workshop-kit/gif-mini-cartes-personas.gif" alt="">
           </div>
         </div>
       </div>
@@ -261,26 +271,22 @@
 
       <div class="sectionRedirect row">
         <div class="column left">
-          <h3 onmouseover="circleSmall()" onmouseout="circleBig()" onclick="window.location.href='../../index.html';"><i class="material-icons icon-studio">west</i> <span class="lang-back"></span></h3>
+          <h3 onmouseover="circleSmall()" onmouseout="circleBig()" onclick="window.location.href='index.html';"><i class="material-icons icon-studio">west</i> <span class="lang-back"></span></h3>
         </div>
 
-        <div class="column right">
-          <h3 onmouseover="circleSmall()" onmouseout="circleBig()" onclick="window.location.href='new_givebox.html';"><span class="lang-next"></span> <i class="material-icons icon-studio">east</i></h3>
-        </div>
       </div>
 
       <div class="footer row">
         <div class="column left">
-          <a href="mailto:emilie@extrude.studio?subject=Object"><h1><span class="lang-getInTouch"></span> <i class="material-icons icon-studio">east</i></h1></a>
+          <a href="mailto:e.durand.design@gmail.com?subject=Object"><h1><span class="lang-getInTouch"></span> <i class="material-icons icon-studio">east</i></h1></a>
         </br>
           <p><span class="lang-coded"></span> <span class="lang-me"></span><br><span class="lang-license"></span> <span class="highlight">CC-BY-NC-ND</span></p>
         </div>
   
         <div class="column right">
           <h6>Instagram</h6>
-          <h4 onclick="window.open('https://www.instagram.com/emilie_does_design/')">Product design <i class="material-icons icon-studio">east</i></h4>
-          <h4 onclick="window.open('https://www.instagram.com/emilie_does_ux/')">UX/UI design <i class="material-icons icon-studio">east</i></h4>
-          <h4 onclick="window.open('https://www.instagram.com/thrulight/')">Photography <i class="material-icons icon-studio">east</i></h4>
+          <h4 onclick="window.open('https://www.instagram.com/emilie_does_design/')">Design <i class="material-icons icon-studio">east</i></h4>
+          <h4 onclick="window.open('https://www.instagram.com/emilie_does_photography/')">Photography <i class="material-icons icon-studio">east</i></h4>
         </div>
       </div>
 
