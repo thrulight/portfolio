@@ -15,7 +15,7 @@ var WORDS_EN = {
 "aboutMe" : "About me",
 "contactMe" : "Contact me",
 "resume" : "See Resume",
-"description1" : "Hi! I am currently looking for a UX/UI Designer job in France.",
+"description1" : "Hi! I am currently looking for a Service Design job in France.",
 "description2" : "I have a particular interest in projects with an environmental impact, as well as projects focused on local authorities and public-sector players. I always put citizens at the heart of the projects I work on.",
 "description3" : "I've been able to develop my UX/UI design skills through my various training courses and professional experience, particularly as a freelancer. This has enabled me to gain in empathy and observation, but also to work more effectively in a group.", 
 
@@ -80,9 +80,9 @@ var WORDS_FR = {
 "aboutMe" : "About me",
 "contactMe" : "Contact me",
 "resume" : "See Resume",
-"description1" : "Bonjour ! Je suis actuellement à la recherche d'un travail de Designer UX/UI en France.",
+"description1" : "Bonjour ! Je suis actuellement à la recherche d'un travail de Designer de service en France.",
 "description2" : "J'ai un intérêt particulier pour les projets à impact environnementaux, ainsi que les projets centrés sur les collectivités territoriales et les acteurs publics. Je place toujours les citoyens au centre des projets sur lesquels je travaille.",
-"description3" : "J'ai pu développé des compétences en Design UX/UI au travers de mes différentes formations et expériences professionnelles, notamment en freelance. Cela m'a permis de gagner en empathie, en observation, mais également de travailler plus efficacement en groupe.", 
+"description3" : "J'ai pu développé des compétences en Design de service au travers de mes différentes formations et expériences professionnelles, notamment en freelance et en agence de design. Cela m'a permis de gagner en empathie, en observation, mais également de travailler plus efficacement en groupe.", 
 
 //Education
 "schoolXP" : "Formation",
