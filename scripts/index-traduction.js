@@ -13,7 +13,9 @@ var WORDS_EN = {
 
 //Hero section
 "hello" : "Hello, I'm Emilie",
-"title" : "I’m a UX/UI and Industrial Product Designer based in Paris",
+"am" : "I'm' a ",
+"based" : " based in Paris, ",
+"title" : "focused on users and public interest through social, societal and environmental issues.",
 "extrude-studio" : "I’m also a co-founder of extrude.studio",
 "serviceDesign" : "Go to service design projects",
 
@@ -37,7 +39,9 @@ var WORDS_FR = {
 
 //Hero section
 "hello" : "Hello, moi, c'est Emilie",
-"title" : "Je suis une designer UX/UI et produit basée à Paris",
+"am" : "Je suis une ",
+"based" : " basée à Paris, ",
+"title" : "centrée sur les usagers et l'intérêt général au travers des questions sociales, sociétales et environnementales.",
 "extrude-studio" : "Je suis également la co-fondatrice d'extrude.studio",
 "serviceDesign" : "Voir les projets de design de service",
 
