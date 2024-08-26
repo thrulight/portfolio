@@ -258,6 +258,7 @@ li a:hover {
   position: fixed;
   width: 100%;
   z-index: 2;
+  backdrop-filter: blur(4px);
 }
 
 /* #endregion Navigation bar */

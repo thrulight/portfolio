@@ -34,6 +34,9 @@ var WORDS_EN = {
 //Work
 "workXP" : "Work experience",
 
+"aphpDescription" : "Civic service volunteer",
+"aphpDates" : "June 2024 - November 2024",
+
 "userDescription" : "Digital service designer - Internship/CDD",
 "userDates" : "September 2023 - April 2024",
 
@@ -98,6 +101,9 @@ var WORDS_FR = {
 
 //Work
 "workXP" : "Expérience professionnelle",
+
+"aphpDescription" : "Volontaire en service civique",
+"aphpDates" : "Juin 2024 - Novembre 2024",
 
 "userDescription" : "Designer de service digitaux - Stage/CDD",
 "userDates" : "Septembre 2023 - Avril 2024",
