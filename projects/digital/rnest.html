@@ -1,0 +1,295 @@
+<!DOCTYPE html>
+<html lang="fr">
+<head>
+  <link rel="icon" href="../../images/logo_circle.png">
+  <meta charset="utf-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+
+  <title>Emilie Durand - Outil de recherche</title>
+
+  <link rel="stylesheet" href="../../css/nonChangingElements_2.css">
+  <link rel="stylesheet" href="../../css/products/project-page.css">
+  <link rel="stylesheet" href="../../css/switzer.css">
+  <link rel="stylesheet" href="../../css/digital/rnest.css">
+
+  <!-- Translation -->
+  <script type="text/javascript" src="../../scripts/digital/valueco-translation.js"></script>
+  <link rel="stylesheet" href="../../css/translate.css">
+
+  <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.5.1/jquery.min.js"></script>
+  <script type="text/javascript" src="../../scripts/jquery.scrollie.js"></script>
+  <script type="text/javascript" src="../../scripts/color-change.js"></script>
+  <script type="text/javascript" src="../../scripts/script.js"></script>
+  <!--<script type="text/javascript" src="../../scripts/mobile-redirect.js"></script>-->
+
+  <!-- REQUIRED: Web Components polyfill to support Edge and Firefox < 63 -->
+  <script src="https://unpkg.com/@webcomponents/webcomponentsjs@2.1.3/webcomponents-loader.js"></script>
+
+  <!-- Intersection Observer polyfill for better performance in Safari and IE11 -->
+  <script src="https://unpkg.com/intersection-observer@0.5.1/intersection-observer.js"></script>
+
+  <!-- Resize Observer polyfill improves resize behavior in non-Chrome browsers -->
+  <script src="https://unpkg.com/resize-observer-polyfill@1.5.1/dist/ResizeObserver.js"></script>
+
+  <!-- Fullscreen polyfill is required for experimental AR features in Canary -->
+  <script src="https://unpkg.com/fullscreen-polyfill@1.0.2/dist/fullscreen.polyfill.js"></script>
+
+  <!-- Focus visible package -->
+  <script src="https://unpkg.com/focus-visible@5.1.0/dist/focus-visible.js"></script>
+
+
+  <!-- Load an icon library to show a hamburger menu (bars) on small screens -->
+  <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/4.7.0/css/font-awesome.min.css">
+
+  <!-- Material Icons -->
+  <link href="https://fonts.googleapis.com/icon?family=Material+Icons" rel="stylesheet">
+
+  <span id="circle" class="circle"></span>
+
+</head>
+<body>
+  <!--
+  <script>
+    var password = "*****";
+    (function passcodeprotect() {
+       var passcode = prompt("Enter PassCode");
+       while (passcode !== password) {
+          alert("Incorrect PassCode");
+          return passcodeprotect();
+       }
+    }());
+ </script>-->
+
+  <div class="main-wrapper">
+
+    <!-- Navigation bar -->
+    <div class="X" id="X"><span  onclick="closeNav()">&times;</span></div>
+    <div id="overlay" class="overlay"></div>
+
+    <div class="nav-bar fadeIn" id="myTopnav">
+      <a href="../../index.html" id="title">EMILIE DURAND</a>
+      <ul class="nav-text">
+
+        <div style="float:right" class="float-right">
+          <li><a class="work active" onmouseover="circleSmall()" onmouseout="circleBig()" href="../../index.html"><span class="lang-work"></span></a></li>
+          <!--<select id="country_select" onchange="loadsLanguage(this.value);" onclick="imageChange();" onchange="imageChange();"></select>-->
+        </div>
+        
+
+        <div class="nav-center">
+          <!--<li><a class="shop active" onmouseover="circleSmall()" onmouseout="circleBig()" href="../../shop.html"><span class="lang-shop"></span></a></li>-->
+          <li><a class="active" onmouseover="circleSmall()" onmouseout="circleBig()" href="../../about.html"><span class="lang-about"></span></a></li>
+        </div>
+
+        <li onmouseover="circleSmall()" onmouseout="circleBig()" style="float:left"><a class="nav-title" href="../../index.html">EMILIE DURAND</a></li>
+      </ul>
+        <a class="icon" id="icon" onclick="openNav()">
+          <i class="fa fa-bars"></i>
+        </a>
+    </div>
+
+    <ul class="nav-bar-mobile" id="nav-bar-mobile">
+      <li><a class="active" onmouseover="circleSmall()" onmouseout="circleBig()" href="../../index.html"><span class="lang-work"></span> <i class="material-icons icon-studio">east</i></a></li>
+      <li><a class="active" onmouseover="circleSmall()" onmouseout="circleBig()" href="../../shop.html"><span class="lang-shop"></span> <i class="material-icons icon-studio">east</i></a></li>
+      <li><a class="active" onmouseover="circleSmall()" onmouseout="circleBig()" href="../../about.html"><span class="lang-about"></span> <i class="material-icons icon-studio">east</i></a></li>
+    </ul>
+
+      <div class="topSection row">
+
+        <div class="column left slideLeft">
+          <h6>Application web IA Deep Search</h6>
+          <h1>Une application web qui aide à se poser des centaines de milliers de questions sur le web et obtenir un rapport synthétique grâce à une IA </h1>
+        </div>
+
+        <div class="column right">
+          <h6><span class="lang-year"></span></h6>
+          <h4>2023-2024</h4>
+
+          <h6><span class="lang-duration"></span></h6>
+          <h4>7 mois</h4>
+
+          <h6><span class="lang-role"></span></h6>
+          <h4>Designer UX/UI</h4>
+
+          <h6><span class="lang-team"></span></h6>
+          <h4>
+            Gabrielle Heynen, Directrice Artistique
+            <br>
+            Matthieu Savary, Chef de projet
+          </h4>
+
+          <h6>Client</h6>
+          <h4>RNEST</h4>
+        </div>
+
+      </div>
+
+      <div class="splash">
+        <img src="../../images/projectsImg/Rnest/rnest-splash.png" alt="">
+      </div>
+
+      <div class="tag pink methodo slide">
+        <div class="sectionTxt">
+          <h5>Méthodologie</h5>
+          <h2>Étapes</h2>
+        </div>
+        <div class="stepsContainer">
+          <div class="steps first row">
+            <div class="column col-1">
+              <div class="number">1</div>
+              <h5>Compréhension de l’existant</h5>
+            </div>
+  
+            <div class="column col-2">
+              <div class="number">2</div>
+              <h5>Itérations de wireframes low-def et high-def</h5>
+            </div>
+  
+            <div class="column col-3">
+              <div class="number">3</div>
+              <h5>Réalisation de prototypes + tests utilisateurs</h5>
+            </div>
+  
+            <div class="column col-4">
+              <div class="number">4</div>
+              <h5>Amélioration des fonctionnalités après  retours utilisateurs</h5>
+            </div>
+          </div>
+  
+          <div class="steps second row">
+            <div class="column col-5">
+              <div class="number">5</div>
+              <h5>Réalisation de prototypes + tests utilisateurs 2</h5>
+            </div>
+  
+            <div class="column col-6">
+              <div class="number">6</div>
+              <h5>Recherche de direction artistique</h5>
+            </div>
+  
+            <div class="column col-7">
+              <div class="number">7</div>
+              <h5>Livraison d’un UI Kit et écrans clés</h5>
+            </div>
+          </div>
+        </div>
+        
+      </div>
+
+      <div class="tag canevas objectif">
+        <div class="sectionTxt">
+          <h5>L’objectif principal</h5>
+          <h2>Concevoir un outil complexe pour une start-up, qui répond aux besoins des utilisateurs ayant des usages distincts.</h2>
+        </div>
+
+        <div class="large">
+          <img src="../../images/projectsImg/Rnest/ecrans.png" alt="">
+        </div>
+
+        <p class="narrowTxt">Les retours utilisateurs étaient cruciaux, étant donné que deux types d’usagers radicalement différents, aux besoins et réflexe distincts, allaient devoir utiliser l’outil.</p>
+      </div>
+
+      <div class="tag blue videoSection">
+        <div class="sectionTxt">
+          <h5>Tests utilisateurs</h5>
+          <h2>Concevoir un prototype complet qui permet de recevoir des retours pertinents</h2>
+          <p>La première version du produit étant très différente, le prototype devait mettre en valeur les points de changement fondamentaux. Cela dû se faire par la création d’un prototype permettant un test plutôt long, mais donnant des retours sur toutes les parties du produit.</p>
+          <video autoplay muted loop>
+            <source src="../../images/projectsImg/Rnest/prototype.mp4" type="video/mp4">
+          </video>
+          <p class="narrowTxt2">Les retours utilisateurs étaient cruciaux, étant donné que deux types d’usagers radicalement différents, aux besoins et réflexe distincts, allaient devoir utiliser l’outil.</p>
+          </div>
+      </div>
+
+      <div class="tag canevas">
+        <div class="sectionTxt">
+          <h5>Les retours d’expérience</h5>
+          <h2>Comprendre les irritants, les points positifs et les opportunités d’une manière la plus objective qui soit</h2>
+          <p>Les retours des différents tests - une vingtaine au total - ont tous été triés et classés par importance. Les points qui revenaient le plus souvent ont été mis en avant. Nous avons classés les retours par étape par affordance, afin de comprendre les points sur lesquels il était le plus priomordial de travailler, ainsi que les opportunités qui pouvaient nous intéresser.</p>
+        </div>
+
+        <div class="large">
+          <img src="../../images/projectsImg/rnest/retour-experience.png" alt="">
+        </div>
+
+        <p class="narrowTxt">Les retours étaient renforcés par les différentes verbatims que nous avions pû récolter pendant les tests, afin de comprendre au mieux les ressentis des utilisateurs.</p>
+      </div>
+
+      <div class="tag grey canevas">
+        <div class="sectionTxt">
+          <h5>Itérations</h5>
+          <h2>Etant un outil complexe, nous avons dû faire de nombreuses itérations, passant de wireframes low-def, à des wireframes high-def, à une implémentation de la UI.</h2>
+          <p>L’UX pris beaucoup de temps avant d’être figée, et l’utilisation de wireframes low-def nous a permis beaucoup plus de flexibilité.</p>
+        </div>
+
+        <div class="large">
+          <img src="../../images/projectsImg/rnest/evolution-ecrans.png" alt="">
+        </div>
+
+        <p class="narrowTxt">Les retours étaient renforcés par les différentes verbatims que nous avions pû récolter pendant les tests, afin de comprendre au mieux les ressentis des utilisateurs.</p>
+      </div>
+
+
+      <div class="caracteristicsContainer">
+        <div class="tag caracteristics row">
+          <div class="column left">
+            <h5>Méthodologie</h5>
+            <h2>Profils utilisateurs</h2>
+            <p>
+              Les tests utilisateurs étant cruciaux dans ce projet, nous avons soigneusement choisi les différents profils.
+              <br><br>
+              L’outil étant relativement complexe à utiliser, nous avons choisi des profils n’ayant jamais utilisé la v1 de l’outil, des utilisateurs peu à l’aise avec l’informatique, et des utilisateurs ayant des métiers très distincts, donc une utilisation de l’outil différente.
+            </p>
+          </div>
+
+          <div class="column right">
+            <img src="../../images/projectsImg/rnest/profils-utilisateurs.png" alt="">
+          </div>
+        </div>
+
+        <div class="tag caracteristics row">
+          <div class="column left">
+            <h5>Livrables</h5>
+            <h2>UI Kit</h2>
+            <p>
+              Une fois l’UX, la recherche de direction artistique finalisée ainsi que quelques écrans clés, nous avons conçu un UI Kit complet permettant aux développeurs de comprendre avec précision comment s’emparer de nos propositions afin de les appliquer aux différentes librairies de développement utilisées. 
+              <br><br>
+              Celui-ci comportait les typographies retenues, ainsi que leurs différents usages dans l’interface, la palette de couleur, les différents composants, tels que les boutons, champs de texte, toggle, etc., et les animations et transitions CSS pour ces derniers.
+            </p>
+          </div>
+
+          <div class="column right">
+            <img src="../../images/projectsImg/rnest/UI-kit.png" alt="">
+          </div>
+        </div>
+      </div>
+
+
+      <div class="sectionRedirect row">
+        <div class="column left">
+          <h3 onmouseover="circleSmall()" onmouseout="circleBig()" onclick="window.location.href='../../index.html';"><i class="material-icons icon-studio">west</i> <span class="lang-back"></span></h3>
+        </div>
+
+        <div class="column right">
+          <h3 onmouseover="circleSmall()" onmouseout="circleBig()" onclick="window.location.href='../../new_givebox.html';"><span class="lang-next"></span> <i class="material-icons icon-studio">east</i></h3>
+        </div>
+      </div>
+
+      <div class="footer row">
+        <div class="column left">
+          <a href="mailto:e.durand.design@gmail.com?subject=Object"><h1><span class="lang-getInTouch"></span> <i class="material-icons icon-studio">east</i></h1></a>
+        </br>
+          <p><span class="lang-coded"></span> <span class="lang-me"></span><br><span class="lang-license"></span> <span class="highlight">CC-BY-NC-ND</span></p>
+        </div>
+  
+        <div class="column right">
+          <h6>Instagram</h6>
+          <h4 onclick="window.open('https://www.instagram.com/emilie_does_design/')">Design <i class="material-icons icon-studio">east</i></h4>
+          <h4 onclick="window.open('https://www.instagram.com/emilie_does_photography/')">Photography <i class="material-icons icon-studio">east</i></h4>
+        </div>
+      </div>
+
+
+</body>
+
+<DOCTYPE html>
