@@ -1,6 +1,6 @@
 var LanguageList = {
-  "EN" : "EN",
-  "FR" : "FR"
+  "FR" : "FR",
+  "EN" : "EN"
 };
 
 //languages Objects
@@ -119,7 +119,7 @@ function initialize() {
     text(value));
   });
 
-  loadsLanguage("EN");
+  loadsLanguage("FR");
 }
 
 function loadsLanguage(lang){
