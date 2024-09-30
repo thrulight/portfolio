@@ -38,7 +38,7 @@ var WORDS_FR = {
 "work" : "projets",
 
 //Hero section
-"hello" : "Hello, moi, c'est Emilie",
+"hello" : "Hello, c'est Emilie",
 "am" : "Je suis une ",
 "based" : " basée à Paris, ",
 "title" : "centrée sur les usagers et l'intérêt général au travers des questions sociales, sociétales et environnementales.",
